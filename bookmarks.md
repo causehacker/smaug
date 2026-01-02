@@ -1,5 +1,20 @@
 # Friday, January 2, 2026
 
+## @rafaelobitten - AGENTS.md Format for Guiding AI Coding Agents
+> *Replying to @karanjagtiani04:* @rafaelobitten Impressive workflow! How do you manage sprint priorities while balancing all those tasks?
+>
+> In the backlog definition, there is a critical path of sprints for the project. When I start a project, I define that upfront.
+>
+> But I also have a slash command, a custom prompt, where I ask GPT 5.2 Codex CLI, debating with Opus 4.5 and Gemini 3.0 Pro, called via the Zen MCP, to prioritize the sprints before we begin.
+>
+> P.S. What I posted above is just an introductory part of my https://t.co/7Ytm9ayFIl. It has several sections, including a workflow definition based on XP methodology that covers all stages, from planning to implementation, review, testing, and so on.
+
+- **Tweet:** https://x.com/rafaelobitten/status/2007081846966763765
+- **Parent:** https://x.com/karanjagtiani04/status/2007070247816429782
+- **Link:** https://agents.md/
+- **Filed:** [agents-md-format.md](./knowledge/articles/agents-md-format.md)
+- **What:** Discussion about sophisticated multi-agent development workflows, referencing AGENTS.md - a standardized format (used by 60k+ open-source projects) for providing AI coding agents with project-specific context and instructions, similar to a README but designed specifically for agents.
+
 ## @amasad - Replit MCP Payments Integration
 > Wow - this seems like a super fast and seamless way to start accepting payments. Built with Replit MCP integrations.
 >
