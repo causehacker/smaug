@@ -342,13 +342,30 @@ export async function fetchAndPrepareBookmarks(options = {}) {
   console.log(`Preparing ${toProcess.length} bookmarks...`);
 
   const prepared = [];
-  const date = now.format('dddd, MMMM D, YYYY');
 
   for (const bookmark of toProcess) {
     try {
       console.log(`\nProcessing bookmark ${bookmark.id}...`);
       const text = bookmark.text || bookmark.full_text || '';
       const author = bookmark.author?.username || bookmark.user?.screen_name || 'unknown';
+      
+      // Parse the bookmark's createdAt timestamp and convert to formatted date
+      // bookmark.createdAt format: "Fri Jan 02 05:59:29 +0000 2026"
+      let bookmarkDate;
+      if (bookmark.createdAt) {
+        try {
+          // Parse Twitter date format and convert to configured timezone
+          const bookmarkTimestamp = dayjs(bookmark.createdAt).tz(config.timezone || 'America/New_York');
+          bookmarkDate = bookmarkTimestamp.format('dddd, MMMM D, YYYY');
+        } catch (e) {
+          // Fallback to current date if parsing fails
+          console.warn(`  Warning: Could not parse createdAt "${bookmark.createdAt}", using current date`);
+          bookmarkDate = now.format('dddd, MMMM D, YYYY');
+        }
+      } else {
+        // Fallback if createdAt is missing
+        bookmarkDate = now.format('dddd, MMMM D, YYYY');
+      }
 
       // Find and expand t.co links
       const tcoLinks = text.match(/https?:\/\/t\.co\/\w+/g) || [];
@@ -470,9 +487,10 @@ export async function fetchAndPrepareBookmarks(options = {}) {
         authorName: bookmark.author?.name || bookmark.user?.name || author,
         text,
         tweetUrl: `https://x.com/${author}/status/${bookmark.id}`,
-        createdAt: bookmark.createdAt,
+        createdAt: bookmark.createdAt,  // When the tweet was originally posted (Twitter time)
+        bookmarkedAt: now.toISOString(),  // When we bookmarked/fetched it locally (ISO 8601)
         links,
-        date,
+        date: bookmarkDate,  // Use the bookmark's actual date, not current time
         isReply: !!bookmark.inReplyToStatusId,
         replyContext,
         isQuote: !!quoteContext,

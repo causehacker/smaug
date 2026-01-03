@@ -7,6 +7,15 @@
 
 import fs from 'fs';
 import path from 'path';
+import os from 'os';
+import { execSync } from 'child_process';
+import dayjs from 'dayjs';
+import utc from 'dayjs/plugin/utc.js';
+import timezone from 'dayjs/plugin/timezone.js';
+import { loadConfig } from './config.js';
+
+dayjs.extend(utc);
+dayjs.extend(timezone);
 
 /**
  * Push a single bookmark to the API
@@ -409,12 +418,90 @@ function parseMarkdownContent(markdown, type) {
 }
 
 /**
+ * Fetch tweet details from Twitter using bird CLI
+ *
+ * @param {Object} config - Configuration object
+ * @param {string} tweetId - Tweet ID
+ * @returns {Object|null} Tweet object or null if fetch fails
+ */
+function fetchTweet(config, tweetId) {
+  const birdCmd = config.birdPath || 'bird';
+  const tmpFile = path.join(os.tmpdir(), `smaug-tweet-${tweetId}-${Date.now()}.json`);
+  
+  try {
+    let cmd;
+    const birdArgs = ['read', tweetId, '--json'];
+    
+    if (config.twitter?.useBrowserCookies !== false) {
+      // Use browser cookie extraction (same approach as fetchBookmarks)
+      if (config.twitter?.chromeProfile) {
+        birdArgs.push('--chrome-profile', config.twitter.chromeProfile);
+      }
+      // If no chromeProfile specified, bird CLI will try to auto-detect from available browsers
+      cmd = `${birdCmd} ${birdArgs.join(' ')} > "${tmpFile}" 2>&1`;
+    } else {
+      // Use manual credentials
+      const envVars = [];
+      if (config.twitter?.authToken) {
+        envVars.push(`AUTH_TOKEN='${config.twitter.authToken}'`);
+      }
+      if (config.twitter?.ct0) {
+        envVars.push(`CT0='${config.twitter.ct0}'`);
+      }
+      cmd = `${envVars.join(' ')} ${birdCmd} ${birdArgs.join(' ')} > "${tmpFile}" 2>&1`;
+    }
+
+    execSync(cmd, {
+      encoding: 'utf8',
+      timeout: 15000,
+      maxBuffer: 1024 * 1024,
+      shell: '/bin/bash',
+      env: process.env
+    });
+    
+    // Read the file
+    let output = fs.readFileSync(tmpFile, 'utf8');
+    
+    // Clean up temp file
+    try {
+      fs.unlinkSync(tmpFile);
+    } catch (e) {
+      // Ignore cleanup errors
+    }
+    
+    // Find the start of JSON object (skip any warnings)
+    const jsonStart = output.indexOf('{');
+    if (jsonStart === -1) {
+      throw new Error(`No valid JSON object found in bird output for tweet ${tweetId}`);
+    }
+    
+    // Extract JSON portion
+    const jsonOutput = output.slice(jsonStart).trim();
+    
+    // Parse JSON
+    const tweet = JSON.parse(jsonOutput);
+    return tweet;
+  } catch (error) {
+    // Clean up temp file on error
+    try {
+      if (fs.existsSync(tmpFile)) {
+        fs.unlinkSync(tmpFile);
+      }
+    } catch (e) {
+      // Ignore cleanup errors
+    }
+    console.warn(`  Could not fetch tweet ${tweetId}: ${error.message}`);
+    return null;
+  }
+}
+
+/**
  * Extract bookmarks from bookmarks.md file
  *
  * @param {Object} config - Configuration object
- * @returns {Array<Object>} Array of bookmark objects
+ * @returns {Promise<Array<Object>>} Array of bookmark objects
  */
-export function extractBookmarksFromArchive(config) {
+export async function extractBookmarksFromArchive(config) {
   const archiveFile = config.archiveFile || './bookmarks.md';
   if (!fs.existsSync(archiveFile)) {
     return [];
@@ -438,7 +525,7 @@ export function extractBookmarksFromArchive(config) {
       const entryText = section.slice(entryStart, entryEnd);
 
       try {
-        const bookmark = parseBookmarkFromMarkdown(entryText, author);
+        const bookmark = await parseBookmarkFromMarkdown(entryText, author, config);
         if (bookmark) {
           bookmarks.push(bookmark);
         }
@@ -456,9 +543,10 @@ export function extractBookmarksFromArchive(config) {
  *
  * @param {string} markdown - Markdown entry text
  * @param {string} author - Twitter username
- * @returns {Object|null} Bookmark object or null
+ * @param {Object} config - Configuration object
+ * @returns {Promise<Object|null>} Bookmark object or null
  */
-function parseBookmarkFromMarkdown(markdown, author) {
+async function parseBookmarkFromMarkdown(markdown, author, config) {
   // Extract tweet URL
   const tweetUrlMatch = markdown.match(/- \*\*Tweet:\*\* (.+)/);
   if (!tweetUrlMatch) {
@@ -472,6 +560,22 @@ function parseBookmarkFromMarkdown(markdown, author) {
     return null;
   }
   const id = tweetIdMatch[1];
+
+  // Fetch actual tweet details from Twitter to get createdAt timestamp
+  const tweetData = fetchTweet(config, id);
+  let createdAt = null;
+  let date = 'Unknown date';
+  
+  if (tweetData && tweetData.createdAt) {
+    createdAt = tweetData.createdAt; // Twitter's createdAt format (e.g., "Fri Jan 02 09:40:00 +0000 2026")
+    // Parse and format the date using the configured timezone
+    date = dayjs(createdAt).tz(config.timezone || 'America/Los_Angeles').format('dddd, MMMM D, YYYY');
+  } else {
+    // Fallback: if we can't fetch, use a placeholder (but this shouldn't happen)
+    console.warn(`  Warning: Could not fetch createdAt for tweet ${id}, using placeholder`);
+    createdAt = new Date().toUTCString();
+    date = dayjs().tz(config.timezone || 'America/Los_Angeles').format('dddd, MMMM D, YYYY');
+  }
 
   // Extract tweet text (content in > quote blocks)
   const textMatches = markdown.matchAll(/^> (.+)$/gm);
@@ -530,10 +634,9 @@ function parseBookmarkFromMarkdown(markdown, author) {
     };
   }
 
-  // Extract date from the section (we'll use a placeholder since it's not in each entry)
-  // Try to find date in the markdown or use current date
-  const date = 'Unknown date';
-  const createdAt = new Date().toUTCString();
+  // For bookmarkedAt, we'll use the state file's last_check or current time
+  // Since we don't have this info in markdown, we'll use a reasonable fallback
+  const bookmarkedAt = dayjs().toISOString();  // When it was bookmarked locally
 
   return {
     id,
@@ -541,8 +644,9 @@ function parseBookmarkFromMarkdown(markdown, author) {
     authorName: author, // We don't have display name in markdown
     text,
     tweetUrl,
-    createdAt,
-    date,
+    createdAt,  // Actual tweet creation time from Twitter
+    bookmarkedAt,  // When it was bookmarked locally
+    date,  // Formatted date string
     links,
     isReply,
     replyContext,
@@ -574,7 +678,7 @@ export async function pushProcessedBookmarks(config, fromArchive = false) {
       return { skipped: true, reason: 'No archive file' };
     }
 
-    bookmarks = extractBookmarksFromArchive(config);
+    bookmarks = await extractBookmarksFromArchive(config);
     if (bookmarks.length === 0) {
       console.log('[API] No bookmarks found in archive');
       return { skipped: true, reason: 'No bookmarks in archive' };
@@ -607,8 +711,21 @@ export async function pushProcessedBookmarks(config, fromArchive = false) {
 
     console.log(`[API] Push complete: ${result.added || 0} added, ${result.updated || 0} updated`);
     if (result.errors && result.errors.length > 0) {
-      console.warn(`[API] ${result.errors.length} errors occurred`);
-      result.errors.forEach(err => console.warn(`[API] Error:`, err));
+      // Filter out duplicate key errors (expected when bookmarks already exist)
+      const nonDuplicateErrors = result.errors.filter(err => 
+        !err.error?.includes('duplicate key value violates unique constraint')
+      );
+      
+      if (nonDuplicateErrors.length > 0) {
+        console.warn(`[API] ${nonDuplicateErrors.length} errors occurred:`);
+        nonDuplicateErrors.forEach(err => console.warn(`[API] Error:`, err));
+      } else {
+        // All errors were duplicates - this is expected, just log summary
+        const duplicateCount = result.errors.length;
+        if (duplicateCount > 0) {
+          console.log(`[API] ${duplicateCount} bookmarks already exist in API (skipped)`);
+        }
+      }
     }
 
     return result;
@@ -643,8 +760,21 @@ export async function pushKnowledgeEntries(config) {
 
     console.log(`[API] Push complete: ${result.created || 0} created, ${result.failed || 0} failed`);
     if (result.errors && result.errors.length > 0) {
-      console.warn(`[API] ${result.errors.length} errors occurred`);
-      result.errors.forEach(err => console.warn(`[API] Error:`, err));
+      // Filter out duplicate key errors (expected when entries already exist)
+      const nonDuplicateErrors = result.errors.filter(err => 
+        !err.error?.includes('duplicate key value violates unique constraint')
+      );
+      
+      if (nonDuplicateErrors.length > 0) {
+        console.warn(`[API] ${nonDuplicateErrors.length} errors occurred:`);
+        nonDuplicateErrors.forEach(err => console.warn(`[API] Error:`, err));
+      } else {
+        // All errors were duplicates - this is expected, just log summary
+        const duplicateCount = result.errors.length;
+        if (duplicateCount > 0) {
+          console.log(`[API] ${duplicateCount} entries already exist in API (skipped)`);
+        }
+      }
     }
 
     return result;

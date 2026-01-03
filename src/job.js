@@ -626,8 +626,10 @@ export async function run(options = {}) {
 
     console.log(`[${now}] Processing ${bookmarkCount} bookmarks`);
 
-    // Track IDs we're about to process
+    // Track IDs we're about to process AND capture bookmarks BEFORE Claude runs
+    // (Claude Code will clean up the pending file, so we need to capture them now)
     const idsToProcess = pendingData.bookmarks.map(b => b.id);
+    const bookmarksToPush = [...pendingData.bookmarks]; // Copy the bookmarks array
 
     // Phase 2: Claude Code analysis (if enabled)
     if (config.autoInvokeClaude !== false) {
@@ -638,21 +640,13 @@ export async function run(options = {}) {
       if (claudeResult.success) {
         console.log(`[${now}] Analysis complete`);
 
-        // Push to API if enabled (BEFORE cleanup so bookmarks are still in pending file)
+        // Push to API if enabled (use captured bookmarks since Claude cleaned up pending file)
         let apiResults = {};
         if (config.api?.enabled) {
           try {
             console.log(`[${now}] Pushing to API...`);
             
-            // Read pending file to get bookmarks that were just processed
-            let bookmarksToPush = [];
-            if (fs.existsSync(config.pendingFile)) {
-              const currentData = JSON.parse(fs.readFileSync(config.pendingFile, 'utf8'));
-              const processedIds = new Set(idsToProcess);
-              bookmarksToPush = currentData.bookmarks.filter(b => processedIds.has(b.id));
-            }
-            
-            // Push bookmarks (only the ones that were just processed)
+            // Push bookmarks (using the ones we captured before Claude ran)
             if (bookmarksToPush.length > 0) {
               const bookmarkPushResult = await pushBookmarksBatch(bookmarksToPush, config);
               apiResults.bookmarks = bookmarkPushResult;
