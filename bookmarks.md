@@ -1,5 +1,25 @@
 # Saturday, January 3, 2026
 
+## @skirano - Using Claude Code for DNA Health Analysis
+> Claude Code isn't just for coding.
+>
+> I fed it my raw DNA data from an ancestry test and used it to find health related genes I should keep an eye on.
+>
+> The file is massive, but its ability to search what matters makes it possible. https://t.co/SsSF2BV86v
+
+- **Tweet:** https://x.com/skirano/status/2007540021536993712
+- **What:** Creative non-coding use of Claude Code to analyze massive raw DNA data files from ancestry tests to identify health-related genes. Demonstrates Claude Code's ability to handle large files and extract meaningful insights beyond traditional coding tasks.
+
+## @smerchek - summarize: CLI + Chrome Extension for Fast Summaries
+> I'm using a combo of @steipete's https://t.co/DhDON0QN6a, yt-dlp, and my own cli orchestrator to find and summarize a bunch of relevant podcasts to find anything that might help me plan might trip or parse out recommendations.
+>
+> Now, I don't have to select and listen to hours upon hours of podcasts just to get a few recommendations for each city/country.
+
+- **Tweet:** https://x.com/smerchek/status/2007223767060066734
+- **Link:** https://summarize.sh/
+- **Filed:** [summarize.md](./knowledge/tools/summarize.md)
+- **What:** A CLI tool and Chrome Side Panel extension by @steipete for fast content extraction and summarization. Supports URLs, PDFs, media files, YouTube, and podcasts with smart transcript extraction and multiple LLM providers. Used here in a workflow with yt-dlp to automatically find and summarize travel podcast recommendations.
+
 ## @aleabitoreddit - Venezuela Investment Analysis: Defense & Energy Stocks
 > US has now invaded Venezuela.
 >
