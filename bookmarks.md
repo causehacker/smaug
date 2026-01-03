@@ -1,5 +1,28 @@
 # Saturday, January 3, 2026
 
+## @hridoyreh - Finding Million-Dollar Business Ideas from TrustMRR
+> How to find $1M+ business ideas:
+>
+> 1. Go to the TrustMRR.
+> 2. Open any startup or SaaS.
+> 3. Find 1/2 useful feature.
+> 4. Discover their marketing channels.
+> 5. Build it better.
+> 6. Do SEO and other marketing.
+>
+> All MRR data is 100% verified.
+>
+> Enjoy... https://t.co/y5UkgYlHvm
+
+- **Tweet:** https://x.com/hridoyreh/status/2007024064121000442
+- **What:** A systematic approach to finding profitable SaaS business opportunities by analyzing successful startups on TrustMRR (a platform with verified MRR data), identifying their key features and marketing channels, then building a better competing product with strong SEO and marketing execution.
+
+## @rakyll - Claude Code Generated Year-Long Google Project in One Hour
+> I'm not joking and this isn't funny. We have been trying to build distributed agent orchestrators at Google since last year. There are various options, not everyone is aligned... I gave Claude Code a description of the problem, it generated what we built last year in an hour.
+
+- **Tweet:** https://x.com/rakyll/status/2007239758158975130
+- **What:** A Google engineer's remarkable testimony that Claude Code was able to generate in one hour what took her team a full year to build - a distributed agent orchestrator system. Highlights the dramatic productivity gains and capability of AI-assisted development, especially for complex distributed systems architecture.
+
 ## @skirano - Using Claude Code for DNA Health Analysis
 > Claude Code isn't just for coding.
 >
