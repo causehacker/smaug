@@ -11,8 +11,10 @@
  */
 
 import { execSync, spawn } from 'child_process';
+import { promisify } from 'util';
 import fs from 'fs';
 import path from 'path';
+import os from 'os';
 import dayjs from 'dayjs';
 import utc from 'dayjs/plugin/utc.js';
 import timezone from 'dayjs/plugin/timezone.js';
@@ -57,25 +59,79 @@ export function saveState(config, state) {
   fs.writeFileSync(config.stateFile, JSON.stringify(state, null, 2) + '\n');
 }
 
-export function fetchBookmarks(config, count = 10) {
+export async function fetchBookmarks(config, count = 10) {
+  const birdCmd = config.birdPath || 'bird';
+  const tmpFile = path.join(os.tmpdir(), `smaug-bookmarks-${Date.now()}.json`);
+  
   try {
-    // Build environment with Twitter credentials
-    const env = { ...process.env };
-    if (config.twitter?.authToken) {
-      env.AUTH_TOKEN = config.twitter.authToken;
+    // Prefer browser cookie extraction over manual credentials
+    // This auto-refreshes credentials from your browser
+    let cmd;
+    const birdArgs = ['bookmarks', '-n', count.toString(), '--json'];
+    
+    if (config.twitter?.useBrowserCookies !== false) {
+      // Try browser cookie extraction first (Chrome, then Firefox, then Safari)
+      // This automatically gets fresh credentials from your logged-in browser
+      // Only add chrome-profile if explicitly configured, otherwise let bird auto-detect
+      if (config.twitter?.chromeProfile) {
+        birdArgs.push('--chrome-profile', config.twitter.chromeProfile);
+      }
+      // If no chromeProfile specified, bird CLI will try to auto-detect from available browsers
+      cmd = `${birdCmd} ${birdArgs.join(' ')} > "${tmpFile}" 2>&1`;
+    } else {
+      // Fall back to manual credentials if browser extraction is disabled
+      const env = { ...process.env };
+      const envVars = [];
+      if (config.twitter?.authToken) {
+        env.AUTH_TOKEN = config.twitter.authToken;
+        envVars.push(`AUTH_TOKEN='${config.twitter.authToken}'`);
+      }
+      if (config.twitter?.ct0) {
+        env.CT0 = config.twitter.ct0;
+        envVars.push(`CT0='${config.twitter.ct0}'`);
+      }
+      cmd = `${envVars.join(' ')} ${birdCmd} ${birdArgs.join(' ')} > "${tmpFile}" 2>&1`;
     }
-    if (config.twitter?.ct0) {
-      env.CT0 = config.twitter.ct0;
+    
+    execSync(cmd, {
+      encoding: 'utf8',
+      timeout: 120000,
+      maxBuffer: 1024 * 1024, // Small buffer is OK since we're redirecting to file
+      shell: '/bin/bash',
+      env: process.env
+    });
+    
+    // Read the file
+    let output = fs.readFileSync(tmpFile, 'utf8');
+    
+    // Clean up temp file
+    try {
+      fs.unlinkSync(tmpFile);
+    } catch (e) {
+      // Ignore cleanup errors
+    }
+    
+    // Find the start of JSON array (skip any warnings)
+    const jsonStart = output.indexOf('[');
+    if (jsonStart === -1) {
+      // If no JSON found, the output might be in stderr or file is empty
+      throw new Error(`No valid JSON array found in bird output. File size: ${output.length}, Content preview: ${output.slice(0, 200)}`);
     }
 
-    const birdCmd = config.birdPath || 'bird';
-    const output = execSync(`${birdCmd} bookmarks -n ${count} --json`, {
-      encoding: 'utf8',
-      timeout: 30000,
-      env
-    });
-    return JSON.parse(output);
+    // Extract JSON portion
+    const jsonOutput = output.slice(jsonStart).trim();
+    
+    // Parse directly
+    return JSON.parse(jsonOutput);
   } catch (error) {
+    // Clean up temp file on error
+    try {
+      if (fs.existsSync(tmpFile)) {
+        fs.unlinkSync(tmpFile);
+      }
+    } catch (e) {
+      // Ignore cleanup errors
+    }
     throw new Error(`Failed to fetch bookmarks: ${error.message}`);
   }
 }
@@ -247,7 +303,7 @@ export async function fetchAndPrepareBookmarks(options = {}) {
   console.log(`[${now.format()}] Fetching and preparing bookmarks...`);
 
   const state = loadState(config);
-  const bookmarks = fetchBookmarks(config, options.count || 20);
+  const bookmarks = await fetchBookmarks(config, options.count || 20);
 
   if (!bookmarks || bookmarks.length === 0) {
     console.log('No bookmarks found');

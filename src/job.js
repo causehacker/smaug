@@ -18,6 +18,7 @@ import path from 'path';
 import os from 'os';
 import { fetchAndPrepareBookmarks } from './processor.js';
 import { loadConfig } from './config.js';
+import { pushBookmarksBatch, pushKnowledgeEntries } from './api-client.js';
 
 const JOB_NAME = 'smaug';
 const LOCK_FILE = path.join(os.tmpdir(), 'smaug.lock');
@@ -598,7 +599,12 @@ export async function run(options = {}) {
     // Phase 1: Fetch new bookmarks (merges with existing pending)
     if (bookmarkCount === 0 || options.forceFetch) {
       console.log(`[${now}] Phase 1: Fetching and preparing bookmarks...`);
-      const prepResult = await fetchAndPrepareBookmarks(options);
+      // Use smaller default count to avoid credential/API limits
+      const fetchOptions = {
+        ...options,
+        count: options.count || 10
+      };
+      const prepResult = await fetchAndPrepareBookmarks(fetchOptions);
 
       // Re-read pending file after fetch
       if (fs.existsSync(config.pendingFile)) {
@@ -632,7 +638,41 @@ export async function run(options = {}) {
       if (claudeResult.success) {
         console.log(`[${now}] Analysis complete`);
 
-        // Remove processed IDs from pending file
+        // Push to API if enabled (BEFORE cleanup so bookmarks are still in pending file)
+        let apiResults = {};
+        if (config.api?.enabled) {
+          try {
+            console.log(`[${now}] Pushing to API...`);
+            
+            // Read pending file to get bookmarks that were just processed
+            let bookmarksToPush = [];
+            if (fs.existsSync(config.pendingFile)) {
+              const currentData = JSON.parse(fs.readFileSync(config.pendingFile, 'utf8'));
+              const processedIds = new Set(idsToProcess);
+              bookmarksToPush = currentData.bookmarks.filter(b => processedIds.has(b.id));
+            }
+            
+            // Push bookmarks (only the ones that were just processed)
+            if (bookmarksToPush.length > 0) {
+              const bookmarkPushResult = await pushBookmarksBatch(bookmarksToPush, config);
+              apiResults.bookmarks = bookmarkPushResult;
+            } else {
+              apiResults.bookmarks = { skipped: true, reason: 'No bookmarks to push' };
+            }
+            
+            // Push knowledge entries
+            const knowledgePushResult = await pushKnowledgeEntries(config);
+            apiResults.knowledge = knowledgePushResult;
+            
+            console.log(`[${now}] API push complete`);
+          } catch (apiError) {
+            console.error(`[${now}] API push failed: ${apiError.message}`);
+            apiResults.error = apiError.message;
+            // Don't fail the job if API push fails - it's a post-processing step
+          }
+        }
+
+        // Remove processed IDs from pending file (AFTER API push)
         if (fs.existsSync(config.pendingFile)) {
           const currentData = JSON.parse(fs.readFileSync(config.pendingFile, 'utf8'));
           const processedIds = new Set(idsToProcess);
@@ -651,7 +691,7 @@ export async function run(options = {}) {
         await notify(
           config,
           'Bookmarks Processed',
-          `**New:** ${bookmarkCount} bookmarks archived`,
+          `**New:** ${bookmarkCount} bookmarks archived${config.api?.enabled ? `\n**API:** ${apiResults.bookmarks?.added || 0} bookmarks, ${apiResults.knowledge?.created || 0} knowledge entries` : ''}`,
           true
         );
 
@@ -659,7 +699,8 @@ export async function run(options = {}) {
           success: true,
           count: bookmarkCount,
           duration: Date.now() - startTime,
-          output: claudeResult.output
+          output: claudeResult.output,
+          api: apiResults
         };
 
       } else {

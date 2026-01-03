@@ -1,0 +1,26 @@
+{
+  "archiveFile": "./bookmarks.md",
+  "pendingFile": "./.state/pending-bookmarks.json",
+  "stateFile": "./.state/bookmarks-state.json",
+  "timezone": "America/Los_Angeles",
+  "twitter": {
+    "useBrowserCookies": true,
+    "chromeProfile": null,
+    "authToken": null,
+    "ct0": null
+  },
+  "autoInvokeClaude": true,
+  "claudeModel": "sonnet",
+  "testing": false,
+  "api": {
+    "enabled": true,
+    "production": {
+      "baseUrl": "https://tweet-stash-jc3.replit.app",
+      "key": "bm_39f6069f97a6a92af3c5100f30eb5f9d8d596b58e5e3e0ba36cacb9b37015ca9"
+    }
+  },
+  "_comment": {
+    "testing": "Set to true or use TESTING=true env var to use dev API from .env. Otherwise uses production API from this config.",
+    "api.production": "Production API credentials. Dev credentials are stored in .env (gitignored)"
+  }
+}

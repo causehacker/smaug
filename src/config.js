@@ -11,6 +11,34 @@ import fs from 'fs';
 import path from 'path';
 import os from 'os';
 
+/**
+ * Load environment variables from .env file
+ */
+function loadEnvFile() {
+  const envPath = path.resolve('.env');
+  if (!fs.existsSync(envPath)) {
+    return;
+  }
+
+  const envContent = fs.readFileSync(envPath, 'utf8');
+  for (const line of envContent.split('\n')) {
+    const trimmed = line.trim();
+    if (trimmed && !trimmed.startsWith('#')) {
+      const match = trimmed.match(/^([^=]+)=(.*)$/);
+      if (match) {
+        const [, key, value] = match;
+        // Only set if not already in process.env (env vars take precedence)
+        if (!process.env[key]) {
+          process.env[key] = value.trim();
+        }
+      }
+    }
+  }
+}
+
+// Load .env file before processing config
+loadEnvFile();
+
 const DEFAULT_CONFIG = {
   // Where to store the markdown archive
   archiveFile: './bookmarks.md',
@@ -108,7 +136,25 @@ const DEFAULT_CONFIG = {
   webhookUrl: null,
 
   // Webhook type: 'discord', 'slack', or 'generic'
-  webhookType: 'discord'
+  webhookType: 'discord',
+
+  // ---- API Integration (optional) ----
+  
+  // Enable API push after processing
+  api: {
+    enabled: false,
+    baseUrl: null,
+    key: null,
+    production: {
+      baseUrl: null,
+      key: null
+    }
+  },
+
+  // Testing/Development mode flag
+  // When true, uses dev API from .env
+  // When false, uses production API from config
+  testing: false
 };
 
 /**
@@ -194,6 +240,40 @@ export function loadConfig(configPath) {
   }
   if (process.env.WEBHOOK_TYPE) {
     config.webhookType = process.env.WEBHOOK_TYPE;
+  }
+
+  // Testing flag from config or environment
+  if (process.env.TESTING !== undefined) {
+    config.testing = process.env.TESTING === 'true';
+  }
+
+  // API configuration - choose dev or prod based on testing flag
+  const isTesting = config.testing === true;
+  
+  if (isTesting) {
+    // Development/testing mode: use .env variables
+    if (process.env.API_BASE_URL) {
+      config.api = config.api || {};
+      config.api.baseUrl = process.env.API_BASE_URL.replace(/\/$/, ''); // Remove trailing slash
+      config.api.enabled = true;
+    }
+    if (process.env.API_KEY) {
+      config.api = config.api || {};
+      config.api.key = process.env.API_KEY;
+      config.api.enabled = true;
+    }
+  } else {
+    // Production mode: use config.json production settings
+    if (config.api?.production?.baseUrl && config.api?.production?.key) {
+      config.api.baseUrl = config.api.production.baseUrl.replace(/\/$/, '');
+      config.api.key = config.api.production.key;
+      config.api.enabled = true;
+    }
+  }
+
+  // Enable API if both URL and key are set (either from dev or prod)
+  if (config.api && config.api.baseUrl && config.api.key) {
+    config.api.enabled = true;
   }
 
   return config;

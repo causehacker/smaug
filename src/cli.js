@@ -14,6 +14,7 @@
 
 import { fetchAndPrepareBookmarks } from './processor.js';
 import { initConfig, loadConfig } from './config.js';
+import { pushProcessedBookmarks, pushKnowledgeEntries } from './api-client.js';
 import { execSync } from 'child_process';
 import fs from 'fs';
 import path from 'path';
@@ -205,6 +206,12 @@ async function main() {
       break;
 
     case 'run': {
+      // Check for testing flag
+      if (args.includes('--testing') || args.includes('--test')) {
+        process.env.TESTING = 'true';
+        console.log('🧪 Testing mode enabled - using dev API\n');
+      }
+      
       // Run the full job (same as node src/job.js)
       const jobPath = path.join(path.dirname(fileURLToPath(import.meta.url)), 'job.js');
       try {
@@ -268,6 +275,53 @@ async function main() {
       break;
     }
 
+    case 'push': {
+      // Check for testing flag
+      if (args.includes('--testing') || args.includes('--test')) {
+        process.env.TESTING = 'true';
+        console.log('🧪 Testing mode enabled - using dev API\n');
+      }
+
+      const config = loadConfig();
+
+      if (!config.api?.enabled) {
+        console.log('API push is not enabled.');
+        console.log('Set API_BASE_URL and API_KEY environment variables or in .env file.');
+        process.exit(1);
+      }
+
+      // Check if user wants to push from archive
+      const fromArchive = args.includes('--archive') || args.includes('-a');
+
+      console.log('Pushing to API...\n');
+
+      try {
+        // Push bookmarks
+        console.log(`Pushing bookmarks${fromArchive ? ' from archive' : ''}...`);
+        const bookmarkResult = await pushProcessedBookmarks(config, fromArchive);
+        if (bookmarkResult.skipped) {
+          console.log('  No bookmarks to push');
+        } else {
+          console.log(`  ✓ ${bookmarkResult.added || 0} added, ${bookmarkResult.updated || 0} updated`);
+        }
+
+        // Push knowledge entries
+        console.log('\nPushing knowledge entries...');
+        const knowledgeResult = await pushKnowledgeEntries(config);
+        if (knowledgeResult.skipped) {
+          console.log('  No knowledge entries to push');
+        } else {
+          console.log(`  ✓ ${knowledgeResult.created || 0} created, ${knowledgeResult.failed || 0} failed`);
+        }
+
+        console.log('\n✓ Push complete!');
+      } catch (error) {
+        console.error(`\n✗ Push failed: ${error.message}`);
+        process.exit(1);
+      }
+      break;
+    }
+
     case 'status': {
       const config = loadConfig();
 
@@ -275,6 +329,12 @@ async function main() {
       console.log(`Archive:     ${config.archiveFile}`);
       console.log(`Twitter:     ${config.twitter?.authToken ? '✓ configured' : '✗ not configured'}`);
       console.log(`Auto-Claude: ${config.autoInvokeClaude ? 'enabled' : 'disabled'}`);
+      
+      if (config.api?.enabled) {
+        console.log(`API:         ✓ enabled (${config.api.baseUrl})`);
+      } else {
+        console.log('API:         ✗ disabled');
+      }
 
       if (fs.existsSync(config.pendingFile)) {
         const pending = JSON.parse(fs.readFileSync(config.pendingFile, 'utf8'));
@@ -306,9 +366,12 @@ async function main() {
 Commands:
   setup          Interactive setup wizard (start here!)
   run            Run the full job (fetch + process with Claude)
+  run --testing  Run in testing mode (uses dev API from .env)
   fetch [n]      Fetch n bookmarks (default: 20)
   fetch --force  Re-fetch even if already archived
   process        Show pending bookmarks
+  push           Push bookmarks and knowledge entries to API
+  push --archive Push all bookmarks from archive to API
   status         Show current status
 
 Examples:
