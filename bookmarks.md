@@ -1,5 +1,70 @@
 # Saturday, January 3, 2026
 
+## @aleabitoreddit - Venezuela Investment Analysis: Defense & Energy Stocks
+> US has now invaded Venezuela.
+>
+> Everyone is probably wondering the same thing:
+>
+> How do you profit off the situation?
+>
+> 1. Heavy Sour, Ammonia, and Nitrogen Fertilizers disruption ( $CF , $CVE).
+>
+> These are Venezuela's biggest exports.
+>
+> Most people will buy generic oil ETFs or light sweet crude producers. This is inefficient because light oil is not a perfect substitute for heavy oil in complex refineries. If Caribbean ammonia is stranded, the global price of nitrogen spikes. The biggest beneficiary is a US-domestic producer that uses cheap US  natural gas and doesn't rely on Caribbean shipping lanes
+>
+> 2. Dirty Crude Processing ( $VLO ) - If competitors are starved of Venezuelan oil, Valero's ability to source heavy crude from diverse locations (and its leverage  to diesel margins) makes it resilient.
+>
+> 3. Naval Warfare ( $LDOS) - While retail investors buy Lockheed Martin (F-35s), the operations in the Caribbean focuses on maritime surveillance, warfare,  and autonomous patrolling to enforce blockades without risking US personnel. Companies like Leidos provide these tpyes of naval tech.
+>
+> 4. Defense and aerospace from $AVAV to $HII and $LHX also benefit.
+>
+> - $AVAV recently unveiled the Red Dragon and updated Switchblade 600 variants specifically for maritime operations
+>
+> - $LHX provides the sensors and communications gear that link the drones ($AVAV) to the ships ($HII) and the jets ($BA).
+>
+> - A blockade requires significant maritime surveillance and naval assets, which benefits shipbuilders ( $HII )
+>
+> 5. Direct Suppliers of recent military operation:
+>
+> - F/A-18E/F Super Hornet from $BA (Precision strikes on Caracas)
+>
+> - B-1B Lancer from $BA
+>
+> - UAS (Drone), MQ-9 Reaper - $RTX (MTS-B Sensors), $HON Honeywell for the Engine
+>
+> - Tomahawk (TLAM), $RTX
+>
+> So far:
+>
+> $AVAV - 5.91%+
+> $BA - 4.91%
+> $LHX - 3.72%
+> $CF - 3.61%+
+> $CVE - 3.61%+
+> $HII  - +2.85%
+> $RTX - 2.1%
+> $VLO - 1.55%+
+> $LDOS - 1.7%+
+> $HON - .4%+
+>
+> *Quoting @aleabitoreddit:* Welcome to 2026. Jan 1st ratings: [contains extensive stock ratings for 2026 including Strong Buy, Buy, and Avoid categories with detailed analysis of tech, crypto, defense, and datacenter stocks]
+
+- **Tweet:** https://x.com/aleabitoreddit/status/2007387427820978510
+- **Quoted:** https://x.com/aleabitoreddit/status/2007071108831338685
+- **What:** Detailed investment thesis on profiting from Venezuela military situation, focusing on energy disruption (fertilizers, heavy crude processing), naval warfare/defense contractors, and specific stock picks in aerospace and defense. Quotes their own earlier 2026 stock ratings post.
+
+## @heyrobinai - Awesome Nano Banana Pro Prompt Library
+> *Replying to @heyrobinai:* Somebody just dropped the ultimate Nano Banana PRO prompt library for free.. Go grab it.
+>
+> Here's the link: https://t.co/bqi4B5K8uu
+
+- **Tweet:** https://x.com/heyrobinai/status/2007065470336487513
+- **Parent:** https://x.com/heyrobinai/status/2007065458328088741
+- **Link:** https://github.com/ZeroLu/awesome-nanobanana-pro
+- **Filed:** [awesome-nanobanana-pro.md](./knowledge/tools/awesome-nanobanana-pro.md)
+- **What:** Curated GitHub repository (7.2k+ stars) containing the best Nano Banana Pro (Nano Banana 2) prompts for AI image generation. Includes high-fidelity prompts for photorealism, creative experiments, e-commerce, and social media, with structured JSON examples and techniques for various photography styles.
+
 ## @michaelque22 - iOS Shortcut for App Store Revenue & Downloads
 > This is the iOS shortcut link to pull up revenue &amp; download numbers.
 >
