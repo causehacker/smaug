@@ -1,3 +1,16 @@
+# Saturday, January 3, 2026
+
+## @michaelque22 - iOS Shortcut for App Store Revenue & Downloads
+> This is the iOS shortcut link to pull up revenue &amp; download numbers.
+>
+> https://t.co/T2bFEqs14C https://t.co/Pju2F57o3F
+
+- **Tweet:** https://x.com/michaelque22/status/2007275082071323047
+- **Link:** https://www.icloud.com/shortcuts/fd313664044749cd8862c1d666bd42d6
+- **What:** An iOS Shortcut that provides quick access to App Store Connect revenue and download metrics. Useful for indie developers who want to check their app performance without opening the full App Store Connect dashboard.
+
+---
+
 # Friday, January 2, 2026
 
 ## @rafaelobitten - AGENTS.md Format for Guiding AI Coding Agents
