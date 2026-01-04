@@ -1,4 +1,40 @@
+# Sunday, January 4, 2026
+
+## @donvito - Claude in Chrome Browser Extension
+> Install this plugin in Chrome
+> https://t.co/iCGA6aQy97
+>
+> Then start Claude Code
+> $ claude --chrome
+>
+> enjoy https://t.co/aLnBkrR6P5
+
+- **Tweet:** https://x.com/donvito/status/2007736412385448313
+- **Link:** https://claude.com/chrome
+- **Filed:** [claude-in-chrome.md](./knowledge/articles/claude-in-chrome.md)
+- **What:** Official Anthropic Chrome extension that integrates Claude AI assistance into the browser. Works with Claude Code (`claude --chrome`) and Desktop for automating tasks, analyzing data, and navigating websites through natural language commands.
+
+---
+
 # Saturday, January 3, 2026
+
+## @alexhillman - Smaug Gets Major Upgrades
+> 🐉 Smaug got some upgrades tonight thanks to first time contributors @afalk, @webology, and aparente
+>
+> - By popular demand, your X bookmark folders now carry over as tags, dates show when the tweet was posted (not fetched)
+>
+> - New --all flag lets you grab your WHOLE bookmark history, not just the last few
+>
+> Just BE CAREFUL, this can get very token expensive
+>
+> smaug run --limit 50 -t keeps you in control. 🐉
+>
+> https://t.co/MAUWyPnvQK
+
+- **Tweet:** https://x.com/alexhillman/status/2007652515555283337
+- **Link:** https://github.com/alexknowshtml/smaug
+- **Filed:** [smaug.md](./knowledge/tools/smaug.md) (updated)
+- **What:** Major feature updates to Smaug from first-time contributors: bookmark folders now preserved as tags, tweet dates show posting time vs fetch time, new `--all` flag for paginated fetching of entire bookmark history, and token tracking for cost control. These improvements address community requests and make the tool more powerful while adding safeguards against expensive API usage.
 
 ## @cocktailpeanut - Claude AI Browser Extension Dark Mode Demo
 > Just tried @claudeai browser extension, I asked it "make the theme dark mode", and... https://t.co/fpLQ2Mh7lp

@@ -2,8 +2,9 @@
 title: "Smaug - Twitter Bookmark Archiver"
 type: tool
 date_added: 2026-01-02
+date_updated: 2026-01-04
 source: "https://github.com/alexknowshtml/smaug"
-tags: [twitter, bookmarks, archiving, markdown, automation, knowledge-management]
+tags: [twitter, bookmarks, archiving, markdown, automation, knowledge-management, claude-code]
 via: "Twitter bookmark from @alexhillman"
 ---
 
@@ -19,6 +20,19 @@ A tool that automatically archives Twitter/X bookmarks to markdown files. Like a
 - Knowledge library filing system (tools, articles, etc.)
 - Customizable category system for different content types
 - Automation support via PM2, cron, or systemd
+- **NEW:** Bookmark folders carry over as tags
+- **NEW:** Tweet dates show when posted (not when fetched)
+- **NEW:** `--all` flag for fetching entire bookmark history with pagination
+- **NEW:** Token usage tracking and cost controls
+
+## Recent Updates (Jan 2026)
+
+Thanks to first-time contributors @afalk, @webология, and aparente:
+- X bookmark folders now preserved as tags in the archive
+- Dates display when the tweet was posted instead of when fetched
+- New `--all` flag enables paginated fetching of complete bookmark history
+- `--max-pages` option to control pagination limits
+- `--limit` flag with `-t` token tracking for cost management
 
 ## Links
 
