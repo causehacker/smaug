@@ -1,5 +1,41 @@
 # Sunday, January 4, 2026
 
+## @vibecode_edu - Veo 3 + Claude Code iOS Design Workflow
+> Veo 3 + Claude Code for iOS design...
+>
+> Full instructions👇
+> https://t.co/XyeGgUAj23
+
+- **Tweet:** https://x.com/vibecode_edu/status/2007829394233110717
+- **Media:** https://x.com/learn2vibe/status/2007629339467382965/video/1
+- **What:** Tutorial on combining Google's Veo 3 (AI video generation) with Claude Code for iOS app design workflow. Demonstrates how to use AI-generated video for designing app interfaces and onboarding experiences, building on the "vibe coding" approach that chains AI tools together for product development.
+
+## @praveenisomer - ASCII Website Design
+> ASCll website slaps hard. https://t.co/mDnM1i6ZZ2
+
+- **Tweet:** https://x.com/praveenisomer/status/2007776523109970116
+- **Media:** https://x.com/praveenisomer/status/2007776523109970116/video/1
+- **What:** Video showcasing an impressive ASCII art-based website design. Highlights creative web design using ASCII characters for visual effects, demonstrating how retro aesthetics can create engaging modern web experiences.
+
+## @HenrypenmanXD - Meltwater Digital 2025 Database Viewer
+> *Replying to @HenrypenmanXD:* Now you can ask the questions your competitors can't ask fast enough:
+> → "Which emerging markets have the fastest mobile payments adoption but the lowest credit card penetration?"
+> → "Compare podcast listening across LATAM vs. MENA"
+> → "Where did social ad spend outpace GDP growth?"
+> Instant answers. No spreadsheet archaeology.
+>
+> 3,000+ metrics · 333 geographies · 13,000+ data points
+>
+> Structured. Searchable. Ready for real analysis.
+> This is what it looks like when a consulting firm becomes a tab in your browser.
+> Free (for now).
+> 🔗 https://t.co/lYBfrpione
+
+- **Tweet:** https://x.com/HenrypenmanXD/status/2007829085565993056
+- **Parent:** https://x.com/HenrypenmanXD/status/2007829083380724009
+- **Link:** https://meltview.manus.space/
+- **What:** A web application providing searchable access to the complete Meltwater Digital 2025 Global Overview report with 13,000+ data points on social media, internet usage, and digital trends across 333 geographies. Enables instant querying of complex market intelligence questions without manual spreadsheet analysis. Currently free.
+
 ## @HenrypenmanXD - Manus for Automated Sales Lead Generation
 > I ran a quick experiment in Manus… and wow. It immediately pulled 100 email-backed sales leads, completely automated. I double-checked the output myself: no hallucinations, no deception.
 >
