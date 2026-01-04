@@ -97,33 +97,8 @@ async function invokeClaudeCode(config, bookmarkCount) {
     }
   }
 
-  // Dramatic dragon reveal with fire animation
-  const showDragonReveal = async (totalBookmarks) => {
-    // Fire animation for 1.5 seconds
-    process.stdout.write('\n');
-    const fireFramesIntro = ['🔥', '🔥🔥', '🔥🔥🔥', '🔥🔥🔥🔥', '🔥🔥🔥🔥🔥'];
-    for (let i = 0; i < 10; i++) {
-      const frame = fireFramesIntro[i % fireFramesIntro.length];
-      process.stdout.write(`\r  ${frame.padEnd(12)}`);
-      await new Promise(r => setTimeout(r, 150));
-    }
-
-    // Clear and reveal
-    process.stdout.write('\r                    \r');
-    process.stdout.write(`  Wait... that's not Claude... it's
-
-  🔥  🔥  🔥  🔥  🔥  🔥  🔥  🔥  🔥  🔥  🔥  🔥
-       _____ __  __   _   _   _  ____
-      / ____|  \\/  | / \\ | | | |/ ___|
-      \\___ \\| |\\/| |/ _ \\| | | | |  _
-       ___) | |  | / ___ \\ |_| | |_| |
-      |____/|_|  |_/_/  \\_\\___/ \\____|
-
-  🐉 The dragon stirs... ${totalBookmarks} treasure${totalBookmarks !== 1 ? 's' : ''} to hoard!
-`);
-  };
-
-  await showDragonReveal(bookmarkCount);
+  // Show processing start message
+  process.stdout.write(`\nProcessing ${bookmarkCount} bookmark${bookmarkCount !== 1 ? 's' : ''}...\n\n`);
 
   return new Promise((resolve) => {
     const args = [
@@ -190,50 +165,32 @@ async function invokeClaudeCode(config, bookmarkCount) {
       return `[${bar}] ${current}/${total}`;
     };
 
-    // Dragon status messages
-    const dragonSays = [
-      '🐉 *sniff sniff* Fresh bookmarks detected...',
-      '🔥 Breathing fire on these tweets...',
-      '💎 Adding treasures to the hoard...',
-      '🏔️ Guarding the mountain of knowledge...',
-      '⚔️ Vanquishing duplicate bookmarks...',
-      '🌋 The dragon\'s flames illuminate the data...',
+    // Status messages
+    const statusMessages = [
+      'Reading bookmarks...',
+      'Processing content...',
+      'Categorizing entries...',
+      'Writing files...',
+      'Updating archive...',
+      'Analyzing links...',
     ];
-    let dragonMsgIndex = 0;
-    const nextDragonMsg = () => dragonSays[dragonMsgIndex++ % dragonSays.length];
+    let statusMsgIndex = 0;
+    const nextStatusMsg = () => statusMessages[statusMsgIndex++ % statusMessages.length];
 
     // Track one-time messages to avoid duplicates
     const shownMessages = new Set();
 
-    // Animated fire spinner with rotating dragon messages
-    const fireFrames = [
-      '  🔥    ',
-      ' 🔥🔥   ',
-      '🔥🔥🔥  ',
-      ' 🔥🔥🔥 ',
-      '  🔥🔥🔥',
-      '   🔥🔥 ',
-      '    🔥  ',
-      '   🔥   ',
-      '  🔥🔥  ',
-      ' 🔥 🔥  ',
-      '🔥  🔥  ',
-      '🔥   🔥 ',
-      ' 🔥  🔥 ',
-      '  🔥 🔥 ',
-      '   🔥🔥 ',
-    ];
+    // Simple spinner with status messages
+    const spinnerFrames = ['⠋', '⠙', '⠹', '⠸', '⠼', '⠴', '⠦', '⠧', '⠇', '⠏'];
     const spinnerMessages = [
-      'Breathing fire on bookmarks',
-      'Examining the treasures',
-      'Sorting the hoard',
-      'Polishing the gold',
-      'Counting coins',
-      'Guarding the lair',
-      'Hunting for gems',
-      'Cataloging riches',
+      'Reading bookmarks',
+      'Processing content',
+      'Categorizing entries',
+      'Writing files',
+      'Updating archive',
+      'Analyzing links',
     ];
-    let fireFrame = 0;
+    let spinnerFrame = 0;
     let spinnerMsgFrame = 0;
     let lastSpinnerLine = '';
     let spinnerActive = true;
@@ -248,16 +205,16 @@ async function invokeClaudeCode(config, bookmarkCount) {
 
     const spinnerInterval = setInterval(() => {
       if (!spinnerActive) return;
-      fireFrame = (fireFrame + 1) % fireFrames.length;
-      const flame = fireFrames[fireFrame];
-      const spinnerLine = `\r  ${flame} ${currentSpinnerMsg}... [${elapsed()}]`;
+      spinnerFrame = (spinnerFrame + 1) % spinnerFrames.length;
+      const frame = spinnerFrames[spinnerFrame];
+      const spinnerLine = `\r  ${frame} ${currentSpinnerMsg}... [${elapsed()}]`;
       process.stdout.write(spinnerLine + '          '); // Extra spaces to clear previous longer messages
       lastSpinnerLine = spinnerLine;
     }, 150);
 
-    // Start the spinner with a patience message
-    process.stdout.write('\n  ⏳ Dragons are patient hunters... this may take a moment.\n');
-    lastSpinnerLine = '  🔥     Processing...';
+    // Start the spinner
+    process.stdout.write('\n  Processing... this may take a moment.\n');
+    lastSpinnerLine = '  Processing...';
     process.stdout.write(lastSpinnerLine);
 
     // Helper to clear spinner and print a status line
@@ -323,31 +280,29 @@ async function invokeClaudeCode(config, bookmarkCount) {
                              input.file_path.includes('/knowledge/articles/') ? 'articles' : '';
                   filesWritten.push(fileName);
                   if (dir) {
-                    printStatus(`    💎 Hoarded → ${dir}/${fileName}\n`);
+                    printStatus(`    → Created: ${dir}/${fileName}\n`);
                   } else if (fileName === 'bookmarks.md') {
                     bookmarksProcessed++;
-                    const fireIntensity = '🔥'.repeat(Math.min(Math.ceil(bookmarksProcessed / 2), 5));
-                    printStatus(`  ${fireIntensity} ${progressBar(bookmarksProcessed, totalBookmarks)} [${elapsed()}]`);
+                    printStatus(`  ${progressBar(bookmarksProcessed, totalBookmarks)} [${elapsed()}]`);
                   } else {
-                    printStatus(`    💎 ${fileName}\n`);
+                    printStatus(`    → Created: ${fileName}\n`);
                   }
                 } else if (toolName === 'Edit' && input.file_path) {
                   const fileName = input.file_path.split('/').pop();
                   if (fileName === 'bookmarks.md') {
                     bookmarksProcessed++;
-                    const fireIntensity = '🔥'.repeat(Math.min(Math.ceil(bookmarksProcessed / 2), 5));
-                    printStatus(`  ${fireIntensity} ${progressBar(bookmarksProcessed, totalBookmarks)} [${elapsed()}]`);
+                    printStatus(`  ${progressBar(bookmarksProcessed, totalBookmarks)} [${elapsed()}]`);
                   } else if (fileName === 'pending-bookmarks.json') {
-                    printStatus(`  🐉 *licks claws clean* Tidying the lair...\n`);
+                    printStatus(`  Cleaning up processed bookmarks...\n`);
                   }
                 } else if (toolName === 'Read' && input.file_path) {
                   const fileName = input.file_path.split('/').pop();
-                  if (fileName === 'pending-bookmarks.json' && !shownMessages.has('eye')) {
-                    shownMessages.add('eye');
-                    printStatus(`  👁️  The dragon's eye opens... surveying treasures...\n`);
-                  } else if (fileName === 'process-bookmarks.md' && !shownMessages.has('scrolls')) {
-                    shownMessages.add('scrolls');
-                    printStatus(`  📜 Consulting the ancient scrolls...\n`);
+                  if (fileName === 'pending-bookmarks.json' && !shownMessages.has('reading')) {
+                    shownMessages.add('reading');
+                    printStatus(`  Reading pending bookmarks...\n`);
+                  } else if (fileName === 'process-bookmarks.md' && !shownMessages.has('instructions')) {
+                    shownMessages.add('instructions');
+                    printStatus(`  Reading processing instructions...\n`);
                   }
                 } else if (toolName === 'Task') {
                   const desc = input.description || `batch ${tasksSpawned + 1}`;
@@ -360,15 +315,15 @@ async function invokeClaudeCode(config, bookmarkCount) {
                       startTime: Date.now(),
                       status: 'running'
                     });
-                    printStatus(`  🐲 Summoning dragon minion: ${desc}\n`);
+                    printStatus(`  → Spawning parallel task: ${desc}\n`);
                     if (tasksSpawned > 1) {
-                      printStatus(`     🔥 ${tasksSpawned} dragons now circling the hoard\n`);
+                      printStatus(`     ${tasksSpawned} tasks running in parallel\n`);
                     }
                   }
                 } else if (toolName === 'Bash') {
                   const cmd = input.command || '';
                   if (cmd.includes('jq') && cmd.includes('bookmarks')) {
-                    printStatus(`  ⚡ ${nextDragonMsg()}\n`);
+                    printStatus(`  → ${nextStatusMsg()}\n`);
                   }
                 }
               }
@@ -388,8 +343,7 @@ async function invokeClaudeCode(config, bookmarkCount) {
                   tasksCompleted++;
                   if (tasksSpawned > 0 && tasksCompleted <= tasksSpawned) {
                     const pct = Math.round((tasksCompleted / tasksSpawned) * 100);
-                    const flames = '🔥'.repeat(Math.ceil(pct / 20));
-                    printStatus(`  🐲 Dragon minion returns! ${flames} (${tasksCompleted}/${tasksSpawned})\n`);
+                    printStatus(`  → Task completed (${tasksCompleted}/${tasksSpawned}) [${pct}%]\n`);
                   }
                 }
               }
@@ -400,52 +354,14 @@ async function invokeClaudeCode(config, bookmarkCount) {
           if (event.type === 'result') {
             stopSpinner();
 
-            // Randomized hoard descriptions by size tier
-            const hoardDescriptions = {
-              small: [
-                'A Few Coins',
-                'Sparse',
-                'Humble Beginnings',
-                'First Treasures',
-                'A Modest Start'
-              ],
-              medium: [
-                'Glittering',
-                'Growing Nicely',
-                'Respectable Pile',
-                'Gleaming Hoard',
-                'Handsome Collection'
-              ],
-              large: [
-                'Overflowing',
-                'Mountain of Gold',
-                'Legendary Hoard',
-                'Dragon\'s Fortune',
-                'Vast Riches'
-              ]
-            };
-
-            const tier = totalBookmarks > 15 ? 'large' : totalBookmarks > 7 ? 'medium' : 'small';
-            const descriptions = hoardDescriptions[tier];
-            const hoardStatus = descriptions[Math.floor(Math.random() * descriptions.length)];
-
             process.stdout.write(`
 
-  🔥🔥🔥  THE DRAGON'S HOARD GROWS!  🔥🔥🔥
+  ✓ Processing Complete
 
-              🐉
-            /|  |\\
-           / |💎| \\      Victory!
-          /  |__|  \\
-         /  /    \\  \\
-        /__/  💰  \\__\\
-
-  ⏱️  Quest Duration:  ${elapsed()}
-  📦  Bookmarks:       ${totalBookmarks} processed
-  🐲  Dragon Minions:  ${tasksSpawned > 0 ? tasksSpawned + ' summoned' : 'solo hunt'}
-  🏔️  Hoard Status:    ${hoardStatus}
-
-  🐉 Smaug rests... until the next hoard arrives.
+  Duration:     ${elapsed()}
+  Bookmarks:    ${totalBookmarks} processed
+  Parallel Tasks: ${tasksSpawned > 0 ? tasksSpawned : 'none'}
+  Files Created: ${filesWritten.length > 0 ? filesWritten.join(', ') : 'none'}
 
 `);
           }

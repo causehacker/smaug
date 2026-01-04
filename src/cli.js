@@ -40,7 +40,7 @@ function prompt(question) {
 
 async function setup() {
   console.log(`
-🐉 Smaug Setup Wizard
+Smaug Setup Wizard
 ━━━━━━━━━━━━━━━━━━━━━
 
 This will set up Smaug to automatically archive your Twitter bookmarks.
@@ -181,7 +181,7 @@ This will set up Smaug to automatically archive your Twitter bookmarks.
   // Done!
   console.log(`
 ━━━━━━━━━━━━━━━━━━━━━
-🐉 Setup Complete!
+Setup Complete!
 ━━━━━━━━━━━━━━━━━━━━━
 
 Your bookmarks will be saved to: ./bookmarks.md
@@ -191,7 +191,7 @@ Commands:
   npx smaug fetch  Fetch new bookmarks
   npx smaug status Check status
 
-Happy hoarding! 🐉
+Setup complete! Run 'npx smaug run' to start processing bookmarks.
 `);
 }
 
@@ -361,7 +361,7 @@ async function main() {
     case '-h':
     default:
       console.log(`
-🐉 Smaug - Twitter Bookmarks Archiver
+Smaug - Twitter Bookmarks Archiver
 
 Commands:
   setup          Interactive setup wizard (start here!)
