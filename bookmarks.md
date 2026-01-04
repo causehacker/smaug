@@ -1,5 +1,31 @@
 # Saturday, January 3, 2026
 
+## @cocktailpeanut - Claude AI Browser Extension Dark Mode Demo
+> Just tried @claudeai browser extension, I asked it "make the theme dark mode", and... https://t.co/fpLQ2Mh7lp
+
+- **Tweet:** https://x.com/cocktailpeanut/status/2007592178185285657
+- **Media:** https://x.com/cocktailpeanut/status/2007592178185285657/video/1
+- **What:** Demonstration video of Claude AI browser extension being instructed to enable dark mode on a website. Shows the extension's ability to modify webpage styling through natural language commands.
+
+## @iruletheworldmo - Twitter Article
+> https://t.co/GCz7g67znl
+
+- **Tweet:** https://x.com/iruletheworldmo/status/2007538247401124177
+- **Link:** https://x.com/i/article/2007528294174883841
+- **What:** Link to a Twitter article. The tweet content is minimal, consisting only of the article link.
+
+## @_kaitodev - Odysser AI Video Animation Tool
+> lovable for videos gets better everyday with new creators joining
+>
+> check it out: https://odysser.com/
+>
+> *Quoting @sbsamuelbitenco:* we found a better way to do daniel dalen style captions https://t.co/CJ38SeWPkj
+
+- **Tweet:** https://x.com/_kaitodev/status/2007553892968706134
+- **Quoted:** https://x.com/sbsamuelbitenco/status/2007549416450978065
+- **Link:** https://odysser.com/
+- **What:** Odysser is an AI-powered tool that turns talking-head and marketing videos into engaging animated content with motion graphics. Kaito is highlighting it as a better approach to creating video captions in the style of Daniel Dalen.
+
 ## @hridoyreh - Finding Million-Dollar Business Ideas from TrustMRR
 > How to find $1M+ business ideas:
 >
