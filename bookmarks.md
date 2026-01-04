@@ -1,5 +1,14 @@
 # Sunday, January 4, 2026
 
+## @simplifyinAI - Claude Browser Capabilities for Excel, PowerPoint, and PDFs
+> Anthropic just killed thousands of AI apps 🤯
+>
+> Claude can now create and edits Excel, PowerPoint, and PDF files directly in your browser. https://t.co/Px6Ra32HFO
+
+- **Tweet:** https://x.com/simplifyinAI/status/2007760080356434304
+- **Media:** https://x.com/simplifyinAI/status/2007760080356434304/video/1
+- **What:** Announcement showcasing Claude's new browser capabilities for creating and editing Microsoft Office files (Excel, PowerPoint) and PDFs directly in the browser. Highlights how this eliminates the need for specialized AI apps that previously filled this niche.
+
 ## @donvito - Claude in Chrome Browser Extension
 > Install this plugin in Chrome
 > https://t.co/iCGA6aQy97
@@ -17,6 +26,19 @@
 ---
 
 # Saturday, January 3, 2026
+
+## @learn2vibe - Vibe Coding Workflow with Claude Code and Veo 3
+> Omg... This Vibe Coding workflow is insane..
+>
+> Claude Code for coding the app.
+>
+> Veo 3 for designing the onboarding.
+>
+> Full workflow instructions👇 https://t.co/a1XhKRkiA3
+
+- **Tweet:** https://x.com/learn2vibe/status/2007629339467382965
+- **Media:** https://x.com/learn2vibe/status/2007629339467382965/video/1
+- **What:** Demonstration of a creative development workflow combining Claude Code for application development with Google's Veo 3 (AI video generation) for designing onboarding experiences. Shows how AI tools can be chained together for end-to-end product development.
 
 ## @alexhillman - Smaug Gets Major Upgrades
 > 🐉 Smaug got some upgrades tonight thanks to first time contributors @afalk, @webology, and aparente
