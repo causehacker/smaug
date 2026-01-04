@@ -214,7 +214,8 @@ async function main() {
       
       // Run the full job (same as node src/job.js)
       const jobPath = path.join(path.dirname(fileURLToPath(import.meta.url)), 'job.js');
-      const trackTokens = args.includes('--track-tokens') || args.includes('-t');
+      // Token tracking is ON by default, use --no-tokens to disable
+      const trackTokens = !args.includes('--no-tokens');
 
       // Parse --limit flag
       const limitIdx = args.findIndex(a => a === '--limit' || a === '-l');
@@ -405,7 +406,7 @@ async function main() {
 Commands:
   setup          Interactive setup wizard (start here!)
   run            Run the full job (fetch + process with Claude)
-  run -t         Run with token usage tracking (--track-tokens)
+  run --no-tokens  Disable token usage tracking
   run --limit N  Process only N bookmarks (for large backlogs)
   run --testing  Run in testing mode (uses dev API from .env)
   fetch [n]      Fetch n tweets (default: 20)
@@ -421,8 +422,8 @@ Commands:
 
 Examples:
   smaug setup                    # First-time setup
-  smaug run                      # Run full automation
-  smaug run -t                   # Run with token usage tracking
+  smaug run                      # Run full automation (shows token usage)
+  smaug run --no-tokens          # Run without token tracking
   smaug run --limit 50           # Process 50 bookmarks at a time
   smaug fetch                    # Fetch latest (uses config source)
   smaug fetch 50                 # Fetch 50 tweets
