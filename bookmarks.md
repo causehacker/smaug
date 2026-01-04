@@ -27,6 +27,35 @@
 
 # Saturday, January 3, 2026
 
+## @alexhillman - Smaug as Essential Weekly Tool
+> Is smaug just the world's most expensive & powerful glorified bookmarking app? Maybe, lol. But I genuinely look forward to using it and reading my data back.
+>
+> It's become a staple tool of my week.
+
+- **Tweet:** https://x.com/alexhillman/status/2007432055074377991
+- **What:** Alex reflects positively on Smaug's value beyond bookmarking, sharing his enthusiasm for using it as a core weekly tool.
+
+## @claudeai - Claude in Chrome Extension Launch
+> Introducing Claude in Chrome.
+>
+> Claude is now deeply integrated into your browser. Navigate sites and view screenshots. Ask questions and run analyses on the data on each page. Automate tasks with just a prompt.
+>
+> Works with Claude Code and Desktop. Available in beta today:
+
+- **Tweet:** https://x.com/claudeai/status/2007361817999532419
+- **Link:** https://claude.com/chrome
+- **What:** Announcement of Claude's new Chrome extension that integrates browser navigation, screenshot analysis, and task automation capabilities.
+
+## @rowancheung - Claude's Chrome Extension Use Cases
+> Claude's new Chrome extension is actually insane.
+>
+> Here are 8 incredible use cases:
+>
+> 1. Auto job application
+
+- **Tweet:** https://x.com/rowancheung/status/2007312253664104797
+- **What:** Rowan highlights the capabilities of Claude's new Chrome extension with practical use cases including automated job applications.
+
 ## @learn2vibe - Vibe Coding Workflow with Claude Code and Veo 3
 > Omg... This Vibe Coding workflow is insane..
 >
@@ -204,6 +233,14 @@
 ---
 
 # Friday, January 2, 2026
+
+## @_kaitodev - The Speed of AI Tool Shipping
+> everyone is shipping on x, like how am i going to keep up with all of this
+>
+> its a whole new world with these ai tools
+
+- **Tweet:** https://x.com/_kaitodev/status/2006899094321082841
+- **What:** Reflection on the rapid pace of new AI tool releases and the challenge of keeping up with innovation.
 
 ## @rafaelobitten - AGENTS.md Format for Guiding AI Coding Agents
 > *Replying to @karanjagtiani04:* @rafaelobitten Impressive workflow! How do you manage sprint priorities while balancing all those tasks?
@@ -435,3 +472,131 @@
 - **Link:** https://github.com/alexknowshtml/smaug/
 - **Filed:** [smaug.md](./knowledge/tools/smaug.md)
 - **What:** A tool that automatically archives Twitter/X bookmarks to markdown, using bird CLI to fetch bookmarks and Claude Code to intelligently categorize and organize them into a personal knowledge system.
+
+---
+
+# Thursday, January 1, 2026
+
+## @alexhillman - Smaug Workshop and Improvements
+> I've been running a workshop of 🐉Smaug for folks tonight.
+>
+> So satisfying to nerd out, help people use a tool I'm proud of, and learn from their experiences.
+>
+> Now: more tweaks, improvements, additions to make. Right after sleep. 😄
+
+- **Tweet:** https://x.com/alexhillman/status/2006877341738623366
+- **What:** Alex conducted a workshop on Smaug, gathering feedback from users and planning further improvements.
+
+## @garrytan - What Makes the Best Engineers
+> The best engineers are not the ones that can write the most lines of code the fastest.
+>
+> Instead the best engineers:
+> - Intuitively sense the most important thing to do next and focuses on that
+> - Spend their energy on crafting the very simple, minimal solution that works (shipping!)…
+
+- **Tweet:** https://x.com/garrytan/status/2006826374368186810
+- **What:** Garry Tan shares principles of engineering excellence focused on prioritization, simplicity, and shipping rather than code volume.
+
+## @joemaristela - One Month of Progress with AI Agents
+> this photo is actually from just a month ago, while i was in a coding trip during midnight at my home so you know i was not making it up. i'm so amazed how far you came. you're not only LLMs, you're more than that, you're genius agents that deserves a nobel prize award i swear
+>
+> *Quoting @claudeai:* Looking back on a year of extraordinary progress for our AI models and products.
+
+- **Tweet:** https://x.com/joemaristela/status/2006819330878333388
+- **Quoted:** https://x.com/claudeai/status/2006807933652275520
+- **What:** Joe reflects on the rapid advancement of AI agents over just one month, expressing amazement at their capabilities beyond traditional LLMs.
+
+## @phuctm97 - Claude Code as a Product of 2024
+> I believe Claude Code is one of THE most important products of 2024
+>
+> And I went all in with it
+>
+> @alexhillman's 🐉Smaug is a really impressive example
+>
+> *Quoting @alexhillman:* Smaug: A tool built with Claude Code for archiving Twitter bookmarks to markdown. Features parallel processing, link expansion, and AI categorization.
+
+- **Tweet:** https://x.com/phuctm97/status/2006762870738186282
+- **Quoted:** https://x.com/alexhillman/status/2006760125598720166
+- **What:** Minh-Phuc highlights Claude Code as a transformative 2024 product, citing Smaug as an impressive real-world example.
+
+## @ahaym0vi - The Future of AI
+> This is the future man.. incredible!
+>
+> *Quoting @claudeai:* Our year in review video from Dario
+
+- **Tweet:** https://x.com/ahaym0vi/status/2006668914685206700
+- **Quoted:** https://x.com/claudeai/status/2006659464374501602
+- **What:** Maya enthusiastically reacts to Claude's year in review content.
+
+## @alexhillman - Smaug Now Supports Fetching All Bookmarks and Likes
+> Holy shit. Thanks to @joemaristela, 🐉Smaug now supports fetching "all" bookmarks (>50) and LIKES in addition to bookmarks.
+>
+> Two PRs to wake up to, one merged, and I'm already working with @joemaristela to get the second sorted.
+>
+> Open source is bonkers awesome and y'all are…
+
+- **Tweet:** https://x.com/alexhillman/status/2006656992099737832
+- **What:** Alex celebrates new Smaug features from community contributor Joe Maristela: pagination for fetching all bookmarks and support for likes, highlighting the power of open source collaboration.
+
+## @alexhillman - Smaug force processing tip
+> Pro tip: smaug --limit 30 --force if you have dupes that you need to force through. https://t.co/Q7pIOPD3ov
+
+- **Tweet:** https://x.com/alexhillman/status/2006572154821091716
+- **What:** Alex shares a helpful CLI tip for processing duplicate bookmarks with Smaug using the force flag.
+
+## @alexhillman - Gratitude for network and community
+> I can't help but feel incredible appreciation that I have such an incredible network of friends, all-stars, ride-or-dies, beautiful people, new friends (!!!), and cherished pals, and that I have a couple life roles / hats that allow me to feel like I'm caring for them. https://t.co/SLdOLfShBN
+
+- **Tweet:** https://x.com/alexhillman/status/2006571916841525321
+- **What:** Alex expresses deep gratitude for their network of friends and the privilege of caring for them through various roles.
+
+---
+
+# Wednesday, December 31, 2025
+
+## @amasad - Fast Payment Integration with Replit MCP
+> Wow - this seems like a super fast and seamless way to start accepting payments. Built with Replit MCP integrations.
+>
+> *Quoting @nickslaney:* Now anyone can one shot a website with global payments using @Replit and @moneydevkit. Replit agent does everything for you, creates an account, sets up payments. Just say "add moneydevkit." Idea to production payments in less than 10 minutes.
+
+- **Tweet:** https://x.com/amasad/status/2006441025032827124
+- **Quoted:** https://x.com/nickslaney/status/2006413797272047758
+- **What:** Amjad Masad highlights a Replit MCP integration with moneydevkit that enables developers to set up global payment processing in under 10 minutes through simple natural language commands.
+
+---
+
+# Tuesday, December 31, 2025
+
+## @alexanderisora - Claude Code Obsidian Vault skill announcement
+> *Replying to @alexhillman:* Original tweet about building Smaug
+>
+> @alexhillman Congrats! I tweeted you back, but sharing here — we also built a Claude Code tool to save tweets to your Obsidian Vault, if you're interested 🙂
+>
+> A Skill for Claude Code, so you can do something like `/saveTweet <link>` and it will fetch the tweet, decide whether to save it, do the saving and move the note to the related project in your Vault.
+>
+> If it sounds interesting, let me know and I can share.
+>
+> P.S. Cool to see you working in Obsidian!
+
+- **Tweet:** https://x.com/alexanderisora/status/2005850668264874019
+- **What:** Alexander shares a Claude Code skill that integrates tweet saving with Obsidian Vault, allowing automated tweet processing and note organization.
+
+---
+
+# Monday, December 30, 2025
+
+## @alexhillman - Excitement about building with Claude Code
+> I don't often use hyperbole like this, but I am genuinely giddy - I feel a welling of childlike wonder but also awe.
+>
+> If you haven't built anything with Claude Code yet, make something for yourself. You won't regret it. https://t.co/bLGPRtgJDr
+
+- **Tweet:** https://x.com/alexhillman/status/2005756063691776014
+- **What:** Alex expresses genuine excitement and wonder about building with Claude Code, encouraging others to try it.
+
+## @alexhillman - Interest in Claude Code Obsidian skill
+> *Replying to @alexanderisora:* Tweet about Claude Code skill for saving tweets to Obsidian
+>
+> @alexanderisora Hell yeah I'm interested!! Sounds awesome.
+
+- **Tweet:** https://x.com/alexhillman/status/2005730667054248058
+- **What:** Alex enthusiastically responds to a proposal for a Claude Code skill that saves tweets to Obsidian.
