@@ -20,13 +20,14 @@ TodoWrite({ todos: [
 ]})
 ```
 
-**For 3+ bookmarks (MUST use parallel subagents):**
+**For 3+ bookmarks (MUST use parallel subagents with batch files):**
 ```javascript
 TodoWrite({ todos: [
   {content: "Read pending bookmarks", status: "pending", activeForm: "Reading pending bookmarks"},
-  {content: "Spawn subagents for N bookmarks", status: "pending", activeForm: "Spawning subagents"},
-  {content: "Wait for subagent results", status: "pending", activeForm: "Waiting for subagents"},
-  {content: "Clean up pending file", status: "pending", activeForm: "Cleaning up pending file"},
+  {content: "Spawn subagents to write batch files", status: "pending", activeForm: "Spawning subagents"},
+  {content: "Wait for all subagents to complete", status: "pending", activeForm: "Waiting for subagents"},
+  {content: "Merge batch files into bookmarks.md", status: "pending", activeForm: "Merging batch files"},
+  {content: "Clean up batch and pending files", status: "pending", activeForm: "Cleaning up files"},
   {content: "Commit and push changes", status: "pending", activeForm: "Committing changes"},
   {content: "Return summary", status: "pending", activeForm: "Returning summary"}
 ]})
@@ -38,19 +39,24 @@ TodoWrite({ todos: [
 - Only ONE task `in_progress` at a time
 - Never skip final steps (commit, summary)
 
-**CRITICAL for 3+ bookmarks:** Spawn ALL subagents in ONE message:
+**CRITICAL for 3+ bookmarks:** Spawn ALL subagents in ONE message, each writing to a batch file:
 ```javascript
 // Send ONE message with multiple Task calls - they run in parallel
-Task(subagent_type="general-purpose", prompt="Process bookmark 1: {json}")
-Task(subagent_type="general-purpose", prompt="Process bookmark 2: {json}")
-Task(subagent_type="general-purpose", prompt="Process bookmark 3: {json}")
-// ... all bookmarks in the SAME message
+// Use model="haiku" for cost-efficient parallel processing (~50% cost savings)
+// Each subagent writes to .state/batch-N.md, NOT to bookmarks.md!
+Task(subagent_type="general-purpose", model="haiku", prompt="Process batch 0: write to .state/batch-0.md: {json for bookmarks 0-4}")
+Task(subagent_type="general-purpose", model="haiku", prompt="Process batch 1: write to .state/batch-1.md: {json for bookmarks 5-9}")
+Task(subagent_type="general-purpose", model="haiku", prompt="Process batch 2: write to .state/batch-2.md: {json for bookmarks 10-14}")
+// ... all batches in the SAME message
 ```
 
+After ALL subagents complete, merge batch files into bookmarks.md in chronological order.
+
 **DO NOT:**
-- Process 3+ bookmarks sequentially (one at a time)
+- Have subagents write directly to bookmarks.md (race conditions!)
+- Process 3+ bookmarks sequentially (too slow)
 - Send Task calls in separate messages (defeats parallelism)
-- Skip parallel processing because "it seems simpler"
+- Skip the merge step
 
 ### Setup
 
@@ -61,19 +67,27 @@ date +"%A, %B %-d, %Y"
 
 Use this format for date section headers (e.g., "Thursday, January 2, 2026").
 
-**Load categories from config:**
+**Load paths and categories from config:**
 ```bash
-cat ./smaug.config.json | jq '.categories // empty'
+cat ./smaug.config.json | jq '{archiveFile, pendingFile, stateFile, categories}'
 ```
 
+This gives you:
+- `archiveFile`: Where to write the bookmark archive (e.g., `~/Obsidian_Vaults/.../bookmarks.md`)
+- `pendingFile`: Where pending bookmarks are stored
+- `stateFile`: Where processing state is tracked
+- `categories`: Custom category definitions
+
+**IMPORTANT:** Use these paths throughout. The `~` will be the user's home directory.
 If no custom categories, use the defaults from `src/config.js`.
 
 ## Input
 
-Prepared bookmarks are in: `./.state/pending-bookmarks.json`
+Prepared bookmarks are in the `pendingFile` path from config (typically `./.state/pending-bookmarks.json` or a custom path).
 
 Each bookmark includes:
 - `id`, `author`, `authorName`, `text`, `tweetUrl`, `date`
+- `tags[]` - folder tags from bookmark folders (e.g., `["ai-tools"]`)
 - `links[]` - each with `original`, `expanded`, `type`, and `content`
   - `type`: "github", "article", "video", "tweet", "media", "image"
   - `content`: extracted text, headline, author (for articles/github)
@@ -105,8 +119,11 @@ Categories define how different bookmark types are handled. Each category has:
 
 ### 1. Read the Prepared Data
 
+Read from the `pendingFile` path specified in config. If the path starts with `~`, expand it to `$HOME`:
 ```bash
-cat ./.state/pending-bookmarks.json
+# Get pendingFile from config and expand ~
+PENDING_FILE=$(cat ./smaug.config.json | jq -r '.pendingFile' | sed "s|^~|$HOME|")
+cat "$PENDING_FILE"
 ```
 
 ### 2. Process Bookmarks (Parallel for 3+)
@@ -148,14 +165,25 @@ Match each bookmark's links against category patterns (check `match` arrays). Us
 
 #### c. Write bookmark entry
 
-Add to `./bookmarks.md`:
+Add to the `archiveFile` path from config (expand `~` to home directory):
 
-**CRITICAL ordering rules:**
-1. Use the bookmark's `date` field from the JSON, format as friendly date
-2. Check if that date section already exists near the TOP of the file
-3. If it exists: insert the new entry immediately AFTER the `# Date` header (ABOVE existing entries)
-4. If no section for that date: create new `# Weekday, Month Day, Year` section at the TOP
-5. Do NOT create duplicate date sections - always check first
+**CRITICAL ordering rules for bookmarks.md:**
+
+The file must be in **descending chronological order** (newest dates at TOP, oldest at BOTTOM).
+
+1. **Read the existing file structure first** - note all existing date sections and their positions
+2. Use each bookmark's `date` field (already formatted as "Weekday, Month Day, Year")
+3. **For each bookmark's date:**
+   - If that date section already exists: insert the entry immediately AFTER the `# Date` header (above other entries in that section)
+   - If no section exists for that date: create a new `# Weekday, Month Day, Year` section at the **correct chronological position** (NOT always at top!)
+4. **Chronological positioning for new date sections:**
+   - Find where the date belongs chronologically among existing sections
+   - Insert BEFORE any older dates, AFTER any newer dates
+   - Example: If file has "Jan 3" then "Jan 1", and you need "Jan 2", insert between them
+5. Do NOT create duplicate date sections - always search the entire file first
+6. Separate date sections with `---`
+
+**Processing order:** Bookmarks in pending-bookmarks.json are sorted oldest-first. Process them in order so that when each is inserted at the top of its date section, the final result has correct ordering within each day.
 
 **Header hierarchy:**
 - `# Thursday, January 2, 2026` - Date headers (h1)
@@ -168,9 +196,12 @@ Add to `./bookmarks.md`:
 
 - **Tweet:** {tweet_url}
 - **Link:** {expanded_url}
+- **Tags:** [[tag1]] [[tag2]] (if bookmark has tags from folders)
 - **Filed:** [{filename}](./knowledge/tools/{slug}.md) (if filed)
 - **What:** {1-2 sentence description of what this actually is}
 ```
+
+**Tags format:** Use wiki-link style `[[TagName]]` for each tag. Only include the **Tags:** line if the bookmark has tags in its `tags` array (from folder configuration). Example: `- **Tags:** [[AI]] [[Coding]]`
 
 **For quote tweets, include the quoted content:**
 ```markdown
@@ -181,6 +212,7 @@ Add to `./bookmarks.md`:
 
 - **Tweet:** {tweet_url}
 - **Quoted:** {quoted_tweet_url}
+- **Tags:** [[tag1]] [[tag2]] (if bookmark has tags)
 - **What:** {description}
 ```
 
@@ -193,6 +225,7 @@ Add to `./bookmarks.md`:
 
 - **Tweet:** {tweet_url}
 - **Parent:** {parent_tweet_url}
+- **Tags:** [[tag1]] [[tag2]] (if bookmark has tags)
 - **What:** {description}
 ```
 
@@ -200,15 +233,16 @@ Separate entries with `---` only between different dates, not between entries on
 
 ### 3. Clean Up Pending File
 
-After successfully processing, remove the processed bookmarks from the pending file:
+After successfully processing, remove the processed bookmarks from the pending file (use `pendingFile` path from config, expanding `~`):
 
 ```javascript
-const pending = JSON.parse(fs.readFileSync('./.state/pending-bookmarks.json', 'utf8'));
+const pendingPath = config.pendingFile.replace(/^~/, process.env.HOME);
+const pending = JSON.parse(fs.readFileSync(pendingPath, 'utf8'));
 const processedIds = new Set([/* IDs you processed */]);
 const remaining = pending.bookmarks.filter(b => !processedIds.has(b.id));
 pending.bookmarks = remaining;
 pending.count = remaining.length;
-fs.writeFileSync('./.state/pending-bookmarks.json', JSON.stringify(pending, null, 2));
+fs.writeFileSync(pendingPath, JSON.stringify(pending, null, 2));
 ```
 
 ### 4. Commit and Push Changes
@@ -219,8 +253,8 @@ After all bookmarks are processed and filed, commit the changes:
 # Get today's date for commit message
 DATE=$(date +"%b %-d")
 
-# Stage all bookmark-related changes
-git add bookmarks.md
+# Stage all bookmark-related changes (use archiveFile path from config)
+git add "$ARCHIVE_FILE"  # The archiveFile path from config
 git add knowledge/
 
 # Commit with descriptive message
@@ -257,7 +291,7 @@ title: "{tool_name}"
 type: tool
 date_added: {YYYY-MM-DD}
 source: "{github_url}"
-tags: [{relevant_tags}]
+tags: [{relevant_tags}, {folder_tags}]
 via: "Twitter bookmark from @{author}"
 ---
 
@@ -283,7 +317,7 @@ type: article
 date_added: {YYYY-MM-DD}
 source: "{article_url}"
 author: "{article_author}"
-tags: [{relevant_tags}]
+tags: [{relevant_tags}, {folder_tags}]
 via: "Twitter bookmark from @{author}"
 ---
 
@@ -309,7 +343,7 @@ type: podcast
 date_added: {YYYY-MM-DD}
 source: "{podcast_url}"
 show: "{show_name}"
-tags: [{relevant_tags}]
+tags: [{relevant_tags}, {folder_tags}]
 via: "Twitter bookmark from @{author}"
 status: needs_transcript
 ---
@@ -341,7 +375,7 @@ type: video
 date_added: {YYYY-MM-DD}
 source: "{video_url}"
 channel: "{channel_name}"
-tags: [{relevant_tags}]
+tags: [{relevant_tags}, {folder_tags}]
 via: "Twitter bookmark from @{author}"
 status: needs_transcript
 ---
@@ -366,23 +400,61 @@ status: needs_transcript
 
 ## Parallel Processing (REQUIRED for 3+ bookmarks)
 
-**You MUST spawn multiple Task subagents in a SINGLE message when processing 3+ bookmarks.**
+**CRITICAL: Subagents must NOT write directly to bookmarks.md** - this causes race conditions and scrambled ordering.
 
-Example for 20 bookmarks - send ONE message containing 4 Task tool calls:
+### Two-Phase Approach:
+
+**Phase 1: Parallel batch processing (subagents write to temp files)**
+
+Spawn multiple Task subagents in ONE message. Each writes to a separate temp file:
 
 ```
-Task 1: "Process bookmarks 1-5" with prompt containing bookmarks 1-5 JSON
-Task 2: "Process bookmarks 6-10" with prompt containing bookmarks 6-10 JSON
-Task 3: "Process bookmarks 11-15" with prompt containing bookmarks 11-15 JSON
-Task 4: "Process bookmarks 16-20" with prompt containing bookmarks 16-20 JSON
+Task 1: model="haiku", "Process batch 0" → writes to .state/batch-0.md
+Task 2: model="haiku", "Process batch 1" → writes to .state/batch-1.md
+Task 3: model="haiku", "Process batch 2" → writes to .state/batch-2.md
+Task 4: model="haiku", "Process batch 3" → writes to .state/batch-3.md
 ```
 
-Each subagent receives the full batch data and processes independently. They run in parallel.
+**Subagent prompt template:**
+```
+Process these bookmarks and write ONLY the markdown entries (no date headers) to .state/batch-{N}.md
+
+Bookmarks to process (in order - oldest first):
+{JSON array of 5-10 bookmarks}
+
+For each bookmark, write an entry in this format:
+---
+DATE: {bookmark.date}
+## @{author} - {title}
+> {tweet text}
+
+- **Tweet:** {url}
+- **Tags:** [[tag1]] [[tag2]] (if tags exist)
+- **What:** {description}
+
+Also create knowledge files (./knowledge/tools/*.md, ./knowledge/articles/*.md) as needed.
+DO NOT touch bookmarks.md - only write to .state/batch-{N}.md
+```
+
+**Phase 2: Sequential merge (main agent combines batches)**
+
+After ALL subagents complete:
+1. Read all .state/batch-*.md files in order (batch-0, batch-1, batch-2...)
+2. Parse each entry (separated by `---`) and extract the DATE line
+3. Insert each entry into bookmarks.md at the correct chronological position
+4. Delete the temp batch files
+
+**Merge logic for bookmarks.md:**
+- File is descending order (newest dates at top)
+- For each entry from batch files (processed in order):
+  - Find or create the date section at correct position
+  - Insert entry at TOP of that date section
+- Since batches are oldest-first, entries end up in correct order
 
 **DO NOT:**
-- Process bookmarks one at a time sequentially
-- Spawn one Task and wait for it before spawning the next
-- Skip parallel processing because it "seems simpler"
+- Have subagents write directly to bookmarks.md (causes race conditions)
+- Process all bookmarks sequentially (too slow)
+- Skip the merge step
 
 ## Example Output
 

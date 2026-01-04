@@ -12,6 +12,22 @@ import path from 'path';
 import os from 'os';
 
 /**
+ * Expands ~ to home directory in paths
+ * @param {string} filepath - The file path to expand
+ * @returns {string} The path with ~ expanded to the home directory
+ */
+export function expandTilde(filepath) {
+  if (!filepath || typeof filepath !== 'string') return filepath;
+  if (filepath.startsWith('~/')) {
+    return path.join(os.homedir(), filepath.slice(2));
+  }
+  if (filepath === '~') {
+    return os.homedir();
+  }
+  return filepath;
+}
+
+/**
  * Load environment variables from .env file
  */
 function loadEnvFile() {
@@ -40,6 +56,13 @@ function loadEnvFile() {
 loadEnvFile();
 
 const DEFAULT_CONFIG = {
+  // Source to fetch from: 'bookmarks', 'likes', or 'both'
+  source: 'bookmarks',
+
+  // EXPERIMENTAL: Include media attachments (photos, videos, GIFs)
+  // Off by default - enable with --media flag or config
+  includeMedia: false,
+
   // Where to store the markdown archive
   archiveFile: './bookmarks.md',
 
@@ -60,6 +83,16 @@ const DEFAULT_CONFIG = {
     authToken: null,
     ct0: null
   },
+
+  // ---- Bookmark Folders ----
+  // Map folder IDs to tag names. Bookmarks from each folder will be tagged.
+  // Get folder IDs from URLs like: https://x.com/i/bookmarks/1234567890
+  // Example:
+  //   folders: {
+  //     "1234567890": "ai-tools",
+  //     "0987654321": "articles-to-read"
+  //   }
+  folders: {},
 
   // ---- Categories: Define how different bookmark types are handled ----
   // Each category has:
@@ -196,6 +229,11 @@ export function loadConfig(configPath) {
     categories: {
       ...DEFAULT_CONFIG.categories,
       ...fileConfig.categories
+    },
+    // Merge folders config
+    folders: {
+      ...DEFAULT_CONFIG.folders,
+      ...fileConfig.folders
     }
   };
 
@@ -214,6 +252,12 @@ export function loadConfig(configPath) {
   }
   if (process.env.BIRD_PATH) {
     config.birdPath = process.env.BIRD_PATH;
+  }
+  if (process.env.SOURCE) {
+    config.source = process.env.SOURCE;
+  }
+  if (process.env.INCLUDE_MEDIA !== undefined) {
+    config.includeMedia = process.env.INCLUDE_MEDIA === 'true';
   }
   if (process.env.AUTH_TOKEN) {
     config.twitter.authToken = process.env.AUTH_TOKEN;
@@ -274,6 +318,22 @@ export function loadConfig(configPath) {
   // Enable API if both URL and key are set (either from dev or prod)
   if (config.api && config.api.baseUrl && config.api.key) {
     config.api.enabled = true;
+  }
+
+  // Expand ~ in all path-related config values
+  config.archiveFile = expandTilde(config.archiveFile);
+  config.pendingFile = expandTilde(config.pendingFile);
+  config.stateFile = expandTilde(config.stateFile);
+  config.birdPath = expandTilde(config.birdPath);
+  config.projectRoot = expandTilde(config.projectRoot);
+
+  // Expand ~ in category folders
+  if (config.categories) {
+    for (const key of Object.keys(config.categories)) {
+      if (config.categories[key]?.folder) {
+        config.categories[key].folder = expandTilde(config.categories[key].folder);
+      }
+    }
   }
 
   return config;

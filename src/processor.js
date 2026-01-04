@@ -59,46 +59,62 @@ export function saveState(config, state) {
   fs.writeFileSync(config.stateFile, JSON.stringify(state, null, 2) + '\n');
 }
 
-export async function fetchBookmarks(config, count = 10) {
+/**
+ * Builds environment variables for bird CLI
+ */
+function buildBirdEnv(config) {
+  const env = { ...process.env };
+  if (config.twitter?.authToken) {
+    env.AUTH_TOKEN = config.twitter.authToken;
+  }
+  if (config.twitter?.ct0) {
+    env.CT0 = config.twitter.ct0;
+  }
+  return env;
+}
+
+/**
+ * Fetches bookmarks from Twitter using bird CLI
+ * @param {object} config - Configuration object
+ * @param {number} count - Number of bookmarks to fetch
+ * @param {object} options - Additional options (all, maxPages, folderId)
+ */
+export async function fetchBookmarks(config, count = 10, options = {}) {
   const birdCmd = config.birdPath || 'bird';
   const tmpFile = path.join(os.tmpdir(), `smaug-bookmarks-${Date.now()}.json`);
   
   try {
-    // Prefer browser cookie extraction over manual credentials
-    // This auto-refreshes credentials from your browser
-    let cmd;
-    const birdArgs = ['bookmarks', '-n', count.toString(), '--json'];
+    const env = buildBirdEnv(config);
     
-    if (config.twitter?.useBrowserCookies !== false) {
-      // Try browser cookie extraction first (Chrome, then Firefox, then Safari)
-      // This automatically gets fresh credentials from your logged-in browser
-      // Only add chrome-profile if explicitly configured, otherwise let bird auto-detect
-      if (config.twitter?.chromeProfile) {
-        birdArgs.push('--chrome-profile', config.twitter.chromeProfile);
-      }
-      // If no chromeProfile specified, bird CLI will try to auto-detect from available browsers
-      cmd = `${birdCmd} ${birdArgs.join(' ')} > "${tmpFile}" 2>&1`;
+    // Use --all for large fetches (> 50) or when explicitly requested
+    const useAll = options.all || count > 50;
+    const folderId = options.folderId;
+    const maxPages = options.maxPages || 10; // Limit pages to prevent runaway
+
+    let cmd;
+    if (useAll) {
+      // Paginated fetch - use longer timeout
+      cmd = folderId
+        ? `${birdCmd} bookmarks --folder-id ${folderId} --all --max-pages ${maxPages} --json`
+        : `${birdCmd} bookmarks --all --max-pages ${maxPages} --json`;
     } else {
-      // Fall back to manual credentials if browser extraction is disabled
-      const env = { ...process.env };
-      const envVars = [];
-      if (config.twitter?.authToken) {
-        env.AUTH_TOKEN = config.twitter.authToken;
-        envVars.push(`AUTH_TOKEN='${config.twitter.authToken}'`);
-      }
-      if (config.twitter?.ct0) {
-        env.CT0 = config.twitter.ct0;
-        envVars.push(`CT0='${config.twitter.ct0}'`);
-      }
-      cmd = `${envVars.join(' ')} ${birdCmd} ${birdArgs.join(' ')} > "${tmpFile}" 2>&1`;
+      cmd = folderId
+        ? `${birdCmd} bookmarks --folder-id ${folderId} -n ${count} --json`
+        : `${birdCmd} bookmarks -n ${count} --json`;
+    }
+
+    // Add chrome profile if configured
+    if (config.twitter?.useBrowserCookies !== false && config.twitter?.chromeProfile) {
+      cmd = cmd.replace('bookmarks', `bookmarks --chrome-profile ${config.twitter.chromeProfile}`);
     }
     
-    execSync(cmd, {
-      encoding: 'utf8',
-      timeout: 120000,
-      maxBuffer: 1024 * 1024, // Small buffer is OK since we're redirecting to file
-      shell: '/bin/bash',
-      env: process.env
+    console.log(`  Running: ${cmd.replace(/--json/, '').trim()}`);
+    
+    // Use temp file to work around bird CLI pipe buffering bug
+    execSync(`${cmd} > "${tmpFile}" 2>&1`, {
+      timeout: useAll ? 180000 : 120000, // 3 min for --all, 2 min otherwise
+      env,
+      shell: '/bin/bash'
     });
     
     // Read the file
@@ -114,14 +130,12 @@ export async function fetchBookmarks(config, count = 10) {
     // Find the start of JSON array (skip any warnings)
     const jsonStart = output.indexOf('[');
     if (jsonStart === -1) {
-      // If no JSON found, the output might be in stderr or file is empty
       throw new Error(`No valid JSON array found in bird output. File size: ${output.length}, Content preview: ${output.slice(0, 200)}`);
     }
 
     // Extract JSON portion
     const jsonOutput = output.slice(jsonStart).trim();
     
-    // Parse directly
     return JSON.parse(jsonOutput);
   } catch (error) {
     // Clean up temp file on error
@@ -134,6 +148,100 @@ export async function fetchBookmarks(config, count = 10) {
     }
     throw new Error(`Failed to fetch bookmarks: ${error.message}`);
   }
+}
+
+/**
+ * Fetches likes from Twitter using bird CLI
+ */
+export function fetchLikes(config, count = 10) {
+  try {
+    const env = buildBirdEnv(config);
+    const birdCmd = config.birdPath || 'bird';
+    // Use temp file to work around bird CLI pipe buffering bug
+    const tmpFile = path.join(os.tmpdir(), `smaug-likes-${Date.now()}.json`);
+    execSync(`${birdCmd} likes -n ${count} --json > "${tmpFile}"`, {
+      timeout: 60000,
+      env,
+      shell: true
+    });
+    const output = fs.readFileSync(tmpFile, 'utf8');
+    fs.unlinkSync(tmpFile);
+    return JSON.parse(output);
+  } catch (error) {
+    throw new Error(`Failed to fetch likes: ${error.message}`);
+  }
+}
+
+/**
+ * Fetches from configured source (bookmarks, likes, or both)
+ */
+export function fetchFromSource(config, count = 10, options = {}) {
+  const source = config.source || 'bookmarks';
+
+  if (source === 'bookmarks') {
+    return fetchBookmarks(config, count, options);
+  } else if (source === 'likes') {
+    return fetchLikes(config, count);
+  } else if (source === 'both') {
+    const bookmarks = fetchBookmarks(config, count, options);
+    const likes = fetchLikes(config, count);
+    // Merge and dedupe by ID
+    const seen = new Set();
+    const merged = [];
+    for (const item of [...bookmarks, ...likes]) {
+      if (!seen.has(item.id)) {
+        seen.add(item.id);
+        merged.push(item);
+      }
+    }
+    return merged;
+  } else {
+    throw new Error(`Invalid source: ${source}. Must be 'bookmarks', 'likes', or 'both'.`);
+  }
+}
+
+/**
+ * Fetches bookmarks from configured folders, tagging each with its folder name
+ */
+export function fetchFromFolders(config, count = 10, options = {}) {
+  const folders = config.folders || {};
+  const folderIds = Object.keys(folders);
+
+  if (folderIds.length === 0) {
+    return [];
+  }
+
+  console.log(`Fetching from ${folderIds.length} configured folder(s)...`);
+
+  const allBookmarks = [];
+  const seen = new Set();
+
+  for (const folderId of folderIds) {
+    const folderTag = folders[folderId];
+    console.log(`\n📁 Folder "${folderTag}" (${folderId}):`);
+
+    try {
+      const bookmarks = fetchBookmarks(config, count, { ...options, folderId });
+      let added = 0;
+
+      for (const bookmark of bookmarks) {
+        if (!seen.has(bookmark.id)) {
+          seen.add(bookmark.id);
+          // Add folder tag to the bookmark
+          bookmark._folderTag = folderTag;
+          bookmark._folderId = folderId;
+          allBookmarks.push(bookmark);
+          added++;
+        }
+      }
+
+      console.log(`  Found ${bookmarks.length} bookmarks, ${added} new`);
+    } catch (error) {
+      console.error(`  Error fetching folder ${folderId}: ${error.message}`);
+    }
+  }
+
+  return allBookmarks;
 }
 
 export function fetchTweet(config, tweetId) {
@@ -303,12 +411,36 @@ export async function fetchAndPrepareBookmarks(options = {}) {
   console.log(`[${now.format()}] Fetching and preparing bookmarks...`);
 
   const state = loadState(config);
-  const bookmarks = await fetchBookmarks(config, options.count || 20);
+  const source = options.source || config.source || 'bookmarks';
+  const includeMedia = options.includeMedia ?? config.includeMedia ?? false;
+  const configWithOptions = { ...config, source, includeMedia };
+  const count = options.count || 20;
 
-  if (!bookmarks || bookmarks.length === 0) {
-    console.log('No bookmarks found');
+  // Build fetch options for pagination
+  const fetchOptions = {
+    all: options.all || count > 50,
+    maxPages: options.maxPages
+  };
+
+  let tweets = [];
+  const hasFolders = Object.keys(config.folders || {}).length > 0;
+
+  if (hasFolders && source === 'bookmarks') {
+    // Fetch from each configured folder with tags
+    console.log('Fetching from configured folders...');
+    tweets = await fetchFromFolders(configWithOptions, count, fetchOptions);
+  } else {
+    // Fetch from source (bookmarks, likes, or both)
+    tweets = await fetchFromSource(configWithOptions, count, fetchOptions);
+  }
+
+  if (!tweets || tweets.length === 0) {
+    console.log('No tweets found');
     return { bookmarks: [], count: 0 };
   }
+
+  // Use tweets as bookmarks for backward compatibility
+  const bookmarks = tweets;
 
   // Get IDs already processed or pending
   const existingIds = getExistingBookmarkIds(config);
@@ -481,6 +613,12 @@ export async function fetchAndPrepareBookmarks(options = {}) {
         };
       }
 
+      // Build tags array (from folders, etc.)
+      const tags = [];
+      if (bookmark._folderTag) {
+        tags.push(bookmark._folderTag);
+      }
+
       prepared.push({
         id: bookmark.id,
         author,
@@ -490,6 +628,7 @@ export async function fetchAndPrepareBookmarks(options = {}) {
         createdAt: bookmark.createdAt,  // When the tweet was originally posted (Twitter time)
         bookmarkedAt: now.toISOString(),  // When we bookmarked/fetched it locally (ISO 8601)
         links,
+        tags,  // Folder tags and other metadata
         date: bookmarkDate,  // Use the bookmark's actual date, not current time
         isReply: !!bookmark.inReplyToStatusId,
         replyContext,
