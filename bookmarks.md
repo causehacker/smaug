@@ -1,5 +1,16 @@
 # Sunday, January 4, 2026
 
+## @HenrypenmanXD - Manus for Automated Sales Lead Generation
+> I ran a quick experiment in Manus… and wow. It immediately pulled 100 email-backed sales leads, completely automated. I double-checked the output myself: no hallucinations, no deception.
+>
+> My prompt: use search keyword [site:https://t.co/DBHco1muff "vp of sales" "austin, texas"] to help me find at least 100 sales leads with emails.
+>
+> *Quoting @hridoyreh:* That's how I find $10,000 leads: https://t.co/0g3flpiy3l
+
+- **Tweet:** https://x.com/HenrypenmanXD/status/2007848237114479067
+- **Quoted:** https://x.com/hridoyreh/status/2007770772539109493
+- **What:** Demonstration of Manus AI agent's capability to automate sales lead generation by searching LinkedIn for targeted leads with specific criteria (e.g., "vp of sales" in "austin, texas"). Henry reports successfully extracting 100 email-backed leads with accurate, hallucination-free output, quoting Hridoy's lead generation method.
+
 ## @simplifyinAI - Claude Browser Capabilities for Excel, PowerPoint, and PDFs
 > Anthropic just killed thousands of AI apps 🤯
 >
