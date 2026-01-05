@@ -1120,6 +1120,22 @@
 
 # Monday, December 30, 2025
 
+## @d33v33d0 - Claude Successfully Maintains Living Plant
+> Claude can code- but can claude grow?! 🪴
+>
+> So far the answer is YES.
+> Claude is successfully keeping a living organism ALIVE.
+>
+> There were some hiccups this week!
+>
+> Some errors and resets, but Claude managed to power through and take care of Sol 🍅
+>
+> A week in review: https://t.co/QouhWe9Ohe
+
+- **Tweet:** https://x.com/d33v33d0/status/2006221407340867881
+- **Media:** https://x.com/d33v33d0/status/2006221407340867881/video/1
+- **What:** Martin demonstrates Claude's capabilities beyond coding by documenting how Claude successfully maintained a living plant (Sol the tomato plant) for a week. Despite some errors and resets, Claude managed to keep the organism alive, showcasing AI's potential for autonomous care and monitoring of physical systems.
+
 ## @alexhillman - Excitement about building with Claude Code
 > I don't often use hyperbole like this, but I am genuinely giddy - I feel a welling of childlike wonder but also awe.
 >
