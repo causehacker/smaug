@@ -1,5 +1,35 @@
 # Monday, January 5, 2026
 
+## @EXM7777 - awesome-nanobanana-pro
+> *Replying to @EXM7777:* this github has over 80 awesome Nano Banana prompts: https://t.co/FuDYqHVHhU
+>
+> https://t.co/x6Kr6GTDwO
+
+- **Tweet:** https://x.com/EXM7777/status/2008221506112024764
+- **Parent:** https://x.com/EXM7777/status/2008221493357109627
+- **Link:** https://github.com/ZeroLu/awesome-nanobanana-pro?tab=readme-ov-file
+- **Filed:** [awesome-nanobanana-pro](./knowledge/tools/awesome-nanobanana-pro.md)
+- **What:** An awesome list of curated Nano Banana pro prompts and examples. Your go-to resource for mastering prompt engineering and exploring the creative potential of the Nano banana pro(Nano banana 2) AI image model. (7411 stars)
+
+## @mattwelter - $100k MRR iOS app with slideshows
+> $100k MRR iOS app
+>
+> doing 65,000,000+ views
+>
+> with ONLY slideshows
+>
+> "Stronger" iOS app has been doing the "1-2 punch" slideshow format, 1 hook, 1 CTA (works very well with a viral UI as the CTA) https://t.co/80tWb5GbX0
+
+- **Tweet:** https://x.com/mattwelter/status/2008196036536447456
+- **Tags:** [[iOS]] [[business]] [[viral-ui]]
+- **What:** Case study of a profitable iOS app generating $100k MRR with 65M+ views using only slideshow format with 1-2 punch pattern (hook + CTA).
+
+## @RayDalio - Ray Dalio tweet
+> https://t.co/5mkvsUPpQG
+
+- **Tweet:** https://x.com/RayDalio/status/2008191202751893770
+- **What:** Plain tweet from Ray Dalio linking to another X article. Requires visiting the original tweet to view the full content.
+
 ## @gregisenberg - The $1.3T App Store doesn't die, it explodes
 > The $1.3T App Store doesn't DIE. It's going to EXPLODE.
 >
@@ -46,6 +76,15 @@
 ---
 
 # Sunday, January 4, 2026
+
+## @appstoretracker - Bible Bff-Modern Bible Stories broke into the top 100
+> Bible Bff-Modern Bible Stories broke into the top 100 and is now #38 in Reference on the App Store
+>
+> https://t.co/2o4gPA6huk 🧵 https://t.co/oWjSze9d5P
+
+- **Tweet:** https://x.com/appstoretracker/status/2007844833260458460
+- **Link:** https://www.appstoretracker.com/app/bible-bff-modern-bible-stories-6745900126
+- **What:** App Store tracker reporting that Bible Bff-Modern Bible Stories has broken into the top 100 apps and is now ranked #38 in the Reference category on the App Store.
 
 ## @alexwg - Dr. Alex Wissner-Gross research article
 > https://t.co/zpW49yG4CR
