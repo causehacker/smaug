@@ -77,6 +77,58 @@
 
 # Sunday, January 4, 2026
 
+## @mikefutia - Building an Arcads alternative in Airtable for UGC videos
+> Stop paying $110/mo. for Arcads.
+>
+> You can create the same UGC-style videos for a fraction of the cost.
+>
+> I built my own Arcads alternative inside Airtable, and I don't have to pay $11 PER VIDEO.
+>
+> Perfect for e-comm brands & agencies who need AI UGC at volume without the per-video tax.
+>
+> Here's why I built this:
+>
+> Arcads pricing is $11/video.
+>
+> That's $110/month for 10 videos.
+>
+> If you're testing 50+ creatives a month like you should be, you're bleeding cash on a tool that's just wrapping the same AI models you can access yourself.
+>
+> So I built my own system:
+>
+> → 30+ AI actors ready to use
+> → Create custom actors with Nano Banana Pro
+> → Add products directly into their hands
+> → Same character across multiple scenes
+> → Quick mode: 8-second hooks (Veo 3.1)
+> → Extended mode: longer testimonials
+> → B-roll generator for lifestyle clips
+> → ElevenLabs integration for voice selection
+>
+> The math:
+>
+> - Arcads: $11/video
+> - This system: ~$0.40/second for Veo 3, ~$0.11/second for AI avatars
+>
+> A 10-second hook costs you a few bucks. Not $11.
+>
+> No monthly caps. No per-video gouging.
+>
+> Scale however you want.
+>
+> I recorded a 20-minute breakdown showing the full system—actor library, UGC generator, B-roll creator, everything.
+>
+> Want to see how it works + learn how to get access?
+>
+> > Comment "ARCADS"
+>
+> > Like this post
+>
+> And I'll send it over (must be following so I can DM)
+
+- **Tweet:** https://x.com/mikefutia/status/2007945254469820669
+- **What:** Mike built a cost-effective alternative to Arcads ($11/video) using Airtable, AI models (Veo 3.1, Nano Banana Pro), and ElevenLabs. The system generates UGC-style marketing videos at ~$0.40/sec for Veo 3 or ~$0.11/sec for AI avatars, allowing e-commerce brands to scale creative testing without per-video pricing. Features include 30+ AI actors, custom actor creation, product placement, multi-scene consistency, and B-roll generation.
+
 ## @appstoretracker - Bible Bff-Modern Bible Stories broke into the top 100
 > Bible Bff-Modern Bible Stories broke into the top 100 and is now #38 in Reference on the App Store
 >
