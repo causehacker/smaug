@@ -1,5 +1,19 @@
 # Monday, January 5, 2026
 
+## @hunterjisaacson - Startup Playbook for Building to 1M Users
+> If I lost everything:
+>
+> Pick a category with demand
+> A name users can say out loud
+> One problem solved well
+> UGC for the first 1K users
+> Viral loop for the next 1M
+>
+> The playbook doesn't change
+
+- **Tweet:** https://x.com/hunterjisaacson/status/2008236831335129104
+- **What:** Hunter's concise startup playbook distilled into five principles: choosing a validated category, memorable naming, focused problem-solving, UGC for early growth, and viral mechanics for scaling. A timeless framework for building products that reach 1M users.
+
 ## @EXM7777 - awesome-nanobanana-pro
 > *Replying to @EXM7777:* this github has over 80 awesome Nano Banana prompts: https://t.co/FuDYqHVHhU
 >
