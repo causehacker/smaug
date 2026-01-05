@@ -18,7 +18,8 @@ import path from 'path';
 import os from 'os';
 import { fetchAndPrepareBookmarks } from './processor.js';
 import { loadConfig } from './config.js';
-import { pushBookmarksBatch, pushKnowledgeEntries } from './api-client.js';
+import { pushBookmarksBatch, pushKnowledgeEntries, pushRecentBookmarks } from './api-client.js';
+import { logger } from './logger.js';
 
 const JOB_NAME = 'smaug';
 const LOCK_FILE = path.join(os.tmpdir(), 'smaug.lock');
@@ -35,12 +36,12 @@ function acquireLock() {
         process.kill(pid, 0); // Check if process exists
         const age = Date.now() - timestamp;
         if (age < 20 * 60 * 1000) { // 20 minute timeout
-          console.log(`[${JOB_NAME}] Previous run still in progress (PID ${pid}). Skipping.`);
-          return false;
-        }
-        console.log(`[${JOB_NAME}] Stale lock found (${Math.round(age / 60000)}min old). Overwriting.`);
-      } catch (e) {
-        console.log(`[${JOB_NAME}] Removing stale lock (PID ${pid} no longer running)`);
+        logger.log(`[${JOB_NAME}] Previous run still in progress (PID ${pid}). Skipping.`);
+        return false;
+      }
+      logger.log(`[${JOB_NAME}] Stale lock found (${Math.round(age / 60000)}min old). Overwriting.`);
+    } catch (e) {
+      logger.log(`[${JOB_NAME}] Removing stale lock (PID ${pid} no longer running)`);
       }
     } catch (e) {
       // Invalid lock file
@@ -92,14 +93,26 @@ async function invokeClaudeCode(config, bookmarkCount, options = {}) {
   // Also check via which if we haven't found it
   if (claudePath === 'claude') {
     try {
-      claudePath = execSync('which claude', { encoding: 'utf8' }).trim() || 'claude';
+      const whichResult = execSync('which claude', { encoding: 'utf8' }).trim();
+      if (whichResult) {
+        claudePath = whichResult;
+      }
     } catch {
-      // which failed, stick with 'claude'
+      // which failed, claude not in PATH
     }
   }
 
+  // Verify claude binary exists before trying to spawn it
+  if (claudePath === 'claude' || !fs.existsSync(claudePath)) {
+    return Promise.resolve({
+      success: false,
+      error: `Claude CLI not found. Please install Claude Code:\n\n  Install via npm:\n    npm install -g @anthropic-ai/claude-code\n\n  Or visit: https://github.com/anthropics/claude-code\n\n  After installation, ensure 'claude' is in your PATH.`,
+      exitCode: -1
+    });
+  }
+
   // Show processing start message
-  process.stdout.write(`\nProcessing ${bookmarkCount} bookmark${bookmarkCount !== 1 ? 's' : ''}...\n\n`);
+  logger.progress(`\nProcessing ${bookmarkCount} bookmark${bookmarkCount !== 1 ? 's' : ''}...\n\n`);
 
   return new Promise((resolve) => {
     const args = [
@@ -217,7 +230,7 @@ async function invokeClaudeCode(config, bookmarkCount, options = {}) {
     }, 10000);
 
     const spinnerInterval = setInterval(() => {
-      if (!spinnerActive) return;
+      if (!spinnerActive || !logger.isInteractive) return;
       spinnerFrame = (spinnerFrame + 1) % spinnerFrames.length;
       const frame = spinnerFrames[spinnerFrame];
       const spinnerLine = `\r  ${frame} ${currentSpinnerMsg}... [${elapsed()}]`;
@@ -226,15 +239,20 @@ async function invokeClaudeCode(config, bookmarkCount, options = {}) {
     }, 150);
 
     // Start the spinner
-    process.stdout.write('\n  Processing... this may take a moment.\n');
+    logger.progress('\n  Processing... this may take a moment.\n');
     lastSpinnerLine = '  Processing...';
-    process.stdout.write(lastSpinnerLine);
+    logger.progress(lastSpinnerLine);
 
     // Helper to clear spinner and print a status line
     const printStatus = (msg) => {
-      // Clear current line and print message
-      process.stdout.write('\r' + ' '.repeat(60) + '\r');
-      process.stdout.write(msg);
+      if (logger.isInteractive) {
+        // Clear current line and print message
+        process.stdout.write('\r' + ' '.repeat(60) + '\r');
+        process.stdout.write(msg);
+      } else {
+        // In background mode, only log important status messages
+        logger.log(msg.trim());
+      }
     };
 
     // Helper to stop spinner completely
@@ -242,7 +260,9 @@ async function invokeClaudeCode(config, bookmarkCount, options = {}) {
       spinnerActive = false;
       clearInterval(spinnerInterval);
       clearInterval(msgInterval);
-      process.stdout.write('\r' + ' '.repeat(60) + '\r');
+      if (logger.isInteractive) {
+        process.stdout.write('\r' + ' '.repeat(60) + '\r');
+      }
     };
 
     // Buffer for incomplete JSON lines
@@ -276,7 +296,7 @@ async function invokeClaudeCode(config, bookmarkCount, options = {}) {
                 if (newPart && newPart.length > 50) {
                   // Only show final summaries
                   if (newPart.includes('Processed') && newPart.includes('bookmark')) {
-                    process.stdout.write(`\n💬 ${newPart.trim().slice(0, 200)}${newPart.length > 200 ? '...' : ''}\n`);
+                    logger.progress(`\n💬 ${newPart.trim().slice(0, 200)}${newPart.length > 200 ? '...' : ''}\n`);
                   }
                 }
                 lastText = block.text;
@@ -435,7 +455,7 @@ ${tokenUsage.subagentInput > 0 || tokenUsage.subagentOutput > 0 ? `
 `;
             }
 
-            process.stdout.write(`
+            const summary = `
 
   ✓ Processing Complete
 
@@ -444,7 +464,12 @@ ${tokenUsage.subagentInput > 0 || tokenUsage.subagentOutput > 0 ? `
   Parallel Tasks: ${tasksSpawned > 0 ? tasksSpawned : 'none'}
   Files Created: ${filesWritten.length > 0 ? filesWritten.join(', ') : 'none'}
 ${tokenDisplay}
-`);
+`;
+            if (logger.isInteractive) {
+              process.stdout.write(summary);
+            } else {
+              logger.log(`[${new Date().toISOString()}] Processing complete: ${totalBookmarks} bookmarks processed in ${elapsed()}`);
+            }
           }
         } catch (e) {
           // JSON parse failed - silently ignore (don't print raw JSON)
@@ -490,9 +515,16 @@ ${tokenDisplay}
     proc.on('error', (err) => {
       stopSpinner();
       clearTimeout(timeoutId);
+      let errorMessage = err.message;
+      
+      // Provide helpful error message if claude command not found
+      if (err.code === 'ENOENT') {
+        errorMessage = `Claude CLI not found. Please install Claude Code:\n\n  Install via npm:\n    npm install -g @anthropic-ai/claude-code\n\n  Or visit: https://github.com/anthropics/claude-code\n\n  After installation, ensure 'claude' is in your PATH.`;
+      }
+      
       resolve({
         success: false,
-        error: err.message,
+        error: errorMessage,
         stdout,
         stderr,
         exitCode: -1
@@ -516,10 +548,10 @@ async function sendWebhook(config, payload) {
     });
 
     if (!response.ok) {
-      console.error(`Webhook failed: ${response.status} ${response.statusText}`);
+      logger.error(`Webhook failed: ${response.status} ${response.statusText}`);
     }
   } catch (error) {
-    console.error(`Webhook error: ${error.message}`);
+    logger.error(`Webhook error: ${error.message}`);
   }
 }
 
@@ -573,7 +605,30 @@ export async function run(options = {}) {
   const now = new Date().toISOString();
   const config = loadConfig(options.configPath);
 
-  console.log(`[${now}] Starting smaug job...`);
+  // Setup log rotation for log files
+  const logPath = path.join(process.cwd(), 'smaug.log');
+  const errorLogPath = path.join(process.cwd(), 'smaug.error.log');
+  logger.setupRotation(logPath, 10);
+  logger.setupRotation(errorLogPath, 10);
+
+  logger.log(`[${now}] Starting smaug job...`);
+  
+  // Check if we should do a periodic retry push (every 30 minutes)
+  // This ensures processed items eventually make it to the API
+  const retryStateFile = path.join(path.dirname(config.stateFile || './.state'), 'api-retry-state.json');
+  let retryState = { lastRetry: null };
+  try {
+    if (fs.existsSync(retryStateFile)) {
+      retryState = JSON.parse(fs.readFileSync(retryStateFile, 'utf8'));
+    }
+  } catch (e) {
+    // Ignore errors reading retry state
+  }
+  
+  const nowTime = Date.now();
+  const lastRetryTime = retryState.lastRetry || 0;
+  const RETRY_INTERVAL = 30 * 60 * 1000; // 30 minutes
+  const shouldRetry = (nowTime - lastRetryTime) >= RETRY_INTERVAL;
 
   // Overlap protection
   if (!acquireLock()) {
@@ -593,7 +648,7 @@ export async function run(options = {}) {
         // Apply --limit if specified (process subset of pending)
         const limit = options.limit;
         if (limit && limit > 0 && bookmarkCount > limit) {
-          console.log(`[${now}] Limiting to ${limit} of ${bookmarkCount} pending bookmarks`);
+          logger.log(`[${now}] Limiting to ${limit} of ${bookmarkCount} pending bookmarks`);
           pendingData.bookmarks = pendingData.bookmarks.slice(0, limit);
           bookmarkCount = limit;
           // Write limited subset back (temporarily)
@@ -610,7 +665,7 @@ export async function run(options = {}) {
 
     // Phase 1: Fetch new bookmarks (merges with existing pending)
     if (bookmarkCount === 0 || options.forceFetch) {
-      console.log(`[${now}] Phase 1: Fetching and preparing bookmarks...`);
+      logger.log(`[${now}] Phase 1: Fetching and preparing bookmarks...`);
       // Use smaller default count to avoid credential/API limits
       const fetchOptions = {
         ...options,
@@ -625,18 +680,18 @@ export async function run(options = {}) {
       }
 
       if (prepResult.count > 0) {
-        console.log(`[${now}] Fetched ${prepResult.count} new bookmarks`);
+        logger.log(`[${now}] Fetched ${prepResult.count} new bookmarks`);
       }
     } else {
-      console.log(`[${now}] Found ${bookmarkCount} pending bookmarks, skipping fetch`);
+      logger.log(`[${now}] Found ${bookmarkCount} pending bookmarks, skipping fetch`);
     }
 
     if (bookmarkCount === 0) {
-      console.log(`[${now}] No bookmarks to process`);
+      logger.log(`[${now}] No bookmarks to process`);
       return { success: true, count: 0, duration: Date.now() - startTime };
     }
 
-    console.log(`[${now}] Processing ${bookmarkCount} bookmarks`);
+    logger.log(`[${now}] Processing ${bookmarkCount} bookmarks`);
 
     // Track IDs we're about to process AND capture bookmarks BEFORE Claude runs
     // (Claude Code will clean up the pending file, so we need to capture them now)
@@ -645,38 +700,86 @@ export async function run(options = {}) {
 
     // Phase 2: Claude Code analysis (if enabled)
     if (config.autoInvokeClaude !== false) {
-      console.log(`[${now}] Phase 2: Invoking Claude Code for analysis...`);
+      logger.log(`[${now}] Phase 2: Invoking Claude Code for analysis...`);
 
       const claudeResult = await invokeClaudeCode(config, bookmarkCount, {
         trackTokens: options.trackTokens
       });
 
       if (claudeResult.success) {
-        console.log(`[${now}] Analysis complete`);
+        logger.log(`[${now}] Analysis complete`);
 
         // Push to API if enabled (use captured bookmarks since Claude cleaned up pending file)
         let apiResults = {};
         if (config.api?.enabled) {
           try {
-            console.log(`[${now}] Pushing to API...`);
+            logger.log(`[${now}] Pushing to API...`);
             
             // Push bookmarks (using the ones we captured before Claude ran)
             if (bookmarksToPush.length > 0) {
               const bookmarkPushResult = await pushBookmarksBatch(bookmarksToPush, config);
               apiResults.bookmarks = bookmarkPushResult;
+              
+              // Log detailed results
+              if (bookmarkPushResult.added > 0 || bookmarkPushResult.updated > 0) {
+                logger.log(`[${now}] Bookmarks: ${bookmarkPushResult.added || 0} added, ${bookmarkPushResult.updated || 0} updated`);
+              } else {
+                // Nothing was added/updated - might be duplicates or validation issues
+                const errorCount = bookmarkPushResult.errors?.length || 0;
+                if (errorCount > 0) {
+                  logger.error(`[${now}] Bookmarks: 0 added/updated, ${errorCount} errors`);
+                  // Log first few errors for debugging
+                  const sampleErrors = bookmarkPushResult.errors.slice(0, 3);
+                  for (const err of sampleErrors) {
+                    logger.error(`[${now}]   Error: ${err.error || JSON.stringify(err)}`);
+                  }
+                } else {
+                  logger.log(`[${now}] Bookmarks: All ${bookmarksToPush.length} already exist in API (skipped)`);
+                }
+              }
             } else {
               apiResults.bookmarks = { skipped: true, reason: 'No bookmarks to push' };
+              logger.log(`[${now}] No bookmarks to push`);
             }
             
             // Push knowledge entries
             const knowledgePushResult = await pushKnowledgeEntries(config);
             apiResults.knowledge = knowledgePushResult;
             
-            console.log(`[${now}] API push complete`);
+            logger.log(`[${now}] API push complete`);
           } catch (apiError) {
-            console.error(`[${now}] API push failed: ${apiError.message}`);
+            logger.error(`[${now}] API push failed: ${apiError.message}`);
             apiResults.error = apiError.message;
             // Don't fail the job if API push fails - it's a post-processing step
+          }
+        }
+        
+        // Periodic retry: Every 30 minutes, push recent bookmarks from archive as backup
+        // This ensures processed items eventually make it to the API even if initial push failed
+        if (config.api?.enabled && shouldRetry) {
+          try {
+            logger.log(`[${now}] Periodic API retry: Pushing recent bookmarks from archive...`);
+            const retryResult = await pushRecentBookmarks(config, 50, false, false);
+            
+            // Update retry state
+            retryState.lastRetry = nowTime;
+            try {
+              const retryDir = path.dirname(retryStateFile);
+              if (!fs.existsSync(retryDir)) {
+                fs.mkdirSync(retryDir, { recursive: true });
+              }
+              fs.writeFileSync(retryStateFile, JSON.stringify(retryState, null, 2));
+            } catch (e) {
+              // Ignore errors writing retry state
+            }
+            
+            if (retryResult.added > 0 || retryResult.updated > 0) {
+              logger.log(`[${now}] Retry successful: ${retryResult.added || 0} added, ${retryResult.updated || 0} updated`);
+            } else if (!retryResult.skipped) {
+              logger.log(`[${now}] Retry: All bookmarks already in API`);
+            }
+          } catch (retryError) {
+            logger.log(`[${now}] Retry failed (will retry next cycle): ${retryError.message}`);
           }
         }
 
@@ -701,7 +804,7 @@ export async function run(options = {}) {
             bookmarks: remaining
           }, null, 2));
 
-          console.log(`[${now}] Cleaned up ${idsToProcess.length} processed bookmarks, ${remaining.length} remaining`);
+          logger.log(`[${now}] Cleaned up ${idsToProcess.length} processed bookmarks, ${remaining.length} remaining`);
         }
 
         // Send success notification
@@ -722,7 +825,7 @@ export async function run(options = {}) {
 
       } else {
         // Claude failed - bookmarks stay in pending for retry
-        console.error(`[${now}] Claude Code failed:`, claudeResult.error);
+        logger.error(`[${now}] Claude Code failed: ${claudeResult.error}`);
 
         await notify(
           config,
@@ -740,7 +843,7 @@ export async function run(options = {}) {
       }
     } else {
       // Auto-invoke disabled - just fetch
-      console.log(`[${now}] Claude auto-invoke disabled. Run 'smaug process' or /process-bookmarks manually.`);
+      logger.log(`[${now}] Claude auto-invoke disabled. Run 'smaug process' or /process-bookmarks manually.`);
 
       return {
         success: true,
@@ -751,7 +854,7 @@ export async function run(options = {}) {
     }
 
   } catch (error) {
-    console.error(`[${now}] Job error:`, error.message);
+    logger.error(`[${now}] Job error: ${error.message}`);
 
     await notify(
       config,

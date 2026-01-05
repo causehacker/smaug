@@ -63,7 +63,7 @@ export async function pushBookmark(bookmark, config) {
  * @param {Object} config - Configuration object with api settings
  * @returns {Promise<Object>} API response with added/updated counts
  */
-export async function pushBookmarksBatch(bookmarks, config) {
+export async function pushBookmarksBatch(bookmarks, config, options = {}) {
   if (!config.api?.baseUrl || !config.api?.key) {
     throw new Error('API configuration missing. Set API_BASE_URL and API_KEY.');
   }
@@ -72,13 +72,22 @@ export async function pushBookmarksBatch(bookmarks, config) {
     return { success: true, added: 0, updated: 0, errors: [] };
   }
 
-  const url = `${config.api.baseUrl}/api/v1/bookmarks`;
+  // Add force parameter if specified
+  const force = options.force || false;
+  const url = force 
+    ? `${config.api.baseUrl}/api/v1/bookmarks?force=true`
+    : `${config.api.baseUrl}/api/v1/bookmarks`;
   const headers = {
     'Content-Type': 'application/json',
     'Authorization': `Bearer ${config.api.key}`,
   };
 
   try {
+    // Log what we're sending (in background mode, only log count)
+    if (process.stdout.isTTY) {
+      console.log(`[API] Sending ${bookmarks.length} bookmarks to API...`);
+    }
+    
     const response = await fetch(url, {
       method: 'POST',
       headers,
@@ -90,7 +99,28 @@ export async function pushBookmarksBatch(bookmarks, config) {
       throw new Error(`API error: ${response.status} ${response.statusText} - ${errorText}`);
     }
 
-    return await response.json();
+    const result = await response.json();
+    
+    // Log detailed results
+    const errorCount = result.errors?.length || 0;
+    if (result.success && (result.added > 0 || result.updated > 0)) {
+      console.log(`[API] Bookmarks: ${result.added || 0} added, ${result.updated || 0} updated${errorCount > 0 ? `, ${errorCount} errors` : ''}`);
+    } else if (result.success && result.added === 0 && result.updated === 0) {
+      if (errorCount > 0) {
+        // There were errors - log them
+        console.warn(`[API] Bookmarks: 0 added/updated, ${errorCount} errors`);
+        const sampleErrors = result.errors.slice(0, 3);
+        for (const err of sampleErrors) {
+          const errorMsg = err.error || err.message || JSON.stringify(err);
+          console.warn(`[API]   Error (ID ${err.id || 'unknown'}): ${errorMsg}`);
+        }
+      } else {
+        // No errors but nothing added - likely all duplicates
+        console.log(`[API] Bookmarks: All ${bookmarks.length} already exist in API (skipped)`);
+      }
+    }
+    
+    return result;
   } catch (error) {
     if (error.message.includes('API error')) {
       throw error;
@@ -499,9 +529,10 @@ function fetchTweet(config, tweetId) {
  * Extract bookmarks from bookmarks.md file
  *
  * @param {Object} config - Configuration object
+ * @param {boolean} skipFetch - If true, skip fetching tweet details (faster but less complete)
  * @returns {Promise<Array<Object>>} Array of bookmark objects
  */
-export async function extractBookmarksFromArchive(config) {
+export async function extractBookmarksFromArchive(config, skipFetch = false) {
   const archiveFile = config.archiveFile || './bookmarks.md';
   if (!fs.existsSync(archiveFile)) {
     return [];
@@ -525,7 +556,7 @@ export async function extractBookmarksFromArchive(config) {
       const entryText = section.slice(entryStart, entryEnd);
 
       try {
-        const bookmark = await parseBookmarkFromMarkdown(entryText, author, config);
+        const bookmark = await parseBookmarkFromMarkdown(entryText, author, config, skipFetch);
         if (bookmark) {
           bookmarks.push(bookmark);
         }
@@ -544,9 +575,10 @@ export async function extractBookmarksFromArchive(config) {
  * @param {string} markdown - Markdown entry text
  * @param {string} author - Twitter username
  * @param {Object} config - Configuration object
+ * @param {boolean} skipFetch - If true, skip fetching tweet details (faster)
  * @returns {Promise<Object|null>} Bookmark object or null
  */
-async function parseBookmarkFromMarkdown(markdown, author, config) {
+async function parseBookmarkFromMarkdown(markdown, author, config, skipFetch = false) {
   // Extract tweet URL
   const tweetUrlMatch = markdown.match(/- \*\*Tweet:\*\* (.+)/);
   if (!tweetUrlMatch) {
@@ -561,20 +593,28 @@ async function parseBookmarkFromMarkdown(markdown, author, config) {
   }
   const id = tweetIdMatch[1];
 
-  // Fetch actual tweet details from Twitter to get createdAt timestamp
-  const tweetData = fetchTweet(config, id);
+  // Extract date from markdown section header if available
   let createdAt = null;
   let date = 'Unknown date';
   
-  if (tweetData && tweetData.createdAt) {
-    createdAt = tweetData.createdAt; // Twitter's createdAt format (e.g., "Fri Jan 02 09:40:00 +0000 2026")
-    // Parse and format the date using the configured timezone
-    date = dayjs(createdAt).tz(config.timezone || 'America/Los_Angeles').format('dddd, MMMM D, YYYY');
-  } else {
-    // Fallback: if we can't fetch, use a placeholder (but this shouldn't happen)
-    console.warn(`  Warning: Could not fetch createdAt for tweet ${id}, using placeholder`);
+  if (skipFetch) {
+    // Fast mode: use current date as placeholder
     createdAt = new Date().toUTCString();
     date = dayjs().tz(config.timezone || 'America/Los_Angeles').format('dddd, MMMM D, YYYY');
+  } else {
+    // Fetch actual tweet details from Twitter to get createdAt timestamp
+    const tweetData = fetchTweet(config, id);
+    
+    if (tweetData && tweetData.createdAt) {
+      createdAt = tweetData.createdAt; // Twitter's createdAt format (e.g., "Fri Jan 02 09:40:00 +0000 2026")
+      // Parse and format the date using the configured timezone
+      date = dayjs(createdAt).tz(config.timezone || 'America/Los_Angeles').format('dddd, MMMM D, YYYY');
+    } else {
+      // Fallback: if we can't fetch, use a placeholder
+      console.warn(`  Warning: Could not fetch createdAt for tweet ${id}, using placeholder`);
+      createdAt = new Date().toUTCString();
+      date = dayjs().tz(config.timezone || 'America/Los_Angeles').format('dddd, MMMM D, YYYY');
+    }
   }
 
   // Extract tweet text (content in > quote blocks)
@@ -653,6 +693,79 @@ async function parseBookmarkFromMarkdown(markdown, author, config) {
     isQuote,
     quoteContext
   };
+}
+
+/**
+ * Push recent bookmarks from archive to the API
+ *
+ * @param {Object} config - Configuration object
+ * @param {number} count - Number of recent bookmarks to push
+ * @returns {Promise<Object>} Summary of push results
+ */
+export async function pushRecentBookmarks(config, count, force = false, skipFetch = false) {
+  if (!config.api?.enabled) {
+    console.log('[API] API push disabled, skipping...');
+    return { skipped: true };
+  }
+
+  const archiveFile = config.archiveFile || './bookmarks.md';
+  if (!fs.existsSync(archiveFile)) {
+    console.log('[API] No bookmarks.md found, nothing to push');
+    return { skipped: true, reason: 'No archive file' };
+  }
+
+  // If skipFetch is true, read from pending file instead (faster, but might be less complete)
+  let allBookmarks = [];
+  if (skipFetch && fs.existsSync(config.pendingFile)) {
+    try {
+      const pendingData = JSON.parse(fs.readFileSync(config.pendingFile, 'utf8'));
+      allBookmarks = pendingData.bookmarks || [];
+      console.log(`[API] Using ${allBookmarks.length} bookmarks from pending file (fast mode)`);
+    } catch (e) {
+      // Fall back to archive extraction with skipFetch=true (fast mode)
+      allBookmarks = await extractBookmarksFromArchive(config, true);
+    }
+  } else {
+    // Use fast mode (skip fetching tweet details) for recent bookmarks push
+    // Pass skipFetch=true to avoid slow Twitter API calls
+    allBookmarks = await extractBookmarksFromArchive(config, true);
+  }
+  
+  if (allBookmarks.length === 0) {
+    console.log('[API] No bookmarks found');
+    return { skipped: true, reason: 'No bookmarks found' };
+  }
+
+  // Get the most recent N bookmarks (they're already sorted by date in the archive)
+  const recentBookmarks = allBookmarks.slice(0, count);
+  
+  console.log(`[API] Pushing ${recentBookmarks.length} recent bookmarks${force ? ' (force update)' : ''}...`);
+
+  try {
+    const result = await pushBookmarksBatch(recentBookmarks, config, { force });
+    
+    console.log(`[API] Push complete: ${result.added || 0} added, ${result.updated || 0} updated`);
+    if (result.errors && result.errors.length > 0) {
+      const nonDuplicateErrors = result.errors.filter(err => 
+        !err.error?.includes('duplicate key value violates unique constraint')
+      );
+      
+      if (nonDuplicateErrors.length > 0) {
+        console.warn(`[API] ${nonDuplicateErrors.length} errors occurred:`);
+        nonDuplicateErrors.forEach(err => console.warn(`[API] Error:`, err));
+      } else {
+        const duplicateCount = result.errors.length;
+        if (duplicateCount > 0) {
+          console.log(`[API] ${duplicateCount} bookmarks already exist in API (skipped)`);
+        }
+      }
+    }
+
+    return result;
+  } catch (error) {
+    console.error(`[API] Failed to push recent bookmarks: ${error.message}`);
+    throw error;
+  }
 }
 
 /**

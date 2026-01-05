@@ -14,7 +14,7 @@
 
 import { fetchAndPrepareBookmarks } from './processor.js';
 import { initConfig, loadConfig } from './config.js';
-import { pushProcessedBookmarks, pushKnowledgeEntries } from './api-client.js';
+import { pushProcessedBookmarks, pushKnowledgeEntries, pushRecentBookmarks } from './api-client.js';
 import { execSync } from 'child_process';
 import fs from 'fs';
 import path from 'path';
@@ -330,13 +330,33 @@ async function main() {
 
       // Check if user wants to push from archive
       const fromArchive = args.includes('--archive') || args.includes('-a');
+      
+      // Check for --recent flag to push recent bookmarks
+      const recentIdx = args.findIndex(a => a === '--recent' || a === '-r');
+      let recentCount = null;
+      if (recentIdx !== -1 && args[recentIdx + 1]) {
+        recentCount = parseInt(args[recentIdx + 1], 10);
+        if (isNaN(recentCount) || recentCount <= 0) {
+          console.error('Invalid --recent value. Must be a positive number.');
+          process.exit(1);
+        }
+      }
+      
+      // Check for --force flag to force update
+      const force = args.includes('--force') || args.includes('-f');
 
       console.log('Pushing to API...\n');
 
       try {
         // Push bookmarks
-        console.log(`Pushing bookmarks${fromArchive ? ' from archive' : ''}...`);
-        const bookmarkResult = await pushProcessedBookmarks(config, fromArchive);
+        let bookmarkResult;
+        if (recentCount) {
+          // Push recent bookmarks from archive
+          bookmarkResult = await pushRecentBookmarks(config, recentCount, force);
+        } else {
+          console.log(`Pushing bookmarks${fromArchive ? ' from archive' : ''}${force ? ' (force update)' : ''}...`);
+          bookmarkResult = await pushProcessedBookmarks(config, fromArchive);
+        }
         if (bookmarkResult.skipped) {
           console.log('  No bookmarks to push');
         } else {
@@ -418,6 +438,8 @@ Commands:
   process        Show pending tweets
   push           Push bookmarks and knowledge entries to API
   push --archive Push all bookmarks from archive to API
+  push --recent N Push N most recent bookmarks from archive to API
+  push --recent N --force Force update N most recent bookmarks
   status         Show current status
 
 Examples:

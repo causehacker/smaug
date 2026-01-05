@@ -19,6 +19,7 @@ import dayjs from 'dayjs';
 import utc from 'dayjs/plugin/utc.js';
 import timezone from 'dayjs/plugin/timezone.js';
 import { loadConfig } from './config.js';
+import { logger } from './logger.js';
 
 dayjs.extend(utc);
 dayjs.extend(timezone);
@@ -108,14 +109,39 @@ export async function fetchBookmarks(config, count = 10, options = {}) {
       cmd = cmd.replace('bookmarks', `bookmarks --chrome-profile ${config.twitter.chromeProfile}`);
     }
     
-    console.log(`  Running: ${cmd.replace(/--json/, '').trim()}`);
+    logger.log(`  Running: ${cmd.replace(/--json/, '').trim()}`);
     
     // Use temp file to work around bird CLI pipe buffering bug
-    execSync(`${cmd} > "${tmpFile}" 2>&1`, {
-      timeout: useAll ? 180000 : 120000, // 3 min for --all, 2 min otherwise
-      env,
-      shell: '/bin/bash'
-    });
+    try {
+      execSync(`${cmd} > "${tmpFile}" 2>&1`, {
+        timeout: useAll ? 180000 : 120000, // 3 min for --all, 2 min otherwise
+        env,
+        shell: '/bin/bash'
+      });
+    } catch (execError) {
+      // Read the temp file to get the actual error output from bird
+      let errorOutput = '';
+      try {
+        if (fs.existsSync(tmpFile)) {
+          errorOutput = fs.readFileSync(tmpFile, 'utf8');
+        }
+      } catch (e) {
+        // Ignore read errors
+      }
+      
+      // Clean up temp file
+      try {
+        if (fs.existsSync(tmpFile)) {
+          fs.unlinkSync(tmpFile);
+        }
+      } catch (e) {
+        // Ignore cleanup errors
+      }
+      
+      // Include the actual bird command output in the error
+      const errorMsg = errorOutput.trim() || execError.message;
+      throw new Error(`Failed to fetch bookmarks: ${errorMsg}`);
+    }
     
     // Read the file
     let output = fs.readFileSync(tmpFile, 'utf8');
@@ -138,7 +164,7 @@ export async function fetchBookmarks(config, count = 10, options = {}) {
     
     return JSON.parse(jsonOutput);
   } catch (error) {
-    // Clean up temp file on error
+    // Clean up temp file on error (in case it wasn't cleaned up above)
     try {
       if (fs.existsSync(tmpFile)) {
         fs.unlinkSync(tmpFile);
@@ -146,7 +172,8 @@ export async function fetchBookmarks(config, count = 10, options = {}) {
     } catch (e) {
       // Ignore cleanup errors
     }
-    throw new Error(`Failed to fetch bookmarks: ${error.message}`);
+    // Re-throw the error (it may already have been enhanced above)
+    throw error;
   }
 }
 
@@ -211,14 +238,14 @@ export function fetchFromFolders(config, count = 10, options = {}) {
     return [];
   }
 
-  console.log(`Fetching from ${folderIds.length} configured folder(s)...`);
+  logger.log(`Fetching from ${folderIds.length} configured folder(s)...`);
 
   const allBookmarks = [];
   const seen = new Set();
 
   for (const folderId of folderIds) {
     const folderTag = folders[folderId];
-    console.log(`\n📁 Folder "${folderTag}" (${folderId}):`);
+    logger.progress(`\n📁 Folder "${folderTag}" (${folderId}):`);
 
     try {
       const bookmarks = fetchBookmarks(config, count, { ...options, folderId });
@@ -235,9 +262,9 @@ export function fetchFromFolders(config, count = 10, options = {}) {
         }
       }
 
-      console.log(`  Found ${bookmarks.length} bookmarks, ${added} new`);
+      logger.log(`  Found ${bookmarks.length} bookmarks, ${added} new`);
     } catch (error) {
-      console.error(`  Error fetching folder ${folderId}: ${error.message}`);
+      logger.error(`  Error fetching folder ${folderId}: ${error.message}`);
     }
   }
 
@@ -262,7 +289,7 @@ export function fetchTweet(config, tweetId) {
     });
     return JSON.parse(output);
   } catch (error) {
-    console.log(`  Could not fetch parent tweet ${tweetId}: ${error.message}`);
+    logger.log(`  Could not fetch parent tweet ${tweetId}: ${error.message}`);
     return null;
   }
 }
@@ -275,7 +302,7 @@ export function expandTcoLink(url, timeout = 10000) {
     );
     return result.trim();
   } catch (error) {
-    console.error(`Failed to expand ${url}: ${error.message}`);
+    logger.error(`Failed to expand ${url}: ${error.message}`);
     return url;
   }
 }
@@ -331,7 +358,7 @@ export async function fetchGitHubContent(url) {
         }
       }
     } catch (e) {
-      console.log(`  No README found for ${owner}/${repo}`);
+      logger.progress(`  No README found for ${owner}/${repo}`);
     }
 
     return {
@@ -345,7 +372,7 @@ export async function fetchGitHubContent(url) {
       url: repoJson.html_url
     };
   } catch (error) {
-    console.error(`  GitHub API error for ${owner}/${repo}: ${error.message}`);
+    logger.error(`  GitHub API error for ${owner}/${repo}: ${error.message}`);
     throw error;
   }
 }
@@ -377,13 +404,13 @@ export async function fetchContent(url, type, config) {
       const ghContent = await fetchGitHubContent(url);
       return { ...ghContent, source: 'github-api' };
     } catch (error) {
-      console.log(`  GitHub API failed: ${error.message}`);
+      logger.log(`  GitHub API failed: ${error.message}`);
     }
   }
 
   // For paywalled sites, note for manual handling or custom bypass
   if (isPaywalled(url)) {
-    console.log(`  Paywalled domain detected: ${url}`);
+    logger.progress(`  Paywalled domain detected: ${url}`);
     return {
       url,
       source: 'paywalled',
@@ -408,7 +435,7 @@ export function getExistingBookmarkIds(config) {
 export async function fetchAndPrepareBookmarks(options = {}) {
   const config = loadConfig(options.configPath);
   const now = dayjs().tz(config.timezone || 'America/New_York');
-  console.log(`[${now.format()}] Fetching and preparing bookmarks...`);
+  logger.log(`[${now.format()}] Fetching and preparing bookmarks...`);
 
   const state = loadState(config);
   const source = options.source || config.source || 'bookmarks';
@@ -427,7 +454,7 @@ export async function fetchAndPrepareBookmarks(options = {}) {
 
   if (hasFolders && source === 'bookmarks') {
     // Fetch from each configured folder with tags
-    console.log('Fetching from configured folders...');
+    logger.log('Fetching from configured folders...');
     tweets = await fetchFromFolders(configWithOptions, count, fetchOptions);
   } else {
     // Fetch from source (bookmarks, likes, or both)
@@ -435,7 +462,7 @@ export async function fetchAndPrepareBookmarks(options = {}) {
   }
 
   if (!tweets || tweets.length === 0) {
-    console.log('No tweets found');
+    logger.log('No tweets found');
     return { bookmarks: [], count: 0 };
   }
 
@@ -467,17 +494,17 @@ export async function fetchAndPrepareBookmarks(options = {}) {
   }
 
   if (toProcess.length === 0) {
-    console.log('No new bookmarks to process');
+    logger.log('No new bookmarks to process');
     return { bookmarks: [], count: 0 };
   }
 
-  console.log(`Preparing ${toProcess.length} bookmarks...`);
+  logger.log(`Preparing ${toProcess.length} bookmarks...`);
 
   const prepared = [];
 
   for (const bookmark of toProcess) {
     try {
-      console.log(`\nProcessing bookmark ${bookmark.id}...`);
+      logger.progress(`\nProcessing bookmark ${bookmark.id}...`);
       const text = bookmark.text || bookmark.full_text || '';
       const author = bookmark.author?.username || bookmark.user?.screen_name || 'unknown';
       
@@ -491,7 +518,7 @@ export async function fetchAndPrepareBookmarks(options = {}) {
           bookmarkDate = bookmarkTimestamp.format('dddd, MMMM D, YYYY');
         } catch (e) {
           // Fallback to current date if parsing fails
-          console.warn(`  Warning: Could not parse createdAt "${bookmark.createdAt}", using current date`);
+          logger.warn(`  Warning: Could not parse createdAt "${bookmark.createdAt}", using current date`);
           bookmarkDate = now.format('dddd, MMMM D, YYYY');
         }
       } else {
@@ -505,7 +532,7 @@ export async function fetchAndPrepareBookmarks(options = {}) {
 
       for (const link of tcoLinks) {
         const expanded = expandTcoLink(link);
-        console.log(`  Expanded: ${link} -> ${expanded}`);
+        logger.progress(`  Expanded: ${link} -> ${expanded}`);
 
         // Categorize the link
         let type = 'unknown';
@@ -524,7 +551,7 @@ export async function fetchAndPrepareBookmarks(options = {}) {
             const tweetIdMatch = expanded.match(/status\/(\d+)/);
             if (tweetIdMatch) {
               const quotedTweetId = tweetIdMatch[1];
-              console.log(`  Quote tweet detected, fetching ${quotedTweetId}...`);
+              logger.progress(`  Quote tweet detected, fetching ${quotedTweetId}...`);
               const quotedTweet = fetchTweet(config, quotedTweetId);
               if (quotedTweet) {
                 content = {
@@ -561,7 +588,7 @@ export async function fetchAndPrepareBookmarks(options = {}) {
                 url: fetchResult.url,
                 source: 'github-api'
               };
-              console.log(`  GitHub repo: ${fetchResult.fullName} (${fetchResult.stars} stars)`);
+              logger.progress(`  GitHub repo: ${fetchResult.fullName} (${fetchResult.stars} stars)`);
             } else {
               content = {
                 text: fetchResult.text?.slice(0, 10000),
@@ -570,7 +597,7 @@ export async function fetchAndPrepareBookmarks(options = {}) {
               };
             }
           } catch (error) {
-            console.log(`  Could not fetch content: ${error.message}`);
+            logger.log(`  Could not fetch content: ${error.message}`);
             content = { error: error.message };
           }
         }
@@ -586,7 +613,7 @@ export async function fetchAndPrepareBookmarks(options = {}) {
       // If this is a reply, fetch the parent tweet for context
       let replyContext = null;
       if (bookmark.inReplyToStatusId) {
-        console.log(`  This is a reply to ${bookmark.inReplyToStatusId}, fetching parent...`);
+        logger.progress(`  This is a reply to ${bookmark.inReplyToStatusId}, fetching parent...`);
         const parentTweet = fetchTweet(config, bookmark.inReplyToStatusId);
         if (parentTweet) {
           replyContext = {
@@ -636,10 +663,10 @@ export async function fetchAndPrepareBookmarks(options = {}) {
         quoteContext
       });
 
-      console.log(`  Prepared: @${author} with ${links.length} links${replyContext ? ' (reply)' : ''}${quoteContext ? ' (quote)' : ''}`);
+      logger.progress(`  Prepared: @${author} with ${links.length} links${replyContext ? ' (reply)' : ''}${quoteContext ? ' (quote)' : ''}`);
 
     } catch (error) {
-      console.error(`  Error processing bookmark ${bookmark.id}: ${error.message}`);
+      logger.error(`  Error processing bookmark ${bookmark.id}: ${error.message}`);
     }
   }
 
@@ -665,7 +692,7 @@ export async function fetchAndPrepareBookmarks(options = {}) {
     fs.mkdirSync(pendingDir, { recursive: true });
   }
   fs.writeFileSync(config.pendingFile, JSON.stringify(output, null, 2));
-  console.log(`\nMerged ${newBookmarks.length} new bookmarks into ${config.pendingFile} (total: ${output.count})`);
+  logger.log(`\nMerged ${newBookmarks.length} new bookmarks into ${config.pendingFile} (total: ${output.count})`);
 
   // Update state
   state.last_check = now.toISOString();
