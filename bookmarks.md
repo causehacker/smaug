@@ -1,5 +1,15 @@
 # Monday, January 5, 2026
 
+## @skirano - Mystery Model vs AI Titans Comparison
+> Mystery model vs Gemini 3.0 vs Opus 4.5 vs GPT-5.2
+>
+> Same prompt.
+>
+> Which one is better? https://t.co/Uxp7Tk3ozu
+
+- **Tweet:** https://x.com/skirano/status/2008242241915990423
+- **What:** Pietro Schirano shares a visual comparison of outputs from an unnamed "mystery model" against the latest flagship models from Google (Gemini 3.0), Anthropic (Opus 4.5), and OpenAI (GPT-5.2), all using the same prompt. Prompts the community to evaluate which model performs best, generating discussion about the state of frontier AI capabilities.
+
 ## @hunterjisaacson - Startup Playbook for Building to 1M Users
 > If I lost everything:
 >
