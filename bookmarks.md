@@ -1,5 +1,91 @@
 # Monday, January 5, 2026
 
+## @emilylambert - Building iOS App with Claude Opus and AI Animation
+> I built an app with Claude Opus 4.5, then animated it with this new tool I found...
+>
+> This new iOS design workflow let me animate a character for my onboarding.
+>
+> Here it is:
+> 1. build the app using Claude Code within @vibecodeapp
+> 2. entered image of my mascot into https://masco.dev/
+> 3. copied animation code from there back into vibecode
+>
+> *Quoting @paulo_kombucha:* My new app is live!
+>
+> Introducing https://masco.dev/, a new way to build your own mascot, powered by VideoBGRemover
+>
+> I'm also using it for my own product marketing, and I made some cool animations and logos with it
+
+- **Tweet:** https://x.com/emilylambert/status/2008373981737525645
+- **Quoted:** https://x.com/paulo_kombucha/status/2007788582979928574
+- **Link:** https://masco.dev/
+- **What:** Emily demonstrates a workflow combining Claude Code with Vibecode for app building and masco.dev for AI-powered mascot animation and character design for iOS onboarding screens.
+
+## @FarzaTV - YouTube Link for AI Agents Course
+> *Replying to @FarzaTV:* - 0:00 introduction to agents
+- 14:05 first lp with lovable.
+- 33:05 first ship.
+- 33:30 building auth + db on Replit.
+- 54:10 payments on Replit
+- 1:17:40 Claude code iOS app + xcode.
+>
+> and here it is on yt if thats better for you
+>
+> https://www.youtube.com/watch?v=nTYsSPeAR1U
+
+- **Tweet:** https://x.com/FarzaTV/status/2008335583735644578
+- **Parent:** https://x.com/FarzaTV/status/2008335582552862783
+- **Link:** https://www.youtube.com/watch?v=nTYsSPeAR1U
+- **What:** A YouTube version of the AI agents and Replit development course content, covering agent introduction, Lovable LP, shipping, authentication, payments, and Claude Code iOS app in Xcode.
+
+## @whotfiszackk - AI Arbitrage Play: Manus + Claude for $15k/month Passive Income
+> manus for niches, claude for hooks = $15k/m passive info income
+>
+> this is the simplest AI arbitrage play i've seen and nobody's doing it
+>
+> while you're overthinking your perfect niche and struggling with hooks
+>
+> smart operators are using 2 AIs to find winning niches and create viral content in 48 hours
+>
+> here's the exact system that prints $15k/month on autopilot...
+
+- **Tweet:** https://x.com/whotfiszackk/status/2008186043644944682
+- **What:** Describes a simple AI arbitrage system combining Manus (for niche discovery) and Claude (for content hooks) to generate $15k/month passive income by creating viral content in 48-hour cycles.
+
+## @fekdaoui - Viral AI Product Strategy: The Unexpected Moment Effect
+> the easiest way to make your ai product go viral: make it do something unexpected
+>
+> ai podcast randomly coughs
+> people stop scrolling
+> print views
+>
+> they got 11.3M views on this one & multiple study apps have been really milking this format
+
+- **Tweet:** https://x.com/fekdaoui/status/2008167708622303721
+- **What:** Explores the viral mechanics of AI products by adding unexpected moments (like coughing) that break user scroll momentum, achieving 11.3M+ views. Multiple study apps are successfully replicating this content format.
+
+## @Adam_DelDuca - Automated YouTube content workflow using no-code tools
+> Go to Reddit > r/AskHistorians
+>
+> Find intriguing stories
+>
+> Have Subscribr convert them into scripts
+>
+> Create video in Vidrush
+>
+> Generate thumbnail using Pikzels
+>
+> Upload and print YouTube cash...
+
+- **Tweet:** https://x.com/Adam_DelDuca/status/2008161645806211203
+- **What:** A complete no-code workflow for creating YouTube videos by sourcing stories from Reddit, converting them to scripts, and using various no-code tools to produce and thumbnail videos for monetization.
+
+## @ErnestoSOFTWARE - Prompt engineering before vibe-coding
+> NEVER start vibe-coding an app without sending this PROMPT first: https://t.co/5m3YY20Xjx
+
+- **Tweet:** https://x.com/ErnestoSOFTWARE/status/2008282454612656382
+- **What:** A reminder to use proper prompt engineering and planning (with a specific prompt template) before beginning app development, rather than jumping straight into coding.
+
 ## @skirano - Mystery Model vs AI Titans Comparison
 > Mystery model vs Gemini 3.0 vs Opus 4.5 vs GPT-5.2
 >
