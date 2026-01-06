@@ -1,3 +1,17 @@
+# Tuesday, January 6, 2026
+
+## @jacobrodri_ - Finding Viral Apps with AppKittie
+> The easiest way to find new viral apps that are crushing it:
+>
+> Go to appkittie → New big hits
+>
+> In today's top 10 we see a christian app that was launched 5 days ago and already has 1,700+ reviews and $100k+ revenue
+
+- **Tweet:** https://x.com/jacobrodri_/status/2008556561434923157
+- **What:** A strategy for discovering newly viral mobile apps using AppKittie's "New big hits" section. Jacob highlights how to identify apps with explosive early traction, using a Christian app as an example that achieved 1,700+ reviews and $100k+ revenue within 5 days of launch. Useful for app developers, marketers, and entrepreneurs looking to spot trends and analyze what's working in the App Store.
+
+---
+
 # Monday, January 5, 2026
 
 ## @elvissun - Background Process Tip to Avoid 5-Hour Limit
