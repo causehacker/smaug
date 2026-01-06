@@ -1,5 +1,13 @@
 # Monday, January 5, 2026
 
+## @elvissun - Background Process Tip to Avoid 5-Hour Limit
+> run this in background to never hit the 5hr limit.
+>
+> thank me later.
+
+- **Tweet:** https://x.com/elvissun/status/2008328671061491891
+- **What:** A tip for running a process in the background to circumvent a 5-hour time limit, shared with an attached screenshot showing the specific command or technique.
+
 ## @emilylambert - Building iOS App with Claude Opus and AI Animation
 > I built an app with Claude Opus 4.5, then animated it with this new tool I found...
 >
