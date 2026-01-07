@@ -1,5 +1,15 @@
 # Tuesday, January 6, 2026
 
+## @deedydas - Claude Code Multi-AI Ad Production Demo
+> Claude Code is one of the worst named products. It's not just for code.
+>
+> Watch this Hermès ad.
+>
+> 30 seconds. 8 shots. Voice. Music. Even text branding burned in with ffmpeg. Clopus 4.5 wrote a script, orchestrated ElevenLabs, Google Veo 3, downloaded music and made this from scratch.
+
+- **Tweet:** https://x.com/deedydas/status/2008747553261842483
+- **What:** Deedy demonstrates Claude Code's versatility beyond coding by creating a complete 30-second Hermès advertisement from scratch. Claude Opus 4.5 orchestrated multiple AI tools (ElevenLabs for voice, Google Veo 3 for video, ffmpeg for text branding) to produce 8 shots with voice, music, and branding. Highlights the growing capability of AI agents to coordinate complex creative workflows across different platforms.
+
 ## @jacobrodri_ - Finding Viral Apps with AppKittie
 > The easiest way to find new viral apps that are crushing it:
 >
