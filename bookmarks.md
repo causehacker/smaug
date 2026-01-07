@@ -12,6 +12,13 @@
 
 # Tuesday, January 6, 2026
 
+## @ryancarson - X Article
+> https://t.co/b8RRfADhx5
+
+- **Tweet:** https://x.com/ryancarson/status/2008548371712135632
+- **Link:** https://x.com/i/article/2008496235791929345
+- **What:** Link to an X article. Full content requires accessing the article link directly.
+
 ## @deedydas - Claude Code Multi-AI Ad Production Demo
 > Claude Code is one of the worst named products. It's not just for code.
 >
