@@ -1,3 +1,15 @@
+# Wednesday, January 7, 2026
+
+## @koylanai - Ralph Wiggum Copywriter with Self-Critique Loop
+> I just built Ralph Wiggum Copywriter; learns your voice, critiques its own work, rewrites until it's actually good.
+>
+> Self-critique loop hits different.
+
+- **Tweet:** https://x.com/koylanai/status/2008824728824451098
+- **What:** A copywriting tool that learns the user's voice and uses an iterative self-critique loop to improve its output. The tool analyzes its own work, identifies weaknesses, and rewrites until the copy meets quality standards. Demonstrates the power of recursive AI feedback loops for creative tasks.
+
+---
+
 # Tuesday, January 6, 2026
 
 ## @deedydas - Claude Code Multi-AI Ad Production Demo
