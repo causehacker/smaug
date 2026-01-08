@@ -1,5 +1,18 @@
 # Wednesday, January 7, 2026
 
+## @rom1trs - Vibe-coded SEO site for Arcads.ai (AI ad platform)
+> growth hacking is back with ai!
+>
+> vibe coded this in 3h
+>
+> ranked #1 on google
+>
+> now it brings thousands of visits per month on https://t.co/ArtDvdEBf2
+
+- **Tweet:** https://x.com/rom1trs/status/2008893606682149200
+- **Link:** https://www.arcads.ai/
+- **What:** Romain demonstrates modern growth hacking by vibe-coding a landing page in 3 hours that ranked #1 on Google, now driving thousands of monthly visits to Arcads.ai (an AI platform for generating UGC videos and images for marketing teams). Shows how AI-assisted development combined with SEO can rapidly scale traffic.
+
 ## @koylanai - Ralph Wiggum Copywriter with Self-Critique Loop
 > I just built Ralph Wiggum Copywriter; learns your voice, critiques its own work, rewrites until it's actually good.
 >
