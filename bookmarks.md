@@ -1,4 +1,83 @@
+# Thursday, January 8, 2026
+
+## @gregisenberg - Ralph Wiggum AI Agents Build Software 24/7
+> this is the CLEAREST explanation of "ralph wiggum" on the internet and how you can use it with claude code/amp/etc and have AI agents build software for you 24/7 even while you sleep https://t.co/84hvjqX3wd
+
+- **Tweet:** https://x.com/gregisenberg/status/2009332316120993803
+- **What:** Greg explains the "Ralph Wiggum" concept for AI-powered agent systems that can autonomously build software and execute tasks continuously using Claude Code and other AI tools, enabling 24/7 development even while you sleep.
+
+---
+
 # Wednesday, January 7, 2026
+
+## @boredGenius - CallMe: Claude Code Phone Plugin for Async Task Notifications
+
+> Introducing CallMe, a minimal plugin that lets Claude Code call you on the phone.
+>
+> Start a task, walk away. Your phone/watch rings when Claude is done, stuck, or needs a decision.
+>
+> Free & open source (MIT). Underlying API costs are cents per minute of call.
+
+- **Tweet:** https://x.com/boredGenius/status/2009035664860565525
+- **What:** CallMe is a minimal open-source MIT plugin that enables Claude Code to call the user on their phone or smartwatch when tasks complete, encounter issues, or require user decisions. The plugin itself is free with inexpensive per-minute call costs.
+
+## @fekdaoui - App Store Preview Screenshot Generator
+
+> allright i got you 🫡
+>
+> you can now auto-generate App Store preview screenshots for your mobile app in 1-click!
+>
+> clone any style you want - just upload some reference images & you're ready to go
+>
+> full control over image & text just by prompting https://t.co/FI2XUIhRjA
+
+> *Quoting @alexcooldev (Alex Nguyen):* A $10k–$50k MRR idea I actually need but don't have time to build:
+>
+> An AI that auto-generates App Store preview screenshots for B2C apps.
+>
+> Every day, thousands → tens of thousands of apps are launched.
+> The market is massive.
+> I personally waste hours designing screenshots for:
+>
+> -iPhone
+> - iPad
+> - Different screen sizes & locales
+>
+> This shouldn't be manual in 2026.
+>
+> If someone builds this right, it's a quiet cash machine. 💰
+
+- **Tweet:** https://x.com/fekdaoui/status/2009031653608366484
+- **Quoted:** https://x.com/alexcooldev/status/2008656774027768040
+- **What:** Someone has apparently built a tool to auto-generate App Store preview screenshots with AI, allowing style cloning from reference images and full control via prompting. Direct response to a business idea thread about the market opportunity.
+
+## @dlnrb - Autonomous: $15M funded superintelligent financial advisor
+> Excited to finally come out of stealth and share what we've been building!
+>
+> Introducing Autonomous — a superintelligent financial advisor at 0% advisory fees.
+>
+> We just announced our $15M fundraise led by @garrytan @ @ycombinator along with some other amazing investors!
+>
+> Get early access → https://t.co/ykJ7Dgyo3j
+>
+> We are hiring across multiple roles in NYC and SF @a____t____g
+
+- **Tweet:** https://x.com/dlnrb/status/2009008876834922949
+- **Link:** https://becomeautonomous.com/
+- **What:** Announcement of Autonomous, a startup building a superintelligent financial advisor with no advisory fees, with $15M Series funding led by Y Combinator's Garry Tan.
+
+## @OpenAI - Introducing ChatGPT Health
+> Introducing ChatGPT Health — a dedicated space for health conversations in ChatGPT. You can securely connect medical records and wellness apps so responses are grounded in your own health information.
+
+Designed to help you navigate medical care, not replace it.
+
+Join the waitlist to get early access.
+
+https://t.co/MdpqDg7Ecg
+
+- **Tweet:** https://x.com/OpenAI/status/2008987566796640575
+- **Link:** https://openai.com/index/introducing-chatgpt-health/
+- **What:** OpenAI announces ChatGPT Health, a new feature that allows users to securely connect medical records and wellness apps to ChatGPT for personalized health conversations.
 
 ## @rom1trs - Vibe-coded SEO site for Arcads.ai (AI ad platform)
 > growth hacking is back with ai!
