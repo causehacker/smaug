@@ -1,3 +1,40 @@
+# Friday, January 9, 2026
+
+## @ErnestoSOFTWARE - Building Apps for Women as Business Strategy
+> He is so right, you should 100%
+> build apps for women
+>
+> they are over spenders..
+> ( source: sister &amp; fiance )
+>
+> This is the same workout app:
+>
+> male version makes $5,000/mo
+> women version makes $400,000/mo
+>
+> just make your app pink,
+> and retire your parents
+>
+> it works every time. https://t.co/3FsRhbVWpM
+>
+> *Quoting @simonecanciello:* this is why i keep saying "build apps for women".
+>
+> they actually spend money.
+>
+> &gt; check sensortower
+> &gt; find 2 or 3 apps doing $100k+
+> &gt; rebuild a women-first version
+>
+> add a mascot + adapt the vibe.
+>
+> it works every time. https://t.co/S3bnVMhTK1
+
+- **Tweet:** https://x.com/ErnestoSOFTWARE/status/2009633776171975094
+- **Quoted:** https://x.com/simonecanciello/status/2009305167963779379
+- **What:** Ernesto endorses Simone's business strategy about building apps specifically for women, citing that female-focused versions of the same app can generate significantly more revenue (citing a workout app example: $5k/mo for male version vs $400k/mo for women's version). The strategy involves checking SensorTower for successful apps, rebuilding them with women-first design, and adding mascots and feminine aesthetics.
+
+---
+
 # Thursday, January 8, 2026
 
 ## @gregisenberg - Ralph Wiggum AI Agents Build Software 24/7
