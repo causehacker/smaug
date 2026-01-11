@@ -1,3 +1,27 @@
+# Saturday, January 10, 2026
+
+## @simonecanciello - AI Monk Influencer + Prayer App Movement Strategy
+> this is a great app idea.
+>
+> a prayer app + ai monk influencer to promote it for $0.
+>
+> now imagine:
+>
+> &gt; generate ai pics with @higgsfield_ai
+> &gt; screenshot bible apps
+> &gt; ask @rork_app to recreate it for another religion
+>
+> don't build an app,
+> create a movement.
+>
+> *Quoting @bymaximise:* AI account giving out life advice disguised as a monk doing numbers and of course behind it is a sales funnel to some AI ebook…
+
+- **Tweet:** https://x.com/simonecanciello/status/2010069311235506296
+- **Quoted:** https://x.com/bymaximise/status/2009368486527549793
+- **What:** Simone outlines a viral app strategy combining a prayer app with an AI-generated monk influencer for zero-cost marketing. He suggests scaling the concept beyond one religion by using Higgsfield AI to generate images, screenshotting existing bible apps, and using Rork to recreate for different religions. The key insight is to "create a movement" rather than just build an app, quoting a tweet about an AI monk account that's driving sales through a funnel to an AI ebook.
+
+---
+
 # Friday, January 9, 2026
 
 ## @claudeai - Specific Claude Code Projects
