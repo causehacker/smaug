@@ -1,5 +1,13 @@
 # Friday, January 9, 2026
 
+## @claudeai - Specific Claude Code Projects
+> Some delightfully specific things people are building with Claude Code lately.
+
+- **Tweet:** https://x.com/claudeai/status/2009666254815269313
+- **What:** The official Claude account highlighting interesting and specific projects developers are building with Claude Code, showcasing the breadth and creativity of use cases.
+
+---
+
 ## @ErnestoSOFTWARE - Building Apps for Women as Business Strategy
 > He is so right, you should 100%
 > build apps for women
