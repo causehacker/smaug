@@ -1,5 +1,13 @@
 # Sunday, January 11, 2026
 
+## @seraleev - Article Link
+> https://t.co/KdN8odK9Vd
+
+- **Tweet:** https://x.com/seraleev/status/2010406470450356679
+- **What:** Link to a Twitter article/thread.
+
+---
+
 ## @irabukht - MCP Servers for Google, Meta, and TikTok Ads
 > MCP servers now exist for Google, Meta, and TikTok Ads
 >
@@ -13,6 +21,73 @@
 ---
 
 # Saturday, January 10, 2026
+
+## @vasuman - Scraping LinkedIn to Build AI Search
+> You can just illegally scrape LinkedIn and make a billion dollar company
+>
+> *Quoting @ExaAILabs:* Introducing state-of-the-art People Search:
+>
+> You can now semantically search over 1 billion people using a hybrid retrieval system backed by finetuned Exa embeddings.
+>
+> Try it: https://t.co/cQ6UlWHnKY
+> We also created an eval: https://t.co/2OIAryN7MT https://t.co/12BdYDWJU1
+
+- **Tweet:** https://x.com/vasuman/status/2010155481927692570
+- **Quoted:** https://x.com/ExaAILabs/status/2001373897154007390
+- **What:** Commentary on scraping data to build search systems, quoted from Exa's announcement of a semantic people search product powered by finetuned embeddings.
+
+---
+
+## @mikefutia - Building Fully Automated AI Avatar Content System
+> This AI avatar account has 2.4 million followers on Instagram 🤯
+>
+> Fully AI-generated. Posting multiple times per day. Insane engagement.
+>
+> And I'm pretty sure the entire thing is automated.
+>
+> So I broke down exactly how they're doing it—and how you can build the same system.
+>
+> Here's what's wild:
+>
+> Every video is the same AI "monk" character giving life advice.
+>
+> Same face, same voice, different scripts, different settings.
+>
+> And it's racking up millions of views.
+>
+> Here's how you can replicate it:
+>
+> → Create your AI avatar in Nano Banana
+> → Preload 10-15 topics in Airtable for automatic rotation
+> → AI agent writes a 60-90 second script per topic
+> → HeyGen animates your avatar and lip syncs the script
+> → Creatomate overlays auto-captions
+> → Blotato auto-publishes to Instagram/TikTok
+>
+> One scheduled trigger, runs daily, fully hands-off.
+>
+> No filming, no editing, no manual posting.
+>
+> The stack:
+>
+> - Nano Banana → AI avatar creation
+> - Airtable → topic library + rotation
+> - n8n → orchestrates the full workflow
+> - HeyGen → animates the avatar
+> - Creatomate → auto-captions
+> - Blotato → auto-publish
+>
+> I recorded a 10-minute breakdown walking through exactly how to build this system step-by-step.
+>
+> > Comment "AVATAR"
+> > Like this post
+>
+> And I'll send it over (must be following so I can DM)
+
+- **Tweet:** https://x.com/mikefutia/status/2010130478372925578
+- **What:** Step-by-step breakdown of building a fully automated AI avatar content creation and publishing system for social media, using tools like HeyGen, Airtable, n8n, and Blotato.
+
+---
 
 ## @simonecanciello - AI Monk Influencer + Prayer App Movement Strategy
 > this is a great app idea.
