@@ -1,3 +1,17 @@
+# Sunday, January 11, 2026
+
+## @irabukht - MCP Servers for Google, Meta, and TikTok Ads
+> MCP servers now exist for Google, Meta, and TikTok Ads
+>
+> if you run paid ads and haven't set this up yet, you're doing it the hard way
+>
+> here's the breakdown:
+
+- **Tweet:** https://x.com/irabukht/status/2010411693827109302
+- **What:** Ira announces the availability of MCP (Model Context Protocol) servers for major advertising platforms including Google, Meta, and TikTok Ads. This suggests a new way to integrate or manage paid advertising campaigns, with the implication that using these MCP servers is significantly easier than traditional methods.
+
+---
+
 # Saturday, January 10, 2026
 
 ## @simonecanciello - AI Monk Influencer + Prayer App Movement Strategy
