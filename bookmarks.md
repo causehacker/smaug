@@ -14,6 +14,19 @@
 
 # Tuesday, January 13, 2026
 
+## @venturetwins - AI Video Models Disrupting Hollywood Production
+> We're not prepared for how quickly production pipelines are going to change with AI.
+>
+> Some of the latest video models have immediate implications for Hollywood - endless character swaps at a negligible cost.
+>
+> (this is from ederxavier3d on IG using Kling Motion Control) https://t.co/CEwOGCHogW
+
+- **Tweet:** https://x.com/venturetwins/status/2011285029541077033
+- **Link:** https://x.com/venturetwins/status/2011285029541077033/video/1
+- **What:** Justine Moore discusses how AI video models like Kling Motion Control are transforming Hollywood production with near-zero-cost character swaps, signaling rapid changes to traditional video production pipelines.
+
+---
+
 ## @hnshah - Daily operator-focused link curator app
 
 > Hey @wabi build me an app that helps me find the best operator-focused links every day.
