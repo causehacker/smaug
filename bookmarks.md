@@ -1,5 +1,46 @@
 # Tuesday, January 13, 2026
 
+## @atoms_dev - Atoms: AI Team for Autonomous Business Building
+> Introducing Atoms: the first AI team that builds real businesses.
+> From research to build, launch, and scale, all autonomous.
+>
+> Don't Vibe Code. Vibe Business.
+> → https://t.co/g0L4NRU7xE https://t.co/igplCnPrEQ
+
+- **Tweet:** https://x.com/atoms_dev/status/2011060882940575842
+- **Link:** https://atoms.dev/
+- **What:** Atoms launches as an AI vibe business team offering multi-agent automation for turning ideas into businesses, from research through build, launch and scale.
+
+---
+
+## @dsog - Novi: AI Tool for Idea Generation
+> *Replying to @atoms_dev:* Introducing Atoms: the first AI team that builds real businesses.
+> From research to build, launch, and scale, all autonomous.
+>
+> Don't Vibe Code. Vibe Business.
+> → https://t.co/g0L4NRU7xE https://t.co/igplCnPrEQ
+>
+> @atoms_dev And if you're not sure what to build use Novi. https://t.co/HYH8aT6kUY
+
+- **Tweet:** https://x.com/dsog/status/2011270175778287651
+- **Parent:** https://x.com/atoms_dev/status/2011060882940575842
+- **Link:** https://www.usenovi.com/
+- **What:** Khaled recommends Novi, an AI co-founder tool for idea generation and business planning, in response to Atoms' launch announcement.
+
+---
+
+## @matteocollina - Critical Node.js Security Release for DoS Vulnerability
+> Today, @nodejs published a security release for Node.js that fixes a critical bug affecting virtually every production Node.js app.
+>
+> If you use React Server Components, Next.js, or ANY APM tool (Datadog, New Relic, OpenTelemetry), your app could be vulnerable to DoS attacks.
+>
+> 👇
+
+- **Tweet:** https://x.com/matteocollina/status/2011137343323865196
+- **What:** Matteo Collina announces a critical Node.js security release addressing a DoS vulnerability affecting production apps using React Server Components, Next.js, or APM tools.
+
+---
+
 ## @ManusAI - Manus Partners with Similarweb for Web Traffic Intelligence
 > Today we're launching our first data partnership with @Similarweb
 
