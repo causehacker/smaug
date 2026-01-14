@@ -1,4 +1,63 @@
+# Wednesday, January 14, 2026
+
+## @LinusEkenstam - Competing with the Machines
+
+> Time to compete with the machines.
+>
+> Can you comprehend at the end? https://t.co/Brd4cRgGSG
+
+- **Tweet:** https://x.com/LinusEkenstam/status/2011374831539978571
+- **Link:** https://x.com/LinusEkenstam/status/2011374831539978571/video/1
+- **What:** A thought-provoking video about human competition with AI, posed as a comprehension challenge.
+
+---
+
 # Tuesday, January 13, 2026
+
+## @hnshah - Daily operator-focused link curator app
+
+> Hey @wabi build me an app that helps me find the best operator-focused links every day.
+>
+> It has to find interesting articles throughout the day, at least checking sources every five minutes and sending me a notification when it finds something worthy of my time.
+>
+> I can then save it if I like it and it's logged on what day I saved it, so I can have set of links I curate throughout the day.
+>
+> Then at 5pm pacific time each day, send me a notification that lets me review the links and choose my top 5 of the day.
+>
+> *Quoting @hnshah:* For 11 years, I've sent a weekly newsletter. Five hundred seventy-two issues built around links people consistently tell me they actually read. That cadence works. I'm keeping it. But frequency isn't the same thing as usefulness. A lot of operator feedback boils down to timing. By the time something shows up in a weekly roundup, the moment to act has often passed. So I'm running a narrow experiment. A daily list. Short. Operator-focused. Optimized for signal, not volume. This is a test to see whether higher-frequency signal actually helps people make better calls while they're in motion. The weekly email stays. The daily one earns its place or it doesn't.
+
+- **Tweet:** https://x.com/hnshah/status/2011215161961693594
+- **Quoted:** https://x.com/hnshah/status/2011114546677625034
+- **What:** A request for an AI agent to build a real-time operator-focused link finder that monitors sources every 5 minutes, allows saving and curation, and delivers daily top-5 summaries at 5pm PT.
+
+---
+
+## @aakashgupta - Cowork as Enterprise Distribution, Not Product Release
+> My take is different from most people covering this. Cowork looks like a product release. It's actually a distribution play.
+>
+> Anthropic built Cowork in 10 days using Claude Code. That tells you everything about the difficulty of shipping this feature. The hard part was never building it. The hard part was deciding to build it.
+>
+> And here's why the timing matters. Microsoft 365 Copilot hit 90%+ Fortune 500 adoption in Q1 2026. But that number is misleading. Most of those deployments are pilots and phased rollouts. Actual daily active usage inside those companies? Somewhere between 20-70% depending on the department. The enterprise market is wide open.
+>
+> Anthropic noticed something wild happening with Claude Code users. People were using a TERMINAL TOOL to do vacation research. Wedding photo recovery. Email cleanup. Subscription cancellations. Non-developers were fighting through command line interfaces because the underlying agent was that good.
+>
+> Cowork fixes the distribution problem without touching the technology. Same Claude Agent SDK. Same Opus 4.5 model. Same file system access via Apple's VZVirtualMachine framework. They just wrapped it in a UI that doesn't scare normal people.
+>
+> Simon Willison reverse engineered the app and found Anthropic is literally booting a custom Linux root filesystem inside a virtualization layer. That's significant overkill for "organize my downloads folder." They built this like production infrastructure.
+>
+> The pricing tells you who they're targeting. $100-200/month for Claude Max. That's not consumer pricing. That's "expense it to the company" pricing. It's positioned below Microsoft's $30/user/month… until you do the math on deploying Copilot to 10,000 employees versus giving power users individual Claude Max subscriptions.
+>
+> Fortune already called it. Cowork threatens "dozens of startups" in the file management and productivity agent space. But the real threat is to Microsoft's assumption that enterprise AI distribution flows through Office.
+>
+> Anthropic is betting that desktop-native file access beats browser-based document editing. That local-first agents beat cloud-first copilots. My prediction: Gemini and OpenAI ship competing desktop agents within 90 days.
+>
+> *Quoting @Meer_AIIT:* Claude Cowork can organize your entire desktop. It's basically Claude Code for "non technical" tasks. Anthropic released Claude Cowork as a research preview for Claude Max subscribers on macOS. It lets Claude access a user-specified folder to read, edit, or create files to complete tasks like organizing files, generating spreadsheets, or drafting reports. It's built on the same foundations as Claude Code but targets non-technical productivity work rather than programming. Could shift how white-collar workers handle routine work.
+
+- **Tweet:** https://x.com/aakashgupta/status/2011147266040750326
+- **Quoted:** https://x.com/Meer_AIIT/status/2011134311467241908
+- **What:** Analysis of Anthropic's Cowork as an enterprise distribution strategy rather than just a product feature, leveraging Claude's capabilities with a user-friendly UI to compete with Microsoft's office-based AI distribution model.
+
+---
 
 ## @atoms_dev - Atoms: AI Team for Autonomous Business Building
 > Introducing Atoms: the first AI team that builds real businesses.
