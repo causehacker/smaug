@@ -1,5 +1,20 @@
 # Wednesday, January 14, 2026
 
+## @Google - Gemini Personal Intelligence Feature Launch
+
+> Today, we're introducing Personal Intelligence.
+>
+> With your permission, Gemini can now securely connect information from Google apps like @Gmail, @GooglePhotos, Search and @YouTube history with a single tap to make Gemini uniquely helpful & personalized to *you* ✨
+>
+> This feature is launching in beta today in the @GeminiApp.
+>
+> See Personal Intelligence in action 🧵 ↓
+
+- **Tweet:** https://x.com/Google/status/2011473056921706852
+- **What:** Google announces the launch of Personal Intelligence in Gemini, a new feature that allows Gemini to securely connect and integrate information from Gmail, Google Photos, Search history, and YouTube to provide personalized and contextual assistance to users. The feature is available in beta in the Gemini app.
+
+---
+
 ## @mikefutia - Automated AI Avatar Content System
 
 > I just fully automated those AI avatar accounts getting millions of views on Instagram 🤯
@@ -84,6 +99,18 @@
 ---
 
 # Tuesday, January 13, 2026
+
+## @justindross - WithCoverage Raises $42M to Replace Insurance Brokers
+> My last company, Opendoor ($7B), replaced real estate brokers.
+>
+> Today, my new company WithCoverage raised $42M to replace insurance brokers.
+>
+> It was led by Sequoia & Khosla, the first time @RoelofBotha and @Rabois partnered since PayPal.
+
+- **Tweet:** https://x.com/justindross/status/2011136224732533026
+- **What:** Announcement of WithCoverage's $42M funding round led by Sequoia and Khosla, positioning it as a broker replacement company in the insurance industry, paralleling the success of Opendoor in real estate.
+
+---
 
 ## @tyler_agg - X Article Post
 
@@ -214,6 +241,20 @@ Available now for all Manus Pro users.
 ---
 
 # Monday, January 12, 2026
+
+## @venturetwins - LTX-2 Open Source Video Model with Local Generation
+> We have a new open source video model.
+>
+> These clips were all generated with LTX-2 on the creator's local machine 🤯
+>
+> It can make clips up to 20 seconds at 4K resolution. And it speaks!
+>
+> (created by u/yanokusnir) https://t.co/FGqINZnnbV
+
+- **Tweet:** https://x.com/venturetwins/status/2010878914273697956
+- **What:** An open source video generation model (LTX-2) that can generate video clips up to 20 seconds in 4K resolution with audio, running locally on creator's machine.
+
+---
 
 ## @lennysan - Claude AI Analyzes Lenny's Podcast: Key Themes and Counterintuitive Truths
 > Testing out the new Claude Cowork.
