@@ -1,4 +1,61 @@
+# Thursday, January 15, 2026
+
+## @angrypenguinPNG - AI-generated elderly person gets 3.6M YouTube views
+
+> AI video is now good enough for longform content that looks completely real.
+>
+> This YouTube video has 3.6M views. The elderly person giving life advice doesn't exist.
+>
+> Not a single comment notices https://t.co/cXFhIC8L3P
+
+- **Tweet:** https://x.com/angrypenguinPNG/status/2011641303797579933
+- **What:** Miguel highlights that AI-generated video content is now indistinguishable from reality, exemplified by a fake elderly advisor video that went viral with millions of views without detection.
+
+---
+
 # Wednesday, January 14, 2026
+
+## @Dries - AI-friendly Markdown pages driving massive bot traffic
+
+> This morning I made a small change to my site: I made every page available as Markdown for AI agents and crawlers. I expected maybe a trickle. Within an hour, I was seeing hundreds of requests from ClaudeBot, GPTBot, and OpenAI's SearchBot. 😲 https://t.co/UD0h22AZEC
+
+- **Tweet:** https://x.com/Dries/status/2011573880360747412
+- **Link:** https://dri.es/the-third-audience
+- **What:** Dries made his website AI-crawlable by serving Markdown versions of pages, resulting in unexpectedly high traffic from AI bot crawlers within an hour.
+
+---
+
+## @alex_prompter - Reverse-engineered AI prompts from life reset post
+
+> i reverse-engineered dan koe's viral life reset post into 10 AI prompts.
+>
+> not surface-level motivation. psychological excavation.
+>
+> each one walks you through 5-8 phases of self-examination most people avoid their entire lives.
+>
+> warning: these will make you uncomfortable.
+>
+> that's the point 👇
+>
+> *Quoting @thedankoe:* https://t.co/7l7Jef99QZ
+
+- **Tweet:** https://x.com/alex_prompter/status/2011566578152661139
+- **Quoted:** https://x.com/thedankoe/status/2010751592346030461
+- **What:** Alex created 10 AI prompts based on Dan Koe's viral life reset framework, designed to guide deep psychological self-examination through structured prompting.
+
+---
+
+## @ivanleomk - Reaction to Natalie's insights
+
+> Jesus this was so good to read holy shit
+>
+> *Quoting @gr00vyfairy:* https://t.co/Kx7G0QT8ve
+
+- **Tweet:** https://x.com/ivanleomk/status/2011472968392847755
+- **Quoted:** https://x.com/gr00vyfairy/status/2011462534235386049
+- **What:** Ivan reacts enthusiastically to Natalie's content, indicating it provided meaningful insights or value.
+
+---
 
 ## @Google - Gemini Personal Intelligence Feature Launch
 
