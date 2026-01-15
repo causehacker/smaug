@@ -1,5 +1,76 @@
 # Wednesday, January 14, 2026
 
+## @mikefutia - Automated AI Avatar Content System
+
+> I just fully automated those AI avatar accounts getting millions of views on Instagram 🤯
+>
+> From character generation to auto-posting.
+>
+> Completely hands-off.
+>
+> If you saw that viral Yang Mun account with 2.4M followers—this is how you build the same thing.
+>
+> All inside n8n + Airtable.
+>
+> Perfect for brands, agencies, & video creators who want to run AI avatar content without touching it daily.
+>
+> Here's what the system does:
+>
+> → Generates your AI character in Nano Banana Pro
+> → Rotates through a preloaded topic library automatically
+> → AI writes the script for each video
+> → HeyGen animates your avatar and lip syncs the script
+> → Overlays captions automatically
+> → Auto-posts to Instagram/TikTok daily
+>
+> One scheduled trigger.
+>
+> Runs daily.
+>
+> You don't touch a thing.
+>
+> No manual prompting.
+>
+> No editing.
+>
+> No posting by hand.
+>
+> What you get:
+>
+> - A consistent AI avatar across all content
+> - Fresh scripts generated automatically
+> - Captioned videos ready for social
+> - Auto-publishing on autopilot
+>
+> I recorded a full step-by-step video showing exactly how to build this system from scratch.
+>
+> Want access for free?
+>
+> > Like this post
+> > Comment "YANG"
+>
+> And I'll send it over (must be following so I can DM)
+
+- **Tweet:** https://x.com/mikefutia/status/2011577209849573656
+- **What:** Complete automation system for AI avatar content creation and posting using n8n and Airtable, from character generation through HeyGen animation to auto-posting on Instagram/TikTok, inspired by the viral Yang Mun account.
+
+---
+
+## @iruletheworldmo - Focus Reader: Reading Comprehension Trainer
+
+> *Replying to @iruletheworldmo:* i never want to read any other way again. https://t.co/hc4edKpDcJ
+>
+> give it a try, lmk what you think
+>
+> https://t.co/7KOPrvsllZ
+
+- **Tweet:** https://x.com/iruletheworldmo/status/2011511459499688226
+- **Parent:** https://x.com/iruletheworldmo/status/2011411177843085343
+- **Link:** https://mstrawberryman-ui.github.io/focus-reader-/
+- **What:** Focus Reader is a web-based reading comprehension trainer that uses a red focus letter technique to improve reading speed and comprehension. Features speed control (120-900 WPM), auto-pace mode, context view, PDF/EPUB support, and reading history tracking.
+
+---
+
 ## @LinusEkenstam - Competing with the Machines
 
 > Time to compete with the machines.
@@ -13,6 +84,16 @@
 ---
 
 # Tuesday, January 13, 2026
+
+## @tyler_agg - X Article Post
+
+> https://t.co/K3D0G3lhjC
+
+- **Tweet:** https://x.com/tyler_agg/status/2011118734270943324
+- **Link:** https://x.com/i/article/2009691810323685376
+- **What:** Link to an X/Twitter article (content requires authentication to view).
+
+---
 
 ## @venturetwins - AI Video Models Disrupting Hollywood Production
 > We're not prepared for how quickly production pipelines are going to change with AI.
