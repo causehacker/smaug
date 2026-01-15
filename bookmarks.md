@@ -100,6 +100,24 @@
 
 # Tuesday, January 13, 2026
 
+## @lennysan - 320 Podcast Episode Transcripts Dataset
+> Here are the full transcripts from all 320 of my podcast episodes.
+>
+> It's been super fun for me to play with AI to extract insights from this data. Now you can to.
+>
+> My only ask is that if you do something cool with it, just let me know.
+>
+> I'll keep this folder updated with as each new episode comes out.
+>
+> Have fun.
+> https://t.co/DwBhryFF7d
+
+- **Tweet:** https://x.com/lennysan/status/2011243567340298651
+- **Link:** https://www.dropbox.com/scl/fo/yxi4s2w998p1gvtpu4193/AMdNPR8AOw0lMklwtnC0TrQ?rlkey=mwwj2oygno72le23o6kvzq5wq&st=msd4xizs&dl=0
+- **What:** Lenny Rachitsky shares a Dropbox folder containing full transcripts from all 320 episodes of his podcast, making this dataset available for AI-powered analysis and insights extraction. The folder will be kept updated with new episodes.
+
+---
+
 ## @justindross - WithCoverage Raises $42M to Replace Insurance Brokers
 > My last company, Opendoor ($7B), replaced real estate brokers.
 >
