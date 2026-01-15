@@ -15,6 +15,22 @@
 
 # Wednesday, January 14, 2026
 
+## @mntruell - Browser built with GPT-5.2 in Cursor (3M+ lines of Rust)
+
+> We built a browser with GPT-5.2 in Cursor. It ran uninterrupted for one week.
+>
+> It's 3M+ lines of code across thousands of files. The rendering engine is from-scratch in Rust with HTML parsing, CSS cascade, layout, text shaping, paint, and a custom JS VM.
+>
+> It *kind of* works! It still has issues and is of course very far from Webkit/Chromium parity, but we were astonished that simple websites render quickly and largely correctly.
+>
+> *Quoting @cursor_ai:* GPT-5.2 Codex is now available in Cursor! We believe it's the frontier model for long-running tasks.
+
+- **Tweet:** https://x.com/mntruell/status/2011562190286045552
+- **Quoted:** https://x.com/cursor_ai/status/2011500027945033904
+- **What:** Michael Truell shares that they used Cursor with GPT-5.2 Codex to build a from-scratch web browser in Rust with 3M+ lines of code, running uninterrupted for a week. The browser includes HTML parsing, CSS cascade, layout engine, text shaping, paint system, and custom JavaScript VM. While not production-ready, it demonstrates GPT-5.2's capability for sustained, complex multi-file development.
+
+---
+
 ## @Dries - AI-friendly Markdown pages driving massive bot traffic
 
 > This morning I made a small change to my site: I made every page available as Markdown for AI agents and crawlers. I expected maybe a trickle. Within an hour, I was seeing hundreds of requests from ClaudeBot, GPTBot, and OpenAI's SearchBot. 😲 https://t.co/UD0h22AZEC
