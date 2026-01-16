@@ -1,3 +1,179 @@
+# Friday, January 16, 2026
+
+## @indexsy - Digg Parasite SEO Strategy Guide
+
+> REPEAT AFTER ME
+>
+> Digg is the NEW REDDIT in 2026.
+>
+> It is already live, already trusted, and already indexable.
+>
+> DR 90+ domains do not just come back online every year.
+>
+> When they do, you abuse them immediately or you miss the window.
+>
+> Most people will ignore this until it's saturated.
+>
+> What people will still think works in 2026
+>
+> Publishing on your own site and waiting
+> Building links for six months
+> Brand building before traffic
+> Hoping AI summaries cite you out of nowhere
+>
+> That game is cooked.
+>
+> What will actually work in 2026
+>
+> Parasite platforms with inherited authority.
+>
+> Digg checks every box
+>
+> Massive legacy trust
+> VC backed resurrection
+> Reddit DNA without Reddit mods
+> Crawlable indexable URLs
+> Community plus post structure
+> Editable content
+>
+> Google does not care that it's new again.
+> Google cares that it's trusted.
+>
+> The Digg Parasite SEO SOP
+>
+> Step 1 Lock real estate immediately
+>
+> Grab
+>
+> Single word usernames
+> Niche communities subreddits equivalent
+> Generic URLs
+>
+> Example
+>
+> digg .com/localseo
+>
+> If you wait you lose.
+>
+> Step 2 Steal what already ranks
+>
+> Go to Reddit.
+> Find a subreddit in your niche.
+> Export
+>
+> Top pages
+> Highest traffic URLs
+> Proven titles
+>
+> You are not inventing content.
+> You are porting demand.
+>
+> Step 3 Rebuild at scale
+>
+> Use AI to
+>
+> Recreate the top posts
+> De duplicate
+> Keep intent identical
+> Publish as Digg posts
+>
+> Volume matters early.
+> Perfection does not.
+>
+> Step 4 Force indexing
+>
+> Copy the live Digg URLs.
+> Submit immediately to IndexChex.
+>
+> Indexing speed equals advantage.
+> Day one indexing matters.
+>
+> Step 5 Stack internal links
+>
+> This is where it gets stupid.
+>
+> Link communities to each other
+> Link posts to hubs
+> Link hubs to money pages
+> Use About pages aggressively
+>
+> Internal authority compounding on a DR 90 plus domain is illegal in spirit.
+>
+> Why this works
+>
+> Digg already has
+>
+> Historical trust
+> Clean link graph
+> Crawl priority
+> Engagement signals
+>
+> You are not ranking Digg.
+> You are borrowing Digg.
+>
+> What Digg will rank for
+>
+> Best X
+> X alternatives
+> Reviews
+> Comparisons
+> Buying intent keywords
+> AI tool lists
+> Software roundups
+>
+> Same playbook.
+> New host.
+>
+> What NOT to do
+>
+> Do not wait
+> Do not ask permission
+> Do not worry about monetization first
+> Do not drip content
+> Do not assume this lasts forever
+>
+> Parasite windows close fast.
+>
+> TLDR
+>
+> Digg is
+>
+> Easy to rank
+> Wide open
+> Under abused
+> Perfect for parasite SEO
+>
+> If you are not on this right now you are late.
+>
+> I am leaving parts of this open so people can abuse it with me.
+>
+> Comment PARASITE and I will drop the Digg URLs must be following.
+
+- **Tweet:** https://x.com/indexsy/status/2012243468408795480
+- **What:** Jacky Chou shares a comprehensive parasite SEO strategy for leveraging Digg.com (DR 90+ domain) which recently came back online. The thread details a 5-step SOP for exploiting Digg's historical trust and authority: securing strategic usernames/URLs, porting proven Reddit content, scaling with AI, forcing indexing, and building internal link structures to rank for buying-intent keywords before the window closes.
+
+---
+
+## @OpenAI - ChatGPT introducing ads to free and Go tiers
+
+> In the coming weeks, we plan to start testing ads in ChatGPT free and Go tiers.
+>
+> We're sharing our principles early on how we'll approach ads–guided by putting user trust and transparency first as we work to make AI accessible to everyone.
+>
+> What matters most:
+> - Responses in ChatGPT will not be influenced by ads.
+>
+> - Ads are always separate and clearly labeled.
+>
+> - Your conversations are private from advertisers.
+>
+> - Plus, Pro, Business, and Enterprise tiers will not have ads.
+
+- **Tweet:** https://x.com/OpenAI/status/2012223373489614951
+- **What:** OpenAI announces they will begin testing ads in ChatGPT's free and Go tiers in the coming weeks, emphasizing transparency principles: responses won't be influenced by ads, ads will be clearly labeled, conversations remain private from advertisers, and paid tiers (Plus, Pro, Business, Enterprise) will remain ad-free.
+
+---
+
 # Thursday, January 15, 2026
 
 ## @0xluffy - Chrome extension for speed reading X articles
