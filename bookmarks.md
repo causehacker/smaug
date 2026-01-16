@@ -1,5 +1,31 @@
 # Thursday, January 15, 2026
 
+## @vibecodeapp - Full-Stack Vibe Coding Platform powered by Claude Code
+
+> Introducing the first Full-Stack Vibe Coding Platform powered by Claude Code.
+>
+> Not only can you build a professional mobile app that accepts payments and ship it to the app store... As of today you can build a web app and deploy it to the internet with one click.
+>
+> In celebration of 5000 vibe coded apps published to the app store, we're giving away a free month of vibe coding for those who reply to this post.
+>
+> Reply and we'll DM you credits 👇
+
+- **Tweet:** https://x.com/vibecodeapp/status/2011962194993561934
+- **What:** vibecode.dev announces their full-stack platform powered by Claude Code that enables users to build and deploy both mobile apps (to app stores) and web apps (with one-click deployment). They've reached 5000 apps published to the app store and are celebrating with a promotional giveaway.
+
+---
+
+## @Replit - React inventor announces new mobile app framework
+
+> AI builds web apps well. Mobile apps have been harder.
+>
+> Now, the inventor of React (the technology that AI uses to build apps), has a new announcement. https://t.co/aDBXydRAjQ
+
+- **Tweet:** https://x.com/Replit/status/2011891602365825489
+- **What:** Replit announces that the inventor of React is introducing a new technology to make mobile app development with AI more accessible, addressing the current gap where AI excels at web apps but struggles with mobile.
+
+---
+
 ## @angrypenguinPNG - AI-generated elderly person gets 3.6M YouTube views
 
 > AI video is now good enough for longform content that looks completely real.
