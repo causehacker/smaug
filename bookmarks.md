@@ -1,5 +1,28 @@
 # Thursday, January 15, 2026
 
+## @0xluffy - Chrome extension for speed reading X articles
+
+> i made a chrome extension that converts X articles into a speed reader. no copy pasting. just a button
+>
+> made with @capydotai
+>
+> *Quoting @UltraLinx:* Can you read 900 words per minute? Try it.
+
+- **Tweet:** https://x.com/0xluffy/status/2011904980249428422
+- **Quoted:** https://x.com/UltraLinx/status/2011434505253650868
+- **What:** Chrome extension built with Capy AI that converts X (Twitter) articles into a speed reader interface with a single button click, eliminating the need for copy-pasting. Built in response to a viral speed reading challenge.
+
+---
+
+## @nearcyan - Fun workflow using Claude Code
+
+> this is how i claude code now. it's fun!
+
+- **Tweet:** https://x.com/nearcyan/status/2011897629987520526
+- **What:** near shares a video demonstrating their current Claude Code workflow, emphasizing the enjoyable experience of using the tool.
+
+---
+
 ## @vibecodeapp - Full-Stack Vibe Coding Platform powered by Claude Code
 
 > Introducing the first Full-Stack Vibe Coding Platform powered by Claude Code.
