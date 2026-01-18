@@ -1,4 +1,47 @@
+# Saturday, January 17, 2026
+
+## @Mho_23 - X Article Link
+> https://t.co/Mk13gv31L6
+
+- **Tweet:** https://x.com/Mho_23/status/2012572596303208637
+- **Link:** https://x.com/i/article/2012257245338152960
+- **What:** Brief tweet sharing an X article link without additional context.
+
+---
+
 # Friday, January 16, 2026
+
+## @tanayj - Agent-Led Growth Examples
+> *Replying to @tbpn:* Sequoia partner @sonyatweetybird says we're going from the age of product-led growth to the age of agent-led growth.
+>
+> "You see this most clearly if you're using Claude Code actively. It says, 'Hey, for a database, you should use Supabase. For hosting, use Vercel.' It's choosing for you, the stuff you should be using."
+>
+> "Product-led growth brought us closer to the vision of 'best product wins,' but ultimately people are still lazy. They can't read all the reviews, and they kind of default to what looks cool on the website."
+>
+> "Whereas your agent has infinite time to go and make these choices for you. It can go and read all the documentation, read all the user comments, and figure out [what you need] for your use case."
+>
+> @tbpn @sonyatweetybird 100% agreed, and some of the others even have stronger defaults https://t.co/ysAuMLOWGo
+
+- **Tweet:** https://x.com/tanayj/status/2012309280519766447
+- **Parent:** https://x.com/tbpn/status/2012297038613070137
+- **Link:** https://x.com/tanayj/status/2012309280519766447/photo/1
+- **What:** Reply agreeing with Sequoia's agent-led growth thesis, noting that some agents have even stronger default recommendations than Claude Code, with attached screenshot showing examples.
+
+---
+
+## @tbpn - Sequoia on Agent-Led Growth Era
+> Sequoia partner @sonyatweetybird says we're going from the age of product-led growth to the age of agent-led growth.
+>
+> "You see this most clearly if you're using Claude Code actively. It says, 'Hey, for a database, you should use Supabase. For hosting, use Vercel.' It's choosing for you, the stuff you should be using."
+>
+> "Product-led growth brought us closer to the vision of 'best product wins,' but ultimately people are still lazy. They can't read all the reviews, and they kind of default to what looks cool on the website."
+>
+> "Whereas your agent has infinite time to go and make these choices for you. It can go and read all the documentation, read all the user comments, and figure out [what you need] for your use case."
+
+- **Tweet:** https://x.com/tbpn/status/2012297038613070137
+- **What:** Sequoia partner's insights on the shift from product-led growth to agent-led growth, using Claude Code as an example of how AI agents make technology choices on behalf of users.
+
+---
 
 ## @indexsy - Digg Parasite SEO Strategy Guide
 
