@@ -1,3 +1,39 @@
+# Monday, January 19, 2026
+
+## @ManusAI - App Publishing Feature Launch with No-Code Deployment
+> We launched App Publishing on Manus! Here's what app publishing looks like:
+>
+> ➡️build your app in manus
+> ➡️click publish
+> ➡️test on your phone via Google Play or TestFlight
+>
+> No xcode. no android studio. no wrestling with certificates.
+>
+> Check out the walkthrough! 👇
+>
+> *Quoting @gr00vyfairy:* Recorded my first walkthrough video for App Publishing via @ManusAI...
+
+- **Tweet:** https://x.com/ManusAI/status/2013265436469850512
+- **Quoted:** https://x.com/gr00vyfairy/status/2013261645506814224
+- **What:** Manus launched a streamlined app publishing feature that eliminates the need for Xcode, Android Studio, and certificate management, allowing developers to build and deploy apps directly from Manus to iOS and Android.
+
+---
+
+## @robj3d3 - Dan Koe's Viral Post Research Process Using SuperX
+> Dan Koe gets 100M+ impressions because he reverse-engineers viral posts using SuperX.
+>
+> Here's his exact research process that most creators miss 🧵: https://t.co/DM51YDP8tk
+>
+> *Quoting @gregisenberg:* if you're wondering how @thedankoe consistently goes mega-viral, including a 131M+ impression X article, using a simple AI workflow?
+>
+> i've got you. https://t.co/x9w8o1AgmI
+
+- **Tweet:** https://x.com/robj3d3/status/2013192751106699561
+- **Quoted:** https://x.com/gregisenberg/status/2012907250323501221
+- **What:** Rob explains how Dan Koe achieves viral success by reverse-engineering viral posts using SuperX, with Greg Isenberg's original thread detailing the AI workflow behind consistently high-performing content.
+
+---
+
 # Sunday, January 18, 2026
 
 ## @nearcyan - Vibecraft (3D Claude Code Visualization)
@@ -294,6 +330,24 @@ Prompt ⤵️, check the video
 ---
 
 # Friday, January 16, 2026
+
+## @colderoshay - The Holy Trinity of Agentic UI Design
+> the holy trinity of agentic UI:
+>
+> - https://t.co/ymclHB0RDA from @elirousso
+> - https://t.co/DZLnezoft4 from @Ibelick
+> - https://t.co/xzdoVQzSd5 from @vercel https://t.co/85CxIiFS85
+
+- **Tweet:** https://x.com/colderoshay/status/2012202861883441597
+- **Link:** https://www.rams.ai/
+- **Link:** https://www.ui-skills.com/
+- **Link:** https://vercel.com/design/guidelines
+- **Filed:** [rams-ai-agentic-ui.md](./knowledge/articles/rams-ai-agentic-ui.md)
+- **Filed:** [ui-skills-agentic-interface-design.md](./knowledge/articles/ui-skills-agentic-interface-design.md)
+- **Filed:** [vercel-design-guidelines.md](./knowledge/articles/vercel-design-guidelines.md)
+- **What:** Cole shares the three key resources for understanding modern agentic UI design, covering perspectives from RAMS.AI, UI Skills, and Vercel's design guidelines.
+
+---
 
 ## @ollama - Anthropic API Compatibility for Open-Source Models
 > Ollama now has Anthropic API compatibility.
