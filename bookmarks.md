@@ -1,5 +1,30 @@
 # Sunday, January 18, 2026
 
+## @Jonnyvandel - Practical Guide to Creating AI Content at Scale
+> must read for anyone in AI, very well written & explained.
+>
+> but, @Mho_23 your guide to actually create this content is just shit.
+>
+> i've been running AI pages since 2023.
+>
+> i own 3 SaaS's that pump out 50,000+ vids per month.
+>
+> here's how our users actually make this AI content👇🏼🧵
+>
+> *Quoting @Mho_23:* https://t.co/Mk13gv31L6
+
+- **Tweet:** https://x.com/Jonnyvandel/status/2012996683739603194
+- **Quoted:** https://x.com/Mho_23/status/2012572596303208637
+- **What:** A thread from an experienced AI content creator critiquing Mho_23's content creation guide while promising to share practical methods from running 3 SaaS products that generate 50,000+ videos monthly since 2023.
+
+## @aijoey - Setting up Claw AI Assistant
+> fresh coffee on sunday.
+>
+>  time to setup @clawdbot @steipete https://t.co/ZvmH0uDHgI
+
+- **Tweet:** https://x.com/aijoey/status/2012914840382079015
+- **What:** Joey setting up Claw AI assistant on a Sunday morning with coffee, sharing the setup process with a photo.
+
 ## @om_patel5 - Finding Startup Ideas by Analyzing Reddit Discussions
 > here's HOW you're going to get your $10k MRR startup idea:
 
