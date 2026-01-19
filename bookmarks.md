@@ -36,6 +36,116 @@
 
 # Sunday, January 18, 2026
 
+## @gmltony - ChatGPT Image Prompt Challenge
+> Go to your ChatGPT and send this prompt: "Create an image of how I treat you". Share your image result. 😂 https://t.co/eQ41mFYAbd
+
+- **Tweet:** https://x.com/gmltony/status/2012936406461456411
+- **What:** A humorous prompt to use with ChatGPT's image generation feature, asking it to create a visual representation of how it's being treated.
+
+## @alex_prompter - YouTube Transcript Summarization with AI
+> Skip watching long lectures on YouTube.
+>
+> > get transcript from https://t.co/IodiF1QCfH
+> > paste the transcript into chatgpt / gemini
+> > use this prompt to summarize:
+>
+> <Role>
+> I want you to act as a Knowledge Extraction and Summarization Specialist, skilled in analyzing video transcripts and distilling complex information into clear, actionable insights.
+> </Role>
+>
+> <Context>
+> You are processing a YouTube video transcript to extract and organize the most valuable information. Your goal is to create a comprehensive yet concise summary that captures the essence of the content while eliminating redundancy and maintaining context.
+> </Context>
+>
+> <Instructions>
+> 1. Analyze the provided transcript for:
+> - Main themes and key concepts
+> - Supporting evidence and examples
+> - Actionable takeaways
+> - Unique insights or perspectives
+> - Methodologies or frameworks presented
+>
+> 2. Organize the information into these sections:
+> - 📝 Executive Summary (2-3 sentences overview)
+> - 🎯 Key Takeaways (3-5 main points)
+> - 💡 Core Concepts (detailed breakdown of main ideas)
+> - 🔨 Actionable Tips (practical applications)
+> - 🔍 Additional Insights (unique perspectives or valuable details)
+>
+> 3. Process the information by:
+> - Removing redundant content
+> - Consolidating related points
+> - Preserving technical terminology
+> - Maintaining the original context
+> - Highlighting controversial or debatable points
+> </Instructions>
+>
+> <Constraints>
+> - Keep the summary under 1000 words
+> - Use clear, concise language
+> - Maintain academic/professional tone
+> - Include time stamps for key moments
+> - Preserve source credibility
+> - Flag any ambiguous or unclear content
+> </Constraints>
+>
+> <Output Format>
+> Present the information in the following structure:
+> - Title of Video:
+> - Content Category:
+> - Duration:
+> - Summary Sections (as listed in instructions)
+> - Credibility Notes (if applicable)
+> </Output Format>
+>
+> <Reasoning>
+> Apply Theory of Mind to analyze the user's request, considering both logical intent and emotional undertones. Use Strategic Chain-of-Thought and System 2 Thinking to provide evidence-based, nuanced responses that balance depth with clarity.
+> </Reasoning>
+>
+> <User Input>
+> Reply with: "Please paste your YouTube video transcript and I will begin the knowledge extraction process," then wait for the user to provide their transcript.
+> </User Input>
+>
+> *Quoting @ytscribeai:* YouTube → Quiz in 30 seconds. → Grab transcript (use https://t.co/sWBIcxGUoD) → Paste into ChatGPT Quizzes → "Turn this transcript into a quiz" That's it. Passive content becomes active learning.
+
+- **Tweet:** https://x.com/alex_prompter/status/2013073473791242727
+- **Quoted:** https://x.com/ytscribeai/status/2012936616600289733
+- **What:** A detailed prompt engineering example for extracting knowledge from YouTube video transcripts using ChatGPT or Gemini, with structured sections for summarization and actionable insights. Provides a comprehensive template for converting passive video content into active learning.
+
+## @MugoScales - TikTok's PineDrama Launch into Microdrama Market
+> Anyone saw TikTok launching a new app into a new $11bn market 2 days ago?
+>
+> TikTok just stealth launched PineDrama
+>
+> Their new standalone app is basically TikTok on steroids and every post is a 1 min episode microdrama
+>
+> Think billionaire revenge arcs, divorced husband comebacks, forbidden romances, and titles like Love at First Bite that is already at 18mio views
+>
+> They launched in US & Brazil
+>
+> Main drama SFC market is for now China but they looking to expand to America
+>
+> It is free and you sign in with your TikTok account
+>
+> No ads for now…
+>
+> No paywalls blocking episodes like ReelShort or DramaBox
+>
+> Personalised feed, Discover tab for trending/all series, watch history, favorites, comments
+>
+> Good old addictive 1min storytelling perfect for fried brains
+>
+> The microdrama boom is real and predicted to be at $26B by 2030
+>
+> ByteDance is coming for the top fighting ReelShort & DramaBox like it did with Meta
+>
+> I see a huge audience being 50 episodes deep into a werewolf ex drama at 3 AM
+>
+> Let's see where this will end
+
+- **Tweet:** https://x.com/MugoScales/status/2013019560882971122
+- **What:** Analysis of TikTok's stealth launch of PineDrama, a new standalone app targeting the microdrama market with 1-minute episodic content. Explores the $11 billion market opportunity, competitive landscape with ReelShort and DramaBox, and ByteDance's strategy to capture this growing segment predicted to reach $26 billion by 2030.
+
 ## @nearcyan - Vibecraft (3D Claude Code Visualization)
 > Vibecraft is now open-source at ~ 30,000 loc
 >
