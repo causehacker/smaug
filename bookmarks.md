@@ -58,6 +58,18 @@
 
 # Saturday, January 17, 2026
 
+## @realfunnyeric - Debug with Forensic-Level Logging in Replit
+> Debug anything in @Replit:
+>
+> "Enable forensic-level logging for this issue, and anything adjacent to it. We will no longer guess; we will use verbose logs to isolate the issue and make a targeted fix."
+>
+> Don't let Agent gaslight you.
+
+- **Tweet:** https://x.com/realfunnyeric/status/2012625663988011309
+- **What:** Advice on debugging in Replit by requesting comprehensive logging instead of guessing at solutions, emphasizing the importance of verbose logs for targeted fixes.
+
+---
+
 ## @venturetwins - X Article Link
 > https://t.co/mepnbZPf1s
 
