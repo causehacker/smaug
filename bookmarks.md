@@ -1,5 +1,14 @@
 # Sunday, January 18, 2026
 
+## @thedankoe - X Article
+> https://t.co/FGLYHaRhRq
+
+- **Tweet:** https://x.com/thedankoe/status/2012956603297964167
+- **Link:** https://x.com/i/article/2012947890956869632
+- **What:** Tweet sharing an X article link from Dan Koe without additional context.
+
+---
+
 ## @knoxtwts - How Shame Markets Create Invisible Demand
 
 > there's a woman making $20k+/month teaching divorced dads how to communicate with their teenage daughters
@@ -82,6 +91,19 @@ Prompt ⤵️, check the video
 ---
 
 # Friday, January 16, 2026
+
+## @ollama - Anthropic API Compatibility for Open-Source Models
+> Ollama now has Anthropic API compatibility.
+>
+> 🦙 This enables tools like Claude Code to be used with open-source models. 😍
+>
+> Get started and learn more 👇👇👇 https://t.co/GG3kBHxVzs
+
+- **Tweet:** https://x.com/ollama/status/2012434308091224534
+- **Link:** https://x.com/ollama/status/2012434308091224534/photo/1
+- **What:** Ollama announces Anthropic API compatibility, enabling Claude Code and other Anthropic-compatible tools to work with local open-source models.
+
+---
 
 ## @tanayj - Agent-Led Growth Examples
 > *Replying to @tbpn:* Sequoia partner @sonyatweetybird says we're going from the age of product-led growth to the age of agent-led growth.
@@ -354,6 +376,16 @@ Prompt ⤵️, check the video
 ---
 
 # Wednesday, January 14, 2026
+
+## @cerebras - OpenAI Partnership Announcement
+> OpenAI🤝Cerebras
+> https://t.co/KN31O9SNIC
+
+- **Tweet:** https://x.com/cerebras/status/2011531740804964855
+- **Link:** https://openai.com/index/cerebras-partnership/
+- **What:** Cerebras announces a partnership with OpenAI, linking to the official announcement on OpenAI's website.
+
+---
 
 ## @mntruell - Browser built with GPT-5.2 in Cursor (3M+ lines of Rust)
 
