@@ -1,4 +1,76 @@
+# Sunday, January 18, 2026
+
+## @knoxtwts - How Shame Markets Create Invisible Demand
+
+> there's a woman making $20k+/month teaching divorced dads how to communicate with their teenage daughters
+>
+> found her account completely by accident while researching a different niche. 340k followers on tiktok. totally faceless. just text slideshows over stock footage and ai voiceover.
+>
+> her entire funnel is so simple it almost feels like it shouldn't work.
+>
+> slideshow calls out the specific pain point. "your daughter barely talks to you anymore and you don't know how to fix it. everything you try makes it worse."
+>
+> link in bio goes straight to a email list.
+>
+> in the email are just daily tips. rebuilding trust after divorce. conversation starters that don't feel forced. how to apologize for things you didn't realize were hurting her. scripts for difficult moments.
+>
+> nothing groundbreaking honestly.
+>
+> stuff you could piece together from parenting blogs if you spent enough time.
+>
+> but here's what she figured out that most people completely miss.
+>
+> divorced dads with strained relationships are desperate. they have money from their jobs. they'll spend almost anything to fix things with their kids.
+>
+> and they will absolutely not ask for help in any public way because the shame is too heavy.
+>
+> so they find her content at 1am when they can't sleep. watch 40 slideshows in a row. join the email list. consume everything for a few days while nobody's watching.
+>
+> then quietly buy the $497 program without ever having to talk to anyone about why they need it.
+>
+> no sales calls required. no dm closing. no webinars. just content that finds ashamed people in private moments and gives them a way to solve the problem without admitting out loud that they have it.
+>
+> her course is literally some pdfs and audio recordings. maybe took two weekends to put together.
+>
+> $20k per month from a problem most people would dismiss as "too narrow" or "too specific" to build around.
+>
+> shame markets don't look like normal markets.
+>
+> the demand is completely invisible until you find the right search terms and private communities where people actually admit what they're going through.
+>
+> reddit has thousands of posts from dads asking how to reconnect with their kids after divorce.
+>
+> and basically nobody is building anything to serve them.
+
+- **Tweet:** https://x.com/knoxtwts/status/2012814480246251797
+- **What:** Analysis of a $20k/month business targeting divorced fathers seeking to improve relationships with their daughters, highlighting how shame-based markets operate invisibly to public markets and the underserved opportunities within them.
+
+---
+
 # Saturday, January 17, 2026
+
+## @venturetwins - X Article Link
+> https://t.co/mepnbZPf1s
+
+- **Tweet:** https://x.com/venturetwins/status/2012583915215880584
+- **Link:** https://x.com/i/article/2012346275191275520
+- **What:** Tweet sharing an X article link from Venture Twins without additional context.
+
+---
+
+## @kaanakz - Google Street View of Troy with the Trojan Horse
+
+> Nano Banana Pro can generate 360-degree visuals, so I wanted to test it.
+I built a small mini-project using Antigravity to test full 360° visuals.
+
+Prompt ⤵️, check the video
+
+@fofrAI thanks for the prompt super inspired.
+
+- **Tweet:** https://x.com/kaanakz/status/2012530316099883420
+- **What:** Creative use of Nano Banana Pro's 360-degree generation capabilities to render a photorealistic Google Street View panorama of ancient Troy with the Trojan Horse, featuring full spherical equirectangular projection with Street View UI overlay and privacy-blurred faces.
+
+---
 
 ## @Mho_23 - X Article Link
 > https://t.co/Mk13gv31L6
