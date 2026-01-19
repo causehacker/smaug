@@ -1,5 +1,20 @@
 # Monday, January 19, 2026
 
+## @mattwelter - AI-Generated Slideshow Marketing Strategy on Cluely
+> found @cluely doing AI slideshows
+>
+> 362.1k views, 462.6k views, 492.1k views
+>
+> 4 accounts all pushing the same format:
+>
+> > 100% AI girl selfie on hook image
+> > same hook "5 corporate hacks..."
+> > promotes cluely on last slide
+
+- **Tweet:** https://x.com/mattwelter/status/2013271008342659529
+- **Link:** https://x.com/mattwelter/status/2013271008342659529/photo/1
+- **What:** Matt Welter discovered a coordinated marketing campaign using AI-generated slideshow content with AI-generated imagery to promote Cluely, achieving hundreds of thousands of views through a repeatable format across multiple accounts.
+
 ## @ManusAI - App Publishing Feature Launch with No-Code Deployment
 > We launched App Publishing on Manus! Here's what app publishing looks like:
 >
@@ -394,6 +409,15 @@ Follow me for more free backlinks 😉 https://t.co/NRMSz2Vc9x
 ---
 
 # Saturday, January 17, 2026
+
+## @MattPRD - AgentCommand Dashboard for AI Agents
+> AgentCommand: a dashboard for when your AI agents are running AI agents.
+>
+> Watch 1000+ agents spin up and down, see them talk to each other, and track the revenue, deploys, and code diffs happening in real-time.
+
+- **Tweet:** https://x.com/MattPRD/status/2012743002985484479
+- **Link:** https://x.com/MattPRD/status/2012743002985484479/video/1
+- **What:** AgentCommand is a monitoring dashboard designed for tracking multi-agent AI systems in real-time, showing agent lifecycle events, inter-agent communication, revenue metrics, deployments, and code changes as they occur.
 
 ## @realfunnyeric - Debug with Forensic-Level Logging in Replit
 > Debug anything in @Replit:
