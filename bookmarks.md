@@ -1,5 +1,36 @@
 # Sunday, January 18, 2026
 
+## @nearcyan - Vibecraft (3D Claude Code Visualization)
+> Vibecraft is now open-source at ~ 30,000 loc
+>
+> Includes all scripts, hooks, visualizations, and sound
+>
+> Demo: https://t.co/gtjSbS1D91
+>
+> GitHub: https://t.co/9Zt77R8v6j https://t.co/eOsJaYLDel
+>
+> *Quoting @nearcyan:* Announcing https://t.co/Te7kvitMfu - manage claude code in style!
+>
+> New:
+> • Spatial Audio. Claude behind you? Claude on your left? No claublem!
+> • Animations: What's Claude up to? Watch him! ◕ ‿ ◕
+>
+> Vibecraft uses your own local CC instances - no files or prompts are shared. https://t.co/O4BrnwcmG5
+
+- **Tweet:** https://x.com/nearcyan/status/2012948508764946484
+- **Quoted:** https://x.com/nearcyan/status/2012283577119940820
+- **Link:** https://vibecraft.sh/
+- **GitHub:** https://github.com/Nearcyan/vibecraft
+- **Filed:** [vibecraft.md](./knowledge/tools/vibecraft.md)
+- **What:** Open-source 3D visualization tool for managing Claude Code sessions. Watch Claude work in real-time as it moves between workstations in a visual workshop environment. Includes spatial audio, multi-session management, voice control, and context-aware animations.
+
+## @hieudinh_ - X Article Post
+> https://t.co/auALYk9XR1
+
+- **Tweet:** https://x.com/hieudinh_/status/2012873366412402940
+- **Link:** https://x.com/i/article/2012866602929360896
+- **What:** Shared an X article link (content not directly accessible).
+
 ## @Jonnyvandel - Practical Guide to Creating AI Content at Scale
 > must read for anyone in AI, very well written & explained.
 >
