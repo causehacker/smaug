@@ -1,5 +1,140 @@
 # Sunday, January 18, 2026
 
+## @om_patel5 - Finding Startup Ideas by Analyzing Reddit Discussions
+> here's HOW you're going to get your $10k MRR startup idea:
+
+1/ the reddit json hack
+
+> go to any subreddit in a niche of your choice
+> take any reddit thread and add /.json to the url
+> you get the full conversation instantly
+> every reply, every deep thread, every nested comment
+> all the context and metadata in a clean format
+> no scraping tools needed. it's just there.
+
+2/ now do something with it (analyze it)
+
+> pass it through claude
+> get the real pain points and problems users are facing
+> spot intent without guessing
+> find patterns no one reads
+> extract the exact words people use to describe their problems
+
+3/ why this works
+
+> small subreddits are untapped opportunities
+> people openly explain what they need
+> they literally tell you what they'd pay for
+> no surveys, no interviews, just raw frustration
+
+4/ what to look for
+
+> "i wish someone would build..."
+> "i'd pay for..."
+> "why doesn't X exist?"
+> "frustrated with..."
+> same complaint appearing 10+ times = validated idea
+
+the advantage isn't speed.
+
+it's listening better than everyone else.
+
+while founders are brainstorming in the shower, you're reading exactly what people are begging for.
+
+the internet is telling you what to build. you just have to listen.
+
+- **Tweet:** https://x.com/om_patel5/status/2012798082065334599
+- **What:** A method for discovering startup ideas by using Reddit's JSON API to extract discussions, analyzing them with Claude to identify pain points, and validating product ideas based on recurring problems mentioned in niche communities.
+
+## @jakobjelling - Getting Free Do-Follow Backlinks via GetWeWrite
+> Want a free (do-follow) backlink?
+
+Domain Rating: 25
+
+1. Go to getwewrite (dot) app
+2. Create an account
+3. Create a page/story - with your link in it
+
+Mine looks like this
+
+Follow me for more free backlinks 😉 https://t.co/NRMSz2Vc9x
+
+- **Tweet:** https://x.com/jakobjelling/status/2012844164367392968
+- **What:** A guide on obtaining free do-follow backlinks through the GetWeWrite platform (Domain Rating 25) by creating an account, posting stories, and including links within the content.
+
+## @PrajwalTomar_ - AI Design Workflow for Landing Pages in 10 Minutes
+> People saying "AI can't design" haven't updated their workflows.
+>
+> I replicated this landing page in under 10 minutes using AI.
+>
+> If your landing pages still look mid, stop blaming AI and fix your workflow.
+>
+> Here's the exact workflow I used ↓
+>
+> *Quoting @PrajwalTomar_:* I replicated a $5K scroll animation inside Cursor in 10 minutes.
+>
+> People keep saying AI can't replace designers.
+> That might be true for big companies with huge teams and complex design systems.
+>
+> But if your goal is to ship an MVP fast, Gemini 3 or Opus 4.5 is MORE than enough.
+>
+> I one-shotted a landing page with a scroll animation agencies charge thousands for.
+>
+> Here's the exact process I used ↓
+
+- **Tweet:** https://x.com/PrajwalTomar_/status/2012894625732894949
+- **Quoted:** https://x.com/PrajwalTomar_/status/2010358938693427673
+- **What:** Practical guide showing how to use AI tools (Cursor with Gemini 3 or Opus 4.5) to rapidly prototype landing pages with scroll animations. Demonstrates that modern AI can handle design work efficiently when workflows are properly optimized, debunking the claim that "AI can't design."
+
+## @RohunJauhar - Autonomous App Building Workflow with Claude Code
+> here's the best way to build autonomously in Claude Code (link at bottom for the github repo).
+>
+> i just open-sourced a workflow that lets me:
+>
+> 1. Describe what I want to build
+> 2. Answer some questions
+> 3. Close my laptop and get a notification when it's done
+>
+> No babysitting. No copy-pasting prompts. No context window juggling.
+>
+> How it works:
+> You say "Run the workflow" and Claude interviews you about what you're building - pushing back on vague ideas, asking about edge cases, challenging your assumptions.
+>
+> Then it:
+>
+> → Creates a detailed PRD with user stories
+> → Designs the technical architecture
+> → Analyzes edge cases you'd miss
+> → Validates story quality (small enough for autonomous execution)
+> → Converts to JSON format
+> → Kicks off an autonomous build loop
+>
+> The build runs in GitHub Codespaces. You can close your laptop, go to dinner, check progress from your phone. Get a notification when it's done.
+>
+> I built this by combining three incredible open source projects:
+>
+> 1. Ralph by @GeoffreyHuntley - The "Ralph Wiggum Technique" that started it all. A bash loop that keeps throwing tokens at the problem until it's solved. Brilliant in its simplicity.
+>
+> 2. snarktank/ralph by @ryancarson - Took the Ralph concept and built a full system around it: PRD skills, progress tracking, automatic commits, quality checks. This is what makes autonomous execution actually work. ps. great episode on @gregisenberg yt channel
+>
+> 3. BMAD Method by bmad-code-org - The discovery/interview framework. Instead of jumping straight to building, it forces you to think through what you're actually building. Game changer for getting better output.
+>
+> I stitched them together, adapted everything for Claude Code (the originals were for Amp), added phone notifications, GitHub Codespaces integration, and one-command setup.
+>
+> The result:
+> cd claude-build-workflow && claude
+> > "Run the workflow"
+>
+> That's it. Answer questions for 10-15 min, then let it build.
+>
+> Repo: https://t.co/lRDJ4eNnXY
+>
+> would love any feedback!
+
+- **Tweet:** https://x.com/RohunJauhar/status/2012983351288692941
+- **Filed:** [[claude-build-workflow]]
+- **What:** Open-source autonomous development workflow that combines BMAD discovery methodology, Ralph execution loop, and Amp skills to enable hands-off app building with Claude Code. Interviews you about requirements, generates PRD and architecture, then autonomously executes with progress notifications to your phone.
+
 ## @thedankoe - X Article
 > https://t.co/FGLYHaRhRq
 
