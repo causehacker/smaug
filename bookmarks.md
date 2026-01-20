@@ -1,5 +1,34 @@
 # Monday, January 19, 2026
 
+## @riyazmd774 - ChatGPT Instagram Content Strategy for Viral Growth
+> MY WIFE GAVE HER INSTAGRAM TO CHATGPT
+>
+> Result? 2.5M views in 30 days.
+> No face cam. No generic content.
+> Just copy + artificial intelligence.
+>
+> Here are 7 prompts that took my content from boring to viral:
+
+- **Tweet:** https://x.com/riyazmd774/status/2013229756469359034
+- **What:** Md Riyazuddin shares the opening of a thread about using ChatGPT to generate Instagram content that achieved 2.5M views in 30 days, promising 7 prompts for creating viral content using AI.
+
+## @jakobjelling - IndieHub Backlink Strategy for SEO
+> Want a NOT free (do-follow) backlink?
+>
+> Domain Rating: 39
+>
+> 1. Go to indiehub (dot) best
+> 2. Create an account
+> 3. Add your product
+>
+> Mine looks like this
+> NB: I paid $5
+>
+> Follow me for more backlinks 😉
+
+- **Tweet:** https://x.com/jakobjelling/status/2013197744081354977
+- **What:** Jakob Jelling shares a paid backlink opportunity through IndieHub (indiehub.best), a directory with Domain Rating 39 that provides do-follow backlinks for $5 when you list your product.
+
 ## @coreyhainesco - Marketing Skills for Claude Code
 > This might be the most valuable thing I've ever released.
 >
