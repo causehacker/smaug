@@ -1,5 +1,51 @@
 # Monday, January 19, 2026
 
+## @coreyhainesco - Marketing Skills for Claude Code
+> This might be the most valuable thing I've ever released.
+>
+> And it's 100% free.
+>
+> → Marketing Skills for Claude Code
+>
+> A collection of skills that turn Claude into a marketing and copywriting genius.
+>
+> Check it out
+> ↓
+>
+> https://t.co/7EdBqNp69c
+
+- **Tweet:** https://x.com/coreyhainesco/status/2013272998191812906
+- **Link:** https://github.com/coreyhaines31/marketingskills
+- **Filed:** [marketingskills.md](./knowledge/tools/marketingskills.md)
+- **What:** Corey Haines released a free collection of 21 specialized Claude Code skills for marketing tasks, including CRO, copywriting, SEO, analytics, and growth engineering, designed for technical marketers and founders.
+
+## @itsPaulAi - GLM-4.7-Flash: 3B Parameter Open Source Coding Model
+> This is so good 🔥
+>
+> You can run this new model on a laptop which is:
+>
+> - 100% open source
+> - Only 3B active parameters (!!)
+> - Way better than GPT-OSS
+> - Perfect for vibe coding (and more)
+>
+> And already available for free on Hugging Face or via API.
+>
+> Open source models keep winning!
+>
+> *Quoting @Zai_org:* Introducing GLM-4.7-Flash: Your local coding and agentic assistant.
+>
+> Setting a new standard for the 30B class, GLM-4.7-Flash balances high performance with efficiency, making it the perfect lightweight deployment option. Beyond coding, it is also recommended for creative writing, translation, long-context tasks, and roleplay.
+>
+> Weights: https://t.co/uzhvLmHDoI
+> API: https://t.co/bl6YxjOzzC
+>  - GLM-4.7-Flash: Free (1 concurrency)
+>  - GLM-4.7-FlashX: High-Speed and Affordable
+
+- **Tweet:** https://x.com/itsPaulAi/status/2013295935908978982
+- **Quoted:** https://x.com/Zai_org/status/2013261304060866758
+- **What:** Paul Couvert highlights GLM-4.7-Flash, a new open-source AI model with only 3B active parameters that can run on a laptop, outperforms GPT-OSS, and is available for free on Hugging Face and via API for coding and agentic tasks.
+
 ## @mattwelter - AI-Generated Slideshow Marketing Strategy on Cluely
 > found @cluely doing AI slideshows
 >
@@ -50,6 +96,20 @@
 ---
 
 # Sunday, January 18, 2026
+
+## @blader - Humanizer: Claude Code Skill to Remove AI Writing Patterns
+> it's really handy that wikipedia went and collated a detailed list of "signs of ai writing".
+>
+> so much so that you can just tell your LLM to ... not do that.
+>
+> i asked claude code to read that article, and create a skill to avoid all of them.
+>
+> enjoy: https://t.co/Ie9IL7KsGf
+
+- **Tweet:** https://x.com/blader/status/2013015738622284156
+- **Link:** https://github.com/blader/humanizer
+- **Filed:** [humanizer.md](./knowledge/tools/humanizer.md)
+- **What:** Siqi Chen created a Claude Code skill that removes signs of AI-generated writing by implementing all the detection patterns from Wikipedia's "Signs of AI writing" guide, helping text sound more natural and human.
 
 ## @gmltony - ChatGPT Image Prompt Challenge
 > Go to your ChatGPT and send this prompt: "Create an image of how I treat you". Share your image result. 😂 https://t.co/eQ41mFYAbd
