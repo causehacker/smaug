@@ -1,5 +1,25 @@
 # Tuesday, January 20, 2026
 
+## @lennysan - ChatGPT Apps as Major Distribution Channel
+> You can build a ChatGPT app in 30 minutes that reaches 800 million users.
+>
+> ChatGPT apps are about to be the next big distribution channel, and this is the kind of opportunity that comes around once or twice a decade—like the App Store in 2008 or SEO in the early 2000s.
+>
+> Today's post breaks it all down:
+> → How users discover ChatGPT apps (hint: they don't—ChatGPT suggests apps based on intent)
+> → How it works under the hood (tools, MCP, the message flow)
+> → A step-by-step guide to building your first app using @Replit or Chippy
+> → Prompts you can copy and paste + technical deep-dive
+>
+> 800M users. Low barrier. The opportunity is open.
+>
+> Here's your guide: https://t.co/HLX3J2DSPu
+
+- **Tweet:** https://x.com/lennysan/status/2013666958504304711
+- **Link:** https://www.lennysnewsletter.com/p/chatgpt-apps-are-about-to-be-the
+- **Filed:** [chatgpt-apps-distribution-channel.md](./knowledge/articles/chatgpt-apps-distribution-channel.md)
+- **What:** Lenny Rachitsky's comprehensive guide positioning ChatGPT apps as a once-in-a-decade distribution opportunity (comparable to App Store 2008 or early SEO), with step-by-step instructions for building apps in 30 minutes that reach 800M users through intent-based discovery.
+
 ## @mikefutia - Automated AI TikTok Slideshow System with n8n
 > So @cluely is getting 400k+ views with AI TikTok slideshows.
 >
