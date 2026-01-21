@@ -1,5 +1,13 @@
 # Tuesday, January 20, 2026
 
+## @claudeai - Claude Health Data Integration Announcement
+> Claude can now securely connect to your health data.
+>
+> Four new integrations are now available in beta: Apple Health (iOS), Health Connect (Android), HealthEx, and Function Health. https://t.co/tTCnxOGt7i
+
+- **Tweet:** https://x.com/claudeai/status/2013754136265621952
+- **What:** Official announcement from Claude introducing beta integrations with four major health data platforms (Apple Health, Health Connect, HealthEx, and Function Health), enabling secure connection to personal health data.
+
 ## @johnrushx - X Algorithm Analysis: How Grok Ranks Your Posts
 > *Replying to @XEng:* We have open-sourced our new 𝕏 algorithm, powered by the same transformer architecture as xAI's Grok model.
 >
