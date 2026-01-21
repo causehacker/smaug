@@ -1,5 +1,85 @@
 # Tuesday, January 20, 2026
 
+## @mikefutia - Automated AI TikTok Slideshow System with n8n
+> So @cluely is getting 400k+ views with AI TikTok slideshows.
+>
+> And I just automated the entire system 🤯
+>
+> AI selfie hook → listicle slides → soft CTA on the last slide.
+>
+> Rinse. Repeat. Scale.
+>
+> And now my n8n + Airtable system runs it on complete autopilot.
+>
+> Perfect for e-comm brands & SaaS companies who want to test this format without the manual grind.
+>
+> Here's why this format is blowing up:
+>
+> → AI-generated "selfie" as the hook image
+> → 5-8 slides with tips, hacks, or advice
+> → Text overlays generated automatically
+> → Promotes product on the final slide
+> → Music added automatically on publish
+>
+> 362k views. 462k views. 492k views.
+>
+> Same playbook, multiple accounts, fully automated.
+>
+> Here's what my system does:
+>
+> → Define your niche, tone, and content style in Airtable
+> → AI generates slide text and hooks automatically
+> → Nano Banana creates every image with text overlays
+> → Preview and approve before anything goes live
+> → Blotato publishes to TikTok on your schedule—with music
+>
+> No manual Canva work.
+>
+> No writing slides one by one.
+>
+> No posting by hand.
+>
+> What you control in Airtable:
+>
+> * Niche and content direction
+> * Hook style and tone
+> * Image aesthetic and reference images
+> * Posting schedule (days + times)
+> * Approval before publish
+>
+> Set it up once. Let it run daily.
+>
+> I recorded a full step-by-step tutorial showing exactly how to build this system.
+>
+> Want access for free?
+>
+> > Like this post
+> > Comment "SLIDES"
+>
+> And I'll send it over (must be following so I can DM)
+
+- **Tweet:** https://x.com/mikefutia/status/2013654359368966174
+- **What:** Mike Futia shares his fully automated TikTok content system using n8n and Airtable that creates AI-generated slideshow videos (hook image, listicle slides, CTAs) and publishes them automatically, achieving 400k+ views consistently with tools like Nano Banana and Blotato.
+
+## @simonecanciello - Rapid App Building with Validated Article Ideas
+> this is how you build apps in 1 day.
+>
+> > take one of these articles
+> > ask chatgpt to extract an app idea
+> > convert the idea into a build prompt
+>
+> you get a validated idea in 10 min.
+>
+> (this is one of the biggest niches for apps).
+>
+> these articles are insanely valuable. https://t.co/KBzdKoDzUF
+>
+> *Quoting @thedankoe:* https://t.co/FGLYHaRhRq
+
+- **Tweet:** https://x.com/simonecanciello/status/2013685092804104193
+- **Quoted:** https://x.com/thedankoe/status/2012956603297964167
+- **What:** Simone shares a process for rapidly extracting validated app ideas from Dan Koe's articles using ChatGPT to convert them into build prompts, claiming this enables one-day app development with pre-validated ideas.
+
 ## @claudeai - Claude Health Data Integration Announcement
 > Claude can now securely connect to your health data.
 >
