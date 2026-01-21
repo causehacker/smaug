@@ -1,3 +1,22 @@
+# Tuesday, January 20, 2026
+
+## @JNYBGR - Remotion Agent Skills for Claude Code Video Creation
+> Created this video without writing any code, but also without needing After Effects skills.
+>
+> Yet I was able to control every detail! Never felt so powerful 🧙🏻
+>
+> *Quoting @Remotion:* Remotion now has Agent Skills - make videos just with Claude Code!
+>
+> $ npx skills add remotion-dev/skills
+>
+> This animation was created just by prompting 👇 https://t.co/hadnkHlG6E
+
+- **Tweet:** https://x.com/JNYBGR/status/2013650328919405054
+- **Quoted:** https://x.com/Remotion/status/2013626968386765291
+- **What:** Jonny Burger demonstrates creating a video using Remotion's new Claude Code agent skills, highlighting the ability to control every detail of video production through prompts without writing code or needing After Effects expertise.
+
+---
+
 # Monday, January 19, 2026
 
 ## @riyazmd774 - ChatGPT Instagram Content Strategy for Viral Growth
