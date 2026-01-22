@@ -1,4 +1,28 @@
+# Thursday, January 22, 2026
+
+## @priymrj - Twitter Article Link
+> https://t.co/lElHHA1BKW
+
+- **Tweet:** https://x.com/priymrj/status/2014276639694487725
+- **Link:** https://x.com/i/article/2014272676228141056
+- **What:** Twitter article shared by Priyam Raj
+
+---
+
 # Wednesday, January 21, 2026
+
+## @amasad - Speed Reading App Built on Replit
+> Super well-done speed reading app built on Replit (download on the AppStore) https://t.co/u1Nwae7uuF
+>
+> *Quoting @danielkempe:* Boom!
+>
+> My @Replit mobile hackathon project has been approved and is on the AppStore!!
+>
+> https://t.co/5o9sTKQM7C https://t.co/zy3V3sC2Fj
+
+- **Tweet:** https://x.com/amasad/status/2014112874684416353
+- **Quoted:** https://x.com/danielkempe/status/2014066346200350931
+- **What:** Speed reading app built on Replit during mobile hackathon, now available on AppStore, endorsed by Replit CEO
 
 ## @romanbuildsaas - Claude Code for outreach
 > Today, we're releasing Claude Code for outreach.
@@ -114,6 +138,25 @@
 ---
 
 # Tuesday, January 20, 2026
+
+## @ollama - Image Generation Support (Z-image-turbo & Flux.2 Klein)
+> Ollama is here with image generation!
+>
+> ollama run x/z-image-turbo
+>
+> ollama run x/flux2-klein
+>
+> In the latest release we've added experimental support for
+> @Ali_TongyiLab  Z-image-turbo
+>
+> @bfl_ml Flux.2 Klein!
+>
+> (macOS with Windows and Linux coming soon)
+>
+> See examples 👇👇👇
+
+- **Tweet:** https://x.com/ollama/status/2013839484941463704
+- **What:** Ollama adds experimental image generation support for Z-image-turbo and Flux.2 Klein models, currently available on macOS
 
 ## @lennysan - ChatGPT Apps as Major Distribution Channel
 > You can build a ChatGPT app in 30 minutes that reaches 800 million users.
