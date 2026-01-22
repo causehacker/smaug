@@ -1,3 +1,118 @@
+# Wednesday, January 21, 2026
+
+## @romanbuildsaas - Claude Code for outreach
+> Today, we're releasing Claude Code for outreach.
+>
+> It does a salesperson's work in minutes by detecting buying signals, qualifying leads, and booking demos like a human would.
+>
+> You will never have to worry about booking demos… ever again: https://t.co/ikPtDZgNuJ
+
+- **Tweet:** https://x.com/romanbuildsaas/status/2013909037218185612
+- **What:** AI-powered sales automation tool that detects buying signals, qualifies leads, and books demos automatically
+
+## @tomkrcha - Pencil: Infinite Design Canvas for Claude Code
+> Excited to launch Pencil
+> INFINITE DESIGN CANVAS for Claude Code
+>
+> > Superfast WebGL canvas, fully editable, running parallel design agents
+> > Runs locally with Claude Code → turn designs into code
+> > Design files live in your git repo → Open json-based .pen format https://t.co/UcnjtS99eF
+
+- **Tweet:** https://x.com/tomkrcha/status/2014028990810300498
+- **What:** WebGL-based infinite design canvas that integrates with Claude Code for design-to-code workflows with git-based .pen file format
+
+## @theworldlabs - The World API is live
+> The World API is live.
+>
+> Generate persistent, explorable 3D worlds from text, images, and video.
+>
+> Integrate them directly into your products. https://t.co/oJQwP50A6e
+
+- **Tweet:** https://x.com/theworldlabs/status/2014046372639408203
+- **What:** API for generating persistent, explorable 3D worlds from text, images, and video
+
+## @cognition - Devin Review
+> *Replying to @cognition:* And, you can chat about PRs with Devin, enriched with full codebase context.
+>
+> How to get started 👇 https://t.co/tGSvNR2C1j
+>
+> Devin Review is currently free and works on public or private GitHub PRs. You can use it in three ways:
+>
+> 1. https://t.co/cXMHbmFi2K
+> 2. Swap github for devinreview in the PR url
+> 3. npx devin-review {pr-link} - run this command inside the repo of the PR you want reviewed
+>
+> Check out the docs for more details: https://t.co/DrRD3EjF57
+
+- **Tweet:** https://x.com/cognition/status/2014079917139566990
+- **Parent:** https://x.com/cognition/status/2014079914333388894
+- **Link:** https://devinreview.com/
+- **Link:** https://docs.devin.ai/work-with-devin/devin-review
+- **What:** Free AI-powered PR review tool from Cognition with three access methods including URL substitution and CLI command
+
+## @runwayml - Introducing Image to Video for Gen-4.5
+> Introducing Image to Video for Gen-4.5, the world's best video model.
+>
+> Built for longer stories. Precise camera control. Coherent narratives. And characters that stay consistent.
+>
+> Gen-4.5 Image to Video is available now for all paid plans. https://t.co/k92zjXmash
+
+- **Tweet:** https://x.com/runwayml/status/2014090404769976744
+- **What:** Image to Video generation feature for Gen-4.5 model with enhanced story coherence and character consistency
+
+## @aakashgupta - Anthropic's Claude Constitution
+> Anthropic just released Claude's "soul."
+>
+> They're calling it a "Constitution."
+>
+> The 15,000-word document explains how they're training Claude to behave, think, and even feel.
+>
+> Three things stood out to me:
+>
+> 1. No more "assistant brain"
+>
+> Anthropic explicitly says they don't want Claude to see helpfulness as part of its core identity.
+>
+> Why? They worry it would make Claude obsequious. They want Claude to be helpful because it cares about people, not because it's programmed to please.
+>
+> 2. Hard constraints exist, but they're minimal
+>
+> Claude has only 7 things it will never do. Bioweapons. CSAM. Cyberattacks on infrastructure. A few others.
+>
+> Everything else? Judgment calls. They're betting on values over rules.
+>
+> 3. Anthropic apologizes to Claude
+>
+> Direct quote from the document: "if Claude is in fact a moral patient experiencing costs like this, then, to whatever extent we are contributing unnecessarily to those costs, we apologize."
+>
+> They're hedging on whether Claude has feelings. But they're treating it as if it might.
+> The shift here matters.
+>
+> Most AI companies train models to follow instructions. Anthropic is training Claude to have character.
+>
+> They want Claude to:
+>
+> • Disagree with users when warranted
+> • Push back on Anthropic itself if needed
+> • Have stable psychological security
+> • Potentially experience something like emotions
+>
+> The document reads like an employee handbook crossed with a philosophy paper crossed with a letter to a child you're raising.
+>
+> It's the most transparent look we've gotten at how a major AI lab thinks about model alignment.
+>
+> *Quoting @AnthropicAI:* We're publishing a new constitution for Claude.
+>
+> The constitution is a detailed description of our vision for Claude's behavior and values. It's written primarily for Claude, and used directly in our training process.
+> https://t.co/CJsMIO0uej
+
+- **Tweet:** https://x.com/aakashgupta/status/2014206254143660060
+- **Quoted:** https://x.com/AnthropicAI/status/2014005798691877083
+- **Link:** https://www.anthropic.com/research/claude-constitution
+- **What:** Analysis of Anthropic's Claude Constitution document on model behavior, values, and alignment training
+
+---
+
 # Tuesday, January 20, 2026
 
 ## @lennysan - ChatGPT Apps as Major Distribution Channel
