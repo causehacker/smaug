@@ -1,5 +1,42 @@
 # Thursday, January 22, 2026
 
+## @milvusio - Running Claude Code Locally with Ollama
+> @claudeai Code is now officially free to use.
+>
+> @ollama  has supported @AnthropicAI's Messages API, you can now run it 100% locally with open-source models.
+>
+> Get it running with this simple 5-step guide:
+> [𝟭] 𝗜𝗻𝘀𝘁𝗮𝗹𝗹 𝗢𝗹𝗹𝗮𝗺𝗮
+>
+> [𝟮] 𝗣𝘂𝗹𝗹 𝗮 𝘀𝘁𝗿𝗼𝗻𝗴 𝗼𝗽𝗲𝗻-𝘀𝗼𝗿𝘂𝗰𝗲 𝗰𝗼𝗱𝗶𝗻𝗴 𝗺𝗼𝗱𝗲𝗹
+>
+> ollama pull qwen2.5-coder
+>
+> [𝟯] 𝗜𝗻𝘀𝘁𝗮𝗹𝗹 𝗖𝗹𝗮𝘂𝗱𝗲 𝗖𝗼𝗱𝗲
+>
+> macOS, Linux, WSL: curl -fsSL https://t.co/uS3tVVUol1 | bash
+> Windows PowerShell: irm https://t.co/V58YRDaJdM | iex
+>
+> [𝟰] 𝗖𝗼𝗻𝗻𝗲𝗰𝘁
+> Point Claude Code to your local server instead of Anthropic's cloud:
+>
+> export ANTHROPIC_AUTH_TOKEN=ollama
+> export ANTHROPIC_BASE_URL=http://localhost:11434
+>
+> [𝟱] 𝗥𝘂𝗻 𝗜𝘁
+> claude --model qwen2.5-coder
+>
+> 💡 Pro tip: Add RAG with Milvus to let your local AI search your entire codebase.
+>
+> The barrier between proprietary tools and open-source models just disappeared. 🕊️
+>
+> Try it now!
+> ———
+> 👉 Follow @milvusio for everything related to unstructured data!
+
+- **Tweet:** https://x.com/milvusio/status/2014366193713545577
+- **What:** Tutorial for running Claude Code 100% locally using Ollama with open-source models like qwen2.5-coder, with setup guide and RAG integration tips
+
 ## @priymrj - Twitter Article Link
 > https://t.co/lElHHA1BKW
 
