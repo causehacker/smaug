@@ -1,5 +1,15 @@
 # Thursday, January 22, 2026
 
+## @venturetwins - Fanvue: AI-Powered OnlyFans Competitor
+> There's an OnlyFans competitor that is blowing up thanks to AI.
+>
+> Fanvue leans in to AI influencers, unlike platforms like OF and Fansly that require content featuring a real person.
+>
+> The company reportedly crossed $100M ARR - and monetizes MANY popular "AI model" accounts. https://t.co/yEC50mvDDR
+
+- **Tweet:** https://x.com/venturetwins/status/2014390795470844205
+- **What:** OnlyFans competitor Fanvue that focuses on AI-generated influencers crossed $100M ARR by monetizing AI model accounts
+
 ## @milvusio - Running Claude Code Locally with Ollama
 > @claudeai Code is now officially free to use.
 >
