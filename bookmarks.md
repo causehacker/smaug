@@ -25,6 +25,22 @@
 
 # Thursday, January 22, 2026
 
+## @trq212 - Twitter Article
+> https://t.co/eHD0AmjSRM
+
+- **Tweet:** https://x.com/trq212/status/2014480496013803643
+- **Link:** https://x.com/i/article/2014473994695823360
+- **What:** Twitter article shared without additional context
+
+## @higgsfield_ai - Earn Credits Giveaway
+> Retweet &amp; reply &amp; follow &amp; like for 220 credits in DM
+>
+> *Quoting @higgsfield_ai:* https://t.co/ujGSPnv7nM
+
+- **Tweet:** https://x.com/higgsfield_ai/status/2014446167271014606
+- **Quoted:** https://x.com/higgsfield_ai/status/2014441893137158156
+- **What:** Promotional tweet offering 220 credits for engagement, self-quoting another tweet
+
 ## @Mho_23 - Twitter Article
 > https://t.co/KuwVmDeinj
 
