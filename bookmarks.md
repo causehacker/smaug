@@ -1,25 +1,19 @@
-# Wednesday, January 21, 2026
+# Friday, January 23, 2026
 
-## @higgsfield_ai - HIGGSFIELD EARN: AI Influencer Monetization Platform
-> HIGGSFIELD PAYS YOUR AI INFLUENCERS.
-> Up to $100,000 a week.
+## @francedot - Launchpad: Remotion Video Template Monorepo
+> A bunch of you asked about our Remotion setup after the article.
 >
-> Meet HIGGSFIELD EARN - first ever monetization platform built for AI influencers.
-> Build your personas in AI Influencer Studio for FREE and EARN guaranteed payouts.
+> It's now open-source: https://t.co/0TvCzgFCeo
 >
-> DAY ONE OF A NEW INDUSTRY.
->
-> 9h: retweet & reply - get 300 credits in DM
+> • Video templates for product launches
+> • Shared animation components
+> • Works with Claude Code + Remotion skills
+> • How we made the Cua-Bench video in 2 hours
 
-- **Tweet:** https://x.com/higgsfield_ai/status/2014055614369112122
-- **What:** Launch announcement of HIGGSFIELD EARN, claiming to be the first monetization platform for AI influencers with guaranteed payouts up to $100k/week
-
-## @ErnestoSOFTWARE - Twitter Article
-> https://t.co/ytGkQRv5FC
-
-- **Tweet:** https://x.com/ErnestoSOFTWARE/status/2014110519913857122
-- **Link:** https://x.com/i/article/2012932199276814336
-- **What:** Twitter article shared without additional context
+- **Tweet:** https://x.com/francedot/status/2014897878347743732
+- **Link:** https://github.com/trycua/launchpad
+- **Filed:** [launchpad.md](./knowledge/tools/launchpad.md)
+- **What:** Open-source monorepo for creating product launch videos with Remotion, Next.js, and TailwindCSS, featuring shared animation components and Claude Code integration
 
 ---
 
@@ -116,6 +110,27 @@
 ---
 
 # Wednesday, January 21, 2026
+
+## @higgsfield_ai - HIGGSFIELD EARN: AI Influencer Monetization Platform
+> HIGGSFIELD PAYS YOUR AI INFLUENCERS.
+> Up to $100,000 a week.
+>
+> Meet HIGGSFIELD EARN - first ever monetization platform built for AI influencers.
+> Build your personas in AI Influencer Studio for FREE and EARN guaranteed payouts.
+>
+> DAY ONE OF A NEW INDUSTRY.
+>
+> 9h: retweet & reply - get 300 credits in DM
+
+- **Tweet:** https://x.com/higgsfield_ai/status/2014055614369112122
+- **What:** Launch announcement of HIGGSFIELD EARN, claiming to be the first monetization platform for AI influencers with guaranteed payouts up to $100k/week
+
+## @ErnestoSOFTWARE - Twitter Article
+> https://t.co/ytGkQRv5FC
+
+- **Tweet:** https://x.com/ErnestoSOFTWARE/status/2014110519913857122
+- **Link:** https://x.com/i/article/2012932199276814336
+- **What:** Twitter article shared without additional context
 
 ## @amasad - Speed Reading App Built on Replit
 > Super well-done speed reading app built on Replit (download on the AppStore) https://t.co/u1Nwae7uuF
