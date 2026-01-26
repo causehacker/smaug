@@ -11,6 +11,17 @@
 
 # Friday, January 23, 2026
 
+## @jonathanzliu - Building Viral Consumer Apps (Article)
+> hands down one of the best articles i've read on how to build viral consumer apps
+>
+> (and make money doing so)
+>
+> *Quoting @ErnestoSOFTWARE:* https://t.co/ytGkQRv5FC
+
+- **Tweet:** https://x.com/jonathanzliu/status/2014955543593681186
+- **Quoted:** https://x.com/ErnestoSOFTWARE/status/2014110519913857122
+- **What:** Quote tweet highlighting an article on building viral consumer apps and monetization strategies
+
 ## @francedot - Launchpad: Remotion Video Template Monorepo
 > A bunch of you asked about our Remotion setup after the article.
 >
