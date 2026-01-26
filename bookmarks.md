@@ -1,4 +1,24 @@
+# Sunday, January 25, 2026
+
+## @socialwithaayan - Twitter Article Link
+> https://t.co/WiwyjqWiNV
+
+- **Tweet:** https://x.com/socialwithaayan/status/2015352581443523028
+- **Link:** https://x.com/i/article/2015279166359269376
+- **What:** Twitter article shared without additional context
+
+---
+
 # Saturday, January 24, 2026
+
+## @shiri_shh - Google Cloud Credits for Startups
+> $200k in Google Cloud Credits if you are an early-stage startup
+>
+> link to apply below 👇 https://t.co/nBhIgaTR41
+
+- **Tweet:** https://x.com/shiri_shh/status/2015296897410617609
+- **Link:** https://x.com/shiri_shh/status/2015296897410617609/photo/1
+- **What:** Announcement about Google Cloud offering $200k in credits for early-stage startups with application link
 
 ## @heyshrutimishra - Twitter Article
 > https://t.co/PFLXeRXaIu
