@@ -1,5 +1,44 @@
 # Sunday, January 25, 2026
 
+## @xIrissy - AI Image Generation Prompt Template
+> Taking Some Prompt Ideas From This Video Which is Posted in The Comments Section Below 👇
+>
+> Prompt:
+>
+> {
+>   "visual_analysis": {
+>     "subject": {
+>       "appearance": "Young woman with a slim, fit figure and light skin tone.",
+>       "hair": "Long, wavy brunette hair styled in a half-up or loose style, framing the face with soft tendrils.",
+>       "expression": "Gentle, pleasant smile, looking directly at the camera.",
+>       "pose": "Standing elegantly in a doorway, legs crossed at the ankles, holding a flower with both hands in front of the chest."
+>     },
+>     "attire": {
+>       "dress": "Light baby pink corset-style mini dress. Features a structured bodice with visible boning/seaming, a sweetheart neckline, spaghetti straps, and a gathered, flared skater skirt with delicate lace trim at the hem.",
+>       "footwear": "White pointed-toe kitten heel mules adorned with small, dainty white bows on the front.",
+>       "jewelry": "A delicate necklace featuring a small ribbon or bow charm."
+>     },
+>     "props": {
+>       "item": "A large, pale pink rose with a green stem and leaves, held gently in both hands against the bodice of the dress."
+>     },
+>     "environment": {
+>       "setting": "Threshold of a large open glass French door.",
+>       "architecture": "Beige stone exterior walls and steps. The door frame is dark metal or wood. Inside, there is a glimpse of a dark room with antique-style wooden furniture and a table leg visible.",
+>       "lighting": "Strong natural sunlight coming from the left, creating bright highlights on the subject's skin and dress, and casting sharp, defined shadows on the right side of the door frame and ground."
+>     }
+>   },
+>   "technical_specifications": {
+>     "quality": "4k, Ultra HD, 8k resolution, photorealistic.",
+>     "style": "Fashion photography, cinematic lighting, high fidelity.",
+>     "focus": "Sharp focus on the subject, highly detailed textures on the fabric and skin.",
+>     "aspect_ratio": "Vertical portrait."
+>   },
+>   "generated_prompt": "A photorealistic 4k HD full-body portrait of a beautiful young woman standing on beige stone steps in an open French doorway. She is wearing a structured baby pink corset mini dress with a gathered skirt and lace hem, paired with white pointed-toe bow heels. She has long wavy brunette hair and is holding a single pale pink rose in her hands. She wears a delicate bow necklace. The lighting is bright and sunny natural light, casting strong, dramatic shadows and highlighting the texture of the dress and her skin. The background shows a glimpse of an elegant interior. Cinematic quality, sharp focus, ultra-detailed, fashion editorial style."
+> }
+
+- **Tweet:** https://x.com/xIrissy/status/2015388933446934825
+- **What:** Structured JSON template for AI image generation prompts, demonstrating how to break down visual elements (subject, attire, environment, technical specs) for creating detailed, photorealistic image generation prompts
+
 ## @socialwithaayan - Twitter Article Link
 > https://t.co/WiwyjqWiNV
 
