@@ -1,4 +1,51 @@
+# Monday, January 26, 2026
+
+## @minchoi - AI Animated Short Film Premieres at Sundance
+> It's happening.
+>
+> AI animated short film just premiered at Sundance.
+>
+> 45 man team of Pixar alumni, an Academy Award winner, researchers, and engineers fine tuned Veo & Imagen to create this masterpiece 🤯
+> https://t.co/AjQU4VC1II
+>
+> *Quoting @GoogleDeepMind:* Our short film Dear Upstairs Neighbors is previewing at @sundancefest. 🎬
+>
+> It's a story about noisy neighbors, but behind the scenes, it's about solving a huge challenge in generative AI: control.
+>
+> Developed by Pixar alumni, an Academy Award winner, researchers, and engineers, here's how it came together. 🎨
+
+- **Tweet:** https://x.com/minchoi/status/2015916836156555386
+- **Quoted:** https://x.com/GoogleDeepMind/status/2015847703276577251
+- **What:** An AI-generated animated short film "Dear Upstairs Neighbors" premiered at Sundance, created by Pixar alumni and engineers using Google's Veo and Imagen models, demonstrating advances in AI control and animation.
+
+## @TawohAwa - Creating Perfect Sketchnotes with AI
+> Stop asking AI to "draw a diagram."
+>
+> The text usually comes out messy and unreadable.
+>
+> Here is my workflow to create perfect Sketchnotes with Google Gemini https://t.co/bbrQQ3Z4UH
+
+- **Tweet:** https://x.com/TawohAwa/status/2015784473715945908
+- **What:** Tips for creating readable sketchnotes with Google Gemini, addressing the common issue of AI-generated diagram text being messy and unreadable.
+
+## @MillieMarconnni - Claude Engagement Boost Through Prompting
+> Everyone's using ChatGPT for content writing. Meanwhile, I switched to Claude and my engagement went up 340% on all social media platforms.
+>
+> Here are 10 prompts that make Claude write like a human (not a robot): https://t.co/0RakxvWdLM
+
+- **Tweet:** https://x.com/MillieMarconnni/status/2015710408796176394
+- **What:** Millie Marconi shares her experience switching from ChatGPT to Claude for content writing, reporting a 340% engagement increase and providing 10 prompts for more human-like writing.
+
+---
+
 # Sunday, January 25, 2026
+
+## @garrytan - Claude Code System Prompt Feedback
+
+> I don't know why this isn't just in Claude Code's system prompt https://t.co/q1GoYt29Lq
+
+- **Tweet:** https://x.com/garrytan/status/2015540619855425959
+- **What:** Garry Tan comments that something should be included in Claude Code's system prompt by default.
 
 ## @blader - MiraViewer: Browser-Based MRI Viewer for Tumor Tracking
 > over the weekend, i built an app that i sincerely hope you will never have a need for, but if you do happen to need a friendly, free, private mri viewer designed to make it easy for you to track tumor progression, you can try it here: https://t.co/DQeMgOjDhM
