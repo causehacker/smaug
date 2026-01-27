@@ -1,5 +1,47 @@
 # Sunday, January 25, 2026
 
+## @blader - MiraViewer: Browser-Based MRI Viewer for Tumor Tracking
+> over the weekend, i built an app that i sincerely hope you will never have a need for, but if you do happen to need a friendly, free, private mri viewer designed to make it easy for you to track tumor progression, you can try it here: https://t.co/DQeMgOjDhM
+>
+> here's the story:
+>
+> as some of you may know, last last september, my six year old daughter mira was diagnosed with an extremely rare brain tumor called an adamatinomatous craniopharyngioma, and since then our family has been doing everything we can possibly do to find a cure for her.
+>
+> we tortured chatgpt deep research, put together our own private research team, raised $1.4M and donated it all to @HankMitraLab research thanks to $MIRA, explored every remotely applicable drug whether on the market or not, and even began working with md anderson to develop a personalized vaccine that we hope can lead to a more permanent cure
+>
+> unfortunately, we received the devastating news last march that the tumor has continued to grow since her initial surgery, and we had to start to consider more drastic options which would have seriously impacted mira's quality of life.
+>
+> thankfully, with the help of dr. sabine mueller @UCSFChildrens and the @HankMitraLab at the university of colorado, in april, we started her on an alternative but extremely experimental treatment for this disease.
+>
+> to our unimaginable relief, her tumor has responded extraordinarily well to this treatment which combines tocilizumab (an arthritis drug that blocks IL6 receptors) with avastin (a colon cancer drug that inhibhits VEGF proteins).
+>
+> we know this, because mira gets an MRI scan of her brain every few months.
+>
+> and every time we get a new scan, the first thing we do is compare it against her last scan. so we have to find the matching weight of the scan, and then find the same plane, and then carefully find the slices of the scan where the tumor is visible, and then find the closest match to last month's scan, then adjust the zoom, rotation, and brightness / contrast so they all look the same.
+>
+> we got pretty good at this.
+>
+> but it shouldn't be this hard.
+>
+> so i built https://t.co/77sBd5thMI last weekend using gemini 3 with some gpt 5.2 xhigh.
+>
+> you just import your DICOM MRI files (either zip, files or a folder), and you can align all of your scans across multiple dates instantly,
+>
+> just click and drag a rectangle around the tumor on any image, and it will use some very clever algorithms to automatically align up and find the closest matching slice from all your other scans, match the brightness / contrast, rotation, pan, zoom, and even shear to make sure the registration is as close as possible, and make it as easy to possible to compare tumor progression.
+>
+> it has a grid view so you can see all your scans for the same location all at once, and an overlay view so you can quickly compare two scans visually (by holding down the space bar to toggle quickly between two scans), along with tools to animate your scans both within the same sequence as well as over multiple scans to show progression.
+>
+> there is no server, it runs entirely locally on your browser - nothing ever gets uploaded and it's all open source: https://t.co/9cOmDAZZID
+>
+> if you've found this useful, please consider a donation to the @UCSFChildrens hospital foundation, who has given us extraordinary care over the past year or so:
+>
+> https://t.co/wAvSxJFxTA
+
+- **Tweet:** https://x.com/blader/status/2015686527482044599
+- **Link:** https://github.com/blader/MiraViewer
+- **Filed:** [miraviewer.md](./knowledge/tools/miraviewer.md)
+- **What:** Browser-based DICOM MRI viewer built by a father to track his daughter's brain tumor progression. Runs locally, compares MRI scans across multiple dates with intelligent alignment, and helps visualize tumor changes over time. Open source and completely private.
+
 ## @xIrissy - AI Image Generation Prompt Template
 > Taking Some Prompt Ideas From This Video Which is Posted in The Comments Section Below 👇
 >
