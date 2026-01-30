@@ -1,5 +1,15 @@
 # Thursday, January 29, 2026
 
+## @GeminiApp - Agentic Vision in Gemini 3 Flash
+> Introducing Agentic Vision, a new capability in Gemini 3 Flash.
+>
+> Agentic Vision makes Gemini even better at analyzing complex images, enabling it to more accurately and consistently read fine details, like serial numbers or text on a complex diagram.
+>
+> See what it can do. 🧵
+
+- **Tweet:** https://x.com/GeminiApp/status/2016914275886125483
+- **What:** Google Gemini announces Agentic Vision, a new capability in Gemini 3 Flash that improves analysis of complex images with better accuracy in reading fine details like serial numbers and text in diagrams.
+
 ## @aakashgupta - Google's Project Genie as AI Training Infrastructure
 > Everyone's calling this a gaming toy. Google just told you exactly what they're building and nobody's repricing it.
 >
