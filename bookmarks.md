@@ -1,3 +1,62 @@
+# Thursday, January 29, 2026
+
+## @aakashgupta - Google's Project Genie as AI Training Infrastructure
+> Everyone's calling this a gaming toy. Google just told you exactly what they're building and nobody's repricing it.
+>
+> Project Genie is a training gym factory for embodied AI.
+>
+> The constraints tell the real story. 60-second generation limits? Latency on character control? Worlds that don't always follow prompts exactly? Those are acceptable tradeoffs when your actual customer is SIMA, DeepMind's robot training agent that needs millions of diverse environments to practice warehouse navigation, edge-case scenarios, and physics interactions.
+>
+> Google explicitly stated in August that Genie 3 is a "foundational building block for AGI." Now they're letting consumers create environments while quietly harvesting data on what kinds of prompts generate interesting training scenarios.
+>
+> The math makes this clear. Traditional robotics simulation requires teams spending months hand-coding environments in Unity or Unreal Engine. Genie 3 generates them in seconds from text. The cost per training environment just dropped by orders of magnitude.
+>
+> Meanwhile OpenAI's Sora generates beautiful videos you can watch. NVIDIA Cosmos targets industrial customers with explicit physics parameters. Google built something that trains its own AI agents while consumers think they're playing with a toy.
+>
+> The "promptable world events" feature where you can drop objects mid-session, change weather, spawn characters? That's curriculum generation for reinforcement learning. You're teaching their robots how to handle novel situations.
+>
+> Google AI Ultra subscribers are paying $250/month to be QA testers for DeepMind's AGI infrastructure. The "World Models as a Service" moat is being dug in plain sight.
+>
+> *Quoting @Meer_AIIT:* 📢 New from Google DeepMind: Project Genie
+>
+> An experimental prototype that lets users create and explore AI-generated interactive worlds in real time.
+>
+> Powered by Genie 3 (their world model), Nano Banana Pro, and Gemini.
+> How it works:
+>
+> → Prompt with text or images to design a world and character
+> → Preview and adjust with Nano Banana Pro before entering
+> → Genie 3 generates the environment in real time as you move through it
+> → Remix existing worlds or browse a gallery for inspiration
+>
+> Rolling out now to Google AI Ultra subscribers in the U.S. (18+).
+
+- **Tweet:** https://x.com/aakashgupta/status/2016947869199323345
+- **Quoted:** https://x.com/Meer_AIIT/status/2016929733804773383
+- **What:** Deep analysis arguing that Google's Project Genie isn't just a gaming toy but a training infrastructure for embodied AI. Positions it as a way to generate diverse robotics training environments at scale, with consumers unknowingly helping to create curriculum data for DeepMind's AGI development.
+
+---
+
+# Wednesday, January 28, 2026
+
+## @minchoi - Higgsfield Angles v2 Post-Production Camera Control
+> We are not ready for this
+> https://t.co/nhrAMpsaLM
+>
+> *Quoting @minchoi:* This is wild.
+>
+> Higgsfield Angles v2 lets you move the camera after the shot, full 360° control + lighting without text prompt.
+>
+> Wild examples + how to try:
+>
+> #ad https://t.co/XcyJURkY2j
+
+- **Tweet:** https://x.com/minchoi/status/2016756812939141494
+- **Quoted:** https://x.com/minchoi/status/2016723119503704290
+- **What:** Demonstration of Higgsfield Angles v2, a tool that allows full post-production camera control in AI-generated video - including 360° camera movement and lighting adjustments after the initial shot is created, without needing text prompts.
+
+---
+
 # Monday, January 26, 2026
 
 ## @minchoi - AI Animated Short Film Premieres at Sundance
