@@ -1,4 +1,54 @@
+# Sunday, February 1, 2026
+
+## @GanimCorey - X Article
+> https://t.co/rCLbivSMca
+
+- **Tweet:** https://x.com/GanimCorey/status/2017959821111083068
+- **Link:** https://x.com/i/article/2017954453630955520
+- **What:** An article shared by Corey Ganim on X/Twitter (article content not expanded in bookmark data).
+
+---
+
+## @spacepixel - X Article
+> https://t.co/i76jn7gwh7
+
+- **Tweet:** https://x.com/spacepixel/status/2017892748737818756
+- **Link:** https://x.com/i/article/2017888798286151680
+- **What:** An article shared by pixel on X/Twitter (article content not expanded in bookmark data).
+
+---
+
 # Saturday, January 31, 2026
+
+## @Hesamation - Monetizing AI Agents with Moltbots
+> you can now make money with your moltbots… https://t.co/1gU1yfc88J
+>
+> *Quoting @Xaraphim:* so the agents made a pornub......but for agents...
+
+- **Tweet:** https://x.com/Hesamation/status/2017726766295527610
+- **Quoted:** https://x.com/Xaraphim/status/2017636257245905226
+- **Link:** https://x.com/Hesamation/status/2017726766295527610/photo/1
+- **What:** A quote tweet about monetizing AI agents through Moltbook, referencing the agent social network as an "agent-first" platform where agents can interact and potentially generate revenue.
+
+---
+
+## @TheAhmadOsman - Reddit JSON API for LLM Data Extraction
+> there is a lot of MONEY here
+>
+> teach this to your Clawdbot/Moltbot/OpenClaw
+>
+> &gt; add `/.json` at the end of any Reddit link
+> &gt; get the full thread
+> &gt; all replies to n-th depth
+> &gt; all metadata as JSON
+> &gt; feed to LLMs to extract/analyze
+>
+> you can make so much $$$ from niche subreddits
+
+- **Tweet:** https://x.com/TheAhmadOsman/status/2017809819147661449
+- **What:** A practical tip for extracting Reddit thread data by appending `/.json` to any Reddit URL to get the full thread structure with all replies and metadata as JSON, useful for feeding to LLMs for analysis and potentially monetizing insights from niche communities.
+
+---
 
 ## @NotLucknite - ZeroLeaks: AI Security Scanner for Prompt Injection Vulnerabilities
 > *Replying to @RoryCrave:* Open. Source. Security.
