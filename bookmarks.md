@@ -1,5 +1,18 @@
 # Saturday, January 31, 2026
 
+## @NotLucknite - ZeroLeaks: AI Security Scanner for Prompt Injection Vulnerabilities
+> *Replying to @RoryCrave:* Open. Source. Security.
+>
+> @RoryCrave @openclaw https://t.co/pCC4hVLUJs
+
+- **Tweet:** https://x.com/NotLucknite/status/2017730892307853625
+- **Parent:** https://x.com/RoryCrave/status/2017730698199666817
+- **Link:** https://github.com/ZeroLeaks/zeroleaks
+- **Filed:** [zeroleaks.md](./knowledge/tools/zeroleaks.md)
+- **What:** An autonomous AI security scanner built with TypeScript that tests LLM systems for prompt injection and extraction vulnerabilities using multi-agent architecture and modern attack techniques like Tree of Attacks (TAP), Crescendo, and TombRaider patterns.
+
+---
+
 ## @pbteja1998 - X Article
 > https://t.co/V6XZfv5UYS
 
