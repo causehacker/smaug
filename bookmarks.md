@@ -1,3 +1,44 @@
+# Monday, February 2, 2026
+
+## @ollama - Easy Setup of OpenClaw with Ollama Launch
+
+> Make it easy to use @openclaw with Ollama launch to connect with local models that can run on your own device.
+>
+> 1. Install OpenClaw
+> 2. ollama launch openclaw
+> select model(s) you want to use
+> 3. configure the integrations you want (WhatsApp, Telegram, iMessage, Slack, Discord, etc.)
+>
+> 👇👇👇 for more instructions!
+>
+> Ollama's cloud can also directly connect! Give it a try if you don't have a powerful computer. It has a generous free tier!
+
+- **Tweet:** https://x.com/ollama/status/2018244432546456044
+- **What:** Ollama provides a simple three-step process to set up OpenClaw with local models via their launch tool, with optional cloud connectivity for those without powerful hardware.
+
+---
+
+## @VittoStack - Security-First OpenClaw Setup Guide
+
+> We spent 48+ hours researching security-first OpenClaw setups.
+>
+> By the end of this guide you'll have:
+> - OpenClaw on a Pi via Tailscale
+> - Matrix E2E chat
+> - Prompt injection hardening
+> - No-log LLM provider
+> - Firewall + habits for damage control
+>
+> It's long but totally worth it.
+>
+> *Quoting @VittoStack:* https://t.co/ntoOOH4NX9
+
+- **Tweet:** https://x.com/VittoStack/status/2018326274440073499
+- **Quoted:** https://x.com/VittoStack/status/2018326025373900881
+- **What:** Comprehensive security-focused guide for deploying OpenClaw on a Raspberry Pi with Tailscale, including end-to-end encryption, prompt injection protection, and firewall configuration.
+
+---
+
 # Sunday, February 1, 2026
 
 ## @GanimCorey - X Article
@@ -19,6 +60,17 @@
 ---
 
 # Saturday, January 31, 2026
+
+## @OpenRouterAI - Use Auto Router for Heartbeat Requests Instead of Opus
+
+> 🦞 Important tip for @openclaw users: you should not be sending simple heartbeat requests to Opus!
+>
+> Use the Auto Router to automatically send them to very cheap (even free!) models.
+
+- **Tweet:** https://x.com/OpenRouterAI/status/2017742972163445070
+- **What:** OpenRouter advises against sending simple heartbeat requests to Opus and recommends using their Auto Router to route these to cheaper or free models for cost optimization.
+
+---
 
 ## @Hesamation - Monetizing AI Agents with Moltbots
 > you can now make money with your moltbots… https://t.co/1gU1yfc88J
