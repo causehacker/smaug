@@ -1,3 +1,29 @@
+# Tuesday, February 3, 2026
+
+## @higgsfield_ai - Vibe-Motion AI Motion Design Tool with Real-Time Control
+
+> THE FIRST EVER AI motion design tool with full real-time control.
+>
+> Higgsfield Vibe-Motion is LIVE.
+> Motion Design was never that easy.
+>
+> One prompt creates any motion design you can imagine. Refine every parameter live on canvas. No creative limits. https://t.co/VLXcBgSEkB
+
+- **Tweet:** https://x.com/higgsfield_ai/status/2018829032398401694
+- **What:** Higgsfield AI launched Vibe-Motion, the first AI motion design tool with full real-time control allowing users to create and refine motion designs with a single prompt and live canvas parameter adjustments.
+
+---
+
+## @ElevenLabsDevs - X Article
+
+> https://t.co/AYYFtmBZUO
+
+- **Tweet:** https://x.com/ElevenLabsDevs/status/2018798792485880209
+- **Link:** https://x.com/i/article/2018627390490943489
+- **What:** An article shared by ElevenLabs Developers on X/Twitter (article content not expanded in bookmark data).
+
+---
+
 # Monday, February 2, 2026
 
 ## @ollama - Easy Setup of OpenClaw with Ollama Launch
