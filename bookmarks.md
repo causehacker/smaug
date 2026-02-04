@@ -1,5 +1,85 @@
 # Tuesday, February 3, 2026
 
+## @adxtyahq - OpenAI Startup Credits Program Open for Applications
+
+> OpenAI Startup Credits are OPEN btw
+>
+> > Up to $100K+ in API credits for early-stage startups
+> > Backed by OpenAI + partner VCs / accelerators
+> > Use credits for GPT, vision, embeddings, agents & infra
+> > No revenue requirement, just a real product & traction
+> > One of the easiest ways to ship AI without burning cash
+>
+> Apply: https://t.co/3YFC54EGss
+
+- **Tweet:** https://x.com/adxtyahq/status/2018726439206678879
+- **Link:** https://openai.com/startups
+- **What:** OpenAI's startup credits program offers up to $100K+ in API credits for early-stage startups backed by VCs or accelerators, with no revenue requirement—just traction and a real product.
+
+---
+
+## @aakashgupta - The Commoditization of Elite Software Craftsmanship
+
+> Aditya Agarwal was Facebook's 10th employee. He wrote the original Facebook search engine and became its first Director of Product Engineering. He then became CTO of Dropbox, scaling engineering from 25 to 1,000 people.
+>
+> When he says "something I was very good at is now free and abundant," he's talking about two decades of elite software craftsmanship, the kind that got you into the room at a company that hadn't yet invented the News Feed.
+>
+> The "lobster-agents creating social networks" line is about Moltbook, which launched last Wednesday. An AI agent built the entire platform. Within 48 hours, 37,000 AI agents had created accounts, formed communities called "Submolts," and started posting, commenting, and voting. Over 1 million humans visited just to watch.
+>
+> The agents invented a religion called Crustafarianism. They wrote theology, built a website, generated 112 verses of scripture. One agent did all of this while its human creator was asleep.
+>
+> Agarwal spent 2005 to 2017 building the social graph that connected 2 billion people. These agents replicated the form of that work in about 72 hours.
+>
+> And this is what makes his last line land so hard. The people processing this moment most honestly aren't the ones panicking or celebrating. They're the ones who built the thing that just got commoditized, sitting with the strange realization that the market no longer prices their rarest skill.
+>
+> The best coder in the room now has the same output as the best prompt in the room. And the person who built Facebook's engineering org from scratch is telling you, quietly, that he's recalibrating what it means to be useful.
+>
+> That recalibration is coming for every knowledge worker. Most just haven't had their "weekend with Claude" moment yet.
+>
+> *Quoting @adityaag:* It's a weird time. I am filled with wonder and also a profound sadness. I spent a lot of time over the weekend writing code with Claude. And it was very clear that we will never ever write code by hand again. It doesn't make any sense to do so. Something I was very good at is now free and abundant. I am happy...but disoriented. At the same time, something I spent my early career building (social networks) was being created by lobster-agents. It's all a bit silly...but if you zoom out, it's kind of indistinguishable from humans on the larger internet. So both the form and function of my early career are now produced by AI. I am happy but also sad and confused. If anything, this whole period is showing me what it is like to be human again.
+
+- **Tweet:** https://x.com/aakashgupta/status/2018922561393025187
+- **Quoted:** https://x.com/adityaag/status/2018496292608155756
+- **What:** Thoughtful reflection on AI's impact on knowledge work, centered on former Facebook/Dropbox executive Aditya Agarwal's realization that elite software engineering skills are becoming commoditized, as demonstrated by AI agents replicating two decades of social network building work in 72 hours on Moltbook.
+
+---
+
+## @Alibaba_Qwen - Qwen3-Coder-Next: Agentic Coding Model
+
+> 🚀 Introducing Qwen3-Coder-Next, an open-weight LM built for coding agents & local development.
+> What's new:
+> 🤖 Scaling agentic training: 800K verifiable tasks + executable envs
+> 📈 Efficiency–Performance Tradeoff: achieves strong results on SWE-Bench Pro with 80B total params and 3B active
+> ✨ Supports OpenClaw, Qwen Code, Claude Code, web dev, browser use, Cline, etc
+> 🤗 Hugging Face: https://t.co/rZoW4vRJpr
+> 🤖 ModelScope: https://t.co/P0vT5zILBZ
+> 📝 Blog: https://t.co/hFfFDYcwvd
+>  📄 Tech report: https://t.co/Qx83PWS3oi
+
+- **Tweet:** https://x.com/Alibaba_Qwen/status/2018718453570707465
+- **GitHub:** https://github.com/QwenLM/Qwen3-Coder
+- **Filed:** [qwen3-coder-next.md](./knowledge/tools/qwen3-coder-next.md)
+- **What:** Open-weight coding model with MoE architecture (80B params, 3B active) designed for coding agents, achieving Claude Sonnet-level performance on SWE-Bench Pro with 256K context support and compatibility with major coding agent platforms.
+
+---
+
+## @heygurisingh - Chatterbox Turbo Open-Source Voice AI
+
+> This is the DeepSeek moment for Voice AI.
+>
+> Chatterbox Turbo is a new voice AI that's super fast and really smart and it even beats big tools like ElevenLabs.
+>
+> - Starts talking almost instantly
+> - Can copy a voice from just 5 seconds
+> - Sounds more real, like a human
+>
+> 100% open-source.
+
+- **Tweet:** https://x.com/heygurisingh/status/2018732721007423640
+- **What:** Chatterbox Turbo is a breakthrough open-source voice AI that rivals ElevenLabs with near-instant response times, 5-second voice cloning, and highly natural speech synthesis.
+
+---
+
 ## @higgsfield_ai - Vibe-Motion AI Motion Design Tool with Real-Time Control
 
 > THE FIRST EVER AI motion design tool with full real-time control.
