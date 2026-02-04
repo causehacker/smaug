@@ -67,6 +67,22 @@
 
 # Sunday, February 1, 2026
 
+## @xai - Grok Imagine 1.0 AI Video Generation Tool
+
+> Introducing Grok Imagine 1.0, our biggest leap yet.
+>
+> 1.0 unlocks 10-second videos, 720p resolution, and dramatically better audio.
+>
+> Imagine has generated 1.245 billion videos in the last 30 days alone.
+>
+> Try it now: https://t.co/zGhs9czkC5 https://t.co/7FPxm7H059
+
+- **Tweet:** https://x.com/xai/status/2018164753810764061
+- **Link:** https://grok.com/imagine
+- **What:** xAI launched Grok Imagine 1.0, a major update to their AI video generation platform featuring 10-second videos, 720p resolution, and improved audio quality. The platform has generated 1.245 billion videos in the past 30 days.
+
+---
+
 ## @GanimCorey - X Article
 > https://t.co/rCLbivSMca
 
