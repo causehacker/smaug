@@ -1,3 +1,75 @@
+# Thursday, February 5, 2026
+
+## @alexalbert__ - Claude Opus 4.6: Increased Autonomy and Agentic Capabilities
+
+> Opus 4.6 is here.
+>
+> The jump in autonomy is real. The biggest shift for me personally has been learning to let it run.
+>
+> Give it the context, step away, and come back to something pretty amazing. The way we work alongside models is starting to completely change.
+
+- **Tweet:** https://x.com/alexalbert__/status/2019467690780324095
+- **Quoted:** https://x.com/claudeai/status/2019467372609040752
+- **What:** User perspective on Claude Opus 4.6's significant improvements in autonomy and agentic capabilities, allowing it to work independently on longer, more complex tasks.
+
+---
+
+## @AravSrinivas - Perplexity Model Council: Multi-LLM Reasoning System
+
+> We're launching Perplexity Model Council for all Perplexity Max users on web. Council Mode lets you delegate to a swarm of frontier reasoning LLMs, where they work async, and a chair LLM synthesizes a more accurate answer considering multiple perspectives.
+
+- **Tweet:** https://x.com/AravSrinivas/status/2019444331006791847
+- **What:** Perplexity launched Model Council, a system where multiple frontier LLMs work asynchronously on queries, with a coordinator LLM synthesizing results from multiple perspectives for more accurate answers.
+
+---
+
+## @testingcatalog - OpenAI Frontier Agent Capabilities Announcement
+
+> BREAKING 🚨:  OPENAI ANNOUNCED OPENAI FRONTIER, A NEW ENTERPRISE PLATFORM TO CREATE AND MANAGE AI COWORKERS.
+>
+> IT IS HAPPENING 👀
+>
+> "Frontier gives agents the same skills people need to succeed at work: Understand how work gets done, Use a computer and tools, Improve quality over time, Stay governed & observable"
+
+- **Tweet:** https://x.com/testingcatalog/status/2019429866110673118
+- **Quoted:** https://x.com/OpenAI/status/2019413714341097945
+- **What:** Coverage of OpenAI Frontier's core capabilities including work understanding, tool usage, continuous improvement, and governance features for enterprise AI agents.
+
+---
+
+## @OpenAI - OpenAI Frontier Enterprise Platform Launch
+
+> Introducing OpenAI Frontier—a new platform that helps enterprises build, deploy, and manage AI coworkers that can do real work.
+
+- **Tweet:** https://x.com/OpenAI/status/2019413712772411528
+- **Filed:** ./knowledge/articles/openai-frontier-platform.md
+- **What:** OpenAI announced Frontier, an enterprise platform designed for building, deploying, and managing AI coworkers capable of performing real work tasks.
+
+---
+
+## @chhddavid - Shipper: Claude-Powered Video and App Generation Tool
+
+> Big news, @claudeai just got a huge upgrade today and I'm very happy to be a part it. As of now, Claude can generate motion videos, demos, animations.
+>
+> We just launched Shipper as a tool that gives Claude the power of:
+>
+> → Generating videos
+> → Prompting SaaS demos
+> → Animating web illustrations
+> → Building full-stack apps w/ payments
+> → Connect, buy and host custom domains
+>
+> Claude's most powerful engines can now do all of that from a <10 word prompt, for as low as $0.15/message... And it takes minutes!
+>
+> Simply go to Shipper, then ask Claude  to "make a demo video explaining my app" or "build a complete saas that charges $29/mo"!
+>
+> To celebrate the launch, if you comment "shipper", you will get free credits :)
+
+- **Tweet:** https://x.com/chhddavid/status/2019375505414275441
+- **What:** Shipper is a new Claude tool enabling video generation, SaaS demos, animations, and full-stack app building with payments integration from simple text prompts at low cost.
+
+---
+
 # Wednesday, February 4, 2026
 
 ## @SawyerMerritt - Tech Giants' 2026 AI Capital Expenditure Plans
