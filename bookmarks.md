@@ -1,5 +1,34 @@
 # Wednesday, February 4, 2026
 
+## @SawyerMerritt - Tech Giants' 2026 AI Capital Expenditure Plans
+
+> Planned capital expenditures for 2026:
+>
+> • Alphabet (Google): $175 billion-$185 billion (+102% YoY)
+> • Amazon: $146 billion (+18% YoY)
+> • Meta: $115 billion-$135 billion (+93% YoY)
+> • Microsoft: $105 billion (estimate, +64% YoY)
+> • Tesla: $20+ billion (+135% YoY)
+> • Apple: $14 billion (+10% YoY)
+>
+> Total: Upwards of $605 billion combined, most of it AI related.
+
+- **Tweet:** https://x.com/SawyerMerritt/status/2019264095313072587
+- **What:** Overview of major tech companies' planned 2026 capital expenditures totaling over $605 billion, with the majority allocated to AI infrastructure. Google and Meta are leading with dramatic year-over-year increases of 102% and 93% respectively.
+
+---
+
+## @sundarpichai - Google Exceeds $400B Annual Revenue with Gemini 3 Leading Adoption
+
+> Our Q4/FY'25 results are in. Thanks to our partners & employees, it was a tremendous quarter, exceeding $400B in annual revenue for the first time. Our full AI stack is fueling our progress, and Gemini 3 adoption has been faster than any other model in our history.
+>
+> We're really well positioned and excited going into 2026. Much more to come!
+
+- **Tweet:** https://x.com/sundarpichai/status/2019155348264042934
+- **What:** Google announces Q4/FY'25 results showing first-time annual revenue exceeding $400 billion, with Gemini 3 achieving record adoption rates. Sundar Pichai signals strong positioning for 2026 growth driven by their AI stack.
+
+---
+
 ## @TiffanyFong - Lotus AI Brings Free Doctor Access to 100M Americans
 
 > Wtf Lotus Ai just gave every American access to a doctor for $0 and no one's talking about it ???
