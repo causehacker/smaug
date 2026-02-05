@@ -1,5 +1,51 @@
 # Wednesday, February 4, 2026
 
+## @TiffanyFong - Lotus AI Brings Free Doctor Access to 100M Americans
+
+> Wtf Lotus Ai just gave every American access to a doctor for $0 and no one's talking about it ???
+>
+> *Quoting @kjdhaliwal:* 100M Americans don't have a primary care doctor, so we built @lotus, the first AI doctor powered by real doctors. Able to refer, diagnose and prescribe. Not generic AI advice, treatment by licensed clinicians. Free & available anytime. Leading investors just backed us with $41M
+
+- **Tweet:** https://x.com/TiffanyFong/status/2019139805175848970
+- **Quoted:** https://x.com/kjdhaliwal/status/2018731342113247533
+- **What:** Lotus AI launched a free AI-powered doctor service backed by real licensed clinicians, targeting the 100M Americans without primary care access and raising $41M in funding.
+
+---
+
+## @cjpedregal - Granola Gets MCP Support
+
+> Granola has an MCP! It works with ChatGPT / Claude / whatever tool you want. Thanks for being patient 🙏🏼
+>
+> (Hope everyone enjoys this change even more than the one we did on Monday 😅)
+>
+> *Quoting @meetgranola:* Hello MCP.
+
+- **Tweet:** https://x.com/cjpedregal/status/2019109258286260485
+- **Quoted:** https://x.com/meetgranola/status/2019108975107846263
+- **What:** Granola announced MCP (Model Context Protocol) support, enabling integration with Claude, ChatGPT, and other tools.
+
+---
+
+## @AmirMushich - Twitter Article Link
+
+> https://t.co/iXuDFf6GVy
+
+- **Tweet:** https://x.com/AmirMushich/status/2019073081881293302
+- **Link:** https://x.com/i/article/2018619454465142784
+- **What:** Shared article link from Twitter.
+
+---
+
+## @rustybrick - AI Overviews Reduce Clicks by 58%
+
+> Ouch! Update: AI Overviews Reduce Clicks by 58%
+
+- **Tweet:** https://x.com/rustybrick/status/2019072535833231360
+- **Link:** https://ahrefs.com/blog/ai-overviews-reduce-clicks-update/
+- **What:** Report showing that Google's AI Overviews feature has resulted in a significant 58% reduction in clicks to websites, impacting traffic and SEO.
+
+---
+
 ## @shcallaway - Sazabi: AI-Native Observability Platform
 
 > Introducing: Sazabi (@sazabi).
@@ -484,6 +530,30 @@
 ---
 
 # Tuesday, February 3, 2026
+
+## @aakashgupta - Goldman Says Agents Will Eat SaaS Economics
+
+> Goldman just told every SaaS CEO their business model has a five-year shelf life and the market hasn't repriced accordingly.
+>
+> The headline number is $780 billion in application software by 2030, 13% CAGR. Sounds like growth. But agents capturing 60%+ of that economics means the profit pool migrates away from per-seat subscriptions toward workflow-completion pricing. The market gets bigger while the legacy revenue model gets smaller. Two things happening at once.
+>
+> This is already showing up in the data. Seat-based pricing dropped from 21% to 15% of SaaS companies in just twelve months. Hybrid pricing surged from 27% to 41%. Klarna doubled revenue per employee after deploying agents across core workflows. SaaStr is actively downgrading seat counts at vendors because they have 12+ AI agents in production replacing human users.
+>
+> The math problem for incumbents is brutal. Salesforce charges up to $500/seat/month at top tiers. When one agent automates what ten humans used to do, charging per seat becomes a penalty on the vendor. BCG's buyer survey found 40% of enterprise customers cite seat reduction as their primary lever to cut software spending. The very AI features vendors are building to retain customers are giving those customers the tool to shrink their contracts.
+>
+> ServiceNow saw this coming and pivoted to "AI Control Tower" positioning, generating $600 million from Now Assist in Q4 alone. But even with 21% subscription growth and 25% more monthly active users, the stock dropped double digits after earnings. The market is saying: prove the new pricing model scales before we assign a multiple.
+>
+> Goldman's own behavior tells the real story. They announced thousands of autonomous AI coding agents working alongside 12,000 human developers, projecting 3-4x productivity gains. Goldman is simultaneously publishing the research that says agents eat SaaS economics while deploying agents internally to eat SaaS economics. They're the customer proving their own thesis.
+>
+> The vendors who win will be the ones who wrap workflows in agents and price on outcomes, capturing a share of the productivity gain rather than passing it all through. The vendors who lose will be the ones still counting seats while their customers count agents.
+>
+> *Quoting @rohanpaul_ai:* A recent Goldman Sachs Research projects AI agents are set to take over the profit pool in software while also making the whole market bigger. Agents are expected to account for >60% of software economics by 2030, so more of the dollars flow to agentic workloads rather than classic SaaS seats. An agent here means a system that acts with autonomy, adapts to changes, keeps memory of context, and calls APIs to complete multi step work. Most deployments today are still chatbots wired to LLMs, while the stronger agent patterns are proofs of concept or internal pilots. The stack needs a stable platform layer plus guardrails for identity, security, and data integrity, and broad standardization is at least 12 months away. Reliability and memory are improving, which reduces failure loops and makes hands off execution workable across support, sales, marketing, and developer tools. Vendors that wrap workflows in agents become the new user interface for knowledge work, which lets them capture part of the productivity gain rather than pass it all to customers.
+
+- **Tweet:** https://x.com/aakashgupta/status/2018936091232067921
+- **Quoted:** https://x.com/rohanpaul_ai/status/2018277125443477861
+- **What:** Analysis of how AI agents will reshape SaaS pricing models, shifting from per-seat subscriptions to outcome-based pricing by 2030 when agents capture 60%+ of software economics.
+
+---
 
 ## @kloss_xyz - Premium UI/UX Architect Prompt for AI Coding Agents
 
