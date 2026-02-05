@@ -1,5 +1,282 @@
 # Wednesday, February 4, 2026
 
+## @shcallaway - Sazabi: AI-Native Observability Platform
+
+> Introducing: Sazabi (@sazabi).
+>
+> The AI-native observability platform for fast moving engineering teams.
+>
+> Backed by engineering leaders from the world's top AI and dev tool companies: Graphite, Vercel, Browserbase, LangChain, Browserbase, and more.
+>
+> Sazabi is taking a radically different approach to observability, centered on three core principles:
+>
+> 1. LESS IS MORE
+>
+> Product engineers don't need more observability bells and whistles. They need clear, actionable answers. The best UX for observability is chat.
+>
+> 2. LOGS ARE ALL YOU NEED
+>
+> The "Three Pillars of Observability" is an outdated idea. Logs can do everything traces can do, and more.
+>
+> 3. MONITORING IS DEAD
+>
+> Creating static monitors for fast-evolving systems is a fool's errand. The future is something different entirely: agentic anomaly detection.
+
+- **Tweet:** https://x.com/shcallaway/status/2019096110556442998
+- **Link:** https://www.sazabi.com/
+- **What:** Sazabi is an AI-native observability platform using chat-first interface and agentic anomaly detection instead of traditional dashboards and monitors. Founded by Sherwood after years at Crunchbase, Brex, and 11x, now launching a closed alpha for 10 startups.
+
+---
+
+## @moguzbulbul - Figma Vector Conversion Feature
+
+> WTF
+>
+> *Quoting @figma:* Imagine turning any image into a vector (now you actually can)
+>
+> → Convert raster images into editable vectors
+> → Simplify and control color output https://t.co/aCBK7Na9o8
+
+- **Tweet:** https://x.com/moguzbulbul/status/2019106665732403708
+- **Quoted:** https://x.com/figma/status/2019096024590287076
+- **What:** Figma has launched an image-to-vector conversion feature that converts raster images into editable vector graphics with color control, prompting enthusiastic reactions from the design community.
+
+---
+
+## @adxtyahq - Claude Startup Program Now Open
+
+> Claude Startup Program is also OPEN btw
+>
+> > API credits for early-stage startups (up to ~$25K)
+> > Built by Anthropic (Claude)
+> > No VC needed (unlike OpenAI)
+> > Selection based on product + real Claude usage
+> > Actually friendly to bootstrapped founders
+>
+> Apply: https://t.co/KQIgRqfPan
+>
+> *Quoting @adxtyahq:* OpenAI Startup Credits are OPEN btw
+>
+> > Up to $100K+ in API credits for early-stage startups
+> > Backed by OpenAI + partner VCs / accelerators
+> > Use credits for GPT, vision, embeddings, agents & infra
+> > No revenue requirement, just a real product & traction
+> > One of the easiest ways to ship AI without burning cash
+>
+> Apply: https://t.co/3YFC54EGss
+
+- **Tweet:** https://x.com/adxtyahq/status/2019101224784785897
+- **Quoted:** https://x.com/adxtyahq/status/2018726439206678879
+- **Link:** https://claude.com/programs/startups
+- **What:** Anthropic's Claude Startup Program offers up to $25K in API credits to early-stage startups without requiring VC backing, contrasting with OpenAI's program which requires venture backing or accelerator partnerships.
+
+---
+
+## @sama - Response to Anthropic's Super Bowl Ad
+
+> First, the good part of the Anthropic ads: they are funny, and I laughed.
+>
+> But I wonder why Anthropic would go for something so clearly dishonest. Our most important principle for ads says that we won't do exactly this; we would obviously never run ads in the way Anthropic depicts them. We are not stupid and we know our users would reject that.
+>
+> I guess it's on brand for Anthropic doublespeak to use a deceptive ad to critique theoretical deceptive ads that aren't real, but a Super Bowl ad is not where I would expect it.
+>
+> More importantly, we believe everyone deserves to use AI and are committed to free access, because we believe access creates agency. More Texans use ChatGPT for free than total people use Claude in the US, so we have a differently-shaped problem than they do. (If you want to pay for ChatGPT Plus or Pro, we don't show you ads.)
+>
+> Anthropic serves an expensive product to rich people. We are glad they do that and we are doing that too, but we also feel strongly that we need to bring AI to billions of people who can't pay for subscriptions.
+>
+> Maybe even more importantly: Anthropic wants to control what people do with AI—they block companies they don't like from using their coding product (including us), they want to write the rules themselves for what people can and can't use AI for, and now they also want to tell other companies what their business models can be.
+>
+> We are committed to broad, democratic decision making in addition to access. We are also committed to building the most resilient ecosystem for advanced AI. We care a great deal about safe, broadly beneficial AGI, and we know the only way to get there is to work with the world to prepare.
+>
+> One authoritarian company won't get us there on their own, to say nothing of the other obvious risks. It is a dark path.
+>
+> As for our Super Bowl ad: it's about builders, and how anyone can now build anything.
+>
+> We are enjoying watching so many people switch to Codex. There have now been 500,000 app downloads since launch on Monday, and we think builders are really going to love what's coming in the next few weeks. I believe Codex is going to win.
+>
+> We will continue to work hard to make even more intelligence available for lower and lower prices to our users.
+>
+> This time belongs to the builders, not the people who want to control them.
+
+- **Tweet:** https://x.com/sama/status/2019139174339928189
+- **What:** Sam Altman critiques Anthropic's Super Bowl ad as deceptive while defending OpenAI's free access model and Codex product strategy, emphasizing democratized AI access over restricted commercial models. OpenAI has achieved 500K app downloads since Codex's Monday launch.
+
+---
+
+## @awilkinson - Deep Personality: AI-Powered Psychological Assessment Tool
+
+> For $5,000 worth of Claude Code credits, I vibe coded something that replaces tens of thousands of dollars of psychological evaluations.
+>
+> Let me explain...
+>
+> Last month, my girlfriend and I sat in our den with our jaws on the floor…
+>
+> We were in front of my laptop, taking turns reading a report out loud, line by line.
+>
+> The document read like a CIA dossier—incisively breaking down each of our repeated fights and nailing our relationship dynamics.
+>
+> We had to laugh. We couldn't believe it.
+>
+> A few days earlier, I'd asked ChatGPT a simple but loaded question:
+>
+> "What information would you need in order to become the ultimate personalized relationship coach?"
+>
+> It replied with a long list of personality tests—the same ones psychologists use to evaluate mental health, personality, and relationship satisfaction.
+>
+> The tests were all available online, but scattered across annoying PDFs and awkward, old-school forms.
+>
+> For someone with ADHD, like me, the idea of doing them one by one was pure torture.
+>
+> I just wanted to pound through them as one big test.
+>
+> So I asked Claude Code to build a simple app that combined them.
+>
+> I listed all the tests I wanted and asked it to build a web app that would.
+>
+> I'd done some vibe coding last year with tools like Replit and Lovable, but nothing prepared me for how good Claude Code has become.
+>
+> Within a few hours, I had a beautiful web app that combined all of these tests into one.
+>
+> When I say beautiful, I mean it looked like I employed a $50,000-a-month payroll of talented designers and engineers who'd spent two months working on it.
+>
+> Except I didn't have a $50,000-a-month payroll.
+>
+> I'd paid Claude around $500 in AI credits — and what would normally take months had taken hours.
+>
+> Crazier yet, I'd just talked to it like it was a human employee.
+>
+> Once a beta version was ready, we completed our tests and exported our results into ChatGPT—no names, no context—and asked:
+>
+> "Based on this couple's psychological test results, tell me as much as you can about their relationship."
+>
+> That's how we ended up in our kitchen, in shock, as ChatGPT broke down our relationship patterns with eerie precision.
+>
+> How my ADHD makes me want quick resolution, while Zoe needs to talk things through.
+>
+> How her high openness craves novelty, while I'm a stick-in-the-mud who craves routine.
+>
+> How my avoidance causes me to pull away and shut down when I'm stressed.
+>
+> It felt like a report written by a world-class therapist who'd spent dozens of multi-hour sessions carefully dissecting our dynamic and suggesting remedies.
+>
+> It told us where we were most compatible, and where we'd struggle if we didn't put in the work.
+>
+> It even wrote personal deep dives on each of us, our personalities, and our individual gifts and challenges.
+>
+> And it knew all of this from 45 minutes of multiple-choice questions.
+>
+> I started thinking about friends who'd never been to therapy, or couldn't afford anything like this, and how much it could help them.
+>
+> That's when I realized this was a business.
+>
+> Something that would solve a valuable problem for a lot of people.
+>
+> So I got to work.
+>
+> For the last month, I've been jolting out of bed at 5:30 a.m., too excited to sleep, obsessively building this product.
+>
+> And today, I'm excited to launch Deep Personality.
+>
+> I think it's one of the most comprehensive mental-health screening tools on the internet.
+>
+> It's not a replacement for professional help, but a roadmap to it.
+>
+> Most people stumble blindly into a random therapist or doctor's office without knowing what type of treatment they are even trained in or its efficacy for their specific problems.
+>
+> Deep Personality will screen you across 30+ mental health conditions and provide you with a detailed roadmap of how to get the help you need.
+>
+> In under an hour, it gives you a high-signal snapshot of your mental health across dozens of dimensions:
+>
+> Big Five Personality
+> The gold standard for understanding why you do what you do.
+>
+> Attachment Styles
+> The hidden patterns behind pushing people away, clinging too tightly, or choosing unavailable partners.
+>
+> Anxiety & Depression
+> Screens for what you might be dismissing as "just stress."
+>
+> Relationship Satisfaction
+> Measures the real health of your relationship — often surfacing problems you've been avoiding.
+>
+> Sensory Processing
+> Why crowded rooms drain you — or why you need things just so to focus.
+>
+> Neurodivergence
+> Flags potential ADHD and autism-spectrum traits that often go undiagnosed into adulthood.
+>
+> Trauma
+> Maps early experiences shaping your triggers and stress responses.
+>
+> Values & Career Fit
+> Shows what actually motivates you, and why some work quietly drains your soul.
+>
+> You can do this individually, or compare yourself to anyone in your life.
+>
+> This is where it gets really interesting…
+>
+> Have your partner, coworker, friend, or family member take the assessment, upload their profile, and wait while the app analyzes your personalities and how they interact with one another.
+>
+> For romantic relationships, it analyzes attachment compatibility, conflict styles, emotional regulation, and values alignment — telling you exactly where you'll clash and what to do about it.
+>
+> For work relationships, it focuses on communication, motivation, and how you'll collaborate — or blow up under pressure.
+>
+> For friendships, it looks at shared values, social energy, and the dynamics that help relationships thrive (or quietly fade).
+>
+> For Zoe and me, having our relationship laid out with this kind of clarity — patterns we'd felt but never articulated — was deeply meaningful.
+>
+> Once you complete the assessment, you get a 50+ page deep dive on your personality.
+>
+> It felt like finally getting the owner's manual for myself.
+>
+> You also get a custom AI prompt pre-loaded with your psychological data.
+>
+> Drop it into ChatGPT, Claude, or any AI assistant — and you have a therapist who already knows your attachment style, anxiety patterns, values, trauma history, and emotional regulation tendencies.
+>
+> No more spending six therapy sessions explaining who you are.
+>
+> The AI already gets it.
+>
+> And if you're in therapy, or going to start with a new therapist, you can also export a clinical PDF designed for practitioners—raw scores, thresholds, severity flags, discussion points, and citations.
+>
+> Or… it can help you attract your perfect romantic partner.
+>
+> This one's just fun.
+>
+> Deep Personality can generate dating bios based on your actual personality data — tailored to Hinge, Bumble, or Tinder — in tones like witty, sincere, adventurous, or intellectual.
+>
+> The AI turns what makes you unique into something that attracts compatible people.
+>
+> Once it knows you, it helps you get the help you need.
+>
+> Based on your results, it recommends books, podcasts, and treatment options backed by peer-reviewed research.
+>
+> The full assessment covers 30+ psychological screens and 300+ questions, and it costs a fraction of a single therapy session (free for the basic analysis, $19 for the full report, $29 for a couples comparison).
+>
+> It's really crazy and I think it's going to help a lot of people.
+>
+> Who is this for?
+>
+> • High achievers who want to understand their edge
+>
+> • People who feel stuck and don't know why
+>
+> • Curious minds who want real data
+>
+> • Pattern repeaters, same story — different chapter
+>
+> • Anyone who wants better relationships
+>
+> I'd love it if you'd try it and send me your thoughts!
+>
+> Click here to check it out: https://t.co/gcox8pCY6Y
+
+- **Tweet:** https://x.com/awilkinson/status/2019133938283999335
+- **Link:** https://deeppersonality.app/
+- **What:** Deep Personality is an AI-powered web app combining 30+ psychological assessment tools (Big Five, attachment styles, trauma screening, neurodivergence detection) into a comprehensive mental-health profiler. Built with Claude Code in hours for $500, it generates 50+ page personality reports and relationship compatibility analysis.
+
+---
+
 ## @aiwithjainam - Claude Prompt for SEO Content Briefs
 
 > My team warned me not to share this publicly.
