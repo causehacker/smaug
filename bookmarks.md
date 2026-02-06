@@ -1,5 +1,14 @@
 # Thursday, February 5, 2026
 
+## @theo - Claude Code Free $50 Credit Promotion
+
+> Heads up: Anthropic is giving out $50 of free credit to many Claude Code users if you go to the usage dashboard and click "claim" https://t.co/4wYVrfsZvA
+
+- **Tweet:** https://x.com/theo/status/2019559922523074765
+- **What:** Announcement about Anthropic offering $50 in free credits to Claude Code users through the usage dashboard.
+
+---
+
 ## @ericosiu - Tweet Link
 
 > https://t.co/08yn9cNYdO
