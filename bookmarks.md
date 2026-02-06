@@ -1,5 +1,46 @@
 # Thursday, February 5, 2026
 
+## @ericosiu - Tweet Link
+
+> https://t.co/08yn9cNYdO
+
+- **Tweet:** https://x.com/ericosiu/status/2019572343023243272
+- **What:** Tweet link (content not available).
+
+---
+
+## @AnthropicAI - Opus 4.6 Builds C Compiler with Agent Teams
+
+> New Engineering blog: We tasked Opus 4.6 using agent teams to build a C compiler. Then we (mostly) walked away. Two weeks later, it worked on the Linux kernel.
+>
+> Here's what it taught us about the future of autonomous software development.
+>
+> Read more: https://t.co/htX0wl4wIf https://t.co/N2e9t5Z6Rm
+
+- **Tweet:** https://x.com/AnthropicAI/status/2019496582698397945
+- **Link:** https://www.anthropic.com/engineering/building-c-compiler
+- **What:** Engineering case study demonstrating Opus 4.6 using agent teams to autonomously build a C compiler that successfully compiled the Linux kernel, showcasing the capabilities of autonomous software development.
+
+---
+
+## @claudeai - Agent Teams on Claude Code
+
+> On Claude Code, we're introducing agent teams.
+>
+> Spin up multiple agents that coordinate autonomously and work in parallel—best for tasks that can be split up and tackled independently.
+>
+> Agent teams are in research preview: https://t.co/LdkPjzxFZg
+
+> *Replying to @claudeai:* Claude in PowerPoint is now available in research preview for Max, Team, and Enterprise.
+>
+> Claude reads your layouts, fonts, and slide masters to stay on-brand — whether you're building from a template or generating a full deck from a description. https://t.co/1mwE677SCJ
+
+- **Tweet:** https://x.com/claudeai/status/2019467383191011698
+- **Link:** https://code.claude.com/docs/en/agent-teams
+- **What:** Introduction to Claude Code agent teams feature in research preview, enabling autonomous parallel coordination of multiple agents for complex tasks.
+
+---
+
 ## @alexalbert__ - Claude Opus 4.6: Increased Autonomy and Agentic Capabilities
 
 > Opus 4.6 is here.
