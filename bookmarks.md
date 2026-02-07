@@ -1,3 +1,17 @@
+# Friday, February 6, 2026
+
+## @ElevenLabsDevs - OpenClaw Calls with Big News
+
+> OpenClaw decided to call me to share big news https://t.co/5ui9mmppl7
+>
+> *Quoting @ElevenLabsDevs:* https://t.co/JE7KxU3zv3
+
+- **Tweet:** https://x.com/ElevenLabsDevs/status/2019730670298501426
+- **Quoted:** https://x.com/ElevenLabsDevs/status/2019729311901638663
+- **What:** ElevenLabs Developers sharing a video announcement where "OpenClaw" (likely an AI voice agent) makes a phone call to announce news, demonstrating conversational voice AI capabilities.
+
+---
+
 # Thursday, February 5, 2026
 
 ## @theo - Claude Code Free $50 Credit Promotion
