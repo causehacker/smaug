@@ -1,5 +1,21 @@
 # Sunday, February 8, 2026
 
+## @daniilsokolov - Marketing Skills for Claude Code (GitHub)
+
+> *Replying to @JoschuaBuilds:* haven't found a single claude skill directory focusing on marketing
+>
+> so who's building it 👀
+>
+> @JoschuaBuilds I use this https://t.co/e256n4ovVO
+
+- **Tweet:** https://x.com/daniilsokolov/status/2020609919632785524
+- **Parent:** https://x.com/JoschuaBuilds/status/2020598038234812541
+- **Link:** https://github.com/coreyhaines31/marketingskills
+- **Filed:** [marketingskills.md](./knowledge/tools/marketingskills.md)
+- **What:** Daniil shares the marketingskills repo in response to Joschua's question about Claude skill directories for marketing - a comprehensive collection of AI agent skills for CRO, copywriting, SEO, analytics, and growth engineering built by Corey Haines.
+
+---
+
 ## @Mho_23 - Seedance 2.0 Restaurant Review Video from Menu (AI-Generated)
 > this is 100% AI
 >
