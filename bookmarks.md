@@ -1,4 +1,40 @@
+# Sunday, February 8, 2026
+
+## @siraustin - OpenClaw Implements Automatic Memory Injection with QMD
+
+> *Replying to @PerceptualPeak:* Zac solved context transfer between pre-compacted and post-compacted states in a bot using hourly memory summaries, JSON conversation history, vector embeddings, and prompt hooks—achieving 10000x efficiency with zero knowledge loss.
+>
+> OpenClaw 2026.2.6 now includes automatic memory injection built-in. The system auto-indexes memory files every 5 minutes, embeds chunks with local vectors (no API cost), and injects relevant memories before the agent processes each message—all in sub-300ms with no manual calls needed. The key insight was realizing that the "User Prompt Submit" hook (like Claude Code has) was the missing piece to automatically inject memories. This converges on the same pattern Zac independently discovered for solving the persistent agent compaction problem.
+
+- **Tweet:** https://x.com/siraustin/status/2020462448382243101
+- **Parent:** https://x.com/PerceptualPeak/status/2020339935178567923
+- **Link:** https://feralbots.com/
+- **What:** Austin responds to Zac's breakthrough in context transfer across compacted states, announcing that OpenClaw has now built-in automatic memory injection using QMD vector search—validating Zac's architecture pattern.
+
+---
+
 # Saturday, February 7, 2026
+
+## @unusual_whales - Unusual Whales API Skill for OpenClaw Agents
+> Building an agent with OpenClaw this weekend?
+>
+> Point it at https://t.co/deXXxz7SOh to level up your bot with real-time stock and option data from Unusual Whales.
+>
+> (Then reply to this tweet to show us what you're building!)
+
+- **Tweet:** https://x.com/unusual_whales/status/2020276941371400198
+- **Link:** https://unusualwhales.com/skill.md
+- **What:** A skill for OpenClaw agents to query the Unusual Whales API for real-time financial data including unusual options activity, dark pool prints, market sentiment, and Greeks/IV data.
+
+---
+
+## @EHuanglu - Seedance 2.0 AI Video Model Beta Testing in China
+> a new ai video model Seedance 2.0 is beta testing in china.. this is going to blow ur mind https://t.co/upBeN2SOOR
+
+- **Tweet:** https://x.com/EHuanglu/status/2020131622675202512
+- **What:** Seedance 2.0, an advanced AI video generation model, is undergoing beta testing in China. This represents a significant development in generative video technology.
+
+---
 
 ## @Saboo_Shubham_ - VisionClaw: Real-time AI Agent on Meta Glasses
 
