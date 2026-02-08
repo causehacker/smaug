@@ -1,5 +1,28 @@
 # Saturday, February 7, 2026
 
+## @Saboo_Shubham_ - VisionClaw: Real-time AI Agent on Meta Glasses
+
+> Someone just dropped VisionClaw.
+>
+> A real-time OpenClaw agent on your Meta glasses that sees, hears, and acts for you using Gemini Live.
+>
+> 100% Opensource. https://t.co/nLa2lCDj7J
+
+- **Tweet:** https://x.com/Saboo_Shubham_/status/2020192268460912924
+- **What:** Announcement of VisionClaw, an open-source real-time AI agent that runs on Meta glasses, integrating visual, audio, and action capabilities using Gemini Live to function as an autonomous assistant.
+
+---
+
+## @0xZakk - Twitter Article
+
+> https://t.co/rxnxf2z0oD
+
+- **Tweet:** https://x.com/0xZakk/status/2020155560268632235
+- **Link:** https://x.com/i/article/2020146470196822016
+- **What:** Twitter article shared by Zakk (content details not available from external article link).
+
+---
+
 ## @LyalinDotCom - Impactful Article Recommendation
 
 > This is one of the most interesting and possibly impactful things for me personally.
