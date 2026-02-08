@@ -1,5 +1,17 @@
 # Sunday, February 8, 2026
 
+## @Mho_23 - Seedance 2.0 Restaurant Review Video from Menu (AI-Generated)
+> this is 100% AI
+>
+> seedance 2 prompt: generate a review video on a restaurant from a menu i found online
+>
+> this model is insane... its about to change everything
+
+- **Tweet:** https://x.com/Mho_23/status/2020492666538950832
+- **What:** Miko demonstrates Seedance 2.0's capability to generate a complete restaurant review video from just a menu, showcasing the model's potential to revolutionize AI video generation.
+
+---
+
 ## @siraustin - OpenClaw Implements Automatic Memory Injection with QMD
 
 > *Replying to @PerceptualPeak:* Zac solved context transfer between pre-compacted and post-compacted states in a bot using hourly memory summaries, JSON conversation history, vector embeddings, and prompt hooks—achieving 10000x efficiency with zero knowledge loss.
@@ -14,6 +26,15 @@
 ---
 
 # Saturday, February 7, 2026
+
+## @Bouazizalex - X Article Link
+> https://t.co/ZlyngVP95I
+
+- **Tweet:** https://x.com/Bouazizalex/status/2020159203382550530
+- **Link:** https://x.com/i/article/2018514651592687616
+- **What:** Alex Bouaziz shares a link to an X article.
+
+---
 
 ## @pbteja1998 - Multi-disciplinary AI agent collaboration platform
 > I am blown away by this 🤯
