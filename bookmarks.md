@@ -1,5 +1,14 @@
 # Sunday, February 8, 2026
 
+## @0xMovez - X Article Link
+> https://t.co/jCd8uDd6kF
+
+- **Tweet:** https://x.com/0xMovez/status/2020586519002501435
+- **Link:** https://x.com/i/article/2020540360800256000
+- **What:** Movez shares a link to an X article.
+
+---
+
 ## @hooeem - X Article Link
 > https://t.co/69yyq0u4pa
 
@@ -180,6 +189,16 @@
 ---
 
 # Friday, February 6, 2026
+
+## @BFAVicky - Seedance 2.0 AI Video Model Demo
+> 只用一张特写图就能直出15秒音视频
+> 中国的AI视频模型又站起来了
+> #seedance 2.0 https://t.co/bpXari98NK
+
+- **Tweet:** https://x.com/BFAVicky/status/2019823262918930445
+- **What:** Vicky showcases Seedance 2.0, a Chinese AI video model that can generate 15-second videos with audio from just a single close-up image, demonstrating significant advancement in AI video generation technology.
+
+---
 
 ## @KSimback - Kevin Simback's X Article Share
 
