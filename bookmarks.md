@@ -1,5 +1,14 @@
 # Sunday, February 8, 2026
 
+## @hooeem - X Article Link
+> https://t.co/69yyq0u4pa
+
+- **Tweet:** https://x.com/hooeem/status/2020522623134822537
+- **Link:** https://x.com/i/article/2020515084364042240
+- **What:** hoeem shares a link to an X article.
+
+---
+
 ## @daniilsokolov - Marketing Skills for Claude Code (GitHub)
 
 > *Replying to @JoschuaBuilds:* haven't found a single claude skill directory focusing on marketing
