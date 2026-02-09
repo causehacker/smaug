@@ -1,4 +1,32 @@
+# Monday, February 9, 2026
+
+## @_MaxBlade - QuickClaw iOS App for OpenClaw Agents
+> Introducing QuickClaw ✨
+>
+> I made the first iOS app that launches your own OpenClaw agent in under 30 seconds.
+>
+> No Telegram
+> No API keys
+> No setup
+>
+> One app, Sign in → your agent is live.
+>
+> In the appstore right now. Limited capacity, first come first serve. https://t.co/u1XhheK0Go
+
+- **Tweet:** https://x.com/_MaxBlade/status/2020930966429237259
+- **What:** Max Blade announces QuickClaw, the first iOS app that lets users launch their own OpenClaw agent in under 30 seconds without Telegram, API keys, or complex setup—just sign in and the agent goes live, now available in the App Store with limited initial capacity.
+
+---
+
 # Sunday, February 8, 2026
+
+## @lepadphone - Seedance 2.0 Impact on Motion Design and Filmmaking
+> Seedance 2.0 doesn't just disrupt filmmaking — it steamrolls motion design too. One image, one sentence, a few minutes, and you've got a premium, expensive-looking Microsoft Fluent–style animated app ad. That whole pipeline just got compressed into a prompt.
+
+- **Tweet:** https://x.com/lepadphone/status/2020728930278531232
+- **What:** Padphone highlights how Seedance 2.0's impact extends beyond filmmaking to motion design—demonstrating that creating premium Microsoft Fluent-style animated app ads has been reduced from a complex multi-step pipeline to simply providing one image, one sentence, and waiting a few minutes.
+
+---
 
 ## @LinusEkenstam - Seedance 2.0 AI Video Generation
 > 🤯🤯🤯
