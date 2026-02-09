@@ -1,5 +1,25 @@
 # Sunday, February 8, 2026
 
+## @LinusEkenstam - Seedance 2.0 AI Video Generation
+> 🤯🤯🤯
+>
+> This is AI now https://t.co/ey2OwT8bZ2
+>
+> *Quoting @LinusEkenstam:* Seedance 2.0 is dropping soon
+> I'm calling it, it will break the internet, 100%.
+>
+> It will be SOTA, with Kling 3.0 just released, this will leap yet another step forward.
+>
+> This is the official threshold, the point of no return.
+>
+> More examples below 👇 https://t.co/yKEuWCy9NB
+
+- **Tweet:** https://x.com/LinusEkenstam/status/2020538749650698660
+- **Quoted:** https://x.com/LinusEkenstam/status/2020248497409446210
+- **What:** Linus Ekenstam quote-tweets his own announcement about Seedance 2.0, an upcoming AI video generation model that he predicts will be state-of-the-art and "break the internet"—positioning it as a leap forward beyond the just-released Kling 3.0 and calling it "the point of no return" for AI video.
+
+---
+
 ## @svpino - TinyFish Cookbook (Web Agents API)
 
 > *Replying to @svpino:* A 100% automated QA team that works 24/7:
