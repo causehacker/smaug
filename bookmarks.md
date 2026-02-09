@@ -1,5 +1,53 @@
 # Sunday, February 8, 2026
 
+## @svpino - TinyFish Cookbook (Web Agents API)
+
+> *Replying to @svpino:* A 100% automated QA team that works 24/7:
+>
+> 1. Write your test in plain English
+> 2. AI generates the test cases
+> 3. Web agents execute the tests in parallel
+> 4. Live browser preview with everything that happens
+>
+> Try this for free in your project. https://t.co/murla98gGX
+>
+> Here is the GitHub repository with their cookbook:
+>
+> • Recipes
+> • Demos
+> • Automation
+>
+> Star the repo: https://t.co/qqCw7RUcSU
+>
+> Thanks to the Tiny Fish team for collaborating with me on this post.
+
+- **Tweet:** https://x.com/svpino/status/2020514034777538754
+- **Parent:** https://x.com/svpino/status/2020514022710538712
+- **Link:** https://github.com/tinyfish-io/tinyfish-cookbook
+- **Filed:** [tinyfish-cookbook.md](./knowledge/tools/tinyfish-cookbook.md)
+- **What:** Santiago shares the TinyFish Cookbook GitHub repository in a reply thread about automated QA testing—a collection of recipes and examples for building with TinyFish's web agents API that turns any website into a programmable surface with natural language goals.
+
+---
+
+## @Charles_SEO - Free AI-Powered SEO Strategy to Boost Rankings
+> HUGE SEO tip (USING AI) that costs ZERO $ and takes UNDER 30 minutes:
+>
+> - Go to your Google Search Console
+> - Export pages with avg. position ~8-20 impressions (last 28-90 days)
+> - Plug the CSV into ChatGPT, Claude or Gemini (I recommend Claude for this)
+> - Prompt the AI to rewrite the top 10 most promising titles that are missing queries the page ranks for
+> - Use agent mode to get the AI to plan internal links from every semantically related page on your site
+> - Rule of thumb: 1 internal link per 50 words. 1 external per 150 words
+>
+> This alone moved pages from position 8-15 to top 3 on multiple projects last year.
+>
+> Internal linking is the most underrated lever in SEO and it's FREE...
+
+- **Tweet:** https://x.com/Charles_SEO/status/2020498857369436401
+- **What:** Charles Floate shares a free, AI-powered SEO strategy using Claude/ChatGPT to analyze Google Search Console data, rewrite titles for missing queries, and plan internal linking—claiming it moved pages from positions 8-15 to top 3 across multiple projects.
+
+---
+
 ## @TedHZhang - Perplexity AI Stock Analysis Prompt Template
 > My favorite @perplexity_ai prompt I've made for traders.
 >
@@ -103,6 +151,16 @@
 ---
 
 # Saturday, February 7, 2026
+
+## @photomatt - WordPress Claude Integration from TechCrunch
+> It just got easier for Claude to check in on your WordPress site https://t.co/yBqY8AIxaS via @techcrunch
+
+- **Tweet:** https://x.com/photomatt/status/2020349124592431557
+- **Link:** https://techcrunch.com/2026/02/06/it-just-got-easier-for-claude-to-check-in-on-your-wordpress-site/
+- **Filed:** [claude-wordpress-integration.md](./knowledge/articles/claude-wordpress-integration.md)
+- **What:** Matt Mullenweg shares TechCrunch article announcing WordPress integration with Anthropic's Claude AI, enabling users to leverage Claude to analyze web traffic and internal site metrics.
+
+---
 
 ## @ProperPrompter - Seedance 2.0 Clips Quality Showcase
 > these seedance 2.0 clips are looking unbelievable https://t.co/fSbI7apekh
