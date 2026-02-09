@@ -152,6 +152,14 @@
 
 # Saturday, February 7, 2026
 
+## @garrytan - Claude Prompt for Testing and Performance Optimization
+> I use a very specific prompt to push Claude to check its work and do a lot of testing and thinking about perf and refactoring. I find I can do big features (4K LOC+ with full testing) in about an hour. https://t.co/9lk5ruNUjw
+
+- **Tweet:** https://x.com/garrytan/status/2020072098635665909
+- **What:** Garry Tan shares his approach to using Claude with a specialized prompt that emphasizes work verification, testing, performance optimization, and refactoring—enabling him to complete large features (4,000+ lines of code with full testing) in about an hour. Tweet includes a screenshot of his prompt.
+
+---
+
 ## @photomatt - WordPress Claude Integration from TechCrunch
 > It just got easier for Claude to check in on your WordPress site https://t.co/yBqY8AIxaS via @techcrunch
 
