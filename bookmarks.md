@@ -1,3 +1,110 @@
+# Tuesday, February 10, 2026
+
+## @0xMovez - Polymarket Wallet Strategy Decoder Python Script
+> Polymarket traders Python strategy decoder script
+>
+> Copy-trading a wallet without understanding its strategy is "gambling"
+>
+> This Python script can decode any Polymarket wallet's strategy in 30 seconds.
+>
+> You can send the results to your Clawdbot and ask it to copy the strategy !
+>
+> How to run script in 30-sec:
+>
+> > Download Python3.1 on your Mac/PC
+> > Install dependencies using: "pip3 install requests"
+> > Upload { analyze_user.py, analyze_trades.py }
+> > Run "python3 analyze_user.py {market} {wallet}"
+>
+> As a result, you'll get raw data showing whether a trader is just gambling or has a consistent strategy.
+>
+> Use Jayden's article to find all the files and an explanation of how to use them.
+>
+> *Quoting @thejayden:* https://t.co/KxuvGAc4Fh
+
+- **Tweet:** https://x.com/0xMovez/status/2021246735549346159
+- **Quoted:** https://x.com/thejayden/status/2020891572389224878
+- **What:** A Python script that analyzes Polymarket trader wallets to determine if they're using a consistent strategy or just gambling, with simple setup instructions for quick analysis.
+
+---
+
+## @david_attisaas - Tweet Article Link
+> https://t.co/cEX3SNXeOQ
+
+- **Tweet:** https://x.com/david_attisaas/status/2021228451835846766
+- **Link:** https://x.com/i/article/2021138543918100480
+- **What:** A tweet sharing a link to an X article.
+
+---
+
+## @MoonDevOnYT - Polymarket API Bots for Automated Trading
+> Print USDC While You Sleep: The Step-by-Step Guide to Polymarket API Bots
+>
+> most people are busy gambling on sportsbooks but the real wealth is being built in the prediction markets where code handles the odds while you sleep. there is a specific bridge between being a retail trader and becoming a market maker that most people never cross because they think they need a finance degree
+>
+> i believe that code is the great equalizer because i used to be the guy getting liquidated and over trading until i decided to learn to code. i spent hundreds of thousands of dollars on developers for apps in the past because i thought i was not smart enough to code myself but now fully automated systems trade for me instead of getting me wiped out
+>
+> prediction markets like polymarket are not like a casino where you bet against the house but an exchange where you trade against other users. this means the prices you see are actually probabilities where an eighteen cent share represents an eighteen percent chance of an event happening
+>
+> if you think the odds are better than the market suggests you buy the shares and wait for the outcome. the real secret to profiting in this space is not picking the winner of the next election but being the one who provides the liquidity for everyone else to trade
+>
+> the secret of the liquidity provider is that they earn money from the spread plus the rewards the platform pays out. most traders think they have to have a crystal ball but we just need a python script that can sit on the bid and the ask simultaneously
+>
+> there is a hidden danger in how these exchanges report data that can lead to your bot placing the wrong orders. i spent hours digging into the documentation to find the logic that keeps everything in sync so you do not have to repeat my mistakes
+>
+> when we talk about the central limit order book we are looking at a unified system where a yes buy is essentially a no sell. once you understand that yes plus no always equals one dollar you realize that the market is always in a state of balance that can be exploited
+>
+> there is a blockchain backdoor for balances that allows us to bypass the exchange api entirely when things get laggy. i discovered that we can use the web3 library in python to talk directly to the polygon rpc and see our usdc balance in real time
+>
+> by looking directly at the smart contracts we can ensure that our bot always knows exactly how much capital it has to work with. this prevents the common error of trying to place an order with funds that are already locked in another trade
+>
+> there is a specific logic buried in the code of top traders that allows them to make nearly a thousand dollars a day during peak volatility. i found an open source repository from a trader who was pulling in massive profits during the election and the logic is surprisingly simple
+>
+> the core of this strategy is the spread scanner which looks for markets with wide gaps between the buyers and the sellers. the bot identifies the top volume markets and ranks them by the potential profit from capturing that spread while avoiding dead markets
+>
+> we use a specific filter to ignore any market that is over ninety eight percent resolved because the volatility is gone and the risk is too high. the bot only focuses on the active markets where people are still fighting over the probabilities of the future
+>
+> everyone talks about arbitrage but there is a hidden reason why most scanners fail and once you see it you will stop wasting time on the wrong markets. arbitrage happens when the cost of buying both yes and no is less than a dollar which is a guaranteed win
+>
+> the reason most arbitrage scanners fail is that they do not account for the depth of the order book. you might see a guaranteed profit for ten cents worth of shares but as soon as you try to scale it the spread
+> disappears and you are left with a losing position
+>
+> instead of chasing ghosts we focus on the spread bot logic which places passive bids at the best price. this allows us to earn the liquidity rewards which are paid out in reward points for every second our orders stay live near the mid price
+>
+> automation is the only way to remove the emotional baggage that comes with watching a position go against you. with bots you must iterate to success and that is why i decided to learn live so everyone can see the process of building these systems
+>
+> the liquidation trap is something i know all too well from my days of manual trading and getting emotional at two in the morning. now the code handles the risk management by checking our positions every second and ensuring we never over leverage our account
+>
+> we build nice functions to handle the heavy lifting like getting the token ids and placing limit orders with a single line of code. this modular approach means we can swap out strategies in seconds without having to rewrite the entire bot from scratch
+>
+> the equalizer is the fact that anyone with a laptop and the willingness to learn can now compete with the big dogs. you do not need to be a math genius to understand how to bridge the gap between world events and your trading account
+>
+> we are moving into a world where prediction markets will be the most accurate source of information for everything from elections to interest rates. being early to the automation side of this industry is like finding a gold mine before the rest of the world knows it exists
+>
+> i am going to keep showing everything because i know that wall street will never reveal how these systems actually work. all i ask is that you stay hungry and keep iterating on your own bots until you find that edge that works for you
+>
+> the final step in the process is to set up a loop that runs twenty four seven scanning for the best spreads and providing liquidity. once the system is live it becomes a machine that converts market volatility into steady growth while removing the human error that leads to liquidations
+>
+> code is truly the great equalizer and once you have your first bot running you will never want to look at a chart manually ever again. the future of finance is automated and we are just getting started on this journey together
+
+- **Tweet:** https://x.com/MoonDevOnYT/status/2021193054116593947
+- **What:** A comprehensive guide to building Python bots for Polymarket prediction markets, covering liquidity provision strategies, spread scanning, arbitrage detection, and automated trading without emotional bias.
+
+---
+
+## @letandrewcook - Opus 4.6 Migrates WordPress Site to Jekyll
+> I'm still processing this shock 😮
+>
+> Opus 4.6 just migrated my entire website, 456 pages of content across multiple categories, from WordPress to Jekyll in one shot.
+>
+> this felt like watching an industry category boundary collapse in realtime 😵. https://t.co/Z7gpyizSDO
+
+- **Tweet:** https://x.com/letandrewcook/status/2021148286652924050
+- **Link:** https://x.com/letandrewcook/status/2021148286652924050/video/1 (video)
+- **What:** A demonstration of Opus 4.6 automatically migrating an entire WordPress website with 456 pages of content to Jekyll, showcasing significant AI capability advancement.
+
+---
+
 # Monday, February 9, 2026
 
 ## @_MaxBlade - QuickClaw iOS App for OpenClaw Agents
