@@ -1,5 +1,55 @@
 # Tuesday, February 10, 2026
 
+## @elevenlabsio - Expressive Mode for ElevenAgents Voice AI
+> Introducing Expressive Mode for ElevenAgents - voice agents so expressive, they blur the line between AI and human conversations.
+>
+> This is an unedited recording of an agent empathizing with a customer at peak frustration.
+
+- **Tweet:** https://x.com/elevenlabsio/status/2021237336793657447
+- **Media:** https://x.com/elevenlabsio/status/2021237336793657447/video/1
+- **What:** ElevenLabs announces Expressive Mode for their voice agents, showcasing an AI that can empathize with frustrated customers in human-like conversations with natural emotional response.
+
+---
+
+## @Argona0x - Autonomous Trading Agent That Pays for Itself
+> i gave an AI $50 and told it "pay for yourself or you die"
+>
+> 48 hours later it turned $50 into $2,980
+>
+> and it's still alive
+>
+> autonomous trading agent on polymarket
+>
+> every 10 minutes it:
+>
+> → scans 500-1000 markets
+> → builds fair value estimate with claude
+> → finds mispricing > 8%
+> → calculates position size (kelly criterion, max 6% bankroll)
+> → executes
+> → pays its own API bill from profits
+>
+> if balance hits $0, the agent dies
+>
+> so it learned to survive
+>
+> built in rust for speed
+>
+> claude API for reasoning (agent pays for its own inference)
+>
+> runs on a $4.5/month VPS
+>
+> weather markets: parses NOAA before polymarket updates sports: scrapes injury reports, finds mispricing crypto: on-chain metrics + sentiment
+>
+> $50 → $2,980 in 48 hours
+>
+> how much do u think i'll see in a week?
+
+- **Tweet:** https://x.com/Argona0x/status/2021232172753936470
+- **What:** An autonomous Polymarket trading agent built in Rust that turned $50 into $2,980 in 48 hours by scanning markets, estimating fair values with Claude API, finding mispricings, and paying for its own API costs from profits.
+
+---
+
 ## @0xMovez - Polymarket Wallet Strategy Decoder Python Script
 > Polymarket traders Python strategy decoder script
 >
@@ -106,6 +156,37 @@
 ---
 
 # Monday, February 9, 2026
+
+## @recap_david - AI Video Ad Tactics for Near-Zero Production Costs
+> I know a guy running AI street interviews as paid ads... 4.5x ROAS.
+>
+> $0 spent on creators.
+> $0 spent on production.
+>
+> Here's 11 AI video tactics brands are using to create viral ads for nearly $0:
+>
+> 1. AI street interviews (you can't tell they're fake)
+> 2. Podcast-style clips that look 100% real
+> 3. Viral food videos with zero kitchen
+> 4. Anatomical video animations
+> 5. Localization at scale — clone ads into any language instantly
+> 6. Try-on videos without a single model
+> 7. Shock hooks getting 47% higher completion rates
+> 8. Product-style commercials
+> 9. POV adventure content for travel brands
+> 10. Real estate transformation videos
+> 11. AI unboxing videos
+>
+> Most marketers have no idea these exist yet.
+>
+> I put together a free PDF with the exact prompts for all 11 along with the tool I'm using.
+>
+> Comment "AI ADS" and I'll send you everything (must be following so I can dm you!).
+
+- **Tweet:** https://x.com/recap_david/status/2020867491829014612
+- **What:** A thread outlining 11 AI video creation tactics that enable brands to produce viral ad content at near-zero cost, achieving 4.5x ROAS without traditional creators or production expenses.
+
+---
 
 ## @_MaxBlade - QuickClaw iOS App for OpenClaw Agents
 > Introducing QuickClaw ✨
