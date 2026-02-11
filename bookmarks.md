@@ -1,5 +1,110 @@
 # Tuesday, February 10, 2026
 
+## @0xCristal - OpenClaw Trading Bot Generating Daily Returns
+> +$98.36K Every Day thanks to OpenClaw!
+>
+> The bot runs without your involvement. Works 24/7. No coding skills
+>
+> A few wins:
+>
+> - $1,676.02 → $7,805.99
+> - $2,760.10 → $7,833.02
+>
+> It mainly trades Bitcoin Up or Down. Gets data from exchanges before it updates on Polymarket
+
+- **Tweet:** https://x.com/0xCristal/status/2021158271072207047
+- **Link:** https://polymarket.com/@0x8dxd?via=cristal
+- **Link:** https://t.me/PolyCop_BOT?start=ref_copytrade
+- **What:** An automated trading bot called OpenClaw that trades Bitcoin predictions on Polymarket 24/7, claiming to generate consistent daily returns.
+
+---
+
+## @crystalsssup - Kimi K2.5 + Seedance 2 Storyboard Workflow
+> Kimi K2.5 + Seedance 2 is a perfect workflow.
+>
+> One prompt = A 100MB Excel storyboard generated with images and prompts, which you can use in seedance.
+>
+> I just tested with Hitchcock's Psycho iconic shower scene. My prompt:
+>
+> I would like to create a derivative work of the shower murder scene from Psycho. Could you provide a storyboard breakdown, including the prompt for each shot, and generate previews for me? Please present this in a table and give me an Excel file.
+
+- **Tweet:** https://x.com/crystalsssup/status/2021149326290956353
+- **What:** A workflow combining Kimi K2.5 and Seedance 2 to generate Excel storyboards with AI-generated images and prompts for video production, demonstrated with a Psycho shower scene example.
+
+---
+
+## @beckerrjon - 400M+ Polymarket Trades Dataset Released
+> added polymarket data to the public dataset.
+>
+> 400m+ trades going back to 2020.
+>
+> 36gb compressed.
+>
+> MIT licensed, free to download via @Cloudflare R2.
+
+- **Tweet:** https://x.com/beckerrjon/status/2021280975318040917
+- **What:** A publicly released dataset containing 400+ million Polymarket trades from 2020 onwards (36GB compressed), MIT licensed and available via Cloudflare R2.
+
+---
+
+## @RoundtableSpace - OpenClaw for TradingView Launch
+> OpenClaw for TradingView just dropped.
+>
+> AI agents analyzing charts and executing trades in real-time.
+
+- **Tweet:** https://x.com/RoundtableSpace/status/2021294344565924350
+- **What:** The release of OpenClaw for TradingView, an AI-powered trading agent that analyzes charts and executes trades automatically in real-time.
+
+---
+
+## @Mho_23 - Seedance 2.0 AI UGC breakthrough with automated video generation
+> seedance 2.0 + my v2 AI UGC prompting system is giving insane results
+
+i spent the last 24 hours generating over 200 seedance 2.0 videos to figure out the best prompting framework system for AI UGC
+
+this video was made with 1 prompt and 1 tool, no editing was done to the video this was just a prompt to a video
+
+this is by far the best model i've ever used
+
+and the craziest part is that it can be fully automated
+
+this is the first time we can actually automate high quality ai ugc at this level
+
+bytedance owns tiktok so this model is trained on millions of high quality ugc videos.
+
+you just need to know how to extract that and call it in your prompt.
+
+we are so early... it's insane
+
+- **Tweet:** https://x.com/Mho_23/status/2021310507584807389
+- **What:** Analysis of Seedance 2.0, a ByteDance AI video generation model trained on TikTok content that enables fully automated, high-quality UGC video creation from simple text prompts.
+
+---
+
+## @Mho_23 - Seedance 2 demo of insane AI UGC ad generation
+> seedance 2 AI UGC ad:
+insane model 1 prompt https://t.co/3YOkGTp4Qk
+
+- **Tweet:** https://x.com/Mho_23/status/2021339842093908329
+- **What:** Short demo showcasing Seedance 2's ability to generate UGC ads with a single prompt, highlighting the model's impressive output quality.
+
+---
+
+## @milesdeutscher - Open-source Polymarket copy-trading bot for whale strategies
+> Insane..
+
+Copytrade REAL Polymarket whales live using this Github repo.
+
+Can't believe this is open to the public.
+
+https:// github. com/terauss/ Polymarket-Copy-Trading-Bot https://t.co/zxMHp9Se22
+
+- **Tweet:** https://x.com/milesdeutscher/status/2021388743756874174
+- **Link:** https://github.com/terauss/Polymarket-Copy-Trading-Bot
+- **What:** An open-source tool that allows users to automatically copy-trade the positions of top Polymarket whales in real-time.
+
+---
+
 ## @elevenlabsio - Expressive Mode for ElevenAgents Voice AI
 > Introducing Expressive Mode for ElevenAgents - voice agents so expressive, they blur the line between AI and human conversations.
 >
