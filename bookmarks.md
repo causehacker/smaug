@@ -1,3 +1,14 @@
+# Thursday, February 12, 2026
+
+## @eptwts - Twitter Article Post
+> https://t.co/ttdrW93saU
+
+- **Tweet:** https://x.com/eptwts/status/2021947976831148445
+- **Link:** https://x.com/i/article/2021937455973179392
+- **What:** A Twitter article shared by EP (link to Twitter article platform).
+
+---
+
 # Tuesday, February 10, 2026
 
 ## @mattshumer_ - Twitter Article Post
