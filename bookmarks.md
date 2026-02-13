@@ -1,5 +1,49 @@
 # Thursday, February 12, 2026
 
+## @kimmonismus - Spotify Engineers Using Claude AI for Zero-Code Development
+> Spotify revealed that its top engineers haven't written a single line of code since December, thanks to an internal AI system called "Honk" powered by Claude.
+>
+> The company shipped 50+ new features in 2025 alone, with AI now enabling real-time bug fixes and feature deployments straight from a phone during a commute, dramatically accelerating product velocity
+>
+> *Quoting @TechCrunch:* Spotify says its best developers haven't written a line of code since December, thanks to AI https://t.co/6hafAJOeJv
+
+- **Tweet:** https://x.com/kimmonismus/status/2022055329408938125
+- **Quoted:** https://x.com/TechCrunch/status/2022016688699674692
+- **What:** Spotify's "Honk" internal AI system powered by Claude enabling engineers to deploy features and fix bugs without writing code, shipping 50+ features and enabling development from mobile devices.
+
+## @jsrailton - Federal Ruling: AI Chat Logs Have No Legal Privilege
+> Are you talking to AI about legal matters? Be careful.
+>
+> He chatted with Claude about his legal strategy.
+>
+> Then discussed with his lawyers.
+>
+> A Federal judge just ruled that those AI chat logs have zero legal privilege
+>
+> *Quoting @mpeltz:* Your AI conversations aren't privileged. Yesterday, Judge Jed Rakoff ruled that 31 documents a defendant generated using an AI tool and later shared with his defense attorneys are not protected by attorney-client privilege or work product doctrine.
+>
+> The logic is simple: an AI tool is not an attorney. It has no law license, owes no duty of loyalty, and its terms of service explicitly disclaim any attorney-client relationship. Sharing case details with an AI platform is legally no different from talking through your legal situation with a friend (which is not privileged).
+
+- **Tweet:** https://x.com/jsrailton/status/2021974761039859714
+- **Quoted:** https://x.com/mpeltz/status/2021778562328482231
+- **What:** Important federal court ruling by Judge Jed Rakoff establishing that conversations with AI tools (including Claude) are not protected by attorney-client privilege, even if later shared with lawyers, as AI providers can disclose data to authorities.
+
+## @tomilola_ng - How to Get Your Website Seen on ChatGPT & Gemini
+> To get your website seen on ChatGPT, Gemini, and the rest, do this:
+>
+> 1. Add a detailed summary about your product or services as an llms.txt file on your website
+> 2. Then submit the page to these websites:
+> - https://t.co/Vl1cReYUyj
+> - https://t.co/K8n4TRmISL
+> 3. ( Optional ) You can also submit it to Google Search Console
+>
+> Thank me later
+
+- **Tweet:** https://x.com/tomilola_ng/status/2021903057437520172
+- **Link:** https://llmstxt.site/
+- **Link:** https://directory.llmstxt.cloud/
+- **What:** A practical guide to making websites discoverable by AI models like ChatGPT and Gemini by creating an llms.txt file and submitting to dedicated llms.txt directories.
+
 ## @GeminiApp - Gemini 3 Deep Think Update for Science & Engineering
 > Today, we're releasing a significant upgrade to our specialized reasoning mode, Gemini 3 Deep Think.
 >
@@ -33,6 +77,16 @@
 ---
 
 # Wednesday, February 11, 2026
+
+## @samdblond - Monaco AI Sales Platform Launch
+> We're launching Monaco today.
+>
+> Monaco automates customer acquisition and revenue growth for startups.
+>
+> The platform disrupting sales with AI has finally arrived. https://t.co/mH03HIOdx8
+
+- **Tweet:** https://x.com/samdblond/status/2021616625058017588
+- **What:** Launch announcement for Monaco, an AI platform designed to automate customer acquisition and revenue growth for startups, positioning itself as a disruptive sales automation tool.
 
 ## @LandseerEnga - iOS App Store Guideline Scanner CLI
 > Built a CLI that scans your iOS app against every App Store guideline before you submit.
