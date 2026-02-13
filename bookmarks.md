@@ -1,3 +1,21 @@
+# Friday, February 13, 2026
+
+## @Star_Knight12 - Google CodeWiki: AI-Powered Interactive GitHub Repository Guide
+> Google launched a brand new AI tool.
+>
+> It's called CodeWiki, and it might be the biggest upgrade GitHub has had in years.
+>
+> And all you do is paste your GitHub repo in, and it turns your entire project into an interactive guide.
+>
+> It also generates diagrams, explanations, walkthroughs, everything you could ever want, and even a chatbot that knows the code better than anyone else.
+>
+> So you never have to dig through a giant repo again wondering what does this do
+
+- **Tweet:** https://x.com/Star_Knight12/status/2022252256247095615
+- **What:** Google's new CodeWiki tool that transforms GitHub repositories into interactive guides with AI-generated diagrams, explanations, walkthroughs, and an intelligent chatbot for easier code navigation and understanding.
+
+---
+
 # Thursday, February 12, 2026
 
 ## @Replit - AI-Powered Feedback Widget for User-Driven Features
