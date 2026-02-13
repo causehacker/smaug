@@ -1,5 +1,13 @@
 # Thursday, February 12, 2026
 
+## @Replit - AI-Powered Feedback Widget for User-Driven Features
+> What if your users' suggestions could turn into shipped features with a single click?
+>
+> Turn on the feedback widget in your published app and let Agent help you build what your users ask for.
+
+- **Tweet:** https://x.com/Replit/status/2022099909827342700
+- **What:** Replit's new feedback widget feature that uses AI Agent to automatically implement user-requested features directly from user suggestions, enabling one-click feature deployment.
+
 ## @kimmonismus - Spotify Engineers Using Claude AI for Zero-Code Development
 > Spotify revealed that its top engineers haven't written a single line of code since December, thanks to an internal AI system called "Honk" powered by Claude.
 >
