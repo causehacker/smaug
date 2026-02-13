@@ -86,6 +86,16 @@
 
 # Wednesday, February 11, 2026
 
+## @Cloudflare - Moltworker: Self-Hosted AI Agents at the Edge
+> Run your own AI personal assistant on Cloudflare Workers — no Mac Mini required. 🤖 Introducing Moltworker: self-hosted AI agents at the edge.
+>
+> https://t.co/8zpt0rljrE
+
+- **Tweet:** https://x.com/Cloudflare/status/2021739474049544648
+- **Link:** https://blog.cloudflare.com/moltworker-self-hosted-ai-agent/
+- **Filed:** [moltworker-self-hosted-ai-agent.md](./knowledge/articles/moltworker-self-hosted-ai-agent.md)
+- **What:** Cloudflare's Moltworker enables running self-hosted AI personal assistants (Moltbot) on Cloudflare Workers using their Sandbox SDK and Developer Platform APIs, eliminating the need for dedicated hardware like Mac Minis.
+
 ## @samdblond - Monaco AI Sales Platform Launch
 > We're launching Monaco today.
 >
