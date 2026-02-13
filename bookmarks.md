@@ -1,11 +1,53 @@
 # Thursday, February 12, 2026
 
+## @GeminiApp - Gemini 3 Deep Think Update for Science & Engineering
+> Today, we're releasing a significant upgrade to our specialized reasoning mode, Gemini 3 Deep Think.
+>
+> Deep Think is built to drive practical applications, enabling researchers to interpret complex data and engineers to model physical systems through code.
+>
+> With the updated Deep Think, you can turn a sketch into a 3D-printable reality. Deep Think analyzes the drawing, builds the complex shape, and generates a file so you can create the physical object with 3D printing.
+>
+> This is rolling out now to Google AI Ultra subscribers. Select the "Deep Think" option in the tools menu to get started.
+>
+> Learn more here: https://t.co/MMGMgDtoK8
+
+- **Tweet:** https://x.com/GeminiApp/status/2021985731577852282
+- **Link:** https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/
+- **Filed:** [gemini-3-deep-think.md](./knowledge/articles/gemini-3-deep-think.md)
+- **What:** Google's major upgrade to Gemini 3 Deep Think, a specialized AI reasoning mode for scientific research and engineering that can turn sketches into 3D-printable objects.
+
+## @oliverhenry - Twitter Article Post
+> https://t.co/Mg6IwpDnGK
+
+- **Tweet:** https://x.com/oliverhenry/status/2022011925903667547
+- **Link:** https://x.com/i/article/2021875898064990208
+- **What:** A Twitter article shared by Oliver Henry (link to Twitter article platform).
+
 ## @eptwts - Twitter Article Post
 > https://t.co/ttdrW93saU
 
 - **Tweet:** https://x.com/eptwts/status/2021947976831148445
 - **Link:** https://x.com/i/article/2021937455973179392
 - **What:** A Twitter article shared by EP (link to Twitter article platform).
+
+---
+
+# Wednesday, February 11, 2026
+
+## @LandseerEnga - iOS App Store Guideline Scanner CLI
+> Built a CLI that scans your iOS app against every App Store guideline before you submit.
+>
+>   It checks for:
+>   - Payment & IAP compliance
+>   - Privacy manifests & data usage declarations
+>   - Required sign-in & account management flows
+>   - App completeness & metadata quality
+>   - Binary & entitlement validation
+>
+> Made it a Claude Code skill so it fixes every issue for you. Scan, fix, repeat until passing
+
+- **Tweet:** https://x.com/LandseerEnga/status/2021661315329405174
+- **What:** A command-line tool that validates iOS apps against all App Store guidelines, integrated with Claude Code to automatically fix compliance issues.
 
 ---
 
