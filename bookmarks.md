@@ -1,5 +1,19 @@
 # Saturday, February 14, 2026
 
+## @jia_seed - jam-nodes: Extensible Workflow Node Framework
+
+> *Replying to @jia_seed:* oh and don't forget openclaw ;D we expose our automation workflows as an mcp server that openclaw agents can call from any messaging channel like whatsapp, telegram, slack, or discord
+>
+> we are open sourcing everything we discover so u can contribute and use what you'd like (shoutout to our community of devs, you guys are great)
+>
+> https://t.co/U01in68hee
+
+- **Tweet:** https://x.com/jia_seed/status/2022761956566818908
+- **Parent:** https://x.com/jia_seed/status/2022761954365050990
+- **Link:** https://github.com/wespreadjam/jam-nodes
+- **Filed:** [jam-nodes](./knowledge/tools/jam-nodes.md)
+- **What:** TypeScript workflow node framework for building automation pipelines with Zod validation. Includes core registry system and built-in nodes for conditional logic, delays, filters, maps, and HTTP requests. Part of jam's open source ecosystem that powers OpenClaw's MCP server workflows.
+
 ## @WasimShips - Build a Better Indie App by Fixing Top Competitor Complaints
 
 > The easiest path to a viral indie app right now (that actually makes money):
