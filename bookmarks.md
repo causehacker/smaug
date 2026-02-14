@@ -1,5 +1,40 @@
 # Friday, February 13, 2026
 
+## @AkshitVrma - Accessing Seedance 2.0 Video Generation
+
+> If you're still living under a rock and don't know how to access seedance 2.0 to generate videos like this
+>
+> > spin up a Hongkong VPN
+> > Visit doubao [dot] com
+> > select image gen and make sure seedance 4.5 is  selected
+>
+> you won't believe the next step but:
+>
+> > tell the image gen model to make a video and it'll start generating a video using the latest seedance 2.0
+
+- **Tweet:** https://x.com/AkshitVrma/status/2022259562586456531
+- **What:** Instructions for accessing Seedance 2.0 video generation through Doubao, requiring a Hong Kong VPN and selecting the image generation model to create videos.
+
+## @kloss_xyz - AI Mission Control Dashboard for OpenClaw
+> Use this prompt in OpenClaw to create your own AI agent command center that syncs up your life like Tony Stark's Jarvis in Iron Man. Adapt the specifics (agent names, data sources, branding) below to your own setup.
+>
+> Prompt: Build me a mission control dashboard for my OpenClaw AI agent system.
+>
+> Stack: Next.js 15 (App Router) + Convex (real-time backend) + Tailwind CSS v4 + Framer Motion + ShadCN UI + Lucide icons. TypeScript throughout...
+>
+> *Quoting @kloss_xyz:* 8 prompts for @openclaw. To help it understand you. 1) Brain: maps you 2) Muscles: routes AI models 3) Bones: ingests codebases 4) DNA: behavioral protocols 5) Soul: personality you want 6) Eyes: activation triggers 7) Heartbeat: evolution/learning 8) Nerves: context efficiency
+
+- **Tweet:** https://x.com/kloss_xyz/status/2022461932759060993
+- **Quoted:** https://x.com/kloss_xyz/status/2020738433724137694
+- **What:** Detailed prompt for building a premium AI agent mission control dashboard using Next.js, Convex, and Tailwind CSS. Quotes a foundational post about OpenClaw's 8 core components.
+
+## @Hartdrawss - iOS App Store Submission Checklist
+
+> This reddit user got iOS app approved in 7 mins! Here's the ULTIMATE submission checklist ( Bookmark this to ship): 1/ App Store Connect Setup, 2/ Build Preparation, 3/ App Store Assets, 4/ Metadata Compliance, 5/ Technical Requirements, 6/ Privacy and Permissions, 7/ Pre-Submission Testing, 8/ App Review Preparation...
+
+- **Tweet:** https://x.com/Hartdrawss/status/2022272233515712847
+- **What:** A comprehensive 8-step checklist for getting iOS apps approved on the App Store, with specific requirements for each category from setup through pre-submission testing.
+
 ## @heyrobinai - Unlimited AI Video Generation with Perfect Lip-Sync
 > no way we're still calling this "AI-generated"
 >
