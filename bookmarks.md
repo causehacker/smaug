@@ -1,5 +1,57 @@
 # Friday, February 13, 2026
 
+## @ChromiumDev - WebMCP Early Preview for AI Agent Tool Exposure
+> WebMCP is available for early preview → https://t.co/bZMcANfg37
+>
+> WebMCP aims to provide a standard way for exposing structured tools, ensuring AI agents can perform actions on your side with increased speed, reliability, and precision.
+
+- **Tweet:** https://x.com/ChromiumDev/status/2022363079976034455
+- **Link:** https://developer.chrome.com/blog/webmcp-epp
+- **What:** Chrome's early preview of WebMCP (Web Model Context Protocol), a standard for exposing structured tools to AI agents, enabling faster and more reliable agent actions on the web.
+
+## @jackfriks - OpenClaw Skills for B2C Mobile App Marketing
+> give your OpenClaw these 2 skills & get millions of tikt0k views this month
+>
+> and 1000s of free downloads to your mobile app...
+>
+> here's how, with prompts and links to 2 skills i made just for this for my own OpenClaw:
+>
+> first off, either copy and paste the following prompt into your OpenClaw, or use the skills i made directly - the skills are just markdown you can view with nothing of harm inside of them, this is the better route IMO to give full context and not have to repeat yourself.
+
+- **Tweet:** https://x.com/jackfriks/status/2022334105820471632
+- **Link:** https://clawhub.ai/jackfriks/b2c-marketing
+- **Link:** https://clawhub.ai/jackfriks/post-bridge-social-manager
+- **Link:** https://api.post-bridge.com/reference
+- **Link:** https://www.post-bridge.com/
+- **What:** Tutorial thread on configuring OpenClaw (Claude Code) with two custom skills for B2C mobile app marketing via short-form video on TikTok/Instagram/YouTube, including social media manager functionality using Post Bridge API for cross-platform posting.
+
+## @JamesEbringer - STUNT: AI Tool for Recreating Viral Videos
+> STUNT IS OFFICIALLY LIVE
+>
+> Paste any viral video. AI recreates it with your character in 60 seconds. Post it as your own.
+>
+> - Clone any viral video
+> - Create unlimited content without recording a single video
+> - Scale across multiple accounts and niches at once
+>
+> RT + Comment "STUNT" and I'll DM you early access
+
+- **Tweet:** https://x.com/JamesEbringer/status/2022399184813392098
+- **What:** Launch announcement for STUNT, an AI tool that recreates viral videos with custom characters in 60 seconds, enabling content creators to clone viral content without recording.
+
+## @123skely - AI Accelerating Destruction of Female Influencer Class
+> AI is accelerating the destruction of the female influencer class and its beautiful.
+>
+> *Quoting @123skely:* I am messing around with UGC influencer content today, and this is one I made with Seedance2.0.  this was just " USG  female ad' for creatine".
+>
+> Yeah its over for the female influencer class.
+>
+> learn to cook ladies.
+
+- **Tweet:** https://x.com/123skely/status/2022411807076585750
+- **Quoted:** https://x.com/123skely/status/2022404440343654825
+- **What:** Commentary on AI-generated UGC influencer content using Seedance2.0, demonstrating how AI tools can create realistic female influencer marketing videos with simple text prompts, potentially disrupting the influencer industry.
+
 ## @Star_Knight12 - Google CodeWiki: AI-Powered Interactive GitHub Repository Guide
 > Google launched a brand new AI tool.
 >
