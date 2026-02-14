@@ -1,5 +1,25 @@
 # Friday, February 13, 2026
 
+## @steipete - Summarize v0.11: CLI + Chrome Extension for Fast Summaries
+
+> New version of https://t.co/VBw4Rt1V5A is out! 0.11 can now even use cursor for free tokens + uses Groq for way faster TTS inference + lots lots of other improvements.
+> https://t.co/AiKEz6UgEj
+>
+> summarize https://t.co/HnrzhQC65N\?v\=n1E9IZfvGMA --slides
+>
+> my favorite way to consume YT. Or Podcasts. or literally any website or remote or local file.
+>
+> Powers the content efficient file summarization for @openclaw but also really nice for humans, especially with --slides.
+>
+> It's also a Chrome extension. because why not.
+> https://t.co/8JnedneSwM
+
+- **Tweet:** https://x.com/steipete/status/2022513027870810384
+- **Link:** https://summarize.sh/
+- **GitHub:** https://github.com/steipete/summarize/releases/tag/v0.11.1
+- **Filed:** [Summarize](./knowledge/tools/summarize.md)
+- **What:** CLI and Chrome extension for fast summaries of URLs, files, YouTube videos, and podcasts. Version 0.11 adds Cursor integration for free tokens, Groq for faster TTS inference, and --slides mode for extracting video frames with timestamps. Powers content summarization for OpenClaw and supports local/paid/free AI models.
+
 ## @AkshitVrma - Accessing Seedance 2.0 Video Generation
 
 > If you're still living under a rock and don't know how to access seedance 2.0 to generate videos like this
