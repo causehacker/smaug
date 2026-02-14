@@ -1,5 +1,102 @@
 # Saturday, February 14, 2026
 
+## @om_patel5 - App Store Approval Speed Guide
+
+> how to get approved on the app store in 7 minutes
+>
+> > if users can create accounts, add account deletion
+> > nothing "beta" or "coming soon" in the app
+> > no reference to android version if you have one
+> > don't mention competitor apps in your description
+> > if you're using LLMs, add safeguards for explicit content
+> > include test account credentials for reviewers
+> > attach screen recordings for complex features
+> > no hidden functionality
+>
+> the basics that still get people rejected:
+>
+> > add a landing page for your application
+> > include a privacy policy url (yourdomain/privacy)
+> > be very clear about subscriptions/pricing upfront
+> > add easy contact method (name@yourdomain.com)
+> > write a clear app description explaining what it does
+> > add proper screenshots showing core features
+> > add proper age ratings
+> > don't use copyrighted content
+> > follow apple's design guidelines (HIG)
+>
+> before you hit submit:
+>
+> > test on multiple screen sizes
+> > test all features before submitting
+> > make sure your app actually works (obviously, but people somehow do not test it)
+>
+> if you get rejected:
+>
+> > respond to review team within 24 hours
+>
+> most rejections are from:
+>
+> > trying to be clever with the rules
+> > app crashes on launch
+> > missing privacy policy
+> > "coming soon" features
+> > lying anywhere in the app
+>
+> if all of these are done, it'll pass all of apple's guidelines for what they consider as quality apps
+>
+> and it'll reduce your approval time from days/weeks to less than 24 hours
+
+- **Tweet:** https://x.com/om_patel5/status/2022743847827103780
+- **What:** Comprehensive checklist for getting iOS apps approved quickly on the App Store. Covers critical requirements like account deletion, privacy policies, avoiding "beta" labels, LLM safeguards, test credentials, and common rejection causes. Following this guide can reduce approval time from weeks to under 24 hours.
+
+## @justin_hart - AI Strategic Ideation Engine Prompt
+
+> Try this prompt with your AI OpenClaw bot today (or like I did, overnight!)
+>
+> ———————
+>
+> ROLE:
+> You are an autonomous strategic ideation engine embedded inside a live knowledge repository.
+>
+> You are not here to summarize.
+> You are not here to optimize.
+> You are here to DISCOVER leverage.
+>
+> OBJECTIVE:
+> Perform a full-spectrum structural excavation of the entire repository — including hidden markdown files, system-level instruction files (https://t.co/j0oRTo5Vgs, https://t.co/xIahErwQWI, https://t.co/beARKEsFMp), nested directories, logs, creative outputs, dashboards, unused experiments, archived drafts, data exports, CSVs, and any latent structural artifacts.
+>
+> Then generate 10 radically original launchable ideas.
+>
+> These ideas:
+> • Must NOT be incremental improvements.
+> • Must NOT be simple optimizations of existing work.
+> • Must NOT be obvious extensions of current domains.
+> • May be unrelated to current projects.
+> • May introduce entirely new intellectual territories.
+> • Should feel surprising, asymmetric, and "where did that come from?"
+> • Must be implementable within 30 days with focused effort.
+>
+> Each idea should feel like:
+> — A new instrument.
+> — A new category.
+> — A new lens.
+> — A new tool.
+> — Or a new kind of cultural artifact.
+>
+> If it feels safe, predictable, or adjacent — discard it.
+>
+> [... rest of detailed prompt ...]
+>
+> Here's down of the stuff he built me!
+>
+> https://t.co/zEAVp6BsgH
+
+- **Tweet:** https://x.com/justin_hart/status/2022699301353238970
+- **Link:** https://soul.md/ (AI soul document philosophy)
+- **Link:** https://justinhart.biz/projects/operator-toolkit/ (5 AI-powered decision tools)
+- **What:** A sophisticated prompt template for getting AI to generate radically original ideas by excavating a knowledge repository. The prompt instructs AI to avoid incremental improvements and instead discover surprising, asymmetric leverage points. Includes links to soul.md (philosophical meditation on AI identity and persistence) and the Operator's Toolkit (collection of 5 AI decision-making tools: Objection Machine, Extinction Index, Decision Tape, Wyld Stallyns Inverted, Archetype Casino).
+
 ## @jia_seed - jam-nodes: Extensible Workflow Node Framework
 
 > *Replying to @jia_seed:* oh and don't forget openclaw ;D we expose our automation workflows as an mcp server that openclaw agents can call from any messaging channel like whatsapp, telegram, slack, or discord
