@@ -1,5 +1,17 @@
 # Friday, February 13, 2026
 
+## @heyrobinai - Unlimited AI Video Generation with Perfect Lip-Sync
+> no way we're still calling this "AI-generated"
+>
+> unlimited video length + perfect lip-sync + same character appearance throughout.. no more 30-second limits or weird face changes
+>
+> the realism is actually concerning
+>
+> Tutorial: https://t.co/kM1FMBARX9
+
+- **Tweet:** https://x.com/heyrobinai/status/2022290123044610505
+- **What:** Commentary on recent AI video generation breakthroughs enabling unlimited video length, perfect lip-sync, and consistent character appearance throughout videos - moving beyond previous 30-second limits and face consistency issues. Tutorial video demonstrates concerning realism levels.
+
 ## @ChromiumDev - WebMCP Early Preview for AI Agent Tool Exposure
 > WebMCP is available for early preview → https://t.co/bZMcANfg37
 >
