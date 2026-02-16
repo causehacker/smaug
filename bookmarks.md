@@ -1,5 +1,16 @@
 # Monday, February 16, 2026
 
+## @Whizz_ai - AI-Generated Product Videos with Claude Opus 4.6 and Higgsfield
+> BREAKING: AI can now create product videos like $10K/day TikTok ad agencies (for free).
+>
+> Here are 9 insane Claude Opus 4.6 + Higgsfield prompts that generate 50 product videos in 4 hours:
+>
+> (Save this before your competitors do) https://t.co/cirWaQG6un
+
+- **Tweet:** https://x.com/Whizz_ai/status/2023307199502774287
+- **Link:** https://x.com/Whizz_ai/status/2023307199502774287/photo/1
+- **What:** Hamza Khalid announces a breakthrough workflow for generating professional-quality product videos using Claude Opus 4.6 combined with Higgsfield. The thread promises 9 prompts that can create 50 product videos in 4 hours, positioning AI tools as a free alternative to expensive TikTok ad agencies.
+
 ## @CyberRobooo - Unitree Humanoid Robot Performance at 2026 Spring Festival Gala
 
 > 🤯Absolutely insane. Unitree's humanoid robot team's performance at the 2026 Spring Festival Gala
@@ -20,6 +31,22 @@
 ---
 
 # Sunday, February 15, 2026
+
+## @anothercohen - AI Workflow Transformation with OpenClaw
+> It's pretty incredible how much of how I work has changed in just the last two weeks.
+>
+> We rolled out an AI chatbot inside Slack (OpenClaw), hooked up a bunch of tools via MCP and APIs, and now I basically just chat with AI to knock out entire projects. I can also do a lot more work when I'm on the go and only have access to my phone.
+>
+> As I finish each project, I turn it into a reusable skill so the rest of the team can use it. Anyone can also update the AI's SOUL file to set overarching rules for how it operates. The system just keeps getting more useful.
+>
+> Example from yesterday: I created a skill where anyone on the sales team can message the bot after a sales call. The AI finds the relevant Granola meeting notes and HubSpot deal, asks a few clarifying questions, then generates a full ROI analysis spreadsheet and a custom pitch deck and shares the xlsx and pptx files right inside Slack.
+>
+> If something's not right, we just tell the AI what to fix and it goes off and spawns sub agents and figures out how to make the changes.
+>
+> Pretty insane
+
+- **Tweet:** https://x.com/anothercohen/status/2023134773418610767
+- **What:** Alex Cohen shares how deploying OpenClaw (an AI chatbot integrated into Slack with MCP and APIs) has transformed his team's workflow. The system enables full project completion via chat, creates reusable skills, and automates complex tasks like generating ROI analyses and pitch decks from sales calls by integrating with Granola and HubSpot.
 
 ## @adriansolarzz - Untapped Strategies for Gemini, Grok and IG
 
