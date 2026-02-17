@@ -1,3 +1,18 @@
+# Tuesday, February 17, 2026
+
+## @garrytan - How Founders Should Ensure AI Agents Discover Their Product
+> One of the most important questions for founders is: How do I make sure agents know about my product and service and choose it? All the old tricks won't work.
+>
+> People who figure this out will win big
+>
+> *Quoting @Flynnjamm:* https://t.co/Okm3scbdOy
+
+- **Tweet:** https://x.com/garrytan/status/2023773343124537411
+- **Quoted:** https://x.com/Flynnjamm/status/2023465136204419096
+- **What:** Garry Tan (YC president) highlights a critical emerging challenge for founders: how to make AI agents aware of and choose their products over competitors. He frames this as an entirely new problem where traditional SEO/marketing tactics won't apply, and suggests those who crack the "agent discoverability" puzzle will win big.
+
+---
+
 # Monday, February 16, 2026
 
 ## @Whizz_ai - AI-Generated Product Videos with Claude Opus 4.6 and Higgsfield
