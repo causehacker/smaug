@@ -1,5 +1,24 @@
 # Tuesday, February 17, 2026
 
+## @mdnlabs - Marshall Shares Oliver Henry's "Larry" AI Skill Giveaway
+> He actually gave away the Larry skill 🤯
+>
+> Larry will be the greatest AI sensation of 2026 🦞
+>
+> The possibilities are endless.
+>
+> I'm ACTUALLY building a system for myself to run our entire company's distribution on auto-pilot.
+>
+> This isn't hype.
+>
+> It's the greatest time saver we've always needed.
+>
+> *Quoting @oliverhenry:* https://t.co/8FoiiD4X67
+
+- **Tweet:** https://x.com/mdnlabs/status/2023781809687814550
+- **Quoted:** https://x.com/oliverhenry/status/2023776478446436696
+- **What:** Marshall reacts excitedly to Oliver Henry releasing a free "Larry" AI skill, and describes building an automated company distribution system on top of it. "Larry" appears to be a viral AI agent or persona, with Marshall claiming it will be the biggest AI trend of 2026.
+
 ## @garrytan - How Founders Should Ensure AI Agents Discover Their Product
 > One of the most important questions for founders is: How do I make sure agents know about my product and service and choose it? All the old tricks won't work.
 >
