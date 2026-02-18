@@ -1,5 +1,24 @@
 # Tuesday, February 17, 2026
 
+## @openclaw - How to Use OpenClaw's 1M Context Window Beta (Anthropic)
+> *Replying to @openclaw:* 🦞 OpenClaw 2026.2.17 just dropped
+>
+> ✨ Sonnet 4.6
+> 🧠 1M context beta
+> 🚀 spawn subagents from chat
+> 📱 iOS share extension
+> 💬 Slack native streaming
+> 🎨 styled inline buttons on Telegram
+>
+> chunkiest changelog yet. upgrade or get left behind 🫡
+>
+> here's how to use the 1M context beta: https://docs.openclaw.ai/providers/anthropic#1m-context-window-anthropic-beta
+
+- **Tweet:** https://x.com/openclaw/status/2023963217681059870
+- **Parent:** https://x.com/openclaw/status/2023961490970026163
+- **Link:** https://docs.openclaw.ai/providers/anthropic#1m-context-window-anthropic-beta
+- **What:** OpenClaw follow-up tweet with a link to docs for their newly-released 1M context window beta, part of the OpenClaw 2026.2.17 release that also added Sonnet 4.6, subagent spawning from chat, iOS share extension, Slack native streaming, and styled Telegram buttons.
+
 ## @mdnlabs - Marshall Shares Oliver Henry's "Larry" AI Skill Giveaway
 > He actually gave away the Larry skill 🤯
 >
