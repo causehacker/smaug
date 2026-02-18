@@ -1,5 +1,110 @@
 # Tuesday, February 17, 2026
 
+## @MikeKhristo - Getting Users After App Launch
+> So, you just finished building your app.
+> It got approved in the App Store.
+> Top of the world feeling.
+> You did it. YOUR thing is live.
+> You wake up the next day.
+> No users.
+> It's like getting punched in the stomach.
+> If you never want to feel that again, use this.
+
+- **Tweet:** https://x.com/MikeKhristo/status/2023983708328378524
+- **What:** Brief commentary on the common app developer experience of launch followed by lack of users, with a suggestion for a solution (referenced in accompanying video).
+
+## @MatthewBerman - 21 Practical Use Cases for OpenClaw
+> I've spent 2.54 BILLION tokens perfecting OpenClaw.
+>
+> The use cases I discovered have changed the way I live and work.
+>
+> ...and now I'm sharing them with the world.
+>
+> Here are 21 use cases I use daily:
+>
+> 0:00 Intro
+> 0:50 What is OpenClaw?
+> 1:35 MD Files
+> 2:14 Memory System
+> 3:55 CRM System
+> 7:19 Fathom Pipeline
+> 9:18 Meeting to Action Items
+> 10:46 Knowledge Base System
+> 13:51 X Ingestion Pipeline
+> 14:31 Business Advisory Council
+> 16:13 Security Council
+> 18:21 Social Media Tracking
+> 19:18 Video Idea Pipeline
+> 21:40 Daily Briefing Flow
+> 22:23 Three Councils
+> 22:57 Automation Schedule
+> 24:15 Security Layers
+> 26:09 Databases and Backups
+> 28:00 Video/Image Gen
+> 29:14 Self Updates
+> 29:56 Usage & Cost Tracking
+> 30:15 Prompt Engineering
+> 31:15 Developer Infrastructure
+> 32:06 Food Journal
+
+- **Tweet:** https://x.com/MatthewBerman/status/2023843493765157235
+- **What:** Overview of 21 daily use cases for OpenClaw, showcasing AI workflow automation from memory systems and CRM to security councils and self-updates.
+
+## @Scobleizer - AI Emotional Intelligence in Customer Service
+> I've never seen a customer agent being used in therapy centers.
+>
+> But the way this AI handled the call is impressive
+> Voice shaky. Long pauses. Sentences trailing off. AI didn't rush or fill the silence.
+>
+> That's something most humans can't even do well.
+>
+> We keep talking about AI getting smarter. Better at code, images, reasoning. Nobody's talking about it getting emotionally intelligent.
+>
+> Not "detecting sentiment" in a dashboard. Actually knowing when to shut up. Knowing that "Great!" is the wrong response when someone's having a rough day.
+> Most companies already deliver worse experiences with real agents who are overworked and burned out.
+>
+> AI isn't competing with the best human on their best day. It's competing with the average Tuesday afternoon call. And it's winning.
+>
+> The company that's closest to nailing this is @polyaivoice. They built the whole thing for phone calls from day one.
+>
+> They already handle calls for Marriott, Gordon Ramsay's restaurants, and every major casino in Vegas.
+>
+> This call is what made it click for me:
+>
+> *Quoting @polyaivoice:* We trained our AI to handle calls that even humans find difficult.
+
+- **Tweet:** https://x.com/Scobleizer/status/2023813771140186247
+- **Quoted:** https://x.com/polyaivoice/status/2023789473205809309
+- **What:** Discussion of how AI customer service agents are developing emotional intelligence—knowing when to listen and pause rather than rush—with PolyAI highlighted as the leader in emotionally-aware voice AI.
+
+## @askOkara - Reddit Agent for Finding Early Users
+> this is the easiest way to get your first 100 users:
+>
+> > go to https://okara.ai/agent/reddit
+> > drop your product url
+> > add keywords your ideal users care about
+> > it monitors reddit 24/7, finds relevant threads, and drafts authentic replies you can post
+
+- **Tweet:** https://x.com/askOkara/status/2023759512742883627
+- **Link:** https://okara.ai/agent/reddit
+- **What:** Okara's Reddit agent tool automatically monitors relevant Reddit discussions and drafts authentic replies to help new products find their first hundred users organically.
+
+## @hwbhatti - Lemon Voice-to-Action AI Agent
+> Think it. Say it. Done.
+>
+> The average person spends 3 hours typing + switches 1,000 tabs per day.
+>
+> That ends today.
+>
+> Meet Lemon: The first voice-to-action AI agent that turns your voice commands into finished tasks.
+>
+> RT + Comment "Lemon" to get free access for 30 days.
+>
+> (must be following so I can DM you)
+
+- **Tweet:** https://x.com/hwbhatti/status/2023736845079900216
+- **What:** Introduction of Lemon, a voice-activated AI agent that converts spoken commands into completed tasks, offering 30-day free access.
+
 ## @openclaw - How to Use OpenClaw's 1M Context Window Beta (Anthropic)
 > *Replying to @openclaw:* 🦞 OpenClaw 2026.2.17 just dropped
 >
@@ -52,6 +157,47 @@
 ---
 
 # Monday, February 16, 2026
+
+## @aakashgupta - Meta's $2B Manus Acquisition and AI Agent Strategy
+> Meta paid over $2 billion for Manus in December. Eight weeks later, Manus launches its agent on Telegram.
+>
+> Think about the sequencing. Meta banned rival AI chatbots from WhatsApp on January 15th. They own that distribution. So why launch Manus on a competitor's messaging platform first?
+>
+> Because Meta already controls AI on WhatsApp, Instagram, and Facebook through Meta AI. Those 3.58 billion daily users are locked in. Manus gives them the execution layer they were missing. The one that actually does things instead of just answering questions.
+>
+> Telegram is the beachhead for everywhere Meta doesn't own. One billion monthly users, open bot API, no native AI agent with this level of autonomy. Manus gets to prove the model on someone else's platform with someone else's users while Meta studies the usage patterns.
+>
+> The $100M ARR Manus hit in 8 months came from standalone users. Meta doesn't need that revenue. They need the behavioral data on what people actually ask AI agents to do inside their daily chat workflows. That's the training set for what comes next: AI agents embedded across every Meta surface that can book, buy, schedule, and transact on your behalf.
+>
+> Meanwhile, China is probing the deal for export control violations because they see exactly what this is. Manus built its core agent architecture in Beijing before relocating to Singapore. The technology that powers autonomous task planning across messaging platforms is now inside the company that reaches half the planet's population daily.
+>
+> The memory and tool integration in this Telegram launch are the spec sheet for what's coming to WhatsApp and Instagram DMs within months. Telegram users are the beta testers. They just don't know it yet.
+>
+> *Quoting @ManusAI:* Introducing Manus Agents — your personal Manus, now inside your chats.
+>
+> 👉🏻Long-term memory. Remembers your style, tone, and preferences.
+> 👉🏻Full Manus power. Create videos, slides, websites, images from one message.
+> 👉🏻Your tools, connected. Gmail, Calendar, Notion, and more.
+>
+> Available now on Telegram. More platforms coming soon.
+
+- **Tweet:** https://x.com/aakashgupta/status/2023658834062131476
+- **Quoted:** https://x.com/ManusAI/status/2023412626428932494
+- **What:** Strategic analysis of Meta's $2B Manus acquisition: Telegram serves as the test bed for AI agent behavior data before Meta deploys autonomous agents across WhatsApp, Instagram, and Facebook's 3.58B daily users.
+
+## @MustafyOf - Seedance 2.0 Now Free and Open
+> Seedance 2.0 is finally FREE 🤯
+>
+> The China Model that just cooked Hollywood is now open.
+>
+> We are talking about the tool that is creating 1080p, CGI-level video so realistic.
+>
+> You don't need a credit card or even a sign up!
+>
+> Here is how to access👇👇
+
+- **Tweet:** https://x.com/MustafyOf/status/2023438902003134543
+- **What:** Announcement that Seedance 2.0, a Chinese AI video generation model producing 1080p CGI-level realistic video, is now freely available without requiring sign-up.
 
 ## @Whizz_ai - AI-Generated Product Videos with Claude Opus 4.6 and Higgsfield
 > BREAKING: AI can now create product videos like $10K/day TikTok ad agencies (for free).
