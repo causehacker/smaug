@@ -1,3 +1,50 @@
+# Wednesday, February 18, 2026
+
+## @steipete - OpenAI Subscriptions Will Work with OpenClaw
+> *Replying to @AndrewWarner:* 🚨 Breaking: Claude OAuth officially not allowed in OpenClaw
+>
+> This would be a GREAT time for @sama to step in and let us use @OpenAI subscriptions with @openclaw.
+>
+> @AndrewWarner @sama @OpenAI @openclaw that already works, OAI publicly said that
+
+- **Tweet:** https://x.com/steipete/status/2024182608746217953
+- **Parent:** https://x.com/AndrewWarner/status/2024168538508775674
+- **What:** Peter Steinberger replies to the claim that Claude OAuth is blocked in OpenClaw, noting that OpenAI has publicly confirmed their subscriptions already work with OpenClaw.
+
+## @Nate_Google_ - OpenClaw Identity, Soul, and PRD Configuration Files
+> for all of you guys that are trying to figure out how to get the most out of OpenClaw
+>
+> you're welcome
+>
+> and here are all of the files:
+>
+> IDENTITY:
+> https://t.co/jmF8E9fFrZ
+>
+> SOUL: https://t.co/YpIKrnwnVQ
+>
+> PRD:
+> https://t.co/sytI1Nh56i
+>
+> *Quoting @MatthewBerman:* I've spent 2.54 BILLION tokens perfecting OpenClaw.
+>
+> The use cases I discovered have changed the way I live and work.
+>
+> ...and now I'm sharing them with the world.
+>
+> Here are 21 use cases I use daily:
+>
+> 0:00 Intro
+> 0:50 What is OpenClaw?
+> ...
+
+- **Tweet:** https://x.com/Nate_Google_/status/2024196080938713439
+- **Quoted:** https://x.com/MatthewBerman/status/2023843493765157235
+- **Links:** [IDENTITY Gist](https://gist.github.com/mberman84/a128371ffb1fc28554f515905a8bddcd) | [SOUL Gist](https://gist.github.com/mberman84/cd6924c7058ba5251a773dac177ae756) | [PRD Gist](https://gist.github.com/mberman84/5ccf2085d0049581b4675f7fe64e9b87)
+- **What:** Shares three GitHub Gist configuration files (IDENTITY, SOUL, PRD) for setting up OpenClaw (an AI agent framework), quoting Matthew Berman's video on his 21 daily use cases for the tool.
+
+---
+
 # Tuesday, February 17, 2026
 
 ## @MikeKhristo - Getting Users After App Launch
