@@ -1,3 +1,18 @@
+# Thursday, February 19, 2026
+
+## @GoogleLabs - Pomelli Photoshoot: AI Product Photography from a Single Image
+> Today, we're introducing Pomelli's latest feature update, 'Photoshoot'
+>
+> With Photoshoot, you can start from a single image of your product and easily create high quality, customized product shots to elevate your marketing.
+>
+> Available free of charge in the US, Canada, Australia & New Zealand! Get started with Pomelli today at https://t.co/SbeT00ToNx
+
+- **Tweet:** https://x.com/GoogleLabs/status/2024529795548102667
+- **Link:** https://labs.google.com/pomelli/about/
+- **What:** Google Labs announces a new "Photoshoot" feature for Pomelli, their AI product photography tool. Given one product image, it generates high-quality customized product shots for marketing. Free in US, Canada, Australia, and New Zealand.
+
+---
+
 # Wednesday, February 18, 2026
 
 ## @steipete - OpenAI Subscriptions Will Work with OpenClaw
