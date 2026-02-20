@@ -22,6 +22,16 @@
 
 # Wednesday, February 18, 2026
 
+## @contraben - Contra Payments: Payments Platform for AI Agents
+> Introducing Contra Payments.
+>
+> The first payments platform that lets you sell to AI Agents.
+>
+> RT + Comment "Contra" and I'll send you 100 products AI agents are looking for.
+
+- **Tweet:** https://x.com/contraben/status/2024182864506761617
+- **What:** Contra introduces their new payments platform designed specifically for transactions with AI agents. The platform enables selling products and services directly to AI agents, positioning itself as the first solution in this emerging market.
+
 ## @steipete - OpenAI Subscriptions Will Work with OpenClaw
 > *Replying to @AndrewWarner:* 🚨 Breaking: Claude OAuth officially not allowed in OpenClaw
 >
