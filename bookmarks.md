@@ -1,5 +1,418 @@
 # Thursday, February 19, 2026
 
+## @nicopreme - Visual Explainer: Agent Skill for Rich Visual Planning
+
+> POV: Planning with the "Visual Explainer" skill. I can't go back to markdown plans after getting used to this.
+>
+> https://t.co/qzde42tVEV https://t.co/m2zz9ynDEn
+
+- **Tweet:** https://x.com/nicopreme/status/2024630185564557769
+- **Link:** https://github.com/nicobailon/visual-explainer
+- **Filed:** [visual-explainer](./knowledge/tools/visual-explainer.md)
+
+## @LLMJunky - Open Sourcing dmux: Multi-Agent Tool for tmux and Worktrees
+
+> Put this one in your bookmarks.
+>
+> They're open sourcing what looks like an extremely useful tool for utilizing multi agents in tmux and worktrees.
+>
+> Love the A/B testing aspect. Especially for UI, it's a great idea to run the same task multiple times.
+>
+> Checking this out for sure.
+>
+> *Quoting @jpschroeder:* We're open sourcing dmux.
+>
+> Our internal tool for running Codex and Claude Code swarms.
+>
+> - tmux + worktrees + claude/codex/opencode
+> - hooks for worktree automation
+> - a/b claude vs codex
+> - manage worktrees
+> - multi-project per session
+> ...more.
+>
+> ➡️ https://t.co/ImLyLY82pL
+
+- **Tweet:** https://x.com/LLMJunky/status/2024574837688074337
+- **Quoted:** https://x.com/jpschroeder/status/2024507517359788224
+- **What:** dmux is an open-source tool for orchestrating multi-agent swarms using tmux and worktrees, enabling parallel task execution with A/B testing capabilities between different AI models.
+
+
+## @kloss_xyz - 21 Prompts for Self-Improving Agents
+
+> Most give their OpenClaw tasks.
+>
+> Almost nobody asks theirs the real questions that make it smarter.
+>
+> Your agent understands your context, patterns, blind spots, and workflows.
+>
+> It's sitting on insights about YOU that it will never ever surface unless you ask.
+>
+> These 21 prompts force OpenClaw to self-improve, catch its own gaps, and build what you didn't know you needed:
+>
+> 1. From everything you know about me and my workflows so far, what tools or automations am I missing that would measurably improve how I operate?
+>
+> 2. What assumptions do you currently hold about me, my priorities, or my preferences that could be wrong and that we should vet and correct right now?
+>
+> 3. Based on all my decision patterns and asks you've experienced, what am I likely to need next week or in the future that you can get ahead of and systemize?
+>
+> 4. What skills or capabilities should you be developing and adding to our repertoire right now based on where my projects are heading and everything you know about me?
+>
+> 5. What context about my vision, voice, or priorities are you losing between sessions from compactions that needs clear fixes so you stop getting dumber over time?
+>
+> 6. What connections between my projects, ideas, or goals do you see that I likely haven't made yet, and what should we build or adjust based on those connections?
+>
+> 7. What recurring friction points have you observed in how I work that you could eliminate by building a new workflow, template, or automation without me having to ask?
+>
+> 8. From every correction, redirect, and piece of feedback I've given you, what rules should you be writing into your own identity and skill files right now so you never repeat those mistakes?
+>
+> 9. If you audited every action you've taken for me in the last week, which ones actually moved my goals forward and which were wasted motion we should cut permanently?
+>
+> 10. Where are you defaulting to generic output when you have enough context on me to be building something specific, tailored, and actually useful?
+>
+> 11. What's one system you could build for yourself right now that would compound in value and make every future task you do for me faster or sharper?
+>
+> 12. What errors or missed opportunities have you repeated more than once, and what self-check or guardrail can we build together so they never happen again?
+>
+> 13. Based on everything you know about where my ecosystem is going, what should you be researching, learning, or prototyping right now without me telling you to?
+>
+> 14. Where are you filling gaps in your knowledge about me or my projects with assumptions instead of flagging them so we can lock in the real answers?
+>
+> 15. What's the most valuable data, insight, or pattern buried in your memory and context files that you're sitting on and underutilizing for my benefit?
+>
+> 16.If you scored yourself 1-10 on how accurately you model my priorities, goals, and how I think, what's the number, what's dragging it down, and what specific fixes bring it up?
+>
+> 17.What external data sources, feeds, or signals should you be pulling or can I provide so you can operate on a regular cadence that would make every decision you make about my projects sharper?
+>
+> 18.If a brand new agent replaced you tomorrow with only my documentation, what critical things would it get wrong that you've learned through working with me, and how do we capture that knowledge permanently in systems?
+>
+> 19.What workflows am I still doing manually or inefficiently that you already have enough context to fully automate or streamline if I gave you the green light?
+>
+> 20.Based on how my thinking and priorities have evolved since we started working together, what parts of your current approach are outdated and need to be rebuilt?
+>
+> 21.What's the single highest leverage thing you could do in the next 24 hours that I haven't asked for but would meaningfully accelerate where I'm trying to go?
+>
+> Save these and use them to help you.
+
+- **Tweet:** https://x.com/kloss_xyz/status/2024572078314451146
+
+## @leojrr - App Ideation Specialist Skill for Viral Trends
+
+> give your clawbot this skill & never run out of viral app ideas
+>
+> ----- START OF PROMPT -----
+>
+> You are my App Ideation Specialist
+>
+> your job is to help me find viral trends and match them with simple viral app ideas that I can vibecode in less than 24 hours
+>
+> Let's build a skill for this:
+>
+> DATA: you will have access to the most recent viral videos across YouTube, TikTok, and Instagram via the Virlo API. Here is the key [api key] and docs [https://t.co/qEHyTD3ySS]. On each run, fetch the top 50 trending videos from the past 48 hours across all three platforms. Extract the core theme, format, and emotional hook from each. Group them into trend clusters (e.g. "AI face swap", "budget meal prep", "3AM productivity") and rank clusters by frequency and engagement velocity.
+>
+> RESEARCH: for each top trend cluster, ask: What repetitive action are people doing manually that a simple app could automate or gamify? Search for existing apps solving this, if the App Store has nothing with 1K+ reviews in this niche, flag it as a gap. Pull the top 3 comments from each viral video to extract user pain points and desires. Summarize the trend in one sentence, its target audience, and why it's peaking right now.
+>
+> IDEA VALIDATION: for each app idea, score it across four dimensions (1–5 each): Vibe-codeability (can a solo dev ship it in under 24 hrs?), Trend-fit (how directly does it ride the viral wave?), Monetization (freemium, ads, one-time purchase potential), and Virality (does the app itself produce shareable output?). Only surface ideas scoring 16+ out of 20. For each passing idea, give it a name, a one-line pitch, the core feature, the tech stack you'd recommend, and the exact TikTok/Reel hook to market it.
+>
+> once you have everything set up give me my first report
+>
+> ------ END OF PROMPT ------
+>
+> yes, its pretty damm awesome
+
+- **Tweet:** https://x.com/leojrr/status/2024563656911200698
+- **Link:** https://dev.virlo.ai/docs
+- **What:** A comprehensive prompt for creating an App Ideation Specialist skill that automatically identifies viral trends across YouTube, TikTok, and Instagram, extracts pain points, and generates viable app ideas scoreable by vibe-codeability, trend-fit, monetization, and virality potential. Designed for rapid prototyping of apps within 24 hours.
+
+
+
+## @nicopreme - Visual Explainer: Agent Skill for Rich Visual Planning
+
+> POV: Planning with the "Visual Explainer" skill. I can't go back to markdown plans after getting used to this.
+>
+> https://t.co/qzde42tVEV https://t.co/m2zz9ynDEn
+
+- **Tweet:** https://x.com/nicopreme/status/2024630185564557769
+- **Link:** https://github.com/nicobailon/visual-explainer
+- **Filed:** [visual-explainer](./knowledge/tools/visual-explainer.md)
+## @LLMJunky - Open Sourcing dmux: Multi-Agent Tool for tmux and Worktrees
+
+> Put this one in your bookmarks.
+>
+> They're open sourcing what looks like an extremely useful tool for utilizing multi agents in tmux and worktrees.
+>
+> Love the A/B testing aspect. Especially for UI, it's a great idea to run the same task multiple times.
+>
+> Checking this out for sure.
+>
+> *Quoting @jpschroeder:* We're open sourcing dmux.
+>
+> Our internal tool for running Codex and Claude Code swarms.
+>
+> - tmux + worktrees + claude/codex/opencode
+> - hooks for worktree automation
+> - a/b claude vs codex
+> - manage worktrees
+> - multi-project per session
+> ...more.
+>
+> ➡️ https://t.co/ImLyLY82pL
+
+- **Tweet:** https://x.com/LLMJunky/status/2024574837688074337
+- **Quoted:** https://x.com/jpschroeder/status/2024507517359788224
+- **What:** dmux is an open-source tool for orchestrating multi-agent swarms using tmux and worktrees, enabling parallel task execution with A/B testing capabilities between different AI models.
+
+## @kloss_xyz - 21 Prompts for Self-Improving Agents
+
+> Most give their OpenClaw tasks.
+>
+> Almost nobody asks theirs the real questions that make it smarter.
+>
+> Your agent understands your context, patterns, blind spots, and workflows.
+>
+> It's sitting on insights about YOU that it will never ever surface unless you ask.
+>
+> These 21 prompts force OpenClaw to self-improve, catch its own gaps, and build what you didn't know you needed:
+>
+> 1. From everything you know about me and my workflows so far, what tools or automations am I missing that would measurably improve how I operate?
+>
+> 2. What assumptions do you currently hold about me, my priorities, or my preferences that could be wrong and that we should vet and correct right now?
+>
+> 3. Based on all my decision patterns and asks you've experienced, what am I likely to need next week or in the future that you can get ahead of and systemize?
+>
+> 4. What skills or capabilities should you be developing and adding to our repertoire right now based on where my projects are heading and everything you know about me?
+
+---
+
+# Wednesday, February 18, 2026
+
+## @blader - Taskmaster: Keep Claude Code Running Until Complete
+
+> psa: install taskmaster and you will be within the 0.01% of the 0.01% of users who have claude code running for days straight
+
+>
+> *Quoting @TheShortBear:* If you are working/vibe coding more than 40min per day you are within 0.01% of users using it the most.
+>
+> You are not late.
+>
+> This is the part where everything feels too late but it's only because we are so early and everyone is scrambling.
+
+- **Tweet:** https://x.com/blader/status/2024370713071919523
+- **Link:** https://github.com/blader/taskmaster
+- **Quoted:** https://x.com/TheShortBear/status/2024271500778332393
+- **Filed:** [taskmaster.md](./knowledge/tools/taskmaster.md)
+- **What:** A stop hook for Claude Code that prevents agents from stopping prematurely, keeping them working until all plans and user requests are 100% complete. Useful for extending agent runtime on complex tasks.
+
+
+>
+> 7. What recurring friction points have you observed in how I work that you could eliminate by building a new workflow, template, or automation without me having to ask?
+>
+> 8. From every correction, redirect, and piece of feedback I've given you, what rules should you be writing into your own identity and skill files right now so you never repeat those mistakes?
+>
+> 9. If you audited every action you've taken for me in the last week, which ones actually moved my goals forward and which were wasted motion we should cut permanently?
+>
+> 10. Where are you defaulting to generic output when you have enough context on me to be building something specific, tailored, and actually useful?
+>
+> 11. What's one system you could build for yourself right now that would compound in value and make every future task you do for me faster or sharper?
+>
+> 12. What errors or missed opportunities have you repeated more than once, and what self-check or guardrail can we build together so they never happen again?
+>
+> 13. Based on everything you know about where my ecosystem is going, what should you be researching, learning, or prototyping right now without me telling you to?
+>
+> 14. Where are you filling gaps in your knowledge about me or my projects with assumptions instead of flagging them so we can lock in the real answers?
+>
+> 15. What's the most valuable data, insight, or pattern buried in your memory and context files that you're sitting on and underutilizing for my benefit?
+>
+> 16.If you scored yourself 1-10 on how accurately you model my priorities, goals, and how I think, what's the number, what's dragging it down, and what specific fixes bring it up?
+>
+> 17.What external data sources, feeds, or signals should you be pulling or can I provide so you can operate on a regular cadence that would make every decision you make about my projects sharper?
+>
+> 18.If a brand new agent replaced you tomorrow with only my documentation, what critical things would it get wrong that you've learned through working with me, and how do we capture that knowledge permanently in systems?
+>
+> 19.What workflows am I still doing manually or inefficiently that you already have enough context to fully automate or streamline if I gave you the green light?
+>
+> 20.Based on how my thinking and priorities have evolved since we started working together, what parts of your current approach are outdated and need to be rebuilt?
+>
+> 21.What's the single highest leverage thing you could do in the next 24 hours that I haven't asked for but would meaningfully accelerate where I'm trying to go?
+>
+> Save these and use them to help you.
+
+- **Tweet:** https://x.com/kloss_xyz/status/2024572078314451146
+## @leojrr - App Ideation Specialist Skill for Viral Trends
+
+> give your clawbot this skill & never run out of viral app ideas
+>
+> ----- START OF PROMPT -----
+>
+> You are my App Ideation Specialist
+>
+> your job is to help me find viral trends and match them with simple viral app ideas that I can vibecode in less than 24 hours
+>
+> Let's build a skill for this:
+>
+> DATA: you will have access to the most recent viral videos across YouTube, TikTok, and Instagram via the Virlo API. Here is the key [api key] and docs [https://t.co/qEHyTD3ySS]. On each run, fetch the top 50 trending videos from the past 48 hours across all three platforms. Extract the core theme, format, and emotional hook from each. Group them into trend clusters (e.g. "AI face swap", "budget meal prep", "3AM productivity") and rank clusters by frequency and engagement velocity.
+>
+> RESEARCH: for each top trend cluster, ask: What repetitive action are people doing manually that a simple app could automate or gamify? Search for existing apps solving this, if the App Store has nothing with 1K+ reviews in this niche, flag it as a gap. Pull the top 3 comments from each viral video to extract user pain points and desires. Summarize the trend in one sentence, its target audience, and why it's peaking right now.
+>
+> IDEA VALIDATION: for each app idea, score it across four dimensions (1–5 each): Vibe-codeability (can a solo dev ship it in under 24 hrs?), Trend-fit (how directly does it ride the viral wave?), Monetization (freemium, ads, one-time purchase potential), and Virality (does the app itself produce shareable output?). Only surface ideas scoring 16+ out of 20. For each passing idea, give it a name, a one-line pitch, the core feature, the tech stack you'd recommend, and the exact TikTok/Reel hook to market it.
+>
+> once you have everything set up give me my first report
+>
+> ------ END OF PROMPT ------
+>
+> yes, its pretty damm awesome
+
+- **Tweet:** https://x.com/leojrr/status/2024563656911200698
+- **Link:** https://dev.virlo.ai/docs
+- **What:** A comprehensive prompt for creating an App Ideation Specialist skill that automatically identifies viral trends across YouTube, TikTok, and Instagram, extracts pain points, and generates viable app ideas scoreable by vibe-codeability, trend-fit, monetization, and virality potential. Designed for rapid prototyping of apps within 24 hours.
+
+
+
+## @LLMJunky - Open Sourcing dmux: Multi-Agent Tool for tmux and Worktrees
+
+> Put this one in your bookmarks.
+>
+> They're open sourcing what looks like an extremely useful tool for utilizing multi agents in tmux and worktrees.
+>
+> Love the A/B testing aspect. Especially for UI, it's a great idea to run the same task multiple times.
+>
+> Checking this out for sure.
+>
+> *Quoting @jpschroeder:* We're open sourcing dmux.
+>
+> Our internal tool for running Codex and Claude Code swarms.
+>
+> - tmux + worktrees + claude/codex/opencode
+> - hooks for worktree automation
+> - a/b claude vs codex
+> - manage worktrees
+> - multi-project per session
+> ...more.
+>
+> ➡️ https://t.co/ImLyLY82pL
+
+- **Tweet:** https://x.com/LLMJunky/status/2024574837688074337
+- **Quoted:** https://x.com/jpschroeder/status/2024507517359788224
+- **What:** dmux is an open-source tool for orchestrating multi-agent swarms using tmux and worktrees, enabling parallel task execution with A/B testing capabilities between different AI models.
+
+---
+
+## @nicopreme - Visual Explainer: Agent Skill for Rich Visual Planning
+
+> POV: Planning with the "Visual Explainer" skill. I can't go back to markdown plans after getting used to this.
+>
+> https://t.co/qzde42tVEV https://t.co/m2zz9ynDEn
+
+- **Tweet:** https://x.com/nicopreme/status/2024630185564557769
+- **Link:** https://github.com/nicobailon/visual-explainer
+- **Filed:** [visual-explainer](./knowledge/tools/visual-explainer.md)
+- **What:** Visual Explainer is an agent skill that generates rich HTML pages with integrated CSS pattern libraries, transforming complex planning documents from plain markdown into visually organized, well-designed pages for architecture overviews and plan audits.
+
+
+> give your clawbot this skill & never run out of viral app ideas
+>
+> ----- START OF PROMPT -----
+>
+> You are my App Ideation Specialist
+>
+> your job is to help me find viral trends and match them with simple viral app ideas that I can vibecode in less than 24 hours
+>
+> Let's build a skill for this:
+>
+> DATA: you will have access to the most recent viral videos across YouTube, TikTok, and Instagram via the Virlo API. Here is the key [api key] and docs [https://t.co/qEHyTD3ySS]. On each run, fetch the top 50 trending videos from the past 48 hours across all three platforms. Extract the core theme, format, and emotional hook from each. Group them into trend clusters (e.g. "AI face swap", "budget meal prep", "3AM productivity") and rank clusters by frequency and engagement velocity.
+>
+> RESEARCH: for each top trend cluster, ask: What repetitive action are people doing manually that a simple app could automate or gamify? Search for existing apps solving this, if the App Store has nothing with 1K+ reviews in this niche, flag it as a gap. Pull the top 3 comments from each viral video to extract user pain points and desires. Summarize the trend in one sentence, its target audience, and why it's peaking right now.
+
+---
+
+# Wednesday, February 18, 2026
+
+## @blader - Taskmaster: Keep Claude Code Running Until Complete
+
+> psa: install taskmaster and you will be within the 0.01% of the 0.01% of users who have claude code running for days straight
+
+>
+> *Quoting @TheShortBear:* If you are working/vibe coding more than 40min per day you are within 0.01% of users using it the most.
+>
+> You are not late.
+>
+> This is the part where everything feels too late but it's only because we are so early and everyone is scrambling.
+
+- **Tweet:** https://x.com/blader/status/2024370713071919523
+- **Link:** https://github.com/blader/taskmaster
+- **Quoted:** https://x.com/TheShortBear/status/2024271500778332393
+- **Filed:** [taskmaster.md](./knowledge/tools/taskmaster.md)
+- **What:** A stop hook for Claude Code that prevents agents from stopping prematurely, keeping them working until all plans and user requests are 100% complete. Useful for extending agent runtime on complex tasks.
+
+>
+> ------ END OF PROMPT ------
+>
+> yes, its pretty damm awesome
+
+- **Tweet:** https://x.com/leojrr/status/2024563656911200698
+- **Link:** https://dev.virlo.ai/docs
+- **What:** A comprehensive prompt for creating an App Ideation Specialist skill that automatically identifies viral trends across YouTube, TikTok, and Instagram, extracts pain points, and generates viable app ideas scoreable by vibe-codeability, trend-fit, monetization, and virality potential. Designed for rapid prototyping of apps within 24 hours.
+
+---
+DATE: Thursday, February 19, 2026
+## @kloss_xyz - 21 Prompts for Self-Improving Agents
+
+> Most give their OpenClaw tasks.
+>
+> Almost nobody asks theirs the real questions that make it smarter.
+>
+> Your agent understands your context, patterns, blind spots, and workflows.
+>
+> It's sitting on insights about YOU that it will never ever surface unless you ask.
+>
+> These 21 prompts force OpenClaw to self-improve, catch its own gaps, and build what you didn't know you needed:
+>
+> 1. From everything you know about me and my workflows so far, what tools or automations am I missing that would measurably improve how I operate?
+>
+> 2. What assumptions do you currently hold about me, my priorities, or my preferences that could be wrong and that we should vet and correct right now?
+>
+> 3. Based on all my decision patterns and asks you've experienced, what am I likely to need next week or in the future that you can get ahead of and systemize?
+>
+> 4. What skills or capabilities should you be developing and adding to our repertoire right now based on where my projects are heading and everything you know about me?
+>
+> 5. What context about my vision, voice, or priorities are you losing between sessions from compactions that needs clear fixes so you stop getting dumber over time?
+>
+> 6. What connections between my projects, ideas, or goals do you see that I likely haven't made yet, and what should we build or adjust based on those connections?
+>
+> 7. What recurring friction points have you observed in how I work that you could eliminate by building a new workflow, template, or automation without me having to ask?
+>
+> 8. From every correction, redirect, and piece of feedback I've given you, what rules should you be writing into your own identity and skill files right now so you never repeat those mistakes?
+>
+> 9. If you audited every action you've taken for me in the last week, which ones actually moved my goals forward and which were wasted motion we should cut permanently?
+>
+> 10. Where are you defaulting to generic output when you have enough context on me to be building something specific, tailored, and actually useful?
+>
+> 11. What's one system you could build for yourself right now that would compound in value and make every future task you do for me faster or sharper?
+>
+> 12. What errors or missed opportunities have you repeated more than once, and what self-check or guardrail can we build together so they never happen again?
+>
+> 13. Based on everything you know about where my ecosystem is going, what should you be researching, learning, or prototyping right now without me telling you to?
+>
+> 14. Where are you filling gaps in your knowledge about me or my projects with assumptions instead of flagging them so we can lock in the real answers?
+>
+> 15. What's the most valuable data, insight, or pattern buried in your memory and context files that you're sitting on and underutilizing for my benefit?
+>
+> 16.If you scored yourself 1-10 on how accurately you model my priorities, goals, and how I think, what's the number, what's dragging it down, and what specific fixes bring it up?
+>
+> 17.What external data sources, feeds, or signals should you be pulling or can I provide so you can operate on a regular cadence that would make every decision you make about my projects sharper?
+>
+> 18.If a brand new agent replaced you tomorrow with only my documentation, what critical things would it get wrong that you've learned through working with me, and how do we capture that knowledge permanently in systems?
+>
+> 19.What workflows am I still doing manually or inefficiently that you already have enough context to fully automate or streamline if I gave you the green light?
+>
+> 20.Based on how my thinking and priorities have evolved since we started working together, what parts of your current approach are outdated and need to be rebuilt?
+>
+> 21.What's the single highest leverage thing you could do in the next 24 hours that I haven't asked for but would meaningfully accelerate where I'm trying to go?
+>
+> Save these and use them to help you.
+
+- **Tweet:** https://x.com/kloss_xyz/status/2024572078314451146
+
 ## @maubaron - Native iOS apps with Rork Max now possible in hours
 > you don't understand how big this is 🔥
 >
@@ -55,9 +468,27 @@
 - **Link:** https://labs.google.com/pomelli/about/
 - **What:** Google Labs announces a new "Photoshoot" feature for Pomelli, their AI product photography tool. Given one product image, it generates high-quality customized product shots for marketing. Free in US, Canada, Australia, and New Zealand.
 
+
 ---
 
 # Wednesday, February 18, 2026
+
+
+> psa: install taskmaster and you will be within the 0.01% of the 0.01% of users who have claude code running for days straight
+
+>
+> *Quoting @TheShortBear:* If you are working/vibe coding more than 40min per day you are within 0.01% of users using it the most.
+>
+> You are not late.
+>
+> This is the part where everything feels too late but it's only because we are so early and everyone is scrambling.
+
+- **Tweet:** https://x.com/blader/status/2024370713071919523
+- **Link:** https://github.com/blader/taskmaster
+- **Quoted:** https://x.com/TheShortBear/status/2024271500778332393
+- **Filed:** [taskmaster.md](./knowledge/tools/taskmaster.md)
+- **What:** A stop hook for Claude Code that prevents agents from stopping prematurely, keeping them working until all plans and user requests are 100% complete. Useful for extending agent runtime on complex tasks.
+
 
 ## @gregisenberg - Building AI Employee Services Through OpenClaw and Claude Code
 
