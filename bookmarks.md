@@ -1,5 +1,42 @@
 # Thursday, February 19, 2026
 
+## @maubaron - Native iOS apps with Rork Max now possible in hours
+> you don't understand how big this is 🔥
+>
+> you can now build native iOS apps with rork max
+> (swift, not react native) in hours
+>
+> you can test them directly in a browser simulator
+> no mac, no xcode. no bundle ids, no complicated API setup
+>
+> this is the first AI app builder that does this btw
+> every other tool uses React Native
+>
+> and every app you love is made with swift
+>
+> so if you were waiting to start this is it
+> you have no excuses left
+>
+> *Quoting @rork_app:* Introducing Rork Max
+>
+> AI that one-shots almost any app for iPhone,  Watch, iPad,  TV &  Vision Pro. Even Pokémon Go with AR & 3D.
+>
+> Max is a website that replaces Xcode. Install on device in 1 click. Publish to App Store in 2 clicks.
+>
+> Powered by Swift, Claude Code & Opus 4.6.
+
+- **Tweet:** https://x.com/maubaron/status/2024612869279539207
+- **Quoted:** https://x.com/rork_app/status/2024570781330792896
+- **What:** Rork Max enables building native iOS apps with Swift directly in a browser without needing Xcode or a Mac, marking a significant advancement in AI-powered app development.
+
+## @LexnLin - Gemini Pro 3.1 UI generation performance
+> gemini pro 3.1 ui gen is really cracked
+>
+> just one shotted this https://t.co/LX83pQDJ0v
+
+- **Tweet:** https://x.com/LexnLin/status/2024589077685629100
+- **What:** Gemini Pro 3.1's UI generation capabilities are impressive, capable of generating complete UIs in a single shot with high quality.
+
 ## @dimitarangg - Twitter Article
 > https://t.co/wmGGLWAPLY
 
@@ -21,6 +58,169 @@
 ---
 
 # Wednesday, February 18, 2026
+
+## @gregisenberg - Building AI Employee Services Through OpenClaw and Claude Code
+
+> how to use openclaw to spin up 24/7 digital employees and build cash-flowing assets:
+>
+> 1. spin up openclaw (mac mini, vm, orgo, whatever) in a workspace so you can run 5–10 machines at once (main agent + sub-agents)
+>
+> 2. pick one boring workflow inside one industry (distributors, real estate, insurance, law firms)
+>
+> 3. map the workflow tip-to-tail (email/trigger → legacy software clicks → downloads → parsing → upload to crm)
+>
+> 4. use claude code to build the "under the hood" python pipeline (openclaw becomes the operator + trigger, code does the heavy lifting)
+>
+> 5. productize it as a repeatable bundle: "setup + 30 days management + new workflows each week"
+>
+> 6. use upwork as the lead source and the sandbox (it tells you what people pay for right now)
+>
+> 7. turn the best-paying workflow into a vertical workspace: 20 skills, 8 sub-agents, one invite link
+>
+> 8. sell it to bigger companies as "ai employees for this department" (with clear outcomes + SLA)
+>
+> "BuT yoU cAn'T bUiLD a BiG coMpaNY dOInG uPwoRk deAls"
+>
+> think about it like this
+>
+> "how does a $1k automation gig turn into a big company deal?"
+>
+> like this:
+>
+> 1. upwork gives you paid reps + proof someone pays for the workflow
+>
+> 2. those reps become case studies ("saved 12 hrs/week", "uploaded 5k records/day", "reduced ops errors by 80%")
+>
+> 3. you stack 5–10 workflows in the same vertical
+>
+> 4. now you're selling a package and not a one off deal which is tough
+>
+> 5. bigco buys packages because procurement 6. understands scopes + outcomes
+>
+> openclaw is the wrapper.
+> claude code is the factory.
+> sub agents/skills are the workforce.
+> the vertical bundle is the product.
+>
+> episode is live on @startupideaspod
+>
+> i will never gatekeep
+>
+> i want to see you win in this openclawed world
+>
+> i am rooting for you
+>
+> watch.
+
+- **Tweet:** https://x.com/gregisenberg/status/2024247983999521123
+- **What:** A framework for building AI-powered automation services starting with Upwork gigs, scaling to productized vertical bundles sold to enterprises using OpenClaw, Claude Code, and sub-agents.
+
+## @kaostyl - Automated Domain Research and Website Deployment Pipeline
+
+> My AI agent finds expired domains, scores them, builds entire websites, and deploys them to production. All while I sleep.
+>
+> Here's the full pipeline 🧵
+>
+> I wanted to build niche websites at scale. The bottleneck was never the content, it was finding good domains.
+>
+> Expired domains with existing backlinks are gold. But every platform that tracks them either charges $200/month or hides the good data behind a UI with no API.
+>
+> So I pointed my AI agent at one of these platforms and said: "Figure out how this works."
+>
+> Step 1: API reverse-engineering
+>
+> The agent opened the site in a headless browser, logged in, and intercepted every network request.
+>
+> Within minutes it had mapped the entire hidden API:
+> → Authentication flow (CSRF tokens, session cookies)
+> → Search endpoints
+> → Result polling mechanism
+>
+> Then it wrote a standalone Python client. No browser needed anymore. Pure API calls.
+>
+> Step 2: Automated domain hunting
+>
+> I gave the agent a list of 30+ keywords across different niches.
+>
+> Every night at 2 AM, it:
+> → Searches all keywords in parallel
+> → Deduplicates results across runs
+> → Pulls backlink metrics for each domain
+> → Cross-references with a second API for keyword difficulty and search volume
+>
+> Step 3: Scoring algorithm
+>
+> Not all expired domains are equal. The agent scores each one:
+>
+> → Backlink quality (referring domains, authority)
+> → Keyword relevance (does the domain match the niche?)
+> → Price filter (auto-reject anything above my budget)
+> → Red flags (spammy history, penalized domains)
+>
+> Top domains get flagged. I review 5-10 candidates instead of scrolling through hundreds.
+>
+> Step 4: Domain purchase
+>
+> Once I approve a domain, the agent:
+> → Checks availability via registrar API
+> → Purchases it (hard budget cap, no surprises)
+> → Points DNS to Cloudflare automatically
+> → Configures SSL, caching, security headers
+>
+> Step 5: Site deployment
+>
+> This is where it gets crazy.
+>
+> The agent:
+> → Generates a full site structure (pages, content, internal linking)
+> → Uploads everything to the server via API
+> → Adds mandatory security headers (CSP, HSTS, X-Frame-Options)
+> → Deploys a sitemap
+> → Submits the site to Google Search Console
+> → Verifies ownership automatically
+>
+> From "domain purchased" to "live site indexed by Google"  zero manual steps.
+>
+> Step 6: Monitoring
+>
+> After deployment, a separate cron job:
+> → Checks each site is still live
+> → Monitors indexing status
+> → Tracks keyword rankings over time
+> → Alerts me if anything breaks
+>
+> The result?
+>
+> I went from manually building 1 site per week to deploying multiple sites per night.
+>
+> The AI handles:
+>
+> • Domain research
+> • Purchase
+> • DNS + SSL
+> • Content generation
+> • Deployment
+> • SEO submission
+> • Monitoring
+>
+> I handle:
+>
+> • Approving domain purchases
+> • Strategic decisions
+> • Coffee
+>
+> The real insight:
+>
+> Most people use AI to write blog posts faster.
+>
+> I used it to build the entire infrastructure that finds, buys, builds, deploys, and monitors websites end to end.
+>
+> The AI didn't just save me time. It made an entire business model viable that wasn't worth doing manually.
+>
+> That's the difference between "using AI" and "building with AI."
+
+- **Tweet:** https://x.com/kaostyl/status/2024371725195178305
+- **What:** An end-to-end automated pipeline that uses AI agents to find expired domains with high-value backlinks, generate content, deploy websites, and monitor performance with zero manual intervention after domain approval.
 
 ## @contraben - Contra Payments: Payments Platform for AI Agents
 > Introducing Contra Payments.
