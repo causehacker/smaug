@@ -1,4 +1,249 @@
+# Saturday, February 21, 2026
+
+## @lorden_eth - Polymarket BTC 5-Minute Arbitrage Bot
+
+> You can make $400k
+>
+> With an Open claw that earns $5 every second, $300 every hour and $7k in 24hrs
+>
+> This bot isn't affected by the 500ms delay removal and has been printing consistently without a single loss
+>
+> https://t.co/ZPJWVLv85i
+>
+> It also keeps depositing $2-$5 every minute
+>
+> It buys both sides of the 5-mins btc up/down crypto market and takes profit even before the market closes
+>
+> > The bot buys multiple YES and NO repeatedly under 4 minutes
+> > When combined price is surprisingly below $1 and profit is taken
+> > 6,823 trades
+> > $400k in less than a month
+
+- **Tweet:** https://x.com/lorden_eth/status/2025240180462874977
+- **Link:** https://polymarket.com/@0x0eA574F3204C5c9C0cdEad90392ea0990F4D17e4-1769515653156
+- **What:** Lorden showcases a Polymarket arbitrage bot earning $400k in less than a month by exploiting pricing inefficiencies in 5-minute BTC up/down markets, buying both YES/NO positions when combined price is below $1 and taking profit before market close with 6,823 trades and no losses.
+
+## @xmayeth - Polymarket Weather Prediction Bot Using NOAA Data
+
+> There's a free exploit on Polymarket that nobody is talking about.
+>
+> You can turn $24 into $6146. 26014% ROI - weather markets print these numbers if you know the edge.
+>
+> The data it used? Free. Published every day by the US government. Available to anyone.
+>
+> Here's what nobody on Polymarket figured out yet.
+>
+> NOAA predicts temperature 24-48 hours out with 94% accuracy. People on Polymarket are pricing weather markets based on their iPhone weather app. Or nothing at all.
+>
+> Think about that for a second. One side has supercomputer models built on decades of satellite data. The other side is guessing.
+>
+> The bot reads NOAA, checks Polymarket, and buys every time they disagree. Every 2 minutes. 6 cities. Runs by itself.
+>
+> I found the wallet:
+>
+> https://t.co/oTc99qJq6X
+>
+> The setup is OpenClaw + Simmer by @TheSpartanLabs + Telegram as command center.
+>
+> *Quoting @LunarResearcher:* https://t.co/AKWBiMSEDd
+
+- **Tweet:** https://x.com/xmayeth/status/2025232198526239171
+- **Quoted:** https://x.com/LunarResearcher/status/2025131164348932533
+- **Link:** https://polymarket.com/@0x594edB9112f526Fa6A80b8F858A6379C8A2c1C11-1762688003124
+- **What:** May.crypto documents an automated weather prediction bot that exploits market inefficiencies on Polymarket by using free NOAA temperature forecasts (94% accuracy) against casual traders using iPhone weather apps, built with OpenClaw + Simmer + Telegram achieving 26014% ROI.
+
+## @damianplayer - AI Bubble Perception vs Reality
+
+> your timeline convinced you AI is in a bubble. talk to a boomer above the age 35 for 5 minutes.
+>
+> most people don't even know what claude is.​​​​​​​​​​​​​​​​
+>
+> kind of wild when you zoom out. https://t.co/fCeqxaUnpk
+
+- **Tweet:** https://x.com/damianplayer/status/2025234388137468387
+- **What:** Damian Player highlights the disconnect between tech Twitter's AI saturation narrative and mainstream reality, noting most people above 35 don't even know what Claude is, challenging the bubble perception.
+
+---
+
+# Friday, February 20, 2026
+
+## @velvet_shark - OpenClaw 50-Day Usage Report
+
+> I've used OpenClaw every single day for 50+ days.
+>
+> Through ClawdBot. Through MoltBot. Through the rebrand and OpenAI partnership.
+>
+> I made the setup video in the official docs. I built Clawdiverse. I contributed a skill to ClawHub.
+>
+> Nobody else can tell you what happens after the first month. Here's everything I learned: 20 real use cases, what actually breaks, and every prompt to set them up yourself:
+>
+> 0:00 Nobody has been here for 50 days yet
+> 1:02 What is OpenClaw?
+> 1:49 What 50 days actually looks like
+> 4:53 #1 Morning briefing
+> 5:54 #2 AI art for my e-ink display
+> 7:30 #3 Auto-updates & backups
+> 8:42 #4 Background checks that caught my Netflix payment fail
+> 10:44 #5 Research with parallel sub-agents
+> 12:09 #6 YouTube analytics in plain English
+> 14:51 #7 /summarize any URL
+> 15:28 #8 "Go fix everything" — server migration
+> 16:57 #9 Coding from my phone
+> 17:35 #10 Email triage (draft-only mode)
+> 18:01 #11 Calendar via WhatsApp for my wife
+> 18:35 #12 Voice note transcription
+> 19:25 #13 Coffee shops, weather, reminders
+> 20:59 #14 My agent helped my friend set up for 3 hours in Polish
+> 23:10 #15 Why I migrated to Discord (biggest upgrade)
+> 26:02 #16 Bookmarks replaced Raindrop
+> 27:24 #17 Semantic search across 3,000 Obsidian notes
+> 29:21 #18 WordPress rickroll honeypot
+> 31:02 #19 Excalidraw diagrams via MCP
+> 31:53 #20 Home automation
+> 33:46 Starter pack: 3 workflows for day one
+> 34:29 The honest part — what breaks
+> 42:03 My 50-day scorecard
+
+- **Tweet:** https://x.com/velvet_shark/status/2024978839487545490
+- **Filed:** [openclaw-50-days](./knowledge/tools/openclaw-50-days.md)
+- **What:** Radek Sienkiewicz documents 50+ days of daily OpenClaw usage with 20 real-world use cases, detailed timestamps, honest assessment of breakages, and starter pack recommendations for new users.
+
+## @jspujji - Wideframe AI Video Editing Platform
+
+> A few days ago I asked who had figured out AI video editing. I got scores of responses.
+>
+> One guy has done it.
+>
+> Claude Cowork for video is finally here.... My team tried Wideframe and was blown away by how much it could do. Anything in your video library including searching, scrubbing, organizing, generating, sequencing, and more. I wouldn't be surprised if ad agencies could reduce production time by 50%.
+>
+> *Quoting @danielpearson:* Wideframe just launched on @ycombinator!
+>
+> Do hours of video work in minutes with @wideframeai.
+>
+> Check out our launch: https://t.co/rPU7Pqu7vE https://t.co/r2yFYFgIZz
+
+- **Tweet:** https://x.com/jspujji/status/2024985054816960930
+- **Quoted:** https://x.com/danielpearson/status/2024951378750439569
+- **Filed:** [wideframe](./knowledge/tools/wideframe.md)
+- **What:** Jesse Pujji highlights Wideframe as a breakthrough AI video editing tool on Y Combinator that can reduce production time by 50% through automated video library management, generation, and sequencing.
+
+## @aakashgupta - Taalas HC1 Custom AI Silicon and Market Timing
+
+> Nvidia paid $20 billion for Groq's IP. Taalas raised $169 million with 24 employees. And they just demonstrated 8x faster single-model inference than Cerebras on the same Llama 3.1 8B.
+>
+> The number everyone's fixating on is the speed. The number that actually matters is the constraint.
+>
+> HC1 runs exactly one model. Llama 3.1 8B, released July 2024, aggressively quantized to 3-bit and 6-bit precision with measurable quality degradation. You can't swap in a new architecture. You can't load different weights. If you want to serve Llama 4, you fabricate an entirely new chip.
+>
+> This tells you everything about what Taalas is actually betting on. They're betting model release cadences slow down. That enterprises will lock into stable, mature models for 12+ months. That the two-month tapeout cycle they've built with TSMC (N6 process, 815 mm2 die, only two metal layers change per model) can keep pace with a frontier that's still accelerating.
+>
+> The economics on paper are staggering. 0.75 cents per million tokens versus Cerebras at 10 cents. That's 13x cheaper. Ten HC1 cards in an air-cooled 2U server pull 2,500 watts total. No HBM, no liquid cooling, no advanced packaging. The founder, Ljubisa Bajic, cofounded Tenstorrent and grew it to unicorn status before starting Taalas. Jim Keller was his first angel investor. This team has shipped silicon before.
+>
+> Where it gets interesting is the multi-chip math. Taalas simulated DeepSeek R1 671B across 30 custom HC chips: 12,000 tokens per second at 7.6 cents per million tokens. Nobody has run that in production. Simulated multi-chip inference and production multi-chip inference are different engineering problems with very different failure modes.
+>
+> The real question is market timing. If model improvements keep delivering large generational gains, the two-month fabrication cycle can't keep up and you're perpetually running yesterday's model in silicon. If improvements plateau and enterprises standardize on stable versions for their highest-volume workloads, Taalas wins on pure economics. Medical devices don't hot-swap models mid-certification. Satellites don't patch weights in orbit.
+>
+> Nvidia just priced Groq's fast-inference approach at $20 billion. A 24-person team in a different corner of the same design space just showed 45x the single-model throughput of a B200. The acquisition math writes itself. Whether the production math does is the $169 million bet.
+>
+> *Quoting @wildmindai:* 17,000 tokens per second!! Read that again!
+> LLM is hard-wired directly into silicon. no HBM, no liquid cooling, just raw specialized hardware. 10x faster and 20x cheaper than a B200.
+> the "waiting for the LLM to think" era is dead. Code generates at the speed of human thought.
+> Transition from brute-force GPU clusters to actual AI appliances.
+> https://t.co/Bf6DH7Q6Uf
+
+- **Tweet:** https://x.com/aakashgupta/status/2025079498396631140
+- **Quoted:** https://x.com/wildmindai/status/2024810128487096357
+- **What:** Aakash Gupta analyzes Taalas' custom HC1 AI chip, examining the technical constraints, market timing risk, and economics of purpose-built silicon versus the Groq acquisition, noting that enterprises locking into stable models makes custom silicon viable if model release cadences slow.
+
+## @whotfiszackk - Twitter Article Link
+
+> https://t.co/RFQr0QgV9l
+
+- **Tweet:** https://x.com/whotfiszackk/status/2025089873603072412
+- **Link:** https://x.com/i/article/2025088655480815619
+- **What:** Direct Twitter article link shared by zack (specific content not accessible from tweet metadata).
+
+## @garrytan - IronClaw Mention
+
+> https://t.co/9Fga6nCvTQ mention spotted 👀 @kumareth
+>
+> *Quoting @karpathy:* Bought a new Mac mini to properly tinker with claws over the weekend. The apple store person told me they are selling like hotcakes and everyone is confused :)
+>
+> I'm definitely a bit sus'd to run OpenClaw specifically - giving my private data/keys to 400K lines of vibe coded monster that is being actively attacked at scale is not very appealing at all. Already seeing reports of exposed instances, RCE vulnerabilities, supply chain poisoning, malicious or compromised skills in the registry, it feels like a complete wild west and a security nightmare. But I do love the concept and I think that just like LLM agents were a new layer on top of LLMs, Claws are now a new layer on top of LLM agents, taking the orchestration, scheduling, context, tool calls and a kind of persistence to a next level.
+>
+> Looking around, and given that the high level idea is clear, there are a lot of smaller Claws starting to pop out. For example, on a quick skim NanoClaw looks really interesting in that the core engine is ~4000 lines of code (fits into both my head and that of AI agents, so it feels manageable, auditable, flexible, etc.) and runs everything in containers by default. I also love their approach to configurability - it's not done via config files it's done via skills! For example, /add-telegram instructs your AI agent how to modify the actual code to integrate Telegram. I haven't come across this yet and it slightly blew my mind earlier today as a new, AI-enabled approach to preventing config mess and if-then-else monsters. Basically - the implied new meta is to write the most maximally forkable repo and then have skills that fork it into any desired more exotic configuration. Very cool.
+>
+> Anyway there are many others - e.g. nanobot, zeroclaw, ironclaw, picoclaw (lol @ prefixes). There are also cloud-hosted alternatives but tbh I don't love these because it feels much harder to tinker with. In particular, local setup allows easy connection to home automation gadgets on the local network. And I don't know, there is something aesthetically pleasing about there being a physical device 'possessed' by a little ghost of a personal digital house elf.
+>
+> Not 100% sure what my setup ends up looking like just yet but Claws are an awesome, exciting new layer of the AI stack.
+
+- **Tweet:** https://x.com/garrytan/status/2024989628944834717
+- **Link:** https://ironclaw.sh/
+- **Quoted:** https://x.com/karpathy/status/2024987174077432126
+- **What:** Garry Tan spots IronClaw mention while Andrej Karpathy discusses the landscape of alternative Claw implementations (NanoClaw, IronClaw, PicoClaw), emphasizing the novel skill-based configuration approach and security concerns around the broader ecosystem.
+
+## @claudeai - Claude Code Security
+
+> Introducing Claude Code Security, now in limited research preview.
+>
+> It scans codebases for vulnerabilities and suggests targeted software patches for human review, allowing teams to find and fix issues that traditional tools often miss.
+>
+> Learn more: https://t.co/n4SZ9EIklG
+
+- **Tweet:** https://x.com/claudeai/status/2024907535145468326
+- **Link:** https://www.anthropic.com/news/claude-code-security
+- **Filed:** [claude-code-security](./knowledge/articles/claude-code-security.md)
+- **What:** Claude announces a new security tool in research preview that scans codebases for vulnerabilities and provides targeted patch suggestions for human review.
+
+## @handotdev - Han Wang on Starting a Company Today
+
+> *Quoting @AnthropicAI:* Software engineering makes up ~50% of agentic tool calls on our API, but we see emerging use in other industries.
+>
+> As the frontier of risk and autonomy expands, post-deployment monitoring becomes essential. We encourage other model developers to extend this research.
+>
+> what I would be working on if I started another company today
+
+- **Tweet:** https://x.com/handotdev/status/2024883980991099180
+- **Quoted:** https://x.com/AnthropicAI/status/2024210053369385192
+- **Filed:** [anthropic-agentic-tool-research](./knowledge/articles/anthropic-agentic-tool-research.md)
+- **What:** Han Wang reflects on what he'd build in a startup today, responding to Anthropic's research on agentic tool usage and post-deployment monitoring.
+
+## @aiedge_ - AI Edge Article
+
+> https://t.co/ZOVfCoKMRB
+
+- **Tweet:** https://x.com/aiedge_/status/2024882793462005866
+- **Link:** https://x.com/i/article/2024566354591043585
+- **What:** AI Edge shares content related to edge AI deployments or technology updates.
+
+## @Legendaryy - AI/Tech Video Content
+
+> https://t.co/LjdYeY2YPX
+
+- **Tweet:** https://x.com/Legendaryy/status/2024927439172841960
+- **Link:** https://x.com/i/article/2024919723670982656
+- **What:** Legendary shares video content about tech/AI topics.
+
+---
+
 # Thursday, February 19, 2026
+
+## @taalas_inc - Taalas Product Launch
+
+> 24 dedicated people.
+> $30M spent on development.
+> Extreme specialization, speed, and power efficiency.
+>
+> Today we launch Taalas' first product. Check it out:
+> Details: https://t.co/88CA0XAL71
+> Demo chatbot: https://t.co/ec4ladcKnw
+> API: https://t.co/M3EkaxEqPj
+
+- **Tweet:** https://x.com/taalas_inc/status/2024516399251456150
+- **Link:** https://taalas.com/the-path-to-ubiquitous-ai/
+- **Link:** https://chatjimmy.ai/
+- **Link:** https://taalas.com/api-request-form/
+- **What:** Taalas announces their first product launch featuring a demo chatbot and API, highlighting the company's focus on specialization, speed, and power efficiency.
 
 ## @nicopreme - Visual Explainer: Agent Skill for Rich Visual Planning
 
